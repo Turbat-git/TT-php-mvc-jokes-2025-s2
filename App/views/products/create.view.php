@@ -72,7 +72,7 @@ loadPartial('navigation');
                             <?php
                             foreach ($colours ?? [] as $colour):
                                 ?>
-                                <option value="<?= $colour->classification ?>"><?= $colour->name ?></option>
+                                <option value="<?= $colour->id ?>"><?= $colour->name ?></option>
                             <?php
                             endforeach
                             ?>
