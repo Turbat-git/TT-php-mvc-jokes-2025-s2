@@ -63,6 +63,22 @@ loadPartial('navigation');
                                value="<?= $product['price'] ?? '' ?>"/>
                     </div>
 
+                    <div class="mb-4">
+                        <label for="Colour">Colour:</label>
+
+                        <select name="colour" id="Colour"
+                                class="border border-gray-300 rounded bg-white px-2 mr-2 flex-0 w-full px-4 py-2 border rounded focus:outline-none">
+                            <option value="" selected disabled>Select Colour</option>
+                            <?php
+                            foreach ($colours ?? [] as $colour):
+                                ?>
+                                <option value="<?= $colour->classification ?>"><?= $colour->name ?></option>
+                            <?php
+                            endforeach
+                            ?>
+                        </select>
+                    </div>
+
                     <div class="grid grid-cols-4 gap-8">
                         <button type="submit"
                                 class="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2

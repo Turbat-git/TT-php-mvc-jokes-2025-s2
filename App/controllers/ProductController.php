@@ -66,7 +66,14 @@ class ProductController
      */
     public function create(): void
     {
-        loadView('products/create');
+
+        $sqlColours = 'SELECT id, name FROM colours ORDER BY name';
+        $colours = $this->db->query($sqlColours)->fetchAll();
+        $colour_count = count($colours);
+
+        loadView('products/create', [
+            "colours" => $colours, "colour_count" => $colour_count,
+        ]);
     }
 
 
@@ -108,12 +115,11 @@ class ProductController
     #[NoReturn] public function store()
     {
         $allowedFields = ['name', 'description', 'price'];
-
         $newProductData = array_intersect_key($_POST, array_flip($allowedFields));
 
         $newProductData['user_id'] = Session::get('user')['id'];
-
         $newProductData = array_map('sanitize', $newProductData);
+
 
         $requiredFields = ['name', 'price'];
 
