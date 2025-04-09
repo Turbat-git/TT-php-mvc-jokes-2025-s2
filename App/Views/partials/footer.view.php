@@ -3,7 +3,7 @@
  * Page Footer
  *
  * Filename:        footer.view.php
- * Location:        App/views/partials
+ * Location:        App/Views/partials
  * Project:         XXX-SaaS-Vanilla-MVC-YYYY-SN
  * Date Created:    20/08/2024
  *

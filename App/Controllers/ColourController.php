@@ -23,7 +23,6 @@ use Framework\Session;
 use Framework\Validation;
 use JetBrains\PhpStorm\NoReturn;
 use League\HTMLToMarkdown\HtmlConverter;
-use Parsedown;
 
 
 class ColourController
@@ -79,7 +78,13 @@ class ColourController
      */
     public function create(): void
     {
-        loadView('colours/create');
+
+        $sqlColourSelect = "SELECT DISTINCT classification FROM colours";
+        $colourSelect = $this->db->query($sqlColourSelect)->fetchAll();
+
+        loadView('colours/create',
+            ['colourSelect' => $colourSelect,]
+        );
     }
 
 
@@ -120,15 +125,13 @@ class ColourController
      */
     #[NoReturn] public function store()
     {
-        $allowedFields = ['name', 'description', 'price'];
+        $allowedFields = ['name', 'hex_code', 'classification'];
 
         $newcolourData = array_intersect_key($_POST, array_flip($allowedFields));
 
-        $newcolourData['user_id'] = Session::get('user')['id'];
-
         $newcolourData = array_map('sanitize', $newcolourData);
 
-        $requiredFields = ['name', 'price'];
+        $requiredFields = ['name', 'hex_code'];
 
         $errors = [];
 
@@ -146,18 +149,7 @@ class ColourController
             ]);
         }
 
-        if (isset($newcolourData['price'])) {
-            $newcolourData['price'] = (float)$newcolourData['price'] * 100;
-        }
-
-        // accept the Markdown from the form and store as HTML
-        if (isset($newcolourData['description'])) {
-
-            $description = $newcolourData['description'] ?? '';
-            $markdown = htmlToMarkdown($description);
-            $newcolourData['description'] = $markdown;
-        }
-
+//        $rgb = hexRgbToDec($)
 
         // Save the submitted data
         $fields = [];

@@ -3,7 +3,7 @@
  * Home Page View
  *
  * Filename:        home.view.php
- * Location:        /App/views
+ * Location:        /App/Views
  * Project:         XXX-SaaS-Vanilla-MVC-YYYY-SN
  * Date Created:    23/08/2024
  *

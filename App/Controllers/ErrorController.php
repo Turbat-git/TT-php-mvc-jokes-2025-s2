@@ -6,7 +6,7 @@
  * other HTTP response codes.
  *
  * Filename:        ErrorController.php
- * Location:        App/controllers/
+ * Location:        App/Controllers/
  * Project:         XXX-SaaS-Vanilla-MVC-YYYY-SN
  * Date Created:    20/08/2024
  *

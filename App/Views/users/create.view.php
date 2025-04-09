@@ -3,7 +3,7 @@
  * Register User View
  *
  * Filename:        create.view.php
- * Location:        App/views/users
+ * Location:        App/Views/users
  * Project:         XXX-SaaS-Vanilla-MVC-YYYY-SN
  * Date Created:    23/08/2024
  *

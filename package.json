@@ -1,5 +1,5 @@
 {
-  "name": "XXX-SaaS-Vanilla-MVC-YYYY-SN",
+  "name": "xxx-saas-vanilla-mvc-yyyy-sn",
   "version": "1.1.0",
   "description": "Simple PHP MVC & TailwindCSS Application Template",
   "main": "index.php",
@@ -39,6 +39,7 @@
     "vite-plugin-php": "^2.0.1"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^44.3.0"
+    "@ckeditor/ckeditor5-build-classic": "^44.3.0",
+    "concurrently": "^9.1.2"
   }
 }

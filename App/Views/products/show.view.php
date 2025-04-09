@@ -100,6 +100,6 @@ loadPartial('navigation');
 
 
 <?php
-require_once basePath("App/views/partials/footer.view.php");
+require_once basePath("App/Views/partials/footer.view.php");
 ?>
 

@@ -3,7 +3,7 @@
  * Flash Message Partial
  *
  * Filename:        message.view.php
- * Location:        App/views/partials
+ * Location:        App/Views/partials
  * Project:         XXX-SaaS-Vanilla-MVC-YYYY-SN
  * Date Created:    23/08/2024
  *

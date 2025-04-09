@@ -27,7 +27,15 @@ class Session
     public static function start()
     {
         if (session_status() == PHP_SESSION_NONE) {
-            session_start();
+            // https://www.php.net/manual/en/function.session-set-cookie-params.php
+            session_start([
+//                    'cookie_path' => '/',
+//                    'cookie_lifetime' => 300,
+//                    'cookie_secure' => false,
+//                    'cookie_httponly' => true,
+//                    'cookie_samesite' => 'lax',
+                    ]
+            );
         }
     }
 
