@@ -15,7 +15,7 @@
  *
  */
 
-namespace App\controllers;
+namespace App\Controllers;
 
 use Framework\Authorisation;
 use Framework\Database;
@@ -318,7 +318,7 @@ class ColourController
     {
         $keywords = isset($_GET['keywords']) ? trim($_GET['keywords']) : '';
 
-        $query = "SELECT * FROM colours WHERE name LIKE :keywords OR description LIKE :keywords ";
+        $query = "SELECT * FROM colours WHERE name LIKE :keywords ";
 
         $params = [
             'keywords' => "%{$keywords}%",

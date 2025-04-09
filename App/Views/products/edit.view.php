@@ -41,7 +41,7 @@ loadPartial('navigation');
                     'errors' => $errors ?? []
                 ]) ?>
 
-                <form id="ProductForm" method="POST" action="/products/<?= $product->id??"" ?>">
+                <form id="ProductForm" method="POST" action="/products/<?= $product->id ?? "" ?>">
                     <input type="hidden" name="_method" value="PUT">
 
                     <h2 class="text-2xl font-bold mb-6 text-left text-gray-500">
@@ -74,14 +74,12 @@ loadPartial('navigation');
                         <label for="Colour">Colour:</label>
 
                         <select name="colour" id="Colour"
-                                class="border border-gray-300 rounded bg-white px-2 mr-2 flex-0 w-full px-4 py-2 border rounded focus:outline-none">
+                                class="border border-gray-300 rounded bg-white px-2 mr-2 flex-0 w-full py-2 focus:outline-none">
                             <option value="" selected disabled>Select Colour</option>
                             <?php
                             foreach ($colours ?? [] as $colour):
                                 ?>
-                                <option value="<?= $colour->id ?>"
-                                <?= $colour->name
-                                ><?= $colour->name ?></option>
+                                <option value="<?= $colour->id ?>"><?= $colour->name ?></option>
                             <?php
                             endforeach
                             ?>

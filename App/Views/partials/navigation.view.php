@@ -118,8 +118,9 @@ $authenticated = new Authorise();
             ?>
 
             <li>
-                <form method="GET" action="#" class="block mx-5 flex">
-                    <input type="text" name="keywords" placeholder="Product search..."
+                <form method="GET" action="#" class="mx-5 flex">
+                    <label for="Keywords">Search:</label>
+                    <input type="text" name="keywords" id="Keywords" placeholder="Product search..."
                            class="w-full md:w-auto px-4 py-1 border border-gray-800 focus:outline-none focus:border-b-gray-500"/>
                     <button class="w-full md:w-auto bg-gray-500 hover:bg-gray-600 text-white px-4 py-1 focus:outline-none transition ease-in-out duration-500">
                         <i class="fa fa-search"></i> Search
