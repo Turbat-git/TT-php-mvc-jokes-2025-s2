@@ -44,7 +44,7 @@ loadPartial('navigation');
                 </h5>
                 <p class="col-span-1 md:col-span-3 ">
                     <img class="w-64 h-64 rounded-lg"
-                         src="https://dummyimage.com/200x200/<?php printf( "%06X", mt_rand( 0, 0xFFFFFF )); ?>/fff&text=Image+Here"
+                         src="https://dummyimage.com/200x200/<?php printf("%06X", mt_rand(0, 0xFFFFFF)); ?>/fff&text=Image+Here"
                          alt="">
                 </p>
 

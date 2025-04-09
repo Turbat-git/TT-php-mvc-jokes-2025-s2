@@ -22,16 +22,16 @@
             <h5 class="font-display text-left font-medium tracking-widest text-gray-500 uppercase title-font>
                 About
             </h5>
+            <a class=" my-1 block" href="/#">
+            Company
+            <span class="text-prussianblue-600 text-xs p-1"></span>
+            </a>
             <a class="my-1 block" href="/#">
-                Company 
+                Careers
                 <span class="text-prussianblue-600 text-xs p-1"></span>
             </a>
             <a class="my-1 block" href="/#">
-                Careers 
-                <span class="text-prussianblue-600 text-xs p-1"></span>
-            </a>
-            <a class="my-1 block" href="/#">
-                Blog 
+                Blog
                 <span class="text-prussianblue-600 text-xs p-1">New</span>
             </a>
         </nav>
@@ -41,7 +41,7 @@
             </h5>
 
             <a class="my-1 block" href="/#">
-                Documentation 
+                Documentation
                 <span class="text-prussianblue-600 text-xs p-1"></span>
             </a>
             <p class="my-1 block">
@@ -52,7 +52,7 @@
             </p>
 
             <a class="my-1 block" href="https://github.com/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN">
-                Source Code 
+                Source Code
                 <span class="text-prussianblue-600 text-xs p-1"></span>
             </a>
 
@@ -119,7 +119,7 @@
                       class="text-gray-500 hover:text-white">Adrian Gould</a> &
                 <a href="https://www.northmetrotafe.wa.edu.au"
                    class="text-gray-500 hover:text-red-700">North Metropolitan TAFE</a>
-            <br>
+                <br>
                 <span class="text-prussianblue-500">License: MIT Open Source Licensing</span>
             </p>
         </nav>

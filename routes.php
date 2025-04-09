@@ -45,8 +45,8 @@ $router->post('/features', 'FeatureController@store', ['auth']);
 $router->put('/features/{id}', 'FeatureController@update', ['auth']);
 $router->delete('/features/{id}', 'FeatureController@destroy', ['auth']);
 
-/** 
- * Example Product Feature Routes 
+/**
+ * Example Product Feature Routes
  */
 $router->get('/products', 'ProductController@index');
 $router->get('/products/create', 'ProductController@create', ['auth']);
@@ -58,8 +58,8 @@ $router->post('/products', 'ProductController@store', ['auth']);
 $router->put('/products/{id}', 'ProductController@update', ['auth']);
 $router->delete('/products/{id}', 'ProductController@destroy', ['auth']);
 
-/** 
- * Example Colours Feature Routes 
+/**
+ * Example Colours Feature Routes
  */
 $router->get('/colours', 'ColourController@index');
 $router->get('/colours/create', 'ColourController@create', ['auth']);

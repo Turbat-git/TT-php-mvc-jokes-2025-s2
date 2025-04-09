@@ -6,7 +6,7 @@
  * - autoloading the classes
  * - requiring the helper functions
  * - creating a list of routes
- * - parsing the URI 
+ * - parsing the URI
  * - calling the relevant method based on the route requested
  *
  * Filename:        index.php

@@ -358,7 +358,7 @@ VALUES (9, 'geek', '1970-01-01 00:00:02'),
 -- --------------------------------------------------------------------------------------------
 
 INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`jokes`(`id`, `title`, `body`, `category_id`, `tags`,
-                                                `author_id`, `created_at`, `updated_at`)
+                                           `author_id`, `created_at`, `updated_at`)
 VALUES (1, 'Skeleton Fight',
         '&lt;p&gt;Why don\'t skeletons fight each other?&lt;/p&gt;&lt;p&gt;They don\'t have the guts.&lt;/p&gt;',
         7, 'spooky,funny', 1, now(), null),

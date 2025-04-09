@@ -17,6 +17,7 @@
 
 namespace App\Controllers;
 
+use Exception;
 use Framework\Authorisation;
 use Framework\Database;
 use Framework\Session;
@@ -31,7 +32,7 @@ class ProductController
     protected Database $db;
 
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function __construct()
     {
@@ -44,7 +45,7 @@ class ProductController
      * Produce home page
      *
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     public function index(): void
     {
@@ -81,7 +82,7 @@ class ProductController
      *
      * @param array $params
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     public function show(array $params): void
     {
@@ -109,7 +110,7 @@ class ProductController
      * Store data in database
      *
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     #[NoReturn] public function store()
     {
@@ -187,7 +188,7 @@ class ProductController
      *
      * @param array $params
      * @return null
-     * @throws \Exception
+     * @throws Exception
      */
     public function edit(array $params): null
     {
@@ -212,12 +213,17 @@ class ProductController
             return redirect('/products/' . $product->id);
         }
 
+        // Get the list of colours
+        $colours = $this->db->query('SELECT * FROM colours ORDER BY name')->fetchAll();
+
+
         $converter = new HtmlConverter();
 
         $product->description = $converter->convert($product->description ?? '');
 
         loadView('products/edit', [
-            'product' => $product
+            'product' => $product,
+            'colours' => $colours,
         ]);
         return null;
     }
@@ -227,7 +233,7 @@ class ProductController
      *
      * @param array $params
      * @return null
-     * @throws \Exception
+     * @throws Exception
      */
     #[NoReturn] public function update(array $params): null
     {
@@ -312,7 +318,7 @@ class ProductController
      * Search products by keywords/location
      *
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     public function search(): void
     {

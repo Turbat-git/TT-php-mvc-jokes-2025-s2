@@ -16,6 +16,7 @@
 
 namespace App\Controllers;
 
+use Exception;
 use Framework\Database;
 use Framework\Session;
 use Framework\Validation;
@@ -37,7 +38,7 @@ class UserController
      * storing the connection in the protected <code>$db</code>
      * property.
      *
-     * @throws \Exception
+     * @throws Exception
      */
     public function __construct()
     {

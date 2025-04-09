@@ -34,7 +34,7 @@ class Session
 //                    'cookie_secure' => false,
 //                    'cookie_httponly' => true,
 //                    'cookie_samesite' => 'lax',
-                    ]
+                ]
             );
         }
     }
@@ -63,20 +63,17 @@ class Session
         session_destroy();
     }
 
-
     /**
-     * Clear session by key
+     * Set a flash message
      *
      * @param string $key
+     * @param string $message
      * @return void
      */
-    public static function clear($key)
+    public static function setFlashMessage($key, $message)
     {
-        if (isset($_SESSION[$key])) {
-            unset($_SESSION[$key]);
-        }
+        self::set('flash_' . $key, $message);
     }
-
 
     /**
      * Set a session key/value pair
@@ -90,6 +87,19 @@ class Session
         $_SESSION[$key] = $value;
     }
 
+    /**
+     * Get a flash message and unset
+     *
+     * @param string $key
+     * @param mixed $default
+     * @return string
+     */
+    public static function getFlashMessage($key, $default = null)
+    {
+        $message = self::get('flash_' . $key, $default);
+        self::clear('flash_' . $key);
+        return $message;
+    }
 
     /**
      * Get a session value by the key
@@ -103,32 +113,17 @@ class Session
         return isset($_SESSION[$key]) ? $_SESSION[$key] : $default;
     }
 
-
     /**
-     * Set a flash message
+     * Clear session by key
      *
      * @param string $key
-     * @param string $message
      * @return void
      */
-    public static function setFlashMessage($key, $message)
+    public static function clear($key)
     {
-        self::set('flash_' . $key, $message);
-    }
-
-
-    /**
-     * Get a flash message and unset
-     *
-     * @param string $key
-     * @param mixed $default
-     * @return string
-     */
-    public static function getFlashMessage($key, $default = null)
-    {
-        $message = self::get('flash_' . $key, $default);
-        self::clear('flash_' . $key);
-        return $message;
+        if (isset($_SESSION[$key])) {
+            unset($_SESSION[$key]);
+        }
     }
 
 }

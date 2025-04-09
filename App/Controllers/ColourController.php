@@ -17,6 +17,7 @@
 
 namespace App\Controllers;
 
+use Exception;
 use Framework\Authorisation;
 use Framework\Database;
 use Framework\Session;
@@ -31,7 +32,7 @@ class ColourController
     protected Database $db;
 
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function __construct()
     {
@@ -44,7 +45,7 @@ class ColourController
      * Colour home page
      *
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     public function index(): void
     {
@@ -93,7 +94,7 @@ class ColourController
      *
      * @param array $params
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     public function show(array $params): void
     {
@@ -121,7 +122,7 @@ class ColourController
      * Store data in database
      *
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     #[NoReturn] public function store()
     {
@@ -187,7 +188,7 @@ class ColourController
      *
      * @param array $params
      * @return null
-     * @throws \Exception
+     * @throws Exception
      */
     public function edit(array $params): null
     {
@@ -227,7 +228,7 @@ class ColourController
      *
      * @param array $params
      * @return null
-     * @throws \Exception
+     * @throws Exception
      */
     #[NoReturn] public function update(array $params): null
     {
@@ -312,7 +313,7 @@ class ColourController
      * Search colours by keywords/location
      *
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     public function search(): void
     {

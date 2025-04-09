@@ -123,10 +123,10 @@
             </section>
             <section class="w-full min-w-64 bg-white shadow rounded grid grid-cols-3">
                 <header class=" bg-gray-700 text-gray-200 text-lg p-4 rounded-l col-span-1 ">
-                <h4 class="text-center flex flex-col gap-1">
-                    <i class="fa fa-user text-5xl text-gray-500"></i>
-                    <span class="text-sm">Users</span>
-                </h4>
+                    <h4 class="text-center flex flex-col gap-1">
+                        <i class="fa fa-user text-5xl text-gray-500"></i>
+                        <span class="text-sm">Users</span>
+                    </h4>
                 </header>
                 <p class="col-span-2 text-3xl ml-6 my-auto text-center">
                     6

@@ -40,7 +40,7 @@ loadPartial('navigation');
                 </div>
                 <div class="col-span-3">
                     <p class="text-4xl font-semibold text-gray-700 dark:text-gray-200">
-                        <?= $productCount->total ?? "-"?>
+                        <?= $productCount->total ?? "-" ?>
                     </p>
                 </div>
             </section>

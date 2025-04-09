@@ -29,8 +29,8 @@ if ($successMessage !== null) : ?>
             <?= $successMessage ?>
         </div>
     </div>
-<?php
-Session::clear('success_message');
+    <?php
+    Session::clear('success_message');
 endif;
 
 $errorMessage = Session::getFlashMessage('error_message');
@@ -52,7 +52,7 @@ if ($errorMessage !== null) : ?>
             <?= $errorMessage ?>
         </div>
     </div>
-<?php
+    <?php
     Session::clear('error_message');
 
 endif;

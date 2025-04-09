@@ -33,6 +33,18 @@ class Router
      */
     protected $routes = [];
 
+    /**
+     * Add a GET route
+     *
+     * @param string $uri
+     * @param string $controller
+     * @param array $middleware
+     * @return void
+     */
+    public function get($uri, $controller, $middleware = [])
+    {
+        $this->registerRoute('GET', $uri, $controller, $middleware);
+    }
 
     /**
      * Add a new route
@@ -63,21 +75,6 @@ class Router
             'Middleware' => $middleware
         ];
     }
-
-
-    /**
-     * Add a GET route
-     *
-     * @param string $uri
-     * @param string $controller
-     * @param array $middleware
-     * @return void
-     */
-    public function get($uri, $controller, $middleware = [])
-    {
-        $this->registerRoute('GET', $uri, $controller, $middleware);
-    }
-
 
     /**
      * Add a POST route

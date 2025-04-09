@@ -52,13 +52,14 @@ loadPartial('navigation');
                     <div class="mb-4">
                         <label for="Rgb">RGB (Hex):</label>
                         <input id="Rgb" name="hex_code" placeholder="HEX RGB"
-                                  class="w-full px-4 py-2 border rounded focus:outline-none"
-                        value="<?= $colour['hex_code'] ?? '' ?>" />
+                               class="w-full px-4 py-2 border rounded focus:outline-none"
+                               value="<?= $colour['hex_code'] ?? '' ?>"/>
                     </div>
 
                     <div class="mb-4">
                         <label for="Classification" class="flex-0 mr-2">Filter:</label>
-                        <select name="classification" id="Classification" class="border border-gray-300 rounded bg-white px-2 mr-2 flex-0">
+                        <select name="classification" id="Classification"
+                                class="border border-gray-300 rounded bg-white px-2 mr-2 flex-0">
                             <?php
                             foreach ($colourSelect ?? [] as $colour):
                                 ?>
