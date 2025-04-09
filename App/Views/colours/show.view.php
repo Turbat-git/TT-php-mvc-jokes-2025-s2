@@ -35,7 +35,7 @@ loadPartial('navigation');
         </section>
         <section class="w-full bg-white shadow rounded p-4 flex flex-col gap-4">
             <h4 class="-mx-4 bg-zinc-700 text-zinc-200 text-2xl p-4 -mt-4 mb-4 rounded-t flex-0 flex justify-between">
-                <?= $product->name ?>
+                <?= $product->name ?? "" ?>
             </h4>
 
             <section class="flex-grow grid grid-cols-4">

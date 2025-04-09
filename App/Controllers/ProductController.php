@@ -23,7 +23,6 @@ use Framework\Session;
 use Framework\Validation;
 use JetBrains\PhpStorm\NoReturn;
 use League\HTMLToMarkdown\HtmlConverter;
-use Parsedown;
 
 
 class ProductController

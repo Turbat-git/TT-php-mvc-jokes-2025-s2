@@ -40,7 +40,7 @@ loadPartial('navigation');
                 </div>
                 <div class="col-span-3">
                     <p class="text-4xl font-semibold text-gray-700 dark:text-gray-200">
-                        <?= $productCount->total ?>
+                        <?= $productCount->total ?? "-"?>
                     </p>
                 </div>
             </section>
@@ -61,7 +61,7 @@ loadPartial('navigation');
                 <div class="col-span-3 ">
 
                     <p class="text-4xl font-semibold text-gray-700 dark:text-gray-200">
-                        <?= $userCount->total ?>
+                        <?= $userCount->total ?? "-" ?>
                     </p>
                 </div>
             </section>
@@ -71,7 +71,7 @@ loadPartial('navigation');
         <section class="my-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
 
             <?php
-            foreach ($products as $product):
+            foreach ($products ?? [] as $product):
                 ?>
                 <!--            article>(header>h4{Name})+(section>p{Description})+(footer>p{Price})-->
                 <article class="bg-gray-100 border border-gray-400 shadow rounded flex flex-col overflow-hidden">

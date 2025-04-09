@@ -33,10 +33,10 @@ $authenticated = new Authorise();
                 </svg>
                 <div class="flex flex-col items-left gap-4">
                     <p class="text-4xl font-bold ">
-                        <?= $status ?>
+                        <?= $status ?? "" ?>
                     </p>
                     <p class="text-2xl font-semibold ">
-                        <?= $message ?>
+                        <?= $message ?? "" ?>
                     </p>
                     <p> Go Back To
                         <a class="underline underline-offset-2

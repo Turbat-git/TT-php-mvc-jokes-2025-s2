@@ -41,7 +41,7 @@ loadPartial('navigation');
                     'errors' => $errors ?? []
                 ]) ?>
 
-                <form id="ProductForm" method="POST" action="/products/<?= $product->id ?>">
+                <form id="ProductForm" method="POST" action="/products/<?= $product->id??"" ?>">
                     <input type="hidden" name="_method" value="PUT">
 
                     <h2 class="text-2xl font-bold mb-6 text-left text-gray-500">
