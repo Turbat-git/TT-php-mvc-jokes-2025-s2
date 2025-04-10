@@ -141,7 +141,17 @@ TODO: More details on use for use in developing basic application using this cod
 
 > TODO: Add details of how to use this demonstration application.
 
+Home Screen (not logged in)
+
 ![Home Screen](src/images/home-screen.png)
+
+Products screen
+
+![Products Screen](src/images/products-screen.png)
+
+Filter feature on Colours
+
+![Colours Fltered](src/images/colours-filtered.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
