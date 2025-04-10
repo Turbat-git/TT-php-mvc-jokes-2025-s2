@@ -43,10 +43,34 @@ loadPartial('navigation');
                     Image:
                 </h5>
                 <p class="col-span-1 md:col-span-3 ">
-                    <img class="w-64 h-64 rounded-lg"
-                         src="https://dummyimage.com/200x200/<?php printf("%06X", mt_rand(0, 0xFFFFFF)); ?>/fff&text=Image+Here"
+                    <img class="w-64 h-64 rounded-lg p-4"
+                         style="background-color: <?= $product_colour->oklch ?? ''; ?>"
+                         src="/assets/svgs/regular/heart.svg"
                          alt="">
                 </p>
+
+                <h5 class="text-lg font-bold col-span-1 mt-4">
+                    Colour:
+                </h5>
+                <section class="col-span-1 md:col-span-3 max-w-192 description mt-4 flex flex-col">
+                    <?php
+                    if (!$product_colour):
+                        ?>
+                        <p>Colour is not set</p>
+                    <?php
+                    else:
+                        ?>
+                        <p>
+                            RGB: #<?= $product_colour->hex_code ?? "- Unknown -" ?>
+                        </p>
+                        <p>
+                            OKLCH: <?= $product_colour->l ?? ""; ?>%, <?= $product_colour->c ?? ""; ?>
+                            %, <?= $product_colour->h ?? ""; ?>°
+                        </p>
+                    <?php
+                    endif
+                    ?>
+                </section>
 
                 <h5 class="text-lg font-bold col-span-1 mt-4">
                     Description:
@@ -67,6 +91,7 @@ loadPartial('navigation');
             if (Framework\Authorisation::isOwner($product->user_id)) :
                 ?>
                 <form method="POST"
+                      action="/products/<?= $product->id ?>"
                       class="px-4 py-4 mt-4 -mx-4 border-0 border-t-1 border-zinc-300 text-lg flex flex-row gap-8">
 
                     <a href="/products/edit/<?= $product->id ?>"
@@ -82,6 +107,7 @@ loadPartial('navigation');
                     </a>
 
                     <input type="hidden" name="_method" value="DELETE">
+                    <input type="hidden" name="product_id" value="<?= $product->id ?>">
                     <button type="submit"
                             class="px-4 py-2 bg-red-500 hover:bg-red-700 text-white rounded transition ease-in-out duration-500">
                         <i class="fa fa-times inline-block mr-2"></i>

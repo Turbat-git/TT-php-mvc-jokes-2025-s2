@@ -41,11 +41,13 @@ loadPartial('navigation');
                     'errors' => $errors ?? []
                 ]) ?>
 
-                <form id="ProductForm" method="POST" action="/products/<?= $product->id ?? "" ?>">
+                <form id="ProductForm" method="POST" action="/products/<?= $product_id ?>">
                     <input type="hidden" name="_method" value="PUT">
 
                     <h2 class="text-2xl font-bold mb-6 text-left text-gray-500">
                         Product Information
+                        <input id="ProductID" type="hidden" name="product_id"
+                               value="<?= $product->id ?>"/>
                     </h2>
 
                     <div class="mb-4">
@@ -72,17 +74,22 @@ loadPartial('navigation');
 
                     <div class="mb-4">
                         <label for="Colour">Colour:</label>
-
                         <select name="colour" id="Colour"
                                 class="border border-gray-300 rounded bg-white px-2 mr-2 flex-0 w-full py-2 focus:outline-none">
-                            <option value="" selected disabled>Select Colour</option>
-                            <?php
-                            foreach ($colours ?? [] as $colour):
-                                ?>
-                                <option value="<?= $colour->id ?>"><?= $colour->name ?></option>
-                            <?php
-                            endforeach
-                            ?>
+
+                            <option value="0"
+                                <?php if (is_null($colour_id) || $colour_id == 0): ?>
+                                    selected
+                                <?php endif ?>
+                                    disabled>Select Colour
+                            </option>
+                            <?php foreach ($colours ?? [] as $colour): ?>
+                                <option value="<?= $colour->id ?>"
+                                    <?php if (!is_null($colour_id) && $colour_id == $colour->id): ?>
+                                        selected
+                                    <?php endif ?>
+                                ><?= $colour->name ?></option>
+                            <?php endforeach ?>
                         </select>
                     </div>
 

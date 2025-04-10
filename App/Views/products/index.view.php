@@ -53,9 +53,10 @@ loadPartial('navigation');
                             </h4>
                         </header>
 
-                        <img class="h-56 w-full object-cover"
-                             src="https://dummyimage.com/400x400/<?php printf("%06X", mt_rand(0, 0xFFFFFF)); ?>/fff&text=Image+Here"
-                             alt="">
+                    <img class="h-32 w-full"
+                         style="background-color: <?= $product->oklch ?? ''; ?>"
+                         src="/assets/svgs/regular/heart.svg"
+                         alt="">
 
                         <section class="flex-grow p-4 ">
                             <div class="bg-white description">

@@ -22,14 +22,14 @@ export default defineConfig({
                 'index.php',
                 'template.php',
                 'public/index.{html,php,js}',
-                'App/views/**/*.{html,php,js}'
+                'App/Views/**/*.{html,php,js}'
             ],
         }),
         liveReload([
                 'index.php',
                 'template.php',
                 'public/index.{html,php,js}',
-                'App/views/**/*.{html,php,js}'
+                'App/Views/**/*.{html,php,js}'
             ],
             {
                 alwaysReload: true
