@@ -61,9 +61,9 @@ class UserController
      *
      * @return void
      */
-    public function create()
+    public function register()
     {
-        loadView('users/create');
+        loadView('users/register');
     }
 
     /**
@@ -71,7 +71,7 @@ class UserController
      *
      * @return void
      */
-    public function store()
+    public function store_register()
     {
         $name = $_POST['name'] ?? null;
         $email = $_POST['email'] ?? null;
@@ -100,7 +100,7 @@ class UserController
         }
 
         if (!empty($errors)) {
-            loadView('users/create', [
+            loadView('users/register', [
                 'errors' => $errors,
                 'user' => [
                     'name' => $name,
