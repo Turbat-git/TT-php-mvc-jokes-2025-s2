@@ -1,0 +1,12480 @@
+CREATE TABLE `xxx_saas_fed_yyyy_sn`.`cities`
+(
+    `id`           INT          NOT NULL,
+    `name`         VARCHAR(255) NOT NULL,
+    `state_id`     INT          NOT NULL,
+    `state_code`   VARCHAR(6)   NOT NULL,
+    `state_name`   VARCHAR(128) NOT NULL,
+    `country_id`   INT          NOT NULL,
+    `country_code` VARCHAR(6)   NOT NULL,
+    `country_name` VARCHAR(128) NOT NULL,
+    `latitude`     FLOAT        NOT NULL,
+    `longitude`    FLOAT        NOT NULL
+) ENGINE = InnoDB;
+
+ALTER TABLE `cities`
+    ADD `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `longitude`,
+    ADD `updated_at` DATETIME NULL     DEFAULT NULL AFTER `created_at`;
+
+//
+
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3915, 'Acton', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.27767, 149.11829);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3923, 'Ainslie', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.26255, 149.1437);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3974, 'Amaroo', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.16959, 149.12802);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3995, 'Aranda', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.25817, 149.0804);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4098, 'Banks', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.47194, 149.09965);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4129, 'Barton', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.30489, 149.14121);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4184, 'Belconnen', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.23798, 149.06627);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4331, 'Bonner', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.16225, 149.13855);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4338, 'Bonython', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.43326, 149.07822);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4377, 'Braddon', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.27078, 149.13569);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4436, 'Bruce', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.24405, 149.09083);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4536, 'Calwell', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.44042, 149.10707);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4555, 'Campbell', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.28907, 149.15382);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4566, 'Canberra', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.28346, 149.12807);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4621, 'Casey', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.16701, 149.0947);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4662, 'Chapman', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.35621, 149.03742);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4669, 'Charnwood', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.20019, 149.03412);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4687, 'Chifley', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.3534, 149.07684);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4697, 'Chisholm', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.41249, 149.12825);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4708, 'City', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.28125, 149.12927);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4787, 'Conder', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.45926, 149.10422);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4799, 'Cook', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.26014, 149.06566);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4816, 'Coombs', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.31634, 149.03941);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4855, 'Crace', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.20282, 149.10736);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4916, 'Curtin', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.32464, 149.07763);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4957, 'Deakin', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.31927, 149.10308);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4989, 'Dickson', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.25082, 149.13932);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5024, 'Downer', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.24457, 149.14468);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5036, 'Duffy', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.33459, 149.03188);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5046, 'Dunlop', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.19402, 149.01984);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5197, 'Evatt', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.21191, 149.06891);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5204, 'Fadden', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.405, 149.11662);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5219, 'Farrer', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.37673, 149.105);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5239, 'Fisher', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.36126, 149.05704);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5257, 'Florey', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.22588, 149.05);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5258, 'Flynn', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.20593, 149.04389);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5261, 'Forde', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.16823, 149.14607);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5270, 'Forrest', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.31499, 149.12859);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5278, 'Franklin', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.19946, 149.14329);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5284, 'Fraser', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.1917, 149.04534);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5306, 'Garran', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.34206, 149.10846);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5336, 'Gilmore', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.41994, 149.13481);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5340, 'Giralang', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.21093, 149.096);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5420, 'Gordon', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.45676, 149.08498);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5429, 'Gowrie', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.41187, 149.10903);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5461, 'Greenway', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.41829, 149.06658);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5472, 'Griffith', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.32533, 149.13714);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5485, 'Gungahlin', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.18674, 149.13619);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5498, 'Hackett', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.24948, 149.16352);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5531, 'Harrison', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.19906, 149.15631);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5538, 'Hawker', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.24707, 149.03666);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5592, 'Higgins', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.23242, 149.0272);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5629, 'Holder', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.33439, 149.04614);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5639, 'Holt', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.22441, 149.01188);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5663, 'Hughes', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.33269, 149.09491);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5707, 'Isaacs', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.36862, 149.11555);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5708, 'Isabella Plains', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.42829,
+        149.08795);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5758, 'Kaleen', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.21814, 149.10516);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5768, 'Kambah', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.38624, 149.05804);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5886, 'Kingston', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.31525, 149.14658);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5980, 'Latham', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.21652, 149.03144);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6091, 'Lyneham', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.2398, 149.13074);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6093, 'Lyons', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.3406, 149.07396);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6097, 'Macarthur', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.40885, 149.12696);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6102, 'Macgregor', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.2098, 149.01101);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6112, 'Macquarie', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.25126, 149.06363);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6205, 'Mawson', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.3634, 149.09863);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6218, 'McKellar', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.21752, 149.07704);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6234, 'Melba', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.21016, 149.05405);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6345, 'Monash', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.41577, 149.09063);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6533, 'Narrabundah', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.3357, 149.14924);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6583, 'Ngunnawal', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.1728, 149.11147);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6587, 'Nicholls', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.18733, 149.09648);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6691, 'O\'Connor', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.25645, 149.11248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6749, 'Oxley', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.40952, 149.0786);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6761, 'Page', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.23864, 149.04988);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6770, 'Palmerston', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.19447, 149.1194);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6820, 'Pearce', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.36222, 149.08338);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6848, 'Phillip', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.35035, 149.09151);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6977, 'Red Hill', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.32624, 149.11906);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6992, 'Reid', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.28578, 149.13905);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7004, 'Richardson', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.42787, 149.11377);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7031, 'Rivett', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.34709, 149.0379);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7157, 'Scullin', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.23462, 149.039);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7303, 'Spence', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.19873, 149.06438);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7348, 'Stirling', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.34969, 149.0493);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7498, 'Theodore', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.44962, 149.11971);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7544, 'Torrens', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.37203, 149.08773);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7582, 'Turner', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.26881, 149.12465);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7693, 'Wanniassa', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.39783, 149.09086);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7697, 'Waramanga', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.35297, 149.06214);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7735, 'Watson', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.23815, 149.15271);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7753, 'Weetangera', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.25, 149.05);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7827, 'Weston', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.33582, 149.05929);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7955, 'Wright', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.32239, 149.03456);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8002, 'Yarralumla', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.2998, 149.10585);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3903, 'Abbotsbury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8701, 150.86119);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3905, 'Abbotsford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84889, 151.12801);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3906, 'Abercrombie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.38867, 149.5458);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3907, 'Aberdare', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.84112, 151.38168);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3908, 'Aberdeen', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.16588, 150.89003);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3911, 'Aberglasslyn', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.7, 151.53333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3912, 'Abermain', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.8074, 151.4275);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3913, 'Acacia Gardens', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73159, 150.91636);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3917, 'Adamstown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.93824, 151.72541);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3918, 'Adamstown Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.94906, 151.71009);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3924, 'Airds', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.08599, 150.83322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3937, 'Albion Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.57132, 150.77568);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3938, 'Albion Park Rail', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.56634, 150.79177);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3939, 'Albury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.07482, 146.92401);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3940, 'Albury Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.01494, 146.95684);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3941, 'Aldavilla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.0818, 152.7679);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3950, 'Alexandria', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89989, 151.19951);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3952, 'Alfords Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98744, 151.02526);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3959, 'Allambie Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76655, 151.24981);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3961, 'Allawah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97257, 151.1144);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3968, 'Alstonville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.84186, 153.44022);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3975, 'Ambarvale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.08942, 150.79656);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3983, 'Anna Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.78135, 152.08586);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3984, 'Annandale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88333, 151.16667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3986, 'Annangrove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.65758, 150.94755);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3991, 'Appin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.20347, 150.78644);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3997, 'Arcadia', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.61667, 151.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3998, 'Arcadia vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.06052, 151.58408);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4002, 'Argenton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.93505, 151.63064);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4005, 'Armidale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.50123, 151.66553);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4007, 'Arncliffe', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93627, 151.14819);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4009, 'Artarmon', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81667, 151.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4018, 'Ashbury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89785, 151.1196);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4020, 'Ashcroft', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91598, 150.89985);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4022, 'Ashfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88834, 151.12274);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4025, 'Ashmont', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.12491, 147.33172);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4027, 'Ashtonfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.77331, 151.60583);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4032, 'Asquith', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.68705, 151.1163);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4040, 'Auburn', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85, 151.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4046, 'Austinmer', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.30516, 150.93335);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4048, 'Austral', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92745, 150.80811);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4055, 'Avoca Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.46818, 151.4339);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4056, 'Avondale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.5175, 150.7501);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4074, 'Balgowlah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79494, 151.2572);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4075, 'Balgowlah Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80661, 151.26243);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4076, 'Balgownie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.39505, 150.88051);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4084, 'Ballina', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.85273, 153.48568);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4085, 'Balmain', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85481, 151.1833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4086, 'Balmain East', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8571, 151.19282);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4090, 'Balranald', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.67839, 143.56384);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4095, 'Bangalow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.68634, 153.52153);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4096, 'Bangor', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01667, 151.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4099, 'Banksia', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94601, 151.14304);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149215, 'Banksmeadow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9560301, 151.197362);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4103, 'Bankstown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91667, 151.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4105, 'Banora Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.21298, 153.53634);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4108, 'Bar Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.94128, 151.76544);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4112, 'Barden Ridge', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03413, 151.01194);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4113, 'Bardia', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97789, 150.86306);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4115, 'Bardwell Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93534, 151.12571);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4116, 'Bardwell Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93344, 151.13668);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4119, 'Bargo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.29301, 150.57806);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4120, 'Barham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.62647, 144.12895);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4124, 'Barnsley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.93333, 151.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4125, 'Barooga', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.90602, 145.69585);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4127, 'Barraba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.38547, 150.60901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4128, 'Barrack Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.56464, 150.85692);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4132, 'Basin View', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.08833, 150.55534);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4134, 'Bass Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89863, 150.99541);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4136, 'Bateau Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.38334, 151.46671);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4137, 'Batehaven', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.73757, 150.19836);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4139, 'Batemans Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.70658, 150.17541);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4140, 'Bathurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.41665, 149.5806);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4142, 'Bathurst city centre', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.41816, 149.57621);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4141, 'Bathurst Regional', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.4731, 149.51956);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4143, 'Batlow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.51987, 148.14727);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4146, 'Baulkham Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75881, 150.99292);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4149, 'Bay View', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.65982, 151.29878);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4159, 'Beacon Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7528, 151.25857);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4169, 'Beaumont Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.69993, 150.9411);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4177, 'Beecroft', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74954, 151.0648);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4181, 'Bega', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.67392, 149.84178);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4182, 'Bega Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.81646, 149.7206);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4186, 'Belfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90354, 151.08467);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4193, 'Bella Vista', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74127, 150.95456);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4195, 'Bellambi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.36667, 150.91667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4197, 'Bellbird', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.85992, 151.31873);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4203, 'Bellevue Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87899, 151.25101);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4205, 'Bellingen', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.37394, 152.72492);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4207, 'Belmont', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.0274, 151.6601);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4211, 'Belmont North', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.02081, 151.66849);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4212, 'Belmont South', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.04934, 151.65695);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4213, 'Belmore', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91901, 151.08935);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4214, 'Belrose', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73954, 151.21033);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4222, 'Bensville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.49757, 151.38084);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4227, 'Berala', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87197, 151.03386);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4228, 'Beresfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.8, 151.65);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4230, 'Berkeley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.48333, 150.85);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4231, 'Berkeley Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.35, 151.43333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4232, 'Berkshire Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.67283, 150.77523);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4233, 'Bermagui', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.419, 150.06355);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4234, 'Berowra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.62078, 151.15091);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4235, 'Berowra Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.61211, 151.13754);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4238, 'Berridale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.36673, 148.82772);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4240, 'Berrigan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.75192, 145.66984);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4243, 'Berry', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.77507, 150.69436);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4251, 'Beverley Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97707, 151.13437);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4252, 'Beverly Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94799, 151.07979);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4253, 'Bexley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95, 151.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4254, 'Bexley North', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93848, 151.11385);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4257, 'Bidwill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73013, 150.82219);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4259, 'Bilambil Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.2161, 153.48415);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4260, 'Bilgola Plateau', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.64781, 151.31212);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4265, 'Bingara', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.86931, 150.57204);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4267, 'Birchgrove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85164, 151.18243);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4271, 'Birmingham Gardens', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.89368, 151.69009);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4272, 'Birrong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89255, 151.02075);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4282, 'Blackalls Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.99893, 151.58018);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4286, 'Blackbutt', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.57164, 150.83804);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4287, 'Blackett', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73792, 150.81812);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4288, 'Blackheath', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.63567, 150.28318);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4291, 'Blacksmiths', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.07167, 151.65533);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4293, 'Blacktown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74016, 150.86253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4294, 'Blackwall', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.50252, 151.32786);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4298, 'Blair Athol', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.65, 150.2);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4300, 'Blakehurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.99152, 151.10876);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4302, 'Bland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91904, 146.92718);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4303, 'Blaxland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75, 150.6);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4304, 'Blayney', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.61653, 149.13046);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4306, 'Bligh Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.63985, 150.80248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4308, 'Blue Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.35413, 151.50024);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4309, 'Blue Haven', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.21106, 151.50351);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4310, 'Blue Mountains Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.63203,
+        150.41293);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4313, 'Boambee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.33981, 153.06783);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4314, 'Boambee East', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.34662, 153.0732);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4316, 'Bogan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.57012, 146.90617);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4317, 'Bogangar', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.32944, 153.5686);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4318, 'Boggabri', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.70953, 150.04121);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4321, 'Bolton Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.00177, 151.61013);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4322, 'Bolwarra Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.701, 151.58541);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4323, 'Bomaderry', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.84967, 150.61093);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4324, 'Bombala', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.91212, 149.23669);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4326, 'Bondi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89429, 151.26444);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4327, 'Bondi Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89079, 151.27852);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4328, 'Bondi Junction', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89275, 151.24723);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4330, 'Bonnells Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.10973, 151.53226);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4332, 'Bonnet Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01023, 151.05253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4333, 'Bonny Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.59061, 152.83908);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4334, 'Bonnyrigg', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89357, 150.88908);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4335, 'Bonnyrigg Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89117, 150.86994);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4337, 'Bonville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.38284, 153.05959);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4340, 'Booker Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.5125, 151.3459);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4344, 'Booragul', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.97486, 151.60978);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4346, 'Boorowa', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.43661, 148.71634);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4352, 'Bossley Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86184, 150.8841);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4354, 'Botany', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94599, 151.19591);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4355, 'Botany Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9466, 151.19874);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4359, 'Bourke', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.99584, 145.3616);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4360, 'Bourkelands', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.15593, 147.34704);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4361, 'Bow Bowing', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01655, 150.8403);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4364, 'Bowen Mountain', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.57192, 150.62563);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4365, 'Bowenfels', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.48336, 150.13444);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4366, 'Bowral', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.4775, 150.4204);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4367, 'Bowraville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.64997, 152.85146);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4376, 'Bradbury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.0854, 150.81541);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4379, 'Braidwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.44148, 149.7998);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4382, 'Branxton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.65547, 151.35113);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4388, 'Breakfast Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84286, 151.11072);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4391, 'Brewarrina', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.95055, 147.1476);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4406, 'Brighton-Le-Sands', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96009, 151.1511);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4408, 'Bringelly', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93333, 150.73333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4415, 'Broadmeadow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92371, 151.72849);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4420, 'Broken Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.9652, 141.4512);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4421, 'Broken Hill Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.95, 141.43333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4423, 'Bronte', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90198, 151.26556);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4430, 'Brookvale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76108, 151.27446);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4434, 'Broulee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.85469, 150.17392);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4441, 'Brunswick Heads', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.54003, 153.54573);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4448, 'Budgewoi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.2339, 151.55412);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4449, 'Buff Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.22285, 151.53125);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4450, 'Bulahdelah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.40698, 152.21185);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4454, 'Bullaburra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72922, 150.41766);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4456, 'Bulli', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.33834, 150.91347);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4468, 'Bundanoon', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.65658, 150.29623);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4469, 'Bundeena', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.08384, 151.15016);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4472, 'Bungarribee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77704, 150.86799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4473, 'Bungendore', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.25382, 149.44007);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4490, 'Buronga', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.1707, 142.1735);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4494, 'Burradoo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.5032, 150.409);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4495, 'Burraneer', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05625, 151.1381);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4496, 'Burrill Lake', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.38716, 150.44952);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4501, 'Burwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88536, 151.10481);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4503, 'Busby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91124, 150.88068);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4508, 'Buttaba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.05327, 151.57866);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4509, 'Buxton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.26017, 150.53288);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4511, 'Byron Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.64989, 153.61246);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4512, 'Byron Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.61667, 153.51667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4513, 'Bywong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.16476, 149.32892);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4514, 'Cabarita', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84721, 151.11638);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4517, 'Cabonne', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.11076, 148.82694);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4520, 'Cabramatta', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89743, 150.93446);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4521, 'Cabramatta West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89303, 150.9119);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4522, 'Caddens', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77415, 150.74126);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4527, 'Calala', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.17356, 150.98059);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4531, 'Callaghan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.89205, 151.70531);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4532, 'Callala Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.99668, 150.72281);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4538, 'Cambewarra Village', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.82335, 150.5594);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4542, 'Cambridge Gardens', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73801, 150.72075);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4543, 'Cambridge Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74784, 150.72208);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4544, 'Camden', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.0161, 150.72521);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4545, 'Camden Haven', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.64484, 152.79462);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4547, 'Camden South', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.08312, 150.69491);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4548, 'Cameron Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90701, 151.60528);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4551, 'Cammeray', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82132, 151.21609);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4558, 'Campbelltown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.06667, 150.81667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4560, 'Campbelltown Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.08333, 150.83333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4561, 'Camperdown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88965, 151.17642);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4563, 'Campsie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9125, 151.10279);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4564, 'Canada Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8659, 151.11591);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4567, 'Canley Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88262, 150.92408);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4568, 'Canley Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88657, 150.94802);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4574, 'Canowindra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.56247, 148.66434);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4576, 'Canterbury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91192, 151.11862);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4577, 'Canton Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.27443, 151.54614);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4585, 'Cardiff', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.94201, 151.6544);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4586, 'Cardiff Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.93626, 151.67227);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4587, 'Cardiff South', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.9547, 151.66446);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4595, 'Caringbah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03534, 151.12468);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4596, 'Caringbah South', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05662, 151.12149);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4598, 'Carlingford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78269, 151.04888);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4601, 'Carlton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97107, 151.12136);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4606, 'Carnes Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93846, 150.84881);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4609, 'Carramar', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88382, 150.96153);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4612, 'Carrathool', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.62571, 145.42523);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4613, 'Carrington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.91501, 151.76436);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4617, 'Carss Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98667, 151.11734);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4618, 'Cartwright', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92498, 150.88951);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4619, 'Carwoola', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.37836, 149.3215);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4623, 'Casino', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.85819, 153.04748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4626, 'Castle Cove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78655, 151.20925);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4627, 'Castle Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73333, 151);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4628, 'Castlecrag', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79987, 151.2231);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4630, 'Castlereagh', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.68981, 150.67887);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4632, 'Casuarina', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.30042, 153.57064);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4634, 'Casula', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95222, 150.89949);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4635, 'Catalina', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.73, 150.18494);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4636, 'Catherine Field', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.00439, 150.77253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4642, 'Caves Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.10637, 151.64402);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4643, 'Cecil Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88917, 150.85137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4648, 'Centennial Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89794, 151.23364);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4650, 'Central Darling', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.77155, 143.62569);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4655, 'Cessnock', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.89391, 151.21234);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4657, 'Chain Valley Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.17241, 151.57143);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4665, 'Charlestown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.96828, 151.69318);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4668, 'Charmhaven', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.22671, 151.50284);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4672, 'Chatswood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8, 151.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4673, 'Chatswood West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79402, 151.16492);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4683, 'Cherrybrook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72197, 151.04607);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4684, 'Chester Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87896, 150.99945);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4688, 'Chifley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96696, 151.24221);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4693, 'Chinderah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.25456, 153.53712);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4694, 'Chippendale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88673, 151.19745);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4695, 'Chipping Norton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91801, 150.95927);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4698, 'Chiswick', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84996, 151.13846);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4699, 'Chittaway Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.32769, 151.42971);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4712, 'City of Sydney', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86778, 151.20844);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4719, 'Claremont Meadows', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77587, 150.75193);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4723, 'Clarence Town', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.58395, 151.77757);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4724, 'Clarence Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.69444, 152.78156);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4729, 'Claymore', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.04649, 150.81114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4734, 'Clemton Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92616, 151.10406);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4745, 'Clontarf', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80554, 151.25367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4746, 'Clovelly', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91214, 151.25882);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4752, 'Coal Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.04225, 151.61159);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4753, 'Cobar', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.96613, 145.36063);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4754, 'Cobbitty', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01592, 150.67854);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4763, 'Coffs Harbour', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.17294, 153.03262);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4768, 'Coleambally', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.80388, 145.88036);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4769, 'Colebee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72769, 150.84743);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4770, 'Coledale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.29105, 150.9447);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4771, 'Collaroy', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73205, 151.30118);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4772, 'Collaroy Plateau', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72884, 151.29075);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4779, 'Colo Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.40095, 150.48573);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4781, 'Colyton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78283, 150.79679);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4782, 'Como', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.99941, 151.06389);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4784, 'Concord', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84722, 151.10381);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4785, 'Concord West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84809, 151.08609);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4786, 'Condell Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92458, 151.01093);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4788, 'Condobolin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.08877, 147.15139);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4790, 'Coniston', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.45, 150.88333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4791, 'Connells Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98827, 151.09094);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4793, 'Constitution Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79259, 150.97627);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4798, 'Coogee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9205, 151.25522);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4801, 'Cooks Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.93244, 151.77114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4803, 'Coolah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.82787, 149.71564);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4804, 'Coolamon', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.60046, 147.13707);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4813, 'Cooma', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.23517, 149.12408);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4819, 'Coonabarabran', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.27734, 149.27904);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4820, 'Coonamble', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.86714, 148.29053);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4823, 'Cooranbong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.07622, 151.45409);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4828, 'Cootamundra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.64095, 148.02838);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4829, 'Copacabana', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.48692, 151.43587);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4832, 'Coraki', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.9926, 153.28374);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4835, 'Cordeaux Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.44043, 150.83748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4837, 'Corindi Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.01668, 153.18555);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4839, 'Corlette', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.72014, 152.10846);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4842, 'Corowa', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.99704, 146.38552);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4844, 'Corrimal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.37864, 150.90356);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4849, 'Coutts Crossing', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.82619, 152.89156);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4854, 'Cowra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81138, 148.78346);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4871, 'Cranebrook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7061, 150.7094);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4875, 'Cremorne', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82679, 151.22633);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4876, 'Cremorne Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84008, 151.22698);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4877, 'Crescent Head', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.1887, 152.97301);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4880, 'Crestwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.34844, 149.21758);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4883, 'Cringila', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.47131, 150.86755);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4884, 'Cromer', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7312, 151.26788);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4885, 'Cronulla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.06251, 151.14961);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4886, 'Crookwell', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.45925, 149.47137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4887, 'Crows Nest', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82494, 151.20398);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4889, 'Croydon', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88333, 151.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4899, 'Culburra Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.92788, 150.75766);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4900, 'Culcairn', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.66669, 147.03845);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4901, 'Cumbalum', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.8225, 153.5284);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4904, 'Cundletown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.8941, 152.52141);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4906, 'Curl Curl', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76886, 151.28888);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4910, 'Currans Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.04311, 150.77301);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4918, 'Daceyville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92879, 151.22577);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4925, 'Dalmeny', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.16608, 150.12912);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4933, 'Dapto', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.50386, 150.79416);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4940, 'Darling Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87064, 151.23895);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4941, 'Darlinghurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87939, 151.21925);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4944, 'Darlington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89103, 151.19548);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4945, 'Darlington Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.56942, 145.9987);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4948, 'Davidson', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74297, 151.2008);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4949, 'Davistown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.48559, 151.36151);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4958, 'Dean Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73539, 150.85958);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4960, 'Dee Why', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7511, 151.28886);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4969, 'Denham Court', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98307, 150.84606);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4970, 'Deniliquin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.53245, 144.95364);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4971, 'Denistone', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79835, 151.09051);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4972, 'Denistone East', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.796, 151.0974);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4973, 'Denman', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.38788, 150.68935);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4985, 'Dharruk', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74814, 150.81561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5000, 'Dolls Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.99341, 151.14474);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5011, 'Doonside', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76667, 150.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5012, 'Dora Creek', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.08139, 151.49677);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5014, 'Dorrigo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.34112, 152.71394);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5016, 'Double Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87782, 151.24354);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5019, 'Douglas Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.18496, 150.71449);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5021, 'Dover Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87083, 151.27917);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5031, 'Drummoyne', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85237, 151.15491);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5033, 'Dubbo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.24295, 148.60484);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5034, 'Dudley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.99373, 151.72197);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5038, 'Dulwich Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9041, 151.13945);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5042, 'Dundas Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78826, 151.05261);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5044, 'Dunedoo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.01634, 149.3871);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5045, 'Dungog', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.34619, 151.61122);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5050, 'Dural', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.68333, 151.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5056, 'Eagle Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03747, 150.8136);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5061, 'Earlwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9209, 151.12506);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5062, 'East Albury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.08144, 146.92991);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5065, 'East Ballina', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.85709, 153.58736);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5067, 'East Branxton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.65372, 151.36559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5072, 'East Corrimal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.37606, 150.91078);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5077, 'East Gosford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.43874, 151.35338);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5078, 'East Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96099, 150.98822);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5081, 'East Jindabyne', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.39579, 148.65137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5082, 'East Kempsey', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.08242, 152.85253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5083, 'East Killara', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75535, 151.18154);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5084, 'East Kurrajong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.5055, 150.79427);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5086, 'East Lindfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76664, 151.18685);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5087, 'East Lismore', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.82591, 153.2888);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5089, 'East Maitland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.75, 151.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5093, 'East Ryde', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81031, 151.13153);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5095, 'East Tamworth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.08548, 150.93721);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5099, 'Eastlakes', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93196, 151.21214);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5100, 'Eastwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79176, 151.08057);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5105, 'Eden', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -37.06675, 149.90029);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5110, 'Edensor Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87971, 150.87778);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5112, 'Edgecliff', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87952, 151.23677);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5114, 'Edgeworth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92508, 151.61612);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5116, 'Edmondson Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95695, 150.86134);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5119, 'Eglinton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.37731, 149.54654);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5124, 'Elanora Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.70159, 151.27965);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5125, 'Elderslie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05519, 150.71367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5126, 'Eleebana', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.9896, 151.63642);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5127, 'Elermore Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.91621, 151.67665);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5130, 'Elizabeth Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87181, 151.22706);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5134, 'Elizabeth Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89863, 150.84761);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5139, 'Ellalong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.91507, 151.31161);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5152, 'Emerald Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.16388, 153.1819);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5153, 'Emerton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74411, 150.80644);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5154, 'Empire Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.49385, 151.3629);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5155, 'Emu Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73453, 150.64874);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5157, 'Emu Plains', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75, 150.66667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5161, 'Engadine', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.06564, 151.01266);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5162, 'Enmore', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9005, 151.17314);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5165, 'Epping', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77271, 151.08184);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5167, 'Erina', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.43218, 151.38972);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5169, 'Ermington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81483, 151.05467);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5171, 'Erskine Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81301, 150.79773);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5172, 'Erskineville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90254, 151.18579);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5173, 'Eschol Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.02982, 150.80957);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5180, 'Estella', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.07254, 147.35748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5183, 'Ettalong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.51301, 151.3383);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5184, 'Ettalong Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.51058, 151.33044);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5186, 'Eulomogo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.26667, 148.68333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5190, 'Eurobodalla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.93307, 149.9278);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5193, 'Evans Head', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.11777, 153.43072);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5206, 'Fairfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86742, 150.90105);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5208, 'Fairfield East', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86938, 150.97129);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5209, 'Fairfield Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86445, 150.93884);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5210, 'Fairfield West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8667, 150.917);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5211, 'Fairlight', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79575, 151.27346);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5213, 'Fairy Meadow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.39303, 150.89275);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5217, 'Farmborough Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.45499, 150.81308);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5220, 'Faulconbridge', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7, 150.53333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5223, 'Fennell Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.9922, 151.60008);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5224, 'Fern Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.86428, 151.81307);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5225, 'Fern Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.38294, 150.88567);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5234, 'Figtree', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.43556, 150.85833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5236, 'Fingal Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.74969, 152.17104);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5237, 'Finley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.65498, 145.57106);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5244, 'Five Dock', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8674, 151.12905);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5247, 'Fletcher', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.87232, 151.64008);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5248, 'Flinders', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.58333, 150.85516);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5255, 'Floraville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.01116, 151.6648);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5260, 'Forbes', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.37898, 147.86448);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5263, 'Forest Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.1481, 147.46707);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5266, 'Forest Lodge', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88137, 151.18);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5269, 'Forestville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76667, 151.20833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5272, 'Forresters Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.407, 151.476);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5274, 'Forster', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.18136, 152.51715);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5286, 'Frederickton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.03749, 152.8753);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5288, 'Freemans Reach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.55794, 150.79553);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5290, 'Frenchs Forest', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74821, 151.22322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5292, 'Freshwater', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77867, 151.28569);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5300, 'Galston', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.65297, 151.04713);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5304, 'Garden Suburb', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.94368, 151.68085);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5307, 'Gateshead', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.98208, 151.69188);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5325, 'Georges Hall', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90879, 150.98852);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5326, 'Georgetown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.9081, 151.73119);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5329, 'Gerringong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.74702, 150.82809);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5332, 'Gilgandra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.63297, 148.70354);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5335, 'Gillieston Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.76164, 151.52863);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5341, 'Girards Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.81693, 153.27786);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5342, 'Girraween', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.799, 150.943);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5346, 'Gladesville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83333, 151.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5353, 'Glebe', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87884, 151.18426);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5354, 'Glen Alpine', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.086, 150.78512);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5359, 'Glen Innes', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.73485, 151.7385);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5360, 'Glen Innes Severn', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.63116, 151.93957);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5366, 'Glenbrook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76667, 150.61667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5367, 'Glendale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.93194, 151.64103);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5369, 'Glendenning', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7483, 150.85411);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5378, 'Glenfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96667, 150.9);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5379, 'Glenfield Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.13725, 147.33285);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5382, 'Glenhaven', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7, 151);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5383, 'Glenmore Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79068, 150.6693);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5384, 'Glenning Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.35369, 151.42623);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5386, 'Glenorie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.60177, 151.00886);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5388, 'Glenroy', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.05021, 146.91058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5393, 'Glenwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73333, 150.93284);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5394, 'Glossodia', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.53618, 150.7739);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5395, 'Gloucester', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.0077, 151.9633);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5399, 'Gol Gol', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.17388, 142.22187);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5411, 'Googong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.43873, 149.2131);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5416, 'Goonellabah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.81667, 153.31667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5418, 'Gordon', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75535, 151.15115);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5423, 'Gorokan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.25764, 151.5097);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5424, 'Gosford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.4244, 151.34399);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5426, 'Goulburn', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.75155, 149.72086);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5427, 'Goulburn Mulwaree', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.9025, 149.902);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5434, 'Grafton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.68104, 152.93394);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5439, 'Granville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8406, 151.00748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5442, 'Grasmere', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05392, 150.66602);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5444, 'Grays Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05873, 151.08604);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5448, 'Greater Hume Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.75837, 147.19731);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5450, 'Green Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90292, 150.86713);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5451, 'Greenacre', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90034, 151.05563);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5454, 'Greenfield Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87461, 150.89189);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5462, 'Greenwell Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.90751, 150.73113);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5463, 'Greenwich', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83954, 151.183);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5466, 'Gregory Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.02673, 150.7707);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5467, 'Grenfell', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89549, 148.16438);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5468, 'Greta', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.67783, 151.38924);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5469, 'Greystanes', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82346, 150.94607);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5471, 'Griffith', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.33448, 146.02295);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5473, 'Grose Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.58331, 150.6744);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5476, 'Guildford West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84939, 150.96475);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5478, 'Gulgong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.36253, 149.53201);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5480, 'Gulmarrad', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.487, 153.23341);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5483, 'Gundagai', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.02623, 148.13457);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5484, 'Gundaroo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.03333, 149.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5487, 'Gunnedah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.02404, 150.11548);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5488, 'Guyra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.2168, 151.66785);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5489, 'Gwandalan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.13538, 151.58285);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5491, 'Gwydir', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.49806, 150.53813);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5492, 'Gwynneville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.41667, 150.8875);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5493, 'Gymea', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03637, 151.08528);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5494, 'Gymea Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05209, 151.08795);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5497, 'Haberfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88296, 151.14389);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5505, 'Halekulani', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.21914, 151.55251);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5512, 'Hamilton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92207, 151.74711);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5516, 'Hamlyn Terrace', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.25125, 151.47627);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5518, 'Hammondville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94827, 150.95211);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5524, 'Hanwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.33095, 146.04137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5527, 'Harrington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.88306, 152.65924);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5528, 'Harrington Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.02405, 150.73501);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5529, 'Harris Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82285, 151.00781);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5534, 'Hassall Grove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73349, 150.83542);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5539, 'Hawkesbury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.34078, 150.783);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5540, 'Hawks Nest', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.66755, 152.17831);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5547, 'Hay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.54276, 144.83826);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5550, 'Haymarket', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87868, 151.20526);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5551, 'Hazelbrook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72446, 150.45839);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5556, 'Heathcote', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.0841, 151.01305);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5563, 'Hebersham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74582, 150.82385);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5564, 'Heckenberg', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90828, 150.88982);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5566, 'Heddon Greta', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.80204, 151.51327);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5571, 'Helensburgh', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.17836, 150.99522);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5579, 'Henty', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.52094, 147.03426);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5604, 'Hill Top', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.34792, 150.4955);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5611, 'Hillsdale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95151, 151.22784);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5613, 'Hillston', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.48266, 145.53525);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5614, 'Hillvue', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.12756, 150.90711);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5617, 'Hinchinbrook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91878, 150.86314);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5623, 'Hobartville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.60435, 150.74299);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5627, 'Holbrook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.721, 147.31605);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5635, 'Holmesville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.91667, 151.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5637, 'Holroyd', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83078, 150.99725);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5638, 'Holsworthy', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98333, 150.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5642, 'Homebush', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86667, 151.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5643, 'Homebush West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86269, 151.06696);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5648, 'Horningsea Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94341, 150.84528);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5649, 'Hornsby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.70244, 151.09931);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5650, 'Hornsby Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.6713, 151.09428);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5651, 'Hornsby Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.58315, 151.10953);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5653, 'Horsley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.48763, 150.77799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5654, 'Horsley Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84322, 150.84889);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5659, 'Howlong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.98197, 146.63248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5661, 'Hoxton Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93126, 150.85412);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5667, 'Hunters Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83437, 151.1451);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5668, 'Hunterview', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.54343, 151.17717);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149308, 'Huntingwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7975932, 150.874809);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5675, 'Hurlstone Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90988, 151.12867);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5677, 'Hurstville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9677, 151.10149);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5678, 'Hurstville Grove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97993, 151.09029);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5682, 'Illawong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34, 151.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5684, 'Iluka', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.40147, 153.35112);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5691, 'Ingleburn', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34, 150.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5697, 'Inverell', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.31526, 151.04187);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5709, 'Islington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.91388, 151.74739);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5716, 'Jamberoo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.64745, 150.77464);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5719, 'Jamisontown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76797, 150.67681);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5724, 'Jannali', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01643, 151.06065);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5727, 'Jerilderie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.35757, 145.72962);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5728, 'Jerrabomberra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.38441, 149.20248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5730, 'Jesmond', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90275, 151.69072);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5731, 'Jewells', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.01386, 151.68308);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5732, 'Jilliby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.22605, 151.41684);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5734, 'Jindabyne', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.41745, 148.62254);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5737, 'Jindera', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.95474, 146.88852);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5743, 'Jordan Springs', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72138, 150.72873);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5748, 'Junction Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.64113, 152.92491);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5750, 'Junee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.86819, 147.58273);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5754, 'Kahibah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.96175, 151.71251);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5772, 'Kanahooka', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.4916, 150.80817);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5773, 'Kandos', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.85772, 149.96832);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5779, 'Kanwal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.253, 151.4911);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5780, 'Kapooka', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.15693, 147.28439);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5782, 'Karabar', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.37595, 149.2328);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5788, 'Kareela', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01336, 151.08345);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5789, 'Kariong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.43972, 151.29453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5794, 'Karuah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.65389, 151.9604);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5800, 'Katoomba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71977, 150.30739);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5805, 'Kearns', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.02191, 150.80082);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5812, 'Keiraville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.41667, 150.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5815, 'Kellyville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71028, 150.95095);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5816, 'Kellyville Ridge', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.70156, 150.9179);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5818, 'Kelso', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.41667, 149.6);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5821, 'Kemps Creek', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88059, 150.78761);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5822, 'Kempsey', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.90553, 152.68608);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5823, 'Kendall', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.63295, 152.70393);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5828, 'Kensington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92019, 151.22241);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5834, 'Kenthurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.65527, 151.00503);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5842, 'Kew', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.63602, 152.72662);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5848, 'Kiama', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.67124, 150.84572);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5849, 'Kiama Downs', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.63341, 150.85456);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5852, 'Kilaben Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.02395, 151.59197);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5856, 'Killara', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76604, 151.16213);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5857, 'Killarney Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77451, 151.22028);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5858, 'Killarney Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.36319, 151.45799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5864, 'King Creek', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.49237, 152.75658);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5871, 'Kings Langley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75005, 150.93542);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5873, 'Kings Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7432, 150.90761);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5876, 'Kingscliff', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.25983, 153.57816);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5878, 'Kingsford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92399, 151.22749);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5879, 'Kingsgrove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93932, 151.09928);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5890, 'Kingswood Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76651, 150.7144);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5894, 'Kirrawee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03831, 151.06903);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5895, 'Kirribilli', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84867, 151.2162);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5901, 'Kogarah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9681, 151.13564);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5902, 'Kogarah Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97951, 151.12119);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5906, 'Koonawarra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.50212, 150.80855);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5911, 'Kooringal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.14069, 147.3768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5912, 'Kootingal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.05857, 151.0535);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5914, 'Korora', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.2462, 153.11487);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5916, 'Kosciuszko National Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.26436, 148.48179);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5917, 'Kotara', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.94282, 151.69585);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5918, 'Kotara South', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.95261, 151.69076);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5920, 'Ku-ring-gai', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72701, 151.14877);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5926, 'Kurnell', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01088, 151.20512);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5927, 'Kurraba Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84235, 151.22256);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5928, 'Kurrajong Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.52772, 150.62907);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5930, 'Kurri Kurri', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.81933, 151.47908);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5935, 'Kyle Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98787, 151.09939);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5937, 'Kyogle', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.64643, 152.77871);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5939, 'Lachlan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.79999, 146.87556);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5941, 'Lake Albert', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.16667, 147.38333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5942, 'Lake Cargelligo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.29884, 146.37296);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5943, 'Lake Cathie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.55183, 152.85465);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5946, 'Lake Haven', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.24303, 151.50434);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5947, 'Lake Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.48433, 150.86649);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5948, 'Lake Illawarra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.54658, 150.85645);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5950, 'Lake Macquarie Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.03756, 151.5347);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5951, 'Lake Munmorah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.19716, 151.5824);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5954, 'Lakelands', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.96185, 151.64972);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5955, 'Lakemba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91972, 151.07592);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5957, 'Lakewood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.6321, 152.7582);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5959, 'Lalor Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7609, 150.93123);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5960, 'Lambton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.91667, 151.7);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5966, 'Lane Cove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82321, 151.17028);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5967, 'Lane Cove North', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80543, 151.16638);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5968, 'Lane Cove West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81613, 151.15145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5973, 'Lansvale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90073, 150.95078);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5976, 'Largs', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.7, 151.6);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5990, 'Lavington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.03976, 146.93958);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5992, 'Lawrence', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.4921, 153.09689);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5993, 'Lawson', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72064, 150.42975);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5999, 'Leeton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.52967, 146.26918);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6002, 'Leichhardt', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88341, 151.15625);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6004, 'Lemon Tree Passage', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.73047, 152.03859);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6006, 'Lennox Head', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.79131, 153.59201);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6007, 'Leonay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76542, 150.64806);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6011, 'Leppington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96983, 150.79675);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6014, 'Lethbridge Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73716, 150.80042);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6015, 'Leumeah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05, 150.83333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6016, 'Leura', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71667, 150.33333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6017, 'Lewisham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89719, 151.14883);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6019, 'Liberty Grove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84095, 151.08402);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6020, 'Lidcombe', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86436, 151.0397);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6022, 'Lightning Ridge', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.42743, 147.97865);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6023, 'Lilli Pilli', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.0683, 151.11574);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6025, 'Lilyfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87499, 151.1653);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6027, 'Lindfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78333, 151.16667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6029, 'Lisarow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.38333, 151.36667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6030, 'Lismore', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.81354, 153.2773);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6031, 'Lismore Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.80102, 153.30048);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6032, 'Lismore Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.8, 153.26667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6034, 'Lithgow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.32025, 150.18584);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6035, 'Little Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97899, 151.24299);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6040, 'Liverpool', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92418, 150.91232);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6041, 'Liverpool Plains', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.47024, 150.42001);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6042, 'Llanarth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.39687, 149.55105);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6043, 'Llandilo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71286, 150.7465);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6045, 'Lockhart', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.32193, 146.79354);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6052, 'Loftus', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.04467, 151.04646);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6060, 'Londonderry', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.64656, 150.73515);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6061, 'Long Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.70833, 150.24483);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6063, 'Long Jetty', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.35917, 151.48834);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6067, 'Longueville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83285, 151.16531);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6069, 'Lorn', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.72701, 151.57245);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6083, 'Luddenham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8785, 150.68863);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6085, 'Lugarno', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98267, 151.04184);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6086, 'Lurnea', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93539, 150.89673);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6107, 'Macksville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.7078, 152.92029);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6108, 'Maclean', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.4581, 153.19753);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6111, 'Macmasters Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.49663, 151.42215);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6113, 'Macquarie Fields', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.99206, 150.89307);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6114, 'Macquarie Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.95111, 151.64461);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6115, 'Macquarie Links', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98454, 150.87027);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6116, 'Macquarie Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78105, 151.12757);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6129, 'Maitland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.73308, 151.5574);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6131, 'Maitland city centre', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.73263, 151.55331);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6130, 'Maitland Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.73333, 151.55);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6132, 'Malabar', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96216, 151.24796);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6139, 'Malua Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.79382, 150.22833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6145, 'Mangerton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.43667, 150.87167);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6148, 'Manilla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.74748, 150.71974);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6151, 'Manly', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79798, 151.28826);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6152, 'Manly Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78457, 151.262);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6154, 'Mannering Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.1581, 151.53477);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6169, 'Maraylya', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.59221, 150.91979);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6170, 'Marayong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74824, 150.89272);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6174, 'Mardi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.29368, 151.4015);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6183, 'Marks Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.05645, 151.64955);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6190, 'Maroubra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95, 151.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6192, 'Marrickville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90741, 151.15546);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6194, 'Marsfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77784, 151.10574);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6196, 'Marulan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.70836, 150.00966);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6199, 'Maryland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.87888, 151.66143);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6200, 'Maryville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.91121, 151.75543);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6201, 'Mascot', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92598, 151.19347);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6203, 'Matraville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96344, 151.23195);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6208, 'Mayfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.89793, 151.73613);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6209, 'Mayfield East', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90031, 151.74972);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6210, 'Mayfield West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.89195, 151.72711);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6216, 'McGraths Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.61551, 150.83372);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6223, 'McMahons Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84492, 151.20307);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6226, 'Meadowbank', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81668, 151.08861);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6232, 'Medowie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.7415, 151.8676);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6237, 'Melrose Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81491, 151.07208);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6243, 'Menai', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01667, 151.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6244, 'Menangle', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.12675, 150.73868);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6251, 'Merewether', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.94801, 151.74325);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6252, 'Merewether Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.94733, 151.73565);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6254, 'Merimbula', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.88901, 149.90961);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6261, 'Merriwa', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.13922, 150.35562);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6263, 'Merrylands', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83333, 150.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6264, 'Merrylands West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83269, 150.96906);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6265, 'Metford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.76497, 151.6094);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6271, 'Mid-Western Regional', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.60202, 149.76748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6272, 'Middle Cove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7928, 151.21248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6279, 'Middleton Grange', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91704, 150.84186);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6292, 'Miller', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92089, 150.88469);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6293, 'Millers Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85957, 151.20406);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6300, 'Millthorpe', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.44601, 149.18539);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6301, 'Milperra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93934, 150.98148);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6302, 'Milsons Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.846, 151.21192);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6303, 'Milton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.31644, 150.4361);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6305, 'Minchinbury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78724, 150.82956);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6311, 'Minto', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03333, 150.85);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6314, 'Miranda', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03857, 151.10005);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6324, 'Mitchell', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.42732, 149.55674);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6327, 'Mittagong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.45002, 150.44572);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6328, 'Moama', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.10413, 144.7608);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6339, 'Mollymook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.34107, 150.46952);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6340, 'Mollymook Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.32966, 150.47173);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6341, 'Molong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.09233, 148.87002);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6342, 'Mona Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.67757, 151.30307);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6351, 'Monterey', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9725, 151.1481);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6360, 'Moonbi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.01775, 151.07062);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6361, 'Moonee Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.20575, 153.15293);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6370, 'Moorebank', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94372, 150.95657);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6380, 'Moree', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.46278, 149.84157);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6381, 'Moree Plains', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.32131, 149.58121);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6384, 'Morisset', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.10801, 151.48706);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6391, 'Morpeth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.73333, 151.63333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6394, 'Mortdale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96897, 151.07231);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6396, 'Mortlake', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84217, 151.10719);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6397, 'Moruya', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.9125, 150.08144);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6399, 'Mosman', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82845, 151.24866);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6401, 'Moss Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.55374, 150.37115);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6405, 'Mount Annan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05287, 150.75984);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6406, 'Mount Austin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.13684, 147.35304);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6412, 'Mount Colah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.68333, 151.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6418, 'Mount Druitt', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76667, 150.81667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6428, 'Mount Hutton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.98329, 151.67012);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6430, 'Mount Keira', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.39678, 150.85268);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6431, 'Mount Kembla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.42881, 150.82161);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6432, 'Mount Kuring-Gai', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.64197, 151.12865);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6434, 'Mount Lewis', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9175, 151.04828);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6448, 'Mount Ousley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.40213, 150.88786);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6452, 'Mount Pleasant', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.39531, 150.86658);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6453, 'Mount Pritchard', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90295, 150.90465);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6456, 'Mount Riverview', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73074, 150.63532);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6457, 'Mount Saint Thomas', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.44333, 150.87222);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6461, 'Mount Vernon', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86036, 150.81007);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6463, 'Mount Warrigal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.54804, 150.83752);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6469, 'Mudgee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.59426, 149.5871);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6475, 'Mulgoa', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.838, 150.64963);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6478, 'Mullumbimby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.55236, 153.49956);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6479, 'Mulwala', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.98536, 146.00534);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6498, 'Murrumbateman', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.97199, 149.02985);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6500, 'Murrurundi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.76422, 150.83575);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6502, 'Murwillumbah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.32732, 153.39339);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6503, 'Muswellbrook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.48935, 150.69839);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6508, 'Nabiac', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.09837, 152.37627);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6514, 'Nambucca', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.63333, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6515, 'Nambucca Heads', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.64318, 153.00884);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6516, 'Nambucca Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.70829, 152.71024);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6517, 'Nana Glen', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.13333, 153.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6525, 'Narara', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.39593, 151.33527);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6526, 'Narellan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.04338, 150.73236);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6527, 'Narellan Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.04974, 150.74392);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6529, 'Naremburn', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81698, 151.20079);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6530, 'Narooma', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.21783, 150.13247);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6531, 'Narrabeen', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71277, 151.29736);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6532, 'Narrabri', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.32779, 149.60242);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6534, 'Narrandera', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.59107, 146.53197);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6535, 'Narrawallee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.31243, 150.46351);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6536, 'Narraweena', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75519, 151.27659);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6541, 'Narromine', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.23174, 147.97591);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6542, 'Narwee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94653, 151.06919);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6549, 'Nelson Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.72043, 152.14398);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6553, 'Neutral Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83784, 151.2175);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6558, 'New Lambton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92838, 151.7085);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6559, 'New Lambton Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92466, 151.69364);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6563, 'Newcastle', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92953, 151.7801);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6565, 'Newcastle city centre', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92885, 151.7774);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6564, 'Newcastle East', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92771, 151.7884);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6568, 'Newington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83488, 151.05703);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6572, 'Newport', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.65639, 151.31401);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6578, 'Newtown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89835, 151.17754);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6586, 'Niagara Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.37638, 151.3486);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6594, 'Nimbin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.59545, 153.22336);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6605, 'Noraville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.26785, 151.55352);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6609, 'Normanhurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7237, 151.09576);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6613, 'North Albury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.05745, 146.92995);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6614, 'North Avoca', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.45608, 151.43511);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6615, 'North Balgowlah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78631, 151.24801);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6618, 'North Boambee Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.31295, 153.06925);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6619, 'North Bondi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88787, 151.28075);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6625, 'North Curl Curl', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76434, 151.29727);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6626, 'North Epping', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75944, 151.09248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6629, 'North Gosford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.414, 151.3516);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6630, 'North Haven', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.6368, 152.81357);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6636, 'North Lambton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90605, 151.70574);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6639, 'North Manly', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77561, 151.26921);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6641, 'North Narrabeen', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.70935, 151.29607);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6642, 'North Nowra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.85822, 150.57479);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6643, 'North Parramatta', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79351, 151.00124);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6646, 'North Richmond', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.58117, 150.71942);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6647, 'North Rocks', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77223, 151.01718);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6648, 'North Ryde', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79677, 151.12436);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6649, 'North St Marys', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75491, 150.78435);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6650, 'North Strathfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85693, 151.09124);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6651, 'North Sydney', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83422, 151.21019);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6652, 'North Tamworth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.07862, 150.92219);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6654, 'North Turramurra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71313, 151.14638);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6655, 'North Wahroonga', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.70531, 151.12278);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6658, 'North Willoughby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79563, 151.20067);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6659, 'North Wollongong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.40569, 150.89763);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6663, 'Northbridge', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81313, 151.21728);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6672, 'Northmead', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78378, 150.99858);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6679, 'Nowra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.88422, 150.60036);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6680, 'Nowra Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.92845, 150.57243);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6689, 'Nyngan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.56375, 147.19373);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6693, 'Oak Flats', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.56229, 150.82193);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6695, 'Oakdale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.0793, 150.5132);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6701, 'Oakhurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73883, 150.83837);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6706, 'Oakville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.61558, 150.88006);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6707, 'Oatlands', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79595, 151.02712);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6708, 'Oatley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98004, 151.07201);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6709, 'Oberon', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84531, 149.81795);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6712, 'Ocean Shores', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.5093, 153.5376);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6714, 'Old Bar', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.9694, 152.58807);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6716, 'Old Erowal Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.0846, 150.64568);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6717, 'Old Guildford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86429, 150.98395);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6720, 'Old Toongabbie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78763, 150.96897);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6729, 'Oran Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.00564, 150.74032);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6731, 'Orange', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.28397, 149.10018);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6732, 'Orange Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.32834, 149.12294);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6733, 'Orangeville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03108, 150.60179);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6735, 'Orchard Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7823, 150.71088);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6745, 'Ourimbah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.31424, 151.33031);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6750, 'Oxley Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77072, 150.79502);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6751, 'Oxley Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.06316, 150.9006);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6752, 'Oyster Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.00407, 151.07588);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6757, 'Paddington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88419, 151.23151);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6759, 'Padstow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95687, 151.03191);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6760, 'Padstow Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9674, 151.03991);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6762, 'Pagewood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94137, 151.21093);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6766, 'Palm Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.59664, 151.32384);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6773, 'Panania', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95366, 150.99733);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6794, 'Parkes', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.82318, 148.02514);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6797, 'Parklea', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72439, 150.9182);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6805, 'Parramatta', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81248, 151.00262);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6816, 'Peak Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.72387, 148.19052);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6817, 'Peakhurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96288, 151.05161);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6818, 'Peakhurst Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97735, 151.05557);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6826, 'Pemulwuy', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82274, 150.92395);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6827, 'Pendle Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80402, 150.95543);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6829, 'Pennant Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73783, 151.07216);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6832, 'Penrith', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75, 150.7);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6833, 'Penrith Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75, 150.7);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6834, 'Penshurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96667, 151.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6844, 'Petersham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8946, 151.15495);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6847, 'Phillip', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.13333, 150.85);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6853, 'Picnic Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98062, 150.99661);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6854, 'Picton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.16995, 150.61168);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6862, 'Pitt Town', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.58718, 150.85857);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6869, 'Plumpton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75184, 150.83686);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6872, 'Point Clare', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.44378, 151.32732);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6874, 'Point Frederick', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.44036, 151.34322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6876, 'Point Piper', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86667, 151.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6878, 'Pokolbin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.8, 151.28333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6891, 'Port Hacking', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.06791, 151.12561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6893, 'Port Kembla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.4818, 150.9012);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6896, 'Port Macquarie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.43084, 152.90894);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6897, 'Port Macquarie-Hastings', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.42106, 152.51916);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6907, 'Port Stephens Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.72855, 151.89952);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6910, 'Portland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.35709, 149.98148);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6912, 'Potts Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86701, 151.22586);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6913, 'Pottsville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.3874, 153.55857);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6914, 'Pottsville Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.38853, 153.56564);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6916, 'Prairiewood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86325, 150.90521);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6918, 'Prestons', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94185, 150.8717);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6919, 'Primbee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.50358, 150.8795);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6923, 'Prospect', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80154, 150.91358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6927, 'Punchbowl', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92893, 151.05111);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6928, 'Putney', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82613, 151.1063);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6929, 'Pymble', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74386, 151.14188);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6931, 'Pyrmont', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86985, 151.19402);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6933, 'Quakers Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73333, 150.88333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6935, 'Queanbeyan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.35493, 149.232);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6936, 'Queanbeyan East', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.34625, 149.24596);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6937, 'Queanbeyan West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.35497, 149.20412);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6939, 'Queens Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89946, 151.24724);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6941, 'Queenscliff', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78278, 151.28495);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6949, 'Quirindi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.50763, 150.67902);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6951, 'Raby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01846, 150.81764);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6953, 'Raglan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.41667, 149.66667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6956, 'Ramsgate', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9822, 151.14);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6957, 'Ramsgate Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.98523, 151.14634);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6958, 'Randwick', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91667, 151.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6963, 'Rankin Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.92516, 151.68016);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6966, 'Rathmines', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.03773, 151.58443);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6972, 'Raworth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.73333, 151.61667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6973, 'Raymond Terrace', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.75952, 151.7505);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6974, 'Razorback', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.15237, 150.65308);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6982, 'Redfern', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89279, 151.20415);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6983, 'Redhead', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.01178, 151.71142);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6990, 'Regents Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88333, 151.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6999, 'Revesby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95, 151.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7000, 'Revesby Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9671, 151.01841);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7003, 'Rhodes', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82663, 151.0881);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7006, 'Richmond', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.59956, 150.75142);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7011, 'Richmond Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.02684, 153.08625);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7025, 'Riverstone', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.68333, 150.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7029, 'Riverview', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82465, 151.16243);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7030, 'Riverwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.94725, 151.04973);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7034, 'Robertson', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.58742, 150.59116);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7042, 'Rockdale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.96611, 151.14342);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7048, 'Rodd Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86662, 151.13995);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7055, 'Rooty Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76667, 150.83333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7057, 'Ropes Crossing', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73276, 150.79104);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7059, 'Rose Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86877, 151.2706);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149144, 'Rosebery', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9185533, 151.1961244);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7065, 'Rosehill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82009, 151.0245);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7066, 'Roselands', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93317, 151.0732);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7067, 'Rosemeadow', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.10414, 150.79282);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7071, 'Roseville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78333, 151.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7072, 'Roseville Chase', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77852, 151.19677);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7082, 'Rouse Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.68207, 150.9154);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7088, 'Rozelle', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86141, 151.1705);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7092, 'Ruse', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.06976, 150.84168);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7093, 'Rushcutters Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8748, 151.22799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7096, 'Russell Lea', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85889, 151.14111);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7097, 'Russell Vale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.35542, 150.89434);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7098, 'Rutherford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.71667, 151.53333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7100, 'Rydalmere', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.81453, 151.03751);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7101, 'Ryde', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80149, 151.11205);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7104, 'Sadleir', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91713, 150.89093);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7112, 'Saint Ives', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72976, 151.15977);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7116, 'Saint Peters', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91667, 151.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7117, 'Salamander Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.72253, 152.07945);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7127, 'Salt Ash', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.78333, 151.91667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7132, 'San Remo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.21469, 151.52102);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7133, 'Sanctuary Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.10361, 150.62667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7138, 'Sandringham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.99447, 151.13913);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7142, 'Sandy Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.14681, 153.19238);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7143, 'Sans Souci', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9899, 151.13334);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7144, 'Sapphire Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.22614, 153.13628);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7145, 'Saratoga', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.47564, 151.35207);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7148, 'Sawtell', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.36459, 153.10141);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7153, 'Schofields', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71667, 150.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7154, 'Scone', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.05014, 150.86893);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7167, 'Seaforth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80145, 151.23981);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7174, 'Sefton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88773, 151.01053);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7184, 'Seven Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78333, 150.93333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7191, 'Shalvey', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72687, 150.80529);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7198, 'Shell Cove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.58994, 150.86203);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7200, 'Shellharbour', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.58333, 150.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7201, 'Shelly Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.36999, 151.48522);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7205, 'Shoal Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.72231, 152.17498);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7206, 'Shoalhaven Heads', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.85086, 150.74512);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7207, 'Shoalhaven Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.14162, 150.41295);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7211, 'Shortland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.87883, 151.69105);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7215, 'Silverdale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9152, 150.6096);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7216, 'Silverwater', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83343, 151.04731);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7219, 'Singleton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.60547, 150.91872);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7220, 'Singleton Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.5416, 151.16089);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7223, 'Skennars Head', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.82888, 153.60209);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7228, 'Smithfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85, 150.93333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7230, 'Smiths Lake', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.38043, 152.50337);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7237, 'Soldiers Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.7105, 152.06979);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7240, 'Somersby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.36667, 151.28333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7249, 'South Albury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.08654, 146.90905);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7250, 'South Bathurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.43839, 149.57203);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7251, 'South Bowenfels', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.51667, 150.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7257, 'South Coogee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93106, 151.25599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7261, 'South Grafton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.7076, 152.92627);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7262, 'South Granville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85864, 151.01066);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7266, 'South Hurstville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.97756, 151.1055);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7268, 'South Kempsey', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.12302, 152.83253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7273, 'South Lismore', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.81629, 153.25619);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7278, 'South Murwillumbah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.33895, 153.40004);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7279, 'South Nowra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.90332, 150.59827);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7280, 'South Penrith', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77349, 150.69466);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7283, 'South Tamworth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.11, 150.92254);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7286, 'South Turramurra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74941, 151.11257);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7287, 'South Wentworthville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8185, 150.96344);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7288, 'South West Rocks', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.88553, 153.04126);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7289, 'South Windsor', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.61808, 150.80443);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7302, 'Speers Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.96383, 151.62618);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7307, 'Spring Farm', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.06851, 150.71182);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7309, 'Springdale Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.03095, 146.94783);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7314, 'Springvale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.16687, 147.33058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7317, 'Springwood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7, 150.55);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7320, 'St Andrews', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.02243, 150.82958);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7321, 'St Clair', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79728, 150.7847);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7327, 'St Helens Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.10474, 150.81368);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7328, 'St Huberts Island', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.49562, 151.34616);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7329, 'St Ives Chase', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.70381, 151.1646);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7331, 'St Johns Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88295, 150.90182);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7334, 'St Leonards', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.82344, 151.19836);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7338, 'St. Georges Basin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.08986, 150.59801);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7341, 'Stanhope Gardens', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72206, 150.92597);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7342, 'Stanmore', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89407, 151.16424);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7344, 'Stanwell Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.2261, 150.98583);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7350, 'Stockton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90908, 151.7836);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7359, 'Strathfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87978, 151.07561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7360, 'Strathfield South', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89252, 151.08334);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7373, 'Suffolk Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.6881, 153.60977);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7374, 'Summer Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89146, 151.13825);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7376, 'Summerland Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.14091, 151.56561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7385, 'Sunshine Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.7454, 150.20792);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7392, 'Surfside', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.69531, 150.19949);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7395, 'Surry Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88374, 151.21282);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7396, 'Sussex Inlet', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.15671, 150.58533);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7397, 'Sutherland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.031, 151.05532);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7398, 'Sutherland Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.07202, 151.07712);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7399, 'Sutton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.16667, 149.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7405, 'Swansea', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.08765, 151.63745);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7407, 'Sydenham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91669, 151.16798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7408, 'Sydney', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86785, 151.20732);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7409, 'Sydney Central Business District', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86482,
+        151.20773);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7410, 'Sydney Olympic Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84983, 151.06828);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7411, 'Sylvania', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01242, 151.09718);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7412, 'Sylvania Waters', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01868, 151.1086);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7413, 'Table Top', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.96667, 147);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7414, 'Tahmoor', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.22246, 150.59467);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7421, 'Tamarama', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89835, 151.27059);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7425, 'Tamworth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.09048, 150.92905);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7426, 'Tamworth Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.92204, 150.81526);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7429, 'Tanilba Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.74706, 151.99714);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7437, 'Taree', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.91099, 152.45387);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7438, 'Taren Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.01936, 151.11826);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7443, 'Tarrawanna', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.38152, 150.88799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7444, 'Tarro', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.8, 151.66667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7445, 'Tascott', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.45017, 151.31375);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7447, 'Tathra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.73126, 149.98328);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7449, 'Tatton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.1599, 147.35875);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7453, 'Tea Gardens', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.66351, 152.15404);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7457, 'Telarah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.72876, 151.53453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7460, 'Telopea', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79279, 151.03858);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7461, 'Temora', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.44834, 147.53558);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7462, 'Temora Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.38314, 147.47917);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7463, 'Tempe', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92335, 151.1602);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7466, 'Tenambit', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.73967, 151.61293);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7470, 'Tennyson Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83172, 151.11682);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7471, 'Tenterfield', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.04946, 152.01952);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7472, 'Tenterfield Municipality', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.06897, 152.04803);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7473, 'Teralba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.96667, 151.6);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7475, 'Terranora', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.23832, 153.50078);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7476, 'Terrigal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.44815, 151.44665);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7477, 'Terry Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.68333, 151.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7482, 'The Entrance', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.33876, 151.4978);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7483, 'The Entrance North', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.33573, 151.50335);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7487, 'The Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.93089, 151.77835);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7488, 'The Hills Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.59118, 150.961);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7489, 'The Junction', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.93822, 151.75909);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7490, 'The Oaks', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.07995, 150.56998);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7492, 'The Ponds', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.70228, 150.91086);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7494, 'The Rock', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.27302, 147.11381);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7495, 'The Rocks', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85923, 151.2081);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7499, 'Thirlmere', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.20455, 150.56767);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7500, 'Thirroul', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.31604, 150.92142);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7506, 'Thornleigh', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73228, 151.07895);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7508, 'Thornton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.78333, 151.63333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7510, 'Thurgoona', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.03626, 146.99609);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7513, 'Tighes Hill', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90732, 151.7509);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7518, 'Tingira Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.99725, 151.67021);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7519, 'Tinonee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.93634, 152.41425);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7523, 'Tocumwal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.8115, 145.56922);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7525, 'Tolland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.14521, 147.35162);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7527, 'Tomakin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.82335, 150.18794);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7528, 'Tomerong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.05231, 150.5865);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7533, 'Toongabbie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.78333, 150.95);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7537, 'Toormina', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.35384, 153.08843);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7541, 'Toronto', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.01357, 151.59373);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7549, 'Toukley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.26367, 151.53841);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7553, 'Towradgi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.38667, 150.90278);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7555, 'Trangie', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.03147, 147.98344);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7561, 'Tregear', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74562, 150.79294);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7572, 'Tuggerawong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.2804, 151.48044);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7576, 'Tumbarumba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.77806, 148.01172);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7577, 'Tumbi Vmbi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.36667, 151.45);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7579, 'Tumut', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.30642, 148.21818);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7580, 'Tuncurry', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.17443, 152.49876);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7581, 'Tura Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.86358, 149.93027);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7584, 'Tuross Head', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.05328, 150.13322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7585, 'Turramurra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73342, 151.12849);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7586, 'Turrella', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93033, 151.14209);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7587, 'Turvey Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.12849, 147.36264);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7589, 'Tweed', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.34991, 153.34652);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7590, 'Tweed Heads', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.17671, 153.5452);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7591, 'Tweed Heads South', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.19517, 153.53964);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7592, 'Tweed Heads West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.18736, 153.52278);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7597, 'Ulladulla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.35906, 150.47247);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7598, 'Ultimo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87722, 151.1972);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7600, 'Umina Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.52314, 151.31325);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7601, 'Unanderra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.45306, 150.84746);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7610, 'Upper Hunter Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.98126, 150.69282);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7612, 'Upper Lachlan Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.41867, 149.53061);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7615, 'Uralla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.48548, 151.35451);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7618, 'Urunga', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.49701, 153.01422);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7622, 'Valentine', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.01504, 151.6429);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7623, 'Valla Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.59259, 153.01131);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7624, 'Valley Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7, 150.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7628, 'Vaucluse', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85549, 151.27754);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7637, 'Villawood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.88434, 150.98027);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7640, 'Vincentia', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.06825, 150.6748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7641, 'Vineyard', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.64995, 150.85259);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7646, 'Voyager Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95871, 150.97417);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7648, 'Wadalba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.2723, 151.46487);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7652, 'Wagga Wagga', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.18587, 147.35509);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7656, 'Wahroonga', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71816, 151.11561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7659, 'Waitara', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71092, 151.1033);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7661, 'Wakeley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87427, 150.90976);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7663, 'Walcha', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.19757, 151.81854);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7664, 'Walgett', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.79031, 148.13393);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7669, 'Wallacia', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86577, 150.64021);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7670, 'Wallalong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.69556, 151.64957);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7673, 'Wallerawang', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.41096, 150.06456);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7676, 'Wallsend', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90133, 151.66432);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7677, 'Wamberal', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.41554, 151.44559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7678, 'Wamboin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -35.25073, 149.33284);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7689, 'Wangi Wangi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.07185, 151.5984);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7696, 'Warabrook', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.88885, 151.71493);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7699, 'Waratah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90667, 151.72647);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7700, 'Waratah West', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.90003, 151.7117);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7703, 'Wareemba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.85819, 151.13085);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7704, 'Warialda', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.54354, 150.57542);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7705, 'Warilla', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.55185, 150.85831);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7708, 'Warners Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.97251, 151.65268);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7712, 'Warragamba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.89191, 150.60461);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7717, 'Warrawee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72884, 151.12051);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7718, 'Warrawong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.485, 150.88833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7719, 'Warren', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.70224, 147.83392);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7720, 'Warren Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.29549, 147.72853);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7721, 'Warriewood', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.68857, 151.29534);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7722, 'Warrimoo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71667, 150.6);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7724, 'Warrumbungle Shire', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.45519, 149.45377);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7727, 'Warwick Farm', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.91291, 150.93701);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7728, 'Watanobbi', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.26772, 151.42246);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7733, 'Waterview Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.69775, 152.83922);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7738, 'Wattle Grove', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.95443, 150.94447);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7741, 'Wattle Ponds', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.52026, 151.19359);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7744, 'Wauchope', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.45792, 152.72617);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7747, 'Waverley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90181, 151.25599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7749, 'Waverton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.83863, 151.20046);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7751, 'Weddin', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87903, 148.01125);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7752, 'Wee Waa', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.2266, 149.44041);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7758, 'Wellington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.55588, 148.94508);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7763, 'Wentworth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.67106, 142.33675);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7764, 'Wentworth Falls', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71033, 150.37534);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7765, 'Wentworth Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8308, 151.07441);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7766, 'Wentworthville', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80652, 150.96785);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7769, 'Werrington', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7592, 150.75266);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7770, 'Werrington County', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7465, 150.73929);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7771, 'Werrington Downs', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.74206, 150.72779);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7772, 'Werris Creek', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.34908, 150.6487);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7774, 'West Albury', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -36.07979, 146.89227);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7777, 'West Ballina', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.862, 153.53291);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7778, 'West Bathurst', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.4092, 149.56324);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7787, 'West Gosford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.42578, 151.31701);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7788, 'West Haven', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.63555, 152.78378);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7791, 'West Hoxton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93388, 150.83234);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7792, 'West Kempsey', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.05757, 152.82794);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7801, 'West Nowra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.88593, 150.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7802, 'West Pennant Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.7457, 151.04764);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7804, 'West Pymble', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.76667, 151.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7806, 'West Ryde', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80543, 151.07386);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7808, 'West Tamworth', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.10236, 150.91447);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7810, 'West Wallsend', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.9, 151.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7813, 'West Wollongong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.4248, 150.86417);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7815, 'West Wyalong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.92373, 147.20473);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7820, 'Westdale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.09052, 150.85678);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7823, 'Westleigh', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.71176, 151.07139);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7824, 'Westmead', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80383, 150.98768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7829, 'Wetherill Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84277, 150.90061);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7830, 'Whalan', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75697, 150.80402);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149216, 'Whale Beach', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.6124118, 151.3254065);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7831, 'Wheeler Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73119, 151.28049);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7836, 'Whitebridge', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.97436, 151.71614);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7849, 'Wickham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.91923, 151.75693);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7851, 'Wilberforce', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.56256, 150.83784);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7852, 'Wiley Park', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9242, 151.06737);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7861, 'Williamtown', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.80638, 151.84361);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7862, 'Willmot', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.72534, 150.79259);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7863, 'Willoughby', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.80167, 151.18782);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7864, 'Willoughby East', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.79844, 151.20518);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7872, 'Wilton', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.24053, 150.69771);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7875, 'Windale', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.99277, 151.68167);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7876, 'Windang', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.53333, 150.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7878, 'Windradyne', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.40539, 149.54507);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7881, 'Windsor', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.61309, 150.81416);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7882, 'Windsor Downs', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.65857, 150.81079);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7884, 'Wingecarribee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.49091, 150.35486);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7885, 'Wingham', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.86676, 152.36989);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7886, 'Winmalee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.67847, 150.61213);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7888, 'Winston Hills', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.77645, 150.98051);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7897, 'Wolli Creek', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.93133, 151.15222);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7898, 'Wollondilly', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.06958, 150.46265);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7899, 'Wollongbar', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -28.8182, 153.39686);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7900, 'Wollongong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.424, 150.89345);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7901, 'Wollongong city centre', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.4279, 150.89268);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7902, 'Wollstonecraft', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.8328, 151.18981);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7912, 'Woodberry', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.79311, 151.67687);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7913, 'Woodbine', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.04589, 150.82146);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7916, 'Woodcroft', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.75637, 150.88071);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7920, 'Woodford', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.73333, 150.48333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7922, 'Woodpark', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.84137, 150.96055);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7924, 'Woodrising', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -32.98595, 151.60657);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7935, 'Woolgoolga', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -30.11058, 153.20067);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7936, 'Woollahra', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87901, 151.24706);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7937, 'Woolloomooloo', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.87042, 151.21968);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7939, 'Woolooware', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.04583, 151.14312);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7942, 'Woongarrah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.24134, 151.47563);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7943, 'Woonona', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.34932, 150.91443);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7951, 'Woronora', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.02436, 151.03862);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7952, 'Woronora Heights', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.03562, 151.02734);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7953, 'Worrigee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.9, 150.63333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7954, 'Woy Woy', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.48433, 151.32471);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7967, 'Wyee', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.18252, 151.48804);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7968, 'Wyee Point', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.14585, 151.50783);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7976, 'Wyoming', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.40387, 151.36254);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7977, 'Wyong', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.28254, 151.42327);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7978, 'Wyongah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.27468, 151.48898);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7981, 'Yagoona', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.9049, 151.01996);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149145, 'Yallah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.5337578, 150.7776845);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7989, 'Yamba', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -29.4375, 153.35914);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8006, 'Yarravel', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -31.04295, 152.76191);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8008, 'Yarrawarrah', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05351, 151.03563);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8011, 'Yass', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.84036, 148.90987);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8012, 'Yass Valley', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.9263, 148.9724);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8016, 'Yenda', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.24525, 146.20273);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8017, 'Yennora', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.86173, 150.96865);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8021, 'Yerrinbool', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.36884, 150.53848);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8024, 'Yoogali', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.29944, 146.08443);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8028, 'Young', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.3135, 148.30107);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8030, 'Yowie Bay', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -34.05116, 151.10228);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8033, 'Zetland', 3909, 'NSW', 'New South Wales', 14, 'AU', 'Australia', -33.90748, 151.20857);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3928, 'Alawa', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.37954, 130.8732);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3957, 'Alice Springs', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.69748, 133.88362);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3973, 'Alyangula', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -13.85413, 136.42129);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3989, 'Anula', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.39125, 130.89047);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3993, 'Araluen', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.69601, 133.854);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4067, 'Bakewell', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.49684, 130.99344);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4121, 'Barkly', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -19.54154, 134.82364);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4194, 'Bellamack', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.51707, 130.98355);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4215, 'Belyuen', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.53819, 130.68317);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4241, 'Berrimah', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.43507, 130.92606);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4380, 'Braitling', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.68005, 133.86877);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4409, 'Brinkin', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.37057, 130.86799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4651, 'Central Desert', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -21.07203, 133.49949);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4761, 'Coconut Grove', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.39602, 130.85186);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4814, 'Coomalie', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -13.04322, 131.08427);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4846, 'Cossack', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -14.45551, 132.17482);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4947, 'Darwin', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.46113, 130.84185);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4982, 'Desert Springs', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.71554, 133.88768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5027, 'Driver', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.48602, 130.97539);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5048, 'Durack', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.47308, 130.97208);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5063, 'East Arnhem', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.66175, 135.82281);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5094, 'East Side', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.69195, 133.8932);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5216, 'Fannie Bay', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.42275, 130.83627);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5218, 'Farrar', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.48028, 130.9982);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5299, 'Galiwinku', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.02811, 135.56486);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5333, 'Gillen', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.70915, 133.86596);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5343, 'Girraween', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.52528, 131.09566);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5443, 'Gray', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.49036, 130.98228);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5482, 'Gunbalanya', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.32474, 133.05087);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5486, 'Gunn', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.48765, 130.99322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5581, 'Herbert', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.53414, 131.16197);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5640, 'Holtze', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.4485, 131.00556);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5658, 'Howard Springs', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.49576, 131.04446);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5666, 'Humpty Doo', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.58406, 131.13674);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5712, 'Jabiru', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.67049, 132.83604);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5738, 'Jingili', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.38895, 130.87281);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5739, 'Johnston', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.48764, 131.01169);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5784, 'Karama', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.40219, 130.916);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5797, 'Katherine', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -14.65012, 132.17414);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5798, 'Katherine East', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -14.46597, 132.28556);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5799, 'Katherine South', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -14.46784, 132.25848);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5975, 'Larapinta', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.69303, 133.83137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5979, 'Larrakeyah', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.45527, 130.83172);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5995, 'Leanyer', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.36667, 130.9);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6033, 'Litchfield', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.50228, 131.12785);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6084, 'Ludmilla', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.42032, 130.85506);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6094, 'Lyons', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.35912, 130.88852);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6096, 'MacDonnell', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -24.42671, 133.49982);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6133, 'Malak', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.39288, 130.90395);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6149, 'Maningrida', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.0483, 134.22941);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6191, 'Marrara', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.40041, 130.8929);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6287, 'Milingimbi', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.10188, 134.91901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6297, 'Millner', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.39186, 130.86252);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6336, 'Moil', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.3885, 130.88088);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6403, 'Moulden', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.50559, 130.97313);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6472, 'Muirhead', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.35863, 130.89352);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6512, 'Nakara', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.37054, 130.87728);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6582, 'Ngukurr', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -14.73081, 134.73102);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6585, 'Nhulunbuy', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.18165, 136.77841);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6592, 'Nightcliff', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.38299, 130.8517);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6769, 'Palmerston', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.4962, 130.97797);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6784, 'Parap', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.43054, 130.84142);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6964, 'Rapid Creek', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.38042, 130.85919);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7056, 'Roper Gulf', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -15.30564, 134.97356);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7061, 'Rosebery', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.51046, 130.9878);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7075, 'Ross', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.74424, 133.90358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7103, 'Sadadeen', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.70399, 133.90043);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7369, 'Stuart Park', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.4486, 130.84249);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7468, 'Tennant Creek', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -19.6497, 134.19147);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7485, 'The Gap', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -23.71333, 133.87386);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7521, 'Tiwi', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.35876, 130.878);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7522, 'Tiwi Islands', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -11.55324, 130.78178);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7632, 'Victoria Daly', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -15.9292, 130.76166);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7643, 'Virginia', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.51895, 131.02844);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7649, 'Wadeye', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -14.23834, 129.52177);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7650, 'Wagait', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.44161, 130.7537);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7651, 'Wagaman', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.38074, 130.88538);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7690, 'Wanguri', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.37129, 130.88815);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7775, 'West Arnhem', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.38723, 133.37935);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7925, 'Woodroffe', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.50173, 130.98016);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7958, 'Wulagi', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.38345, 130.89543);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7963, 'Wurrumiyanga', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -11.76082, 130.62555);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8031, 'Yulara', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -25.2406, 130.9889);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8036, 'Zuccoli', 3910, 'NT', 'Northern Territory', 14, 'AU', 'Australia', -12.50727, 131.00694);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3914, 'Acacia Ridge', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58333, 153.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3922, 'Agnes Water', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.2119, 151.9035);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3925, 'Airlie Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.26751, 148.71471);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3927, 'Aitkenvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.30142, 146.77082);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3931, 'Albany Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.35364, 152.96848);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3942, 'Alderley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.42553, 153.00102);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3943, 'Aldershot', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.46312, 152.66348);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3948, 'Alexandra Headland', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.67154, 153.10058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3949, 'Alexandra Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53221, 153.22889);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3955, 'Algester', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61279, 153.03239);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3956, 'Alice River', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.33437, 146.61391);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3963, 'Allenstown', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.39403, 150.50393);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3964, 'Alligator Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.39176, 146.93784);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3965, 'Allora', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.03484, 151.98058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3969, 'Alton Downs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.3, 150.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3977, 'Andergrove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.08333, 149.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3985, 'Annandale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.31503, 146.79069);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3987, 'Annerley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.51228, 153.03248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3988, 'Anstead', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53781, 152.86187);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3994, 'Arana Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.39808, 152.95797);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4008, 'Aroona', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.78173, 153.11652);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4010, 'Arundel', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.93768, 153.36302);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4011, 'Ascot', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.43154, 153.058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4024, 'Ashgrove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.44552, 152.992);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4026, 'Ashmore', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.98883, 153.37647);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4031, 'Aspley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.36667, 153.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4034, 'Atherton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.26864, 145.47522);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4041, 'Auchenflower', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47443, 152.99213);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4044, 'Augustine Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66047, 152.87896);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4045, 'Aurukun', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -13.51263, 141.82435);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4052, 'Avenell Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.8896, 152.36786);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4054, 'Avoca', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.87822, 152.30794);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4058, 'Ayr', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.57393, 147.40666);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4059, 'Babinda', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.3439, 145.92265);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4063, 'Bahrs Scrub', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.73333, 153.16667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4065, 'Bakers Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.2199, 149.14681);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4071, 'Bald Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.32112, 153.00857);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4087, 'Balmoral', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.45341, 153.0668);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4089, 'Balonne Shire', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.28481, 148.17933);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4093, 'Bamaga', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -10.89197, 142.38934);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4094, 'Banana', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.80653, 149.89838);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4100, 'Banksia Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.04027, 153.1439);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4106, 'Banyo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.38236, 153.07903);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4110, 'Barcaldine', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.05203, 145.4349);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4111, 'Barcoo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.17292, 142.46481);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4114, 'Bardon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.461, 152.9792);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4117, 'Barellan Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.57196, 152.84379);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4118, 'Bargara', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.81476, 152.46257);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4123, 'Barney Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.84793, 151.26577);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4144, 'Battery Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.77878, 153.12887);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4156, 'Bayview Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.96229, 145.72585);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4158, 'Beachmere', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.12808, 153.05243);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4163, 'Beaconsfield', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.09121, 149.16544);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4165, 'Beaudesert', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.98691, 152.99657);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4179, 'Beenleigh', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.71137, 153.2029);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4180, 'Beerwah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.85881, 152.96144);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4187, 'Belgian Gardens', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.24507, 146.79455);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4196, 'Bellara', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.06392, 153.14959);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4198, 'Bellbird Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63674, 152.88663);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4199, 'Bellbowrie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55939, 152.88278);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4206, 'Bellmere', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.08441, 152.89003);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4208, 'Belmont', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.49882, 153.134);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4217, 'Benaraby', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.00417, 151.3341);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4221, 'Benowa', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.0077, 153.38583);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4226, 'Bentley Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.00389, 145.73819);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4242, 'Berrinba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.65853, 153.07888);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4244, 'Berserker', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.35817, 150.52042);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4258, 'Biggera Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.93239, 153.40021);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4261, 'Bilinga', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.16667, 153.51667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4263, 'Biloela', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.39589, 150.51504);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4269, 'Birkdale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48333, 153.21667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4273, 'Birtinya', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.74322, 153.11913);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4277, 'Black Mountain', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.39886, 152.87561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4278, 'Black River', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.22517, 146.61787);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4280, 'Blackall', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.42327, 145.46303);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4281, 'Blackall Tambo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.78795, 145.97279);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4290, 'Blacks Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.05466, 149.18971);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4295, 'Blackwater', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.58351, 148.87912);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4305, 'Bli Bli', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.61724, 153.03665);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4311, 'Bluewater', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.18157, 146.5582);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4319, 'Bohle Plains', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.31365, 146.69186);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4320, 'Bokarina', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.73843, 153.13049);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4329, 'Bongaree', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.08367, 153.15942);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4336, 'Bonogin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.1393, 153.35297);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4339, 'Booie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.53677, 151.94181);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4341, 'Boonah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.99724, 152.68108);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4342, 'Boondall', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.35317, 153.06092);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4345, 'Booral', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.36048, 152.9081);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4347, 'Booval', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61328, 152.78944);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4350, 'Boronia Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.68855, 153.01959);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4357, 'Bouldercombe', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.57054, 150.46951);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4358, 'Boulia', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -22.27908, 139.62534);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4362, 'Bowen', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.01367, 148.24754);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4363, 'Bowen Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.44369, 153.03728);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4372, 'Boyne Island', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.94829, 151.35336);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4375, 'Bracken Ridge', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.3171, 153.03097);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4381, 'Brandon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.55389, 147.35304);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4383, 'Branyan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.91347, 152.27251);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4384, 'Brassall', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.59753, 152.74755);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4385, 'Bray Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.29246, 152.96783);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4389, 'Brendale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.32114, 152.98393);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4394, 'Bridgeman Downs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.35538, 152.99432);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4402, 'Brighton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.29582, 153.05721);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4410, 'Brinsmead', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.89921, 145.71554);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4411, 'Brisbane', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46794, 153.02809);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4412, 'Broadbeach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.02782, 153.43343);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4413, 'Broadbeach Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.03498, 153.42502);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4426, 'Brookfield', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.5, 152.9);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4431, 'Brookwater', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66128, 152.89669);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4443, 'Bucasia', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.03494, 149.15726);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4444, 'Bucca', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.86667, 152.1);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4445, 'Buccan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.75, 153.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4446, 'Buddina', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.69565, 153.13302);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4447, 'Buderim', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.68443, 153.05705);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4452, 'Bulimba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.4499, 153.05766);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4457, 'Bulloo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.83079, 142.9128);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4461, 'Bundaberg', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.97305, 151.98442);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4462, 'Bundaberg East', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.8586, 152.38003);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4463, 'Bundaberg North', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.84914, 152.34638);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4464, 'Bundaberg South', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.87277, 152.35986);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4465, 'Bundaberg West', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.87265, 152.33647);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4466, 'Bundall', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.01111, 153.40479);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4467, 'Bundamba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60947, 152.81133);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4471, 'Bungalow', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.93855, 145.75634);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4475, 'Bunya', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.3694, 152.94331);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4477, 'Burbank', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55584, 153.14701);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4478, 'Burdekin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.84934, 147.27239);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4479, 'Burdell', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.25056, 146.69877);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4480, 'Burke', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -18.06461, 139.03748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4481, 'Burleigh Heads', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.1, 153.45);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4482, 'Burleigh Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.09975, 153.42463);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4483, 'Burnett Heads', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.76468, 152.4127);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4488, 'Burnside', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.63255, 152.94063);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4491, 'Burpengary', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.15746, 152.95758);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4492, 'Burpengary East', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.14447, 152.99968);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4497, 'Burrum Heads', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.18457, 152.61263);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4504, 'Bushland Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.19134, 146.67682);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4515, 'Cabarlah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.43333, 152);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4518, 'Caboolture', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.08465, 152.9511);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4519, 'Caboolture South', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.09389, 152.94874);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4524, 'Cairns', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.90268, 145.75287);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4525, 'Cairns City', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.92069, 145.77358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4526, 'Cairns North', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.90406, 145.75703);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4528, 'Calamvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.62329, 153.04785);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4533, 'Calliope', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.00705, 151.20033);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4534, 'Caloundra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.80346, 153.12195);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4535, 'Caloundra West', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.80634, 153.10894);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4539, 'Cambooya', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.71454, 151.86029);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4550, 'Camira', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63461, 152.92091);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4552, 'Camp Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.49354, 153.07629);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4553, 'Camp Mountain', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.4, 152.88333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4572, 'Cannon Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47237, 153.09475);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4573, 'Cannonvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.27681, 148.69759);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4578, 'Canungra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.01689, 153.16525);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4579, 'Capalaba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54333, 153.20287);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4582, 'Capella', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.08593, 148.02206);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4583, 'Caravonica', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.87063, 145.68099);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4584, 'Carbrook', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.68333, 153.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4590, 'Cardwell', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -18.26693, 146.02804);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4592, 'Carina Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.50721, 153.09126);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4593, 'Carindale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.50578, 153.10236);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4608, 'Carpentaria', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.32216, 141.3531);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4611, 'Carrara', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.02151, 153.36635);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4616, 'Carseldine', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.34753, 153.02307);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4622, 'Cashmere', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.29767, 152.90662);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4624, 'Cassowary Coast', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.96785, 145.96561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4644, 'Cedar Grove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.86667, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4645, 'Cedar Vale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.88923, 153.02891);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4647, 'Centenary Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58684, 151.96249);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4654, 'Central Highlands', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.06336, 148.31958);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4658, 'Chambers Flat', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.74811, 153.07764);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4660, 'Chandler', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.51398, 153.14907);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4661, 'Chapel Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.50264, 152.95012);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4666, 'Charleville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.40542, 146.24274);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4670, 'Charters Towers', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.20927, 145.81645);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4671, 'Charters Towers City', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.07774, 146.26275);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4674, 'Chatsworth', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.14398, 152.61503);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4675, 'Chelmer', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.51326, 152.97524);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4680, 'Cherbourg', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.2875, 151.93279);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4681, 'Chermside', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.38472, 153.03062);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4682, 'Chermside West', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.38383, 153.01586);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4690, 'Childers', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.23708, 152.27876);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4692, 'Chinchilla', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.73787, 150.6297);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4703, 'Churchill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.64233, 152.75022);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4706, 'Chuwar', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.5662, 152.77844);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4728, 'Clayfield', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41894, 153.05818);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4732, 'Clear Island Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.05308, 153.39815);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4735, 'Clermont', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -22.82407, 147.63635);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4737, 'Cleveland', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.52677, 153.26516);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4738, 'Clifton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.93374, 151.9066);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4739, 'Clifton Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.76313, 145.67167);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4742, 'Clinton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.87518, 151.21793);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4743, 'Cloncurry', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.69889, 140.27115);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4744, 'Clontarf', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.25341, 153.07835);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4762, 'Coes Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.6472, 152.94943);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4776, 'Collingwood Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61282, 152.86008);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4777, 'Collinsville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.55223, 147.84399);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4789, 'Condon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.32968, 146.71663);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4796, 'Cooee Bay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.14427, 150.76113);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4800, 'Cook Shire', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -13.68149, 143.53156);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4802, 'Cooktown', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -15.4657, 145.24984);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4805, 'Coolangatta', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.16944, 153.53471);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4810, 'Cooloola Cove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.9864, 152.99355);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4812, 'Coolum Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.5283, 153.08809);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4815, 'Coombabah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.91073, 153.37093);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4817, 'Coomera', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.84333, 153.33901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4818, 'Coominya', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.39009, 152.5006);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4821, 'Coopers Plains', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56463, 153.04067);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4822, 'Cooran', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.33689, 152.82246);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4824, 'Cooroibah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.36316, 152.98599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4826, 'Cooroy', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.41778, 152.91149);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4827, 'Coorparoo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.49325, 153.05826);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4830, 'Coppabella', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.9471, 148.3005);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4833, 'Coral Cove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.88309, 152.48266);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4836, 'Corinda', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54381, 152.98215);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4840, 'Cornubia', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66667, 153.21667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4847, 'Cotswold Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.52241, 151.89516);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4861, 'Craiglie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.53789, 145.46963);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4863, 'Craignish', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.28258, 152.72429);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4870, 'Cranbrook', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.30553, 146.75286);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4872, 'Cranley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.51504, 151.923);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4879, 'Crestmead', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.68759, 153.08444);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4888, 'Crows Nest', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.25993, 152.05164);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4891, 'Croydon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -18.5136, 142.32249);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4905, 'Cunnamulla', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.06766, 145.68439);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4907, 'Curra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.06667, 152.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4908, 'Currajong', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.27566, 146.77918);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4912, 'Currimundi', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.76925, 153.12237);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4913, 'Currumbin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.13649, 153.48158);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4914, 'Currumbin Valley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.20805, 153.39424);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4915, 'Currumbin Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.15442, 153.47282);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5054, 'Dâ€™Aguilar', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.98333, 152.8);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4920, 'Daisy Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63026, 153.15784);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4921, 'Dakabin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.22594, 152.99097);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4922, 'Dalby', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.18169, 151.26205);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4939, 'Darling Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.59659, 151.93045);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4946, 'Darra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56693, 152.95395);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4953, 'Dayboro', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.19632, 152.82253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4956, 'Deagon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.32788, 153.06126);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4959, 'Deception Bay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.19354, 153.02631);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4961, 'Deebing Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66719, 152.74867);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4963, 'Deeragun', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.24741, 146.6757);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4966, 'Delaneys Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.00021, 152.79553);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4976, 'Depot Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.39024, 150.52102);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4986, 'Diamantina', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.57676, 140.07163);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4990, 'Dicky Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.78364, 153.13766);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4991, 'Diddillibah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.64166, 153.04959);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4994, 'Dimbulah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.14752, 145.10969);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5008, 'Doolandella', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61328, 152.98547);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5009, 'Doomadgee', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.63879, 138.74359);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5010, 'Doonan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.43964, 152.99204);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5018, 'Douglas', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.32394, 146.75234);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5025, 'Drayton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60011, 151.90109);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5026, 'Drewvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.64768, 153.05458);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5043, 'Dundowran Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.26934, 152.76232);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5049, 'Durack', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58947, 152.98577);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5051, 'Dutton Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.49662, 153.02796);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5053, 'Dysart', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -22.58825, 148.34924);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149309, 'Eagle Farm', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.4315185, 153.0722913);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5057, 'Eagleby', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.68333, 153.21667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5060, 'Earlville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.95078, 145.73308);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5068, 'East Brisbane', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48099, 153.04401);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5079, 'East Innisfail', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.53324, 146.03487);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5080, 'East Ipswich', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60637, 152.77232);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5088, 'East Mackay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.14979, 149.1964);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5096, 'East Toowoomba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.57086, 151.97422);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5098, 'Eastern Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.62849, 152.77828);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5102, 'Eatons Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.3392, 152.9599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5109, 'Edens Landing', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.7027, 153.16943);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5111, 'Edge Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.9, 145.75);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5117, 'Edmonton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.01902, 145.74443);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5121, 'Eight Mile Plains', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58333, 153.1);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5122, 'Eimeo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.03766, 149.1763);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5123, 'Elanora', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.13577, 153.44931);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5128, 'Eli Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.27922, 152.8091);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5129, 'Elimbah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.01667, 152.95);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5140, 'Ellen Grove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61529, 152.94385);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5143, 'Elliott Heads', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.91622, 152.48988);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5151, 'Emerald', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.52296, 148.15784);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5156, 'Emu Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.2568, 150.82679);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5163, 'Enoggera', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.42832, 152.97467);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5174, 'Esk', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.23895, 152.42223);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5182, 'Etheridge', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -18.56276, 143.53832);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5185, 'Eudlo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.72963, 152.95395);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5188, 'Eumundi', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.47737, 152.95115);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5199, 'Everton Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.38909, 152.97126);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5200, 'Everton Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.40732, 152.9884);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5207, 'Fairfield', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.50644, 153.02479);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5228, 'Fernvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.45475, 152.65321);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5230, 'Ferny Grove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.4008, 152.93475);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5231, 'Ferny Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.39594, 152.93737);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5233, 'Fig Tree Pocket', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.52784, 152.9619);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5240, 'Fitzgibbon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.33971, 153.02921);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5249, 'Flinders', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.8903, 144.38814);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5253, 'Flinders View', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.65046, 152.77451);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5262, 'Forest Glen', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.68864, 153.00453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5265, 'Forest Lake', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.62563, 152.96883);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5267, 'Forestdale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66334, 153.00383);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5275, 'Fortitude Valley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.45706, 153.03178);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5285, 'Fraser Coast', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.34145, 152.67024);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5291, 'Frenchville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.34761, 150.5445);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5293, 'Freshwater', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.88333, 145.71667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5298, 'Gailes', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61133, 152.9132);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5302, 'Garbutt', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.26602, 146.78224);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5308, 'Gatton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55873, 152.27618);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5309, 'Gaven', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.95651, 153.33453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5313, 'Gayndah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.62522, 151.61144);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5314, 'Gaythorne', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41667, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5315, 'Geebung', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.37246, 153.04712);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5337, 'Gilston', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.03333, 153.3);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5338, 'Gin Gin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.99363, 151.95808);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5347, 'Gladstone', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.01869, 151.65818);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5348, 'Gladstone Central', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.84281, 151.24887);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5352, 'Glass House Mountains', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.89758, 152.95319);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5355, 'Glen Eden', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.89738, 151.27133);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5370, 'Gleneagle', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.93333, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5376, 'Glenella', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.11768, 149.14453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5391, 'Glenvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56818, 151.8934);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5392, 'Glenview', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.76667, 153.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5400, 'Gold Coast', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.00029, 153.43088);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5402, 'Golden Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.82177, 153.11972);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5407, 'Gooburrum', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.82312, 152.33154);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5408, 'Goodna', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61046, 152.89896);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5415, 'Goondiwindi', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.46221, 150.31345);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5421, 'Gordon Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41899, 153.02547);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5422, 'Gordonvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.09959, 145.78038);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5430, 'Gowrie Junction', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48333, 151.88333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5432, 'Gracemere', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.43792, 150.45749);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5433, 'Graceville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.52201, 152.98222);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5436, 'Grange', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.42251, 153.01527);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5440, 'Granville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.54486, 152.73346);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5453, 'Greenbank', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.71667, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5459, 'Greenslopes', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.50815, 153.04951);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5470, 'Griffin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.27149, 153.03942);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5479, 'Gulliver', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.28814, 146.77691);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5481, 'Gumdale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.49188, 153.15315);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5495, 'Gympie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.18979, 152.66499);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5496, 'Gympie Regional Council', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.18881, 152.65868);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5513, 'Hamilton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.43896, 153.06287);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5526, 'Harlaxton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53333, 151.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5532, 'Harristown', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58333, 151.93333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5536, 'Hatton Vale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56667, 152.46667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5546, 'Hawthorne', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46696, 153.05779);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5548, 'Hay Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.29646, 149.27368);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5555, 'Healy', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.74596, 139.5001);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5561, 'Heathwood', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63449, 152.98814);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5562, 'Heatley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.29035, 146.75355);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5572, 'Helensvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.91828, 153.33275);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5573, 'Helidon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55316, 152.12398);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5574, 'Hemmant', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.44776, 153.13174);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5575, 'Hendra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41775, 153.07025);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5583, 'Heritage Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.68273, 153.06082);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5584, 'Hermit Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.28741, 146.80043);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5587, 'Herston', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.44453, 153.01852);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5588, 'Hervey Bay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.28762, 152.76936);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5596, 'Highfields', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46343, 151.95386);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5599, 'Highgate Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48912, 153.01878);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5600, 'Highland Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.01392, 153.33312);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5602, 'Highvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.37227, 152.80195);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5608, 'Hillcrest', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66857, 153.02614);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5616, 'Hinchinbrook', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -18.6584, 146.12296);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5626, 'Hodgson Vale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66518, 151.93251);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5631, 'Holland Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.51704, 153.06744);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5632, 'Holland Park West', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.52625, 153.06046);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5633, 'Holloways Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.84209, 145.73922);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5634, 'Hollywell', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.90076, 153.39609);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5636, 'Holmview', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.71631, 153.17045);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5641, 'Home Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.65921, 147.41232);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5644, 'Hope Island', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.87036, 153.35164);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5645, 'Hope Vale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -15.13588, 145.19248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5657, 'Howard', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.31934, 152.55986);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5662, 'Hughenden', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.84399, 144.20035);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5679, 'Hyde Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.27691, 146.79653);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5681, 'Idalia', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.30682, 146.81389);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5685, 'Inala', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.59715, 152.97432);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5688, 'Indooroopilly', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.50302, 152.97518);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5689, 'Ingham', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -18.64552, 146.16248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5694, 'Innes Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.86833, 152.47992);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5695, 'Innisfail', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.52209, 146.03102);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5696, 'Innisfail Estate', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.5183, 146.04474);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5702, 'Ipswich', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.6779, 152.66188);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5706, 'Isaac', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -22.24346, 148.23672);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5715, 'Jacobs Well', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.77992, 153.36153);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5717, 'Jamboree Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55634, 152.93402);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5722, 'Jandowae', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.78411, 151.1124);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5726, 'Jensen', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.2457, 146.65289);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5733, 'Jimboomba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.83118, 153.02737);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5736, 'Jindalee', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53446, 152.93843);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5745, 'Joyner', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.27613, 152.94471);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5746, 'Jubilee Pocket', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.28809, 148.72938);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5747, 'Julatten', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.6072, 145.34118);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5756, 'Kalbar', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.94169, 152.62372);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5762, 'Kalinga', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.40957, 153.05061);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5763, 'Kalkie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.84426, 152.38532);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5764, 'Kallangur', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.25204, 152.99226);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5771, 'Kamerunga', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.87321, 145.7013);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5777, 'Kangaroo Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47679, 153.0367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5778, 'Kanimbla', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.92307, 145.72158);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5783, 'Karalee', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56485, 152.82446);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5785, 'Karana Downs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54857, 152.80728);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5795, 'Karumba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.48691, 140.84262);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5801, 'Kawana', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.33933, 150.50493);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5802, 'Kawungan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.29879, 152.846);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5804, 'Kearneys Spring', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60495, 151.94098);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5806, 'Kedron', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.40286, 153.02969);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5819, 'Kelso', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.38932, 146.71912);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5820, 'Kelvin Grove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.44819, 153.01337);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5824, 'Kenmore', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.50759, 152.93879);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5825, 'Kenmore Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.5042, 152.93183);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5830, 'Kensington Grove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53278, 152.47205);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5837, 'Keperra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41376, 152.94703);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5838, 'Kepnock', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.87606, 152.37518);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5844, 'Kewarra Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.78219, 145.68455);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5854, 'Kilcoy', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.943, 152.56545);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5863, 'Kin Kora', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.87705, 151.24722);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5866, 'Kingaroy', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.53994, 151.8373);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5870, 'Kings Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.80166, 153.14261);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5881, 'Kingsthorpe', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47558, 151.81409);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5885, 'Kingston', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66667, 153.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5892, 'Kippa-Ring', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.22586, 153.0835);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5893, 'Kirkwood', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.90327, 151.23545);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5896, 'Kirwan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.30323, 146.72531);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5897, 'Kleinton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.43333, 151.95);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5908, 'Koongal', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.36887, 150.54917);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5909, 'Kooralbyn', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.07955, 152.83974);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5919, 'Kowanyama', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -15.27882, 141.81287);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5922, 'Kuluin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.65779, 153.05608);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5924, 'Kuraby', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60683, 153.09367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5925, 'Kuranda', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.81978, 145.63818);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5932, 'Kurwongbah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.2325, 152.97621);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5938, 'Labrador', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.94402, 153.39815);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5940, 'Laidley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63278, 152.39285);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5949, 'Lake Macdonald', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.38482, 152.93213);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5962, 'Lammermoor', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.16076, 150.76079);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5964, 'Landsborough', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.80666, 152.96095);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5991, 'Lawnton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.28333, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6001, 'Leichhardt', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.62279, 152.73373);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6038, 'Little Mountain', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.78436, 153.09218);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6046, 'Lockhart River', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -13.01876, 143.25024);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6050, 'Lockyer Valley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.68139, 152.23036);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6053, 'Logan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.76294, 153.04492);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6054, 'Logan Central', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.64385, 153.10725);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6055, 'Logan City', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63917, 153.10944);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6056, 'Logan Reserve', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.72414, 153.09002);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6057, 'Logan Village', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.76832, 153.10762);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6058, 'Loganholme', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.68444, 153.1864);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6059, 'Loganlea', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.67535, 153.13472);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6066, 'Longreach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.876, 143.86708);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6071, 'Lota', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46923, 153.1858);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6073, 'Lower Beechmont', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.04751, 153.24572);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6079, 'Lowood', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46555, 152.57625);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6088, 'Lutwyche', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.42275, 153.03354);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6101, 'Macgregor', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.5649, 153.0665);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6103, 'Machans Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.85849, 145.74468);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6104, 'Mackay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.08189, 149.04265);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6105, 'Mackay City', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.14463, 149.18678);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6106, 'Mackenzie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54351, 153.12057);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6109, 'Macleay Island', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61089, 153.35996);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6123, 'Magnetic Island', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.15514, 146.8485);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6127, 'Main Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.97879, 153.4266);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6134, 'Malanda', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.35228, 145.59528);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6136, 'Maleny', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.76001, 152.84926);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6146, 'Mango Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.24349, 153.02384);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6153, 'Manly West', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47382, 153.16641);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6159, 'Manoora', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.91706, 145.73665);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6160, 'Mansfield', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53929, 153.09895);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6163, 'Manunda', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.91721, 145.7492);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6164, 'Mapleton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.62431, 152.86784);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6165, 'Mapoon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -12.1096, 141.90216);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6168, 'Maranoa', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.39289, 148.43098);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6172, 'Marcoola', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.5845, 153.09465);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6175, 'Mareeba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.99096, 145.42306);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6178, 'Margate', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.24761, 153.09809);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6179, 'Marian', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.14386, 148.94209);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6187, 'Maroochy River', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.57767, 153.01884);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6188, 'Maroochydore', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.66008, 153.09953);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6193, 'Marsden', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.67342, 153.09732);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6198, 'Maryborough', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.54073, 152.70493);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6204, 'Maudsland', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.95, 153.26667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6215, 'McDowall', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.38266, 152.99194);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6219, 'McKinlay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.59413, 141.67448);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6227, 'Meadowbrook', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66401, 153.14465);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6249, 'Menzies', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.71809, 139.49717);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6253, 'Meridan Plains', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.77351, 153.06187);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6255, 'Meringandan West', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41612, 151.88727);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6256, 'Mermaid Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.04411, 153.43472);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6257, 'Mermaid Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.04912, 153.43081);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6260, 'Merrimac', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.05085, 153.37307);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6267, 'Miami', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.07173, 153.44158);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6274, 'Middle Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55596, 152.92223);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6275, 'Middle Ridge', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60709, 151.96688);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6277, 'Middlemount', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -22.81226, 148.69926);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6286, 'Miles', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.65836, 150.18822);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6290, 'Millbank', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.87536, 152.32217);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6296, 'Millmerran', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.87913, 151.27058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6298, 'Millstream', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.65318, 145.41401);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6304, 'Milton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47039, 153.00312);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6307, 'Minden', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55965, 152.54493);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6312, 'Minyama', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.69573, 153.12353);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6315, 'Mirani', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.15729, 148.86217);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6318, 'Mission Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.86885, 146.10392);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6319, 'Mission River', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -12.59509, 141.9576);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6323, 'Mitchell', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.4849, 147.9742);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6326, 'Mitchelton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41667, 152.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6334, 'Moffat Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.79048, 153.13997);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6335, 'Moggill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58333, 152.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6338, 'Molendinar', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.97409, 153.36069);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6347, 'Monkland', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.21191, 152.68245);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6353, 'Monto', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.86477, 151.12199);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6356, 'Montville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.68333, 152.88333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6358, 'Mooloolaba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.68164, 153.11925);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6369, 'Moore Park Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.71066, 152.20905);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6371, 'Mooroobool', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.93489, 145.73137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6373, 'Moorooka', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53436, 153.0246);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6376, 'Moranbah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -22.00163, 148.04661);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6378, 'Morayfield', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.10876, 152.94907);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6383, 'Moreton Bay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.10731, 152.92937);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6386, 'Morningside', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46165, 153.07511);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6388, 'Mornington', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.68436, 139.46682);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6402, 'Mossman', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.46292, 145.37144);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6414, 'Mount Coolum', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.56581, 153.09139);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6415, 'Mount Cotton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63333, 153.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6416, 'Mount Crosby', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53948, 152.80583);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6423, 'Mount Gravatt', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53333, 153.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6424, 'Mount Gravatt East', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.5405, 153.08221);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6429, 'Mount Isa', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.72523, 139.49727);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6435, 'Mount Lofty', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54628, 151.97218);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6436, 'Mount Louisa', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.274, 146.75091);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6437, 'Mount Low', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.23209, 146.66951);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6443, 'Mount Morgan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.64532, 150.38902);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6445, 'Mount Nathan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.9643, 153.27198);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6447, 'Mount Ommaney', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54609, 152.93219);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6451, 'Mount Pleasant', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.11814, 149.15965);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6458, 'Mount Sheridan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.98608, 145.73244);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6462, 'Mount Warren Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.73109, 153.20549);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6465, 'Mountain Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.70278, 153.10133);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6466, 'Moura', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.5722, 149.96729);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6470, 'Mudgeeraba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.08333, 153.36667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6471, 'Mudjimba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.61497, 153.0989);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6474, 'Mulambin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.18755, 150.78933);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6482, 'Mundingburra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.29851, 146.79352);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6483, 'Mundoolun', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.8994, 153.0715);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6484, 'Mundubbera', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.59266, 151.30225);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6487, 'Munruben', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.74635, 153.03119);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6489, 'Murarrie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46289, 153.09809);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6492, 'Murgon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.2417, 151.94047);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6494, 'Murray', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.31803, 146.79494);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6497, 'Murrumba Downs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.26733, 153.01053);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6501, 'Murweh', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.13609, 146.6041);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6513, 'Nambour', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.62613, 152.95941);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6518, 'Nanango', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.67157, 152.00211);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6520, 'Nanum', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -12.64511, 141.86221);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6521, 'Napranum', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -12.55322, 142.06558);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6524, 'Narangba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.20338, 152.95923);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6544, 'Nathan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55888, 153.0623);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6545, 'Nebo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.68333, 148.68333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6548, 'Nelly Bay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.15775, 146.84977);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6550, 'Nerang', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.98941, 153.33633);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6554, 'New Auckland', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.88359, 151.23563);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6555, 'New Beith', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.79359, 152.88443);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6556, 'New Farm', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46777, 153.04834);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6570, 'Newmarket', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.43534, 153.00781);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6574, 'Newport', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.20731, 153.10135);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6576, 'Newstead', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.45314, 153.04183);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6579, 'Newtown', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55602, 151.93255);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6595, 'Ninderry', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.54094, 152.9752);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6596, 'Ningi', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.06108, 153.07883);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6601, 'Nome', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.36245, 146.94672);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6602, 'Noosa Heads', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.39433, 153.0901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6603, 'Noosaville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.4, 153.06667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6607, 'Norman Gardens', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.33044, 150.52747);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6608, 'Norman Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47916, 153.0625);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6610, 'Normanton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.67183, 141.07721);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6620, 'North Booval', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60392, 152.79485);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6623, 'North Burnett', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.24444, 151.32301);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6633, 'North Ipswich', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60286, 152.76146);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6635, 'North Lakes', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.22426, 153.02075);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6637, 'North Mackay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.12009, 149.17941);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6638, 'North Maclean', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.76759, 153.01646);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6653, 'North Toowoomba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54415, 151.96117);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6656, 'North Ward', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.24994, 146.81477);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6669, 'Northern Peninsula Area', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -10.9719, 142.35364);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6673, 'Norville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.8931, 152.34089);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6681, 'Nudgee', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.3691, 153.0847);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6686, 'Nundah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.40252, 153.06165);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6698, 'Oakey', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.43305, 151.72063);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6700, 'Oakhurst', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.51253, 152.63583);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6722, 'One Mile', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.62902, 152.73768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6727, 'Oonoonba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.29684, 146.82091);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6728, 'Ooralea', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.17394, 149.14797);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6737, 'Ormeau', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.76791, 153.2428);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6738, 'Ormeau Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.79653, 153.2567);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6739, 'Ormiston', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.51667, 153.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6747, 'Oxenford', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.89033, 153.31309);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6748, 'Oxley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6754, 'Pacific Paradise', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.61807, 153.07781);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6755, 'Pacific Pines', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.93994, 153.31436);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6758, 'Paddington', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.45939, 152.99509);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6765, 'Palm Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.11694, 153.46584);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6767, 'Palm Cove', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.75, 145.66667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6768, 'Palm Island', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -18.74893, 146.60379);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6771, 'Palmwoods', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.68584, 152.96135);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6781, 'Paradise Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.88663, 153.3933);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6786, 'Park Avenue', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.35327, 150.5189);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6790, 'Park Ridge', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.71667, 153.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6791, 'Park Ridge South', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.72707, 153.0332);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6795, 'Parkhurst', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.3, 150.51667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6796, 'Parkinson', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.6434, 153.02975);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6798, 'Parkside', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.7377, 139.48865);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6801, 'Parkwood', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.95461, 153.36304);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6804, 'Paroo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.98742, 145.71755);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6806, 'Parramatta Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.92598, 145.76643);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6807, 'Parrearra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.71152, 153.12197);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6815, 'Peachester', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.84551, 152.884);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6824, 'Pelican Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.83354, 153.10013);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6836, 'Peregian Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.481, 153.096);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6837, 'Peregian Springs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.48801, 153.07577);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6845, 'Petrie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.26667, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6846, 'Petrie Terrace', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46298, 153.01312);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6850, 'Pialba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.287, 152.84369);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6855, 'Pie Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.22991, 152.60774);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6856, 'Pimlico', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.28172, 146.78803);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6857, 'Pimpama', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.81667, 153.3);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6858, 'Pine Mountain', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55, 152.7);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6861, 'Pioneer', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.72032, 139.50812);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6863, 'Pittsworth', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.71638, 151.63399);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6864, 'Plainland', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56667, 152.41667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6877, 'Point Vernon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.25727, 152.81725);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6879, 'Pomona', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.36685, 152.85574);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6881, 'Pormpuraaw', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -14.65705, 141.83354);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6888, 'Port Douglas', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.48383, 145.46725);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6921, 'Proserpine', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.4011, 148.5802);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6926, 'Pullenvale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.52283, 152.88651);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6945, 'Queenton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.07453, 146.2817);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6946, 'Quilpie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.15057, 143.57936);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6952, 'Raceview', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63472, 152.77519);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6954, 'Railway Estate', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.2757, 146.81962);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6955, 'Rainbow Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.90432, 153.09174);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6960, 'Rangeville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58318, 151.97997);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6962, 'Rangewood', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.31138, 146.63877);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6965, 'Rasmussen', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.3524, 146.7228);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6968, 'Ravenshoe', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.60901, 145.48413);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6976, 'Red Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.31667, 148.5);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6979, 'Redbank', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.6, 152.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6980, 'Redbank Plains', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.64613, 152.85965);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6984, 'Redland', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53791, 153.24829);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6985, 'Redland Bay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.6113, 153.30022);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6986, 'Redlynch', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.9254, 145.69559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6988, 'Reedy Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.11243, 153.39638);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6989, 'Regency Downs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53359, 152.44049);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6991, 'Regents Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.67664, 153.04165);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7005, 'Richlands', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.59616, 152.95321);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7008, 'Richmond', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.56967, 142.91384);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7022, 'River Heads', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.41551, 152.91315);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7023, 'Riverhills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55928, 152.91106);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7028, 'Riverview', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.6, 152.85);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7033, 'Robertson', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56583, 153.05738);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7035, 'Robina', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.07071, 153.39329);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7037, 'Rochedale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56667, 153.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7038, 'Rochedale South', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.59521, 153.12332);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7043, 'Rockhampton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.38032, 150.50595);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7046, 'Rocklea', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53917, 153.00402);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7047, 'Rockville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53611, 151.93805);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7052, 'Roma', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.56741, 148.78751);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7068, 'Rosemount', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.6303, 152.9997);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7069, 'Rosenthal Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.24013, 152.01327);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7074, 'Rosewood', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.6335, 152.58949);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7077, 'Rosslea', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.29871, 146.79824);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7081, 'Rothwell', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.21433, 153.04676);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7089, 'Runaway Bay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.91386, 153.39775);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7090, 'Runcorn', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.59756, 153.07699);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7091, 'Rural View', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.06447, 149.1646);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7095, 'Russell Island', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.64867, 153.38124);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7105, 'Sadliers Crossing', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61251, 152.74577);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7120, 'Salisbury', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55145, 153.0325);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7129, 'Samford Valley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.3727, 152.86699);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7135, 'Sandgate', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.32198, 153.06951);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7140, 'Sandstone Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.08374, 153.13235);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7146, 'Sarina', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.4191, 149.21677);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7150, 'Scarborough', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.20118, 153.10939);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7151, 'Scarness', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.28405, 152.856);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7152, 'Scenic Rim', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.04021, 152.80688);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7183, 'Seven Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48341, 153.07474);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7186, 'Seventeen Mile Rocks', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.5507, 152.95896);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7190, 'Shailer Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.6498, 153.17753);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7193, 'Sharon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.87593, 152.26994);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7197, 'Sheldon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58436, 153.20042);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7210, 'Shorncliffe', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.32759, 153.08161);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7212, 'Silkstone', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.62126, 152.78768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7221, 'Sinnamon Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54436, 152.9489);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7222, 'Sippy Downs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.71793, 153.05475);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7225, 'Slacks Creek', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.65, 153.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7226, 'Slade Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.075, 149.225);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7236, 'Soldiers Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.70533, 139.48988);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7241, 'Somerset', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.01133, 152.41521);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7253, 'South Brisbane', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48034, 153.02049);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7255, 'South Burnett', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.40077, 151.60166);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7260, 'South Gladstone', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.86221, 151.26801);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7270, 'South Kolan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.93202, 152.1679);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7274, 'South Mackay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.16288, 149.17751);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7275, 'South Maclean', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.79245, 153.01603);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7284, 'South Toowoomba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.57101, 151.9465);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7285, 'South Townsville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.26618, 146.83331);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7293, 'Southern Downs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.50265, 151.92165);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7298, 'Southport', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.96724, 153.39796);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7299, 'Southside', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.20997, 152.64719);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7308, 'Spring Hill', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.46141, 153.02311);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7310, 'Springfield', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.65365, 152.91716);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7311, 'Springfield Lakes', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66757, 152.92488);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7312, 'Springsure', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.11478, 148.08849);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7316, 'Springwood', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61183, 153.12899);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7322, 'St George', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.94763, 148.60986);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7339, 'Stafford', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41044, 153.01105);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7340, 'Stafford Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.39354, 153.0105);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7343, 'Stanthorpe', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.65425, 151.93388);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7364, 'Strathpine', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.30414, 152.98977);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7367, 'Stretton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.62205, 153.06609);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7368, 'Stuart', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.34702, 146.84378);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7377, 'Sun Valley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.87516, 151.25752);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7379, 'Sunnybank', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58003, 153.06064);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7380, 'Sunnybank Hills', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61025, 153.05388);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7381, 'Sunrise Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.41646, 153.10305);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7382, 'Sunset', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.71026, 139.50824);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7386, 'Sunshine Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.40579, 153.10779);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7387, 'Sunshine Coast', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.56098, 152.85113);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7391, 'Surfers Paradise', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.00274, 153.42999);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7400, 'Svensson Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.88566, 152.33183);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7415, 'Taigum', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.34265, 153.04444);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7417, 'Tallai', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.06407, 153.32589);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7419, 'Tallebudgera', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.15, 153.43333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7420, 'Tallebudgera Valley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.1927, 153.35489);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7422, 'Tamborine', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.88333, 153.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7423, 'Tamborine Mountain', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.96954, 153.19937);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7427, 'Tanah Merah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.67151, 153.17019);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7428, 'Tanawha', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.71981, 153.03018);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7430, 'Tannum Sands', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.94749, 151.36749);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7434, 'Tara', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.27613, 150.45676);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7435, 'Taranganba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.14435, 150.75139);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7439, 'Taringa', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.49061, 152.97861);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7442, 'Tarragindi', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.52713, 153.04556);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7459, 'Telina', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.88834, 151.25379);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7467, 'Teneriffe', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.45587, 153.04696);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7478, 'Tewantin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.39104, 153.03432);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7479, 'Thabeban', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.9, 152.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7484, 'The Gap', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.44187, 152.93861);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7486, 'The Gemfields', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.53014, 147.79679);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7493, 'The Range', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.392, 150.49624);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7504, 'Thorneside', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48777, 153.19821);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7505, 'Thornlands', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55751, 153.26481);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7511, 'Thursday Island', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -10.58257, 142.21949);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7512, 'Tieri', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.03829, 148.34463);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7515, 'Tin Can Bay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.91914, 153.0032);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7516, 'Tinana', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.55196, 152.6659);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7517, 'Tingalpa', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.4736, 153.12704);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7520, 'Tivoli', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.59278, 152.76798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7524, 'Tolga', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.18557, 145.47707);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7531, 'Toogoolawah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.08661, 152.37636);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7532, 'Toogoom', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.25637, 152.69025);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7539, 'Toowong', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48333, 152.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7540, 'Toowoomba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47958, 151.47705);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7542, 'Torquay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.28496, 152.87886);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7547, 'Torres', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -10.57928, 142.22059);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7548, 'Torres Strait Island Region', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -10.20141, 142.27295);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7550, 'Townsville', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.26639, 146.80569);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7551, 'Townview', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.73252, 139.50482);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7565, 'Trinity Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.78876, 145.69682);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7567, 'Trinity Park', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.80684, 145.70549);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7570, 'Trunding', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -12.63422, 141.86963);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7573, 'Tugun', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.15, 153.5);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7575, 'Tully', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.93264, 145.92277);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7593, 'Twin Waters', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.63422, 153.08114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7603, 'Underwood', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60885, 153.1113);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7607, 'Upper Caboolture', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.11667, 152.88333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7608, 'Upper Coomera', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.87683, 153.28572);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7611, 'Upper Kedron', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.41879, 152.91777);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7613, 'Upper Mount Gravatt', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.56128, 153.08453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7616, 'Urangan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.29214, 152.90535);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7617, 'Urraween', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.29522, 152.82206);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7626, 'Varsity Lakes', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.0894, 153.4122);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7635, 'Victoria Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58329, 153.31172);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7639, 'Vincent', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.28341, 146.76463);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7644, 'Virginia', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.38333, 153.06667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7647, 'Wacol', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.58333, 152.93333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7662, 'Wakerley', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.483, 153.15589);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7665, 'Walkerston', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.16097, 149.05814);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7666, 'Walkervale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.88266, 152.35886);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7675, 'Walloon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60545, 152.66429);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7679, 'Wamuran', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.03909, 152.86542);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7680, 'Wandal', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.36878, 150.49381);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7686, 'Wandoan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.12285, 149.96028);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7698, 'Warana', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.72273, 153.12688);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7707, 'Warner', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.31222, 152.94981);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7725, 'Warwick', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.21901, 152.03438);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7730, 'Waterford West', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.69056, 153.13319);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7746, 'Wavell Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.39385, 153.04698);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7754, 'Weipa', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -12.63671, 141.87555);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7756, 'Wellesley Islands', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.63184, 139.4014);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7759, 'Wellington Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48333, 153.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7784, 'West End', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.47923, 153.0096);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7786, 'West Gladstone', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.86123, 151.2453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7798, 'West Mackay', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -21.15467, 149.16181);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7805, 'West Rockhampton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.37941, 150.48175);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7814, 'West Woombye', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.66644, 152.92557);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7817, 'Westbrook', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61667, 151.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7819, 'Westcourt', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.8, 150.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7821, 'Western Downs', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.80665, 150.3859);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7822, 'Westlake', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54862, 152.91276);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7835, 'White Rock', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.97438, 145.7633);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7838, 'Whitfield', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.89508, 145.73335);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7839, 'Whitsunday', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.6978, 148.01349);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7840, 'Whitsundays', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.11943, 148.91325);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7865, 'Willow Vale', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.84499, 153.2631);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7866, 'Willowbank', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.68215, 152.67407);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7869, 'Wilsonton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.54312, 151.91684);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7870, 'Wilsonton Heights', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53227, 151.92444);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7871, 'Wilston', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.43218, 153.01904);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7877, 'Windaroo', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.74587, 153.19339);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7880, 'Windsor', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.43631, 153.02882);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7887, 'Winston', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -20.70374, 139.49913);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7890, 'Winton', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -22.50749, 142.66199);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7891, 'Wishart', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55448, 153.10107);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7892, 'Withcott', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.55408, 152.02432);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7894, 'Witta', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.7, 152.81667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7903, 'Wondai', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.3177, 151.87242);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7904, 'Wondunna', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.31758, 152.85912);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7906, 'Wongaling Beach', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.91327, 146.09611);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7908, 'Wongawallan', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.87553, 153.22865);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7918, 'Woodend', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.60554, 152.75307);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7919, 'Woodford', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.95291, 152.77747);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7921, 'Woodgate', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -25.1083, 152.56254);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7923, 'Woodridge', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.63333, 153.1);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7934, 'Woody Point', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.25608, 153.10427);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7938, 'Woolloongabba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.48855, 153.03655);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7940, 'Wooloowin', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.42244, 153.04204);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7941, 'Woombye', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.66054, 152.96947);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7944, 'Woorabinda', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -24.1501, 149.44977);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7946, 'Woorim', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.06931, 153.20427);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7949, 'Woree', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.95, 145.75);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7950, 'Worongary', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -28.05, 153.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7957, 'Wujal Wujal', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -15.96904, 145.3152);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7959, 'Wulguru', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -19.3285, 146.81842);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7960, 'Wulkuraka', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.61429, 152.72191);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7964, 'Wurtulla', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.75648, 153.12805);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7973, 'Wynnum', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.44527, 153.15813);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7974, 'Wynnum West', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.45824, 153.15319);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7979, 'Wyreema', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.65583, 151.85532);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7988, 'Yamanto', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.66027, 152.73863);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7991, 'Yandina', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.56165, 152.95595);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7994, 'Yaroomba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.55126, 153.09701);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7999, 'Yarrabah', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.99463, 145.88058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8000, 'Yarrabilba', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.80864, 153.11163);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8004, 'Yarraman', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -26.84167, 151.98138);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8013, 'Yatala', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.71667, 153.21667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8015, 'Yeerongpilly', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.53097, 153.00935);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8018, 'Yeppoon', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.12683, 150.74406);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8019, 'Yeppoon city centre', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.1295, 150.73639);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8020, 'Yeronga', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.51571, 153.01642);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8027, 'Yorkeys Knob', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -16.80278, 145.72083);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8032, 'Yungaburra', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -17.27058, 145.58335);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8034, 'Zillmere', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -27.35591, 153.04453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8035, 'Zilzie', 3905, 'QLD', 'Queensland', 14, 'AU', 'Australia', -23.28867, 150.7982);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3910, 'Aberfoyle Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.0768, 138.59163);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3919, 'Adelaide', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92866, 138.59863);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3921, 'Adelaide city centre', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92873, 138.60334);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3920, 'Adelaide Hills', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90103, 138.85457);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3933, 'Albert Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87201, 138.51966);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3935, 'Alberton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85925, 138.52138);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3944, 'Aldgate', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.01667, 138.73333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3945, 'Aldinga Beach', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.27826, 138.45802);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3951, 'Alexandrina', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.33769, 138.83704);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3962, 'Allenby Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89766, 138.55425);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3976, 'Anangu Pitjantjatjara', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -27.05797, 131.37314);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3978, 'Andrews Farm', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.67632, 138.66197);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3979, 'Angaston', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.50129, 139.04625);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3980, 'Angle Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85989, 138.55798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3981, 'Angle Vale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.64098, 138.6461);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4001, 'Ardrossan', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.42217, 137.91907);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4014, 'Ascot Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.99175, 138.55768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4023, 'Ashford', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94859, 138.57457);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4033, 'Athelstone', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87019, 138.6999);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4035, 'Athol Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85608, 138.54282);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4069, 'Balaklava', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.14542, 138.41148);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4077, 'Balhannah', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.99094, 138.82565);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4102, 'Banksia Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.81015, 138.7357);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4122, 'Barmera', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.25562, 140.46147);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4126, 'Barossa', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.61351, 138.96169);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4130, 'Barunga West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.79484, 137.92311);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4168, 'Beaumont', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94899, 138.66188);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4173, 'Bedford Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.02204, 138.56815);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4183, 'Belair', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.99766, 138.62077);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4202, 'Bellevue Heights', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.03023, 138.58314);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4236, 'Berri', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.28107, 140.59958);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4237, 'Berri and Barmera', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.28788, 140.49358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4247, 'Beulah Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91768, 138.64522);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4250, 'Beverley', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89512, 138.54633);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4268, 'Birdwood', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.81826, 138.96478);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4270, 'Birkenhead', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83685, 138.49788);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4275, 'Black Forest', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.96028, 138.57668);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4296, 'Blackwood', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.02139, 138.61429);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4297, 'Blair Athol', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85889, 138.59656);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4301, 'Blakeview', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.67566, 138.7101);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4348, 'Bordertown', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -36.30768, 140.77167);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4378, 'Brahma Lodge', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.77604, 138.65306);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4397, 'Bridgewater', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.01397, 138.76648);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4401, 'Brighton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.0182, 138.52351);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4417, 'Broadview', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87589, 138.61498);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4422, 'Brompton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89445, 138.5782);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4428, 'Brooklyn Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92847, 138.53631);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4486, 'Burnside', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.93333, 138.65);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4493, 'Burra', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.67171, 138.92835);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4499, 'Burton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.73339, 138.60247);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4546, 'Camden Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.96857, 138.53957);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4559, 'Campbelltown', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88545, 138.68546);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4646, 'Ceduna', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.14736, 133.86288);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4664, 'Charles Sturt', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90067, 138.53182);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4678, 'Cheltenham', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.86788, 138.52336);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4701, 'Christie Downs', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.12999, 138.49633);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4702, 'Christies Beach', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.13876, 138.47232);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4713, 'City of West Torrens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.93133, 138.5509);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4714, 'Clapham', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98989, 138.60158);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4715, 'Clare', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.83325, 138.61064);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4716, 'Clare and Gilbert Valleys', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.01462, 138.7534);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4721, 'Clarence Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.97539, 138.57983);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4722, 'Clarence Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.96416, 138.5806);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4733, 'Clearview', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85735, 138.61327);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4736, 'Cleve', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.66078, 136.28893);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4747, 'Clovelly Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.99951, 138.57081);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4778, 'Collinswood', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8873, 138.61224);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4780, 'Colonel Light Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98628, 138.59746);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4794, 'Coober Pedy', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -29.01415, 134.75495);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4831, 'Copper Coast', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.94287, 137.71329);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4841, 'Coromandel Valley', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.05, 138.61667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4850, 'Cowandilla', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.93221, 138.55931);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4852, 'Cowell', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.68227, 136.92117);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4856, 'Crafers', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35, 138.7);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4857, 'Crafers West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.99136, 138.68205);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4858, 'Craigburn Farm', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.04046, 138.6049);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4862, 'Craigmore', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.70064, 138.70956);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4894, 'Croydon Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88028, 138.56779);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4896, 'Crystal Brook', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.35256, 138.20955);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4902, 'Cumberland Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.97204, 138.5867);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4942, 'Darlington', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.03151, 138.55527);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4950, 'Davoren Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.69063, 138.66862);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4951, 'Daw Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98975, 138.58407);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4979, 'Dernancourt', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.86199, 138.67658);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5020, 'Dover Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.024, 138.53695);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5037, 'Dulwich', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9365, 138.6272);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5104, 'Echunga', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.10354, 138.79588);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5107, 'Eden Hills', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.0211, 138.59567);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5118, 'Edwardstown', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98018, 138.5694);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5131, 'Elizabeth Downs', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.69982, 138.69132);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5132, 'Elizabeth East', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.72513, 138.68214);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5133, 'Elizabeth Grove', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.73528, 138.66888);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5135, 'Elizabeth North', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.70678, 138.67609);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5136, 'Elizabeth Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.70974, 138.68604);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5137, 'Elizabeth South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.73182, 138.66192);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5138, 'Elizabeth Vale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.74857, 138.66819);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5144, 'Elliston', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.53931, 135.09514);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5158, 'Encounter Bay', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.57419, 138.60055);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5160, 'Enfield', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8526, 138.60255);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5168, 'Erindale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92785, 138.66313);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5181, 'Ethelton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.84869, 138.49103);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5192, 'Evandale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90552, 138.63542);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5194, 'Evanston', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.61657, 138.73369);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5195, 'Evanston Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.62323, 138.72166);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5196, 'Evanston Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.62284, 138.74123);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5198, 'Everard Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95196, 138.57481);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5201, 'Exeter', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83994, 138.48902);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5212, 'Fairview Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.79998, 138.72857);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5222, 'Felixstow', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88902, 138.64696);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5232, 'Ferryden Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.86616, 138.5618);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5235, 'Findon', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9, 138.53333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5238, 'Firle', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90459, 138.65319);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5245, 'Flagstaff Hill', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.04861, 138.58285);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5251, 'Flinders Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91026, 138.54322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5252, 'Flinders Ranges', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.13341, 138.33882);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5268, 'Forestville', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94946, 138.57845);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5279, 'Franklin Harbour', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.60164, 136.94148);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5287, 'Freeling', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.45407, 138.80868);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5294, 'Fulham', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92737, 138.51368);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5295, 'Fulham Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91483, 138.51324);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5296, 'Fullarton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.951, 138.629);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5310, 'Gawler', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.62109, 138.73228);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5311, 'Gawler East', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.59889, 138.7632);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5312, 'Gawler South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.60712, 138.74445);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5331, 'Gilberton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90051, 138.6126);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5334, 'Gilles Plains', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85, 138.65);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5351, 'Glandore', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.96154, 138.56832);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5363, 'Glen Osmond', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9596, 138.64873);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5365, 'Glenalta', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.00792, 138.62592);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5371, 'Glenelg', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98079, 138.515);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5373, 'Glenelg East', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9764, 138.52962);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5374, 'Glenelg North', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9679, 138.51751);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5375, 'Glenelg South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98964, 138.51425);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5381, 'Glengowrie', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98708, 138.53674);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5389, 'Glenside', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94275, 138.63375);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5390, 'Glenunga', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95013, 138.63841);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5396, 'Glynde', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89605, 138.65253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5403, 'Golden Grove', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.78333, 138.73333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5410, 'Goodwood', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95092, 138.5923);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5412, 'Goolwa', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.50159, 138.78191);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5413, 'Goolwa Beach', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.50474, 138.7732);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5431, 'Goyder', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.7164, 139.01655);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5435, 'Grange', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90223, 138.49022);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5437, 'Grant', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -37.83642, 140.63316);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5452, 'Greenacres', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.86855, 138.628);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5457, 'Greenock', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.457, 138.92719);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5464, 'Greenwith', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.76565, 138.71383);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5477, 'Gulfview Heights', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.79545, 138.66937);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5499, 'Hackham', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.15514, 138.52509);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5500, 'Hackham West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.14312, 138.51442);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5504, 'Hahndorf', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.02863, 138.80779);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5507, 'Hallett Cove', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.07923, 138.5146);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5519, 'Hampstead Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87448, 138.62881);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5525, 'Happy Valley', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.08333, 138.53333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5542, 'Hawthorn', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.97384, 138.60738);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5545, 'Hawthorndene', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.02229, 138.63039);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5549, 'Hayborough', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.53129, 138.65037);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5553, 'Hazelwood Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.93947, 138.65879);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5565, 'Hectorville', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89157, 138.65892);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5576, 'Henley Beach', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92029, 138.49442);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5577, 'Henley Beach South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92591, 138.49554);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5589, 'Hewett', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.57801, 138.75242);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5594, 'Highbury', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85287, 138.6975);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5598, 'Highgate', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.96177, 138.6218);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5606, 'Hillbank', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.73588, 138.68723);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5607, 'Hillcrest', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.86252, 138.64306);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5619, 'Hindmarsh Island', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.51014, 138.86762);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5628, 'Holden Hill', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85161, 138.67232);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5630, 'Holdfast Bay', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.00244, 138.52318);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5646, 'Hope Valley', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83333, 138.7);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5656, 'Hove', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.00814, 138.5212);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5669, 'Huntfield Heights', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.15452, 138.51417);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5680, 'Hyde Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95467, 138.60107);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5690, 'Ingle Farm', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83333, 138.63333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5718, 'Jamestown', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.20531, 138.60503);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5744, 'Joslin', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89967, 138.62655);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5753, 'Kadina', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.96495, 137.71634);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5776, 'Kangaroo Island', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.8239, 137.33392);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5781, 'Kapunda', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.33871, 138.91644);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5791, 'Karoonda East Murray', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92846, 140.02484);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5813, 'Keith', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -36.0991, 140.35315);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5829, 'Kensington Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92582, 138.66145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5831, 'Kensington Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92022, 138.6543);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5833, 'Kent Town', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92155, 138.62009);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5840, 'Kersbrook', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.78305, 138.85091);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5851, 'Kidman Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91224, 138.52693);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5853, 'Kilburn', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8597, 138.58559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5855, 'Kilkenny', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87914, 138.5529);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5862, 'Kimba', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.04817, 136.31797);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5877, 'Kingscote', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.6559, 137.6393);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5883, 'Kingston', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -36.64083, 140.05093);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5888, 'Kingston South East', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -36.83073, 139.8522);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5898, 'Klemzig', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87928, 138.63562);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5929, 'Kurralta Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95142, 138.56702);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5977, 'Largs Bay', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.82582, 138.48619);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5978, 'Largs North', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8205, 138.49241);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5994, 'Leabrook', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92976, 138.65862);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6018, 'Lewiston', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.60449, 138.59125);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6021, 'Light', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.40981, 138.84367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6026, 'Linden Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94347, 138.64728);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6037, 'Little Hampton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.04225, 138.86423);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6044, 'Lobethal', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90455, 138.87477);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6047, 'Lockleys', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92588, 138.52803);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6075, 'Lower Eyre Peninsula', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.48806, 135.70114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6077, 'Lower Mitcham', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.97731, 138.60493);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6080, 'Loxton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.4502, 140.56908);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6081, 'Loxton Waikerie', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.48161, 140.28346);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6090, 'Lyndoch', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.60124, 138.89094);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6098, 'Macclesfield', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.17182, 138.83589);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6122, 'Magill', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90911, 138.67498);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6128, 'Maitland', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.37386, 137.67333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6138, 'Mallala', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.51035, 138.42783);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6141, 'Malvern', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95915, 138.61254);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6157, 'Manningham', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87776, 138.62206);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6158, 'Mannum', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91529, 139.30325);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6162, 'Mansfield Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85655, 138.55186);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6166, 'Maralinga Tjarutja', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -29.60092, 130.84442);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6173, 'Marden', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89569, 138.6378);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6181, 'Marino', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.04468, 138.51236);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6182, 'Marion', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.01322, 138.55339);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6184, 'Marleston', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94763, 138.55957);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6202, 'Maslin Beach', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.22595, 138.47984);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6206, 'Mawson Lakes', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.81589, 138.60809);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6212, 'Maylands', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91128, 138.63671);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6213, 'McCracken', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.5358, 138.63121);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6221, 'McLaren Flat', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.21667, 138.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6222, 'McLaren Vale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.21895, 138.54326);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6228, 'Meadows', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.18021, 138.7625);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6231, 'Medindie', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.896, 138.605);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6238, 'Melrose Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98328, 138.57541);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6245, 'Meningie', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.68637, 139.34007);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6270, 'Mid Murray', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.41566, 139.41639);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6278, 'Middleton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.51047, 138.70377);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6285, 'Mile End', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92654, 138.57033);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6295, 'Millicent', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -37.59389, 140.34947);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6299, 'Millswood', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95505, 138.58888);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6310, 'Minlaton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.77101, 137.59576);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6321, 'Mitcham', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.0069, 138.62218);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6325, 'Mitchell Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.01031, 138.56266);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6329, 'Moana', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.19394, 138.47614);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6330, 'Modbury', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83333, 138.68333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6331, 'Modbury Heights', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.80969, 138.68544);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6332, 'Modbury North', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.82848, 138.6739);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6343, 'Monash', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.2384, 140.56131);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6364, 'Moonta Bay', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.05, 137.56667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6368, 'Moorak', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -37.86381, 140.74263);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6392, 'Morphett Vale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.13333, 138.51667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6393, 'Morphettville', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98852, 138.53979);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6408, 'Mount Barker', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.06907, 138.86936);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6413, 'Mount Compass', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.34685, 138.62032);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6422, 'Mount Gambier', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -37.82469, 140.78191);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6454, 'Mount Remarkable', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.71813, 138.1713);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6485, 'Munno Para', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.66792, 138.70149);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6486, 'Munno Para West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.66464, 138.68066);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6495, 'Murray Bridge', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.2002, 139.3209);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6505, 'Mylor', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.04303, 138.759);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6506, 'Myrtle Bank', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.96057, 138.63377);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6510, 'Nailsworth', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88437, 138.60619);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6511, 'Nairne', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.0345, 138.91154);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6522, 'Naracoorte', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -36.95785, 140.7383);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6523, 'Naracoorte and Lucindale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -36.99542, 140.52791);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6551, 'Netherby', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.97048, 138.62503);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6552, 'Netley', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94887, 138.54983);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6577, 'Newton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88207, 138.68249);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6597, 'Noarlunga Downs', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.1504, 138.50395);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6611, 'Normanville', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.44623, 138.3213);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6612, 'North Adelaide', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90733, 138.59141);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6622, 'North Brighton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.00279, 138.52211);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6631, 'North Haven', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.78825, 138.49162);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6645, 'North Plympton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95769, 138.55343);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6666, 'Northern Areas', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.30074, 138.47745);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6670, 'Northfield', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.84979, 138.6255);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6671, 'Northgate', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85784, 138.62908);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6675, 'Norwood', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9273, 138.62849);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6676, 'Norwood Payneham St Peters', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.908, 138.63556);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6678, 'Novar Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.96626, 138.53256);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6688, 'Nuriootpa', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.46825, 138.99767);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6692, 'O\'Sullivan Beach', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.11879, 138.4734);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6753, 'Oâ€™Halloran Hill', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.06667, 138.55);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6696, 'Oakden', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8528, 138.6433);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6702, 'Oaklands Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.00671, 138.54457);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6718, 'Old Noarlunga', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.18209, 138.50138);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6719, 'Old Reynella', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.10353, 138.53365);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6723, 'One Tree Hill', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.7, 138.76667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6724, 'Onkaparinga', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.1868, 138.57776);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6725, 'Onkaparinga Hills', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.13514, 138.56697);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6741, 'Orroroo/Carrieton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.53181, 138.6647);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6742, 'Osborne', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.79804, 138.49796);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6744, 'Ottoway', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.84756, 138.53575);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6774, 'Panorama', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9908, 138.59948);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6776, 'Para Hills', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8121, 138.65802);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6777, 'Para Hills West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.80474, 138.64283);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6778, 'Para Vista', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.82094, 138.66111);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6780, 'Paradise', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87361, 138.66896);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6782, 'Parafield Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.78254, 138.61077);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6783, 'Paralowie', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.75705, 138.60819);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6785, 'Paringa', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.17644, 140.78579);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6788, 'Park Holme', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.99443, 138.55318);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6799, 'Parkside', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94512, 138.61304);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6808, 'Pasadena', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.00274, 138.58862);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6812, 'Payneham', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89724, 138.64064);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6813, 'Payneham South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90481, 138.64448);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6830, 'Pennington', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85758, 138.5316);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6831, 'Penola', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -37.3752, 140.83678);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6842, 'Peterborough', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.84787, 139.02608);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6843, 'Peterhead', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83118, 138.49892);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6866, 'Playford', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.69419, 138.6421);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6870, 'Plympton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.962, 138.55496);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6871, 'Plympton Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.98071, 138.54918);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6880, 'Pooraka', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.82471, 138.62637);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6882, 'Port Adelaide', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8462, 138.50302);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6883, 'Port Adelaide Enfield', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.84803, 138.50773);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6884, 'Port Augusta', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.5553, 137.71362);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6885, 'Port Augusta West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.48611, 137.75833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6886, 'Port Broughton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.6007, 137.93597);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6889, 'Port Elliot', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.53017, 138.67922);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6895, 'Port Lincoln', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.72854, 135.85748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6899, 'Port Noarlunga', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.14802, 138.47099);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6900, 'Port Noarlunga South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.17404, 138.46859);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6902, 'Port Pirie', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.19176, 138.01746);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6903, 'Port Pirie City and Dists', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.36513, 138.10706);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6904, 'Port Pirie South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.19797, 138.01446);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6905, 'Port Pirie West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.1779, 137.9985);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6908, 'Port Willunga', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.26181, 138.46436);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6922, 'Prospect', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88457, 138.60038);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6944, 'Queenstown', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.86091, 138.51048);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6950, 'Quorn', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.34676, 138.04176);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6987, 'Redwood Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.81155, 138.70695);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6993, 'Renmark', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.17702, 140.74697);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6994, 'Renmark Paringa', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.17485, 140.7486);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6995, 'Renmark West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.16531, 140.7097);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6996, 'Renown Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89174, 138.57729);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7001, 'Reynella', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.09372, 138.53082);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7002, 'Reynella East', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.09197, 138.55742);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7010, 'Richmond', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94199, 138.56322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7012, 'Ridgehaven', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.82126, 138.70467);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7014, 'Ridleyton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8928, 138.57159);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7019, 'Risdon Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.19661, 137.99399);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7020, 'Risdon Park South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.21104, 137.99498);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7032, 'Robe', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -37.18616, 139.99003);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7060, 'Rose Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.93039, 138.62825);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7073, 'Rosewater', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.852, 138.52158);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7078, 'Rosslyn Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92194, 138.67553);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7080, 'Rostrevor', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89386, 138.69183);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7085, 'Roxby Downs', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -30.54892, 136.88377);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7086, 'Royal Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87415, 138.51189);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7087, 'Royston Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89757, 138.6315);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7119, 'Salisbury', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.76827, 138.60831);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7121, 'Salisbury Downs', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.76772, 138.6221);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7122, 'Salisbury East', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.79052, 138.6545);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7123, 'Salisbury Heights', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.7631, 138.67591);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7124, 'Salisbury North', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.74956, 138.6206);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7125, 'Salisbury Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.76155, 138.67029);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7126, 'Salisbury Plain', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.77265, 138.6633);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7159, 'Seacliff', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.03474, 138.52288);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7160, 'Seacliff Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.02983, 138.53129);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7161, 'Seacombe Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.02336, 138.5458);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7162, 'Seacombe Heights', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.03264, 138.54584);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7164, 'Seaford', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.1898, 138.47589);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7165, 'Seaford Meadows', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.17276, 138.4879);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7166, 'Seaford Rise', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.19296, 138.48172);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7169, 'Seaton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9, 138.51667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7170, 'Seaview Downs', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.03698, 138.53796);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7175, 'Sefton Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87405, 138.60343);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7177, 'Sellicks Beach', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.33869, 138.44734);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7178, 'Semaphore', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83934, 138.48228);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7179, 'Semaphore Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.85072, 138.47889);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7180, 'Semaphore South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.84975, 138.47949);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7196, 'Sheidow Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.07928, 138.52738);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7227, 'Smithfield', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.68333, 138.68333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7229, 'Smithfield Plains', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.67643, 138.67785);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7238, 'Solomontown', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.1853, 138.02364);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7243, 'Somerton Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.99705, 138.52155);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7252, 'South Brighton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.02765, 138.52798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7282, 'South Plympton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.97682, 138.55588);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7295, 'Southern Mallee', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.36733, 140.5203);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7318, 'St Agnes', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83075, 138.71074);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7324, 'St Georges', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.952, 138.64787);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7335, 'St Marys', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.00423, 138.57983);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7336, 'St Morris', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91107, 138.6536);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7337, 'St Peters', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90498, 138.62255);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7346, 'Stirling', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.0022, 138.71956);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7349, 'Stirling North', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.47986, 137.83804);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7353, 'Stonyfell', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.93422, 138.67674);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7355, 'Strathalbyn', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.25979, 138.89247);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7366, 'Streaky Bay', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.73808, 134.55116);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7370, 'Sturt', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.02303, 138.55476);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7393, 'Surrey Downs', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.79951, 138.71154);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7416, 'Tailem Bend', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.25226, 139.45546);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7431, 'Tanunda', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.52336, 138.95982);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7432, 'Taperoo', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.80425, 138.49593);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7448, 'Tatiara', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -36.22232, 140.50748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7454, 'Tea Tree Gully', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.80171, 138.71994);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7469, 'Tennyson', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88601, 138.48588);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7481, 'The Coorong', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.71844, 139.70329);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7497, 'Thebarton', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91667, 138.56667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7536, 'Toorak Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.93478, 138.63639);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7545, 'Torrens Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.97607, 138.61034);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7546, 'Torrensville', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92046, 138.56149);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7557, 'Tranmere', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.9055, 138.66212);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7566, 'Trinity Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91438, 138.64141);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7568, 'Trott Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.07576, 138.54189);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7578, 'Tumby Bay', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.19697, 136.13649);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7588, 'Tusmore', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.93894, 138.65059);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7595, 'Two Wells', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.59327, 138.51367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7602, 'Underdale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.91803, 138.54704);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7604, 'Unley', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95392, 138.60798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7605, 'Unley Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.96388, 138.60776);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7621, 'Vale Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88604, 138.62714);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7625, 'Valley View', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83994, 138.66072);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7631, 'Victor Harbor', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.51605, 138.5461);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7642, 'Virginia', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.6663, 138.56027);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7657, 'Waikerie', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.18178, 139.98552);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7660, 'Wakefield', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.00743, 138.39455);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7667, 'Walkerville', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89443, 138.61626);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7668, 'Walkley Heights', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.83668, 138.64368);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7672, 'Wallaroo', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.93881, 137.63365);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7711, 'Warradale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.99717, 138.53155);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7731, 'Waterloo Corner', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.71667, 138.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7740, 'Wattle Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.92516, 138.67501);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7742, 'Wattle Range', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -37.50804, 140.42114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7750, 'Wayville', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94468, 138.59132);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7779, 'West Beach', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.94597, 138.50935);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7783, 'West Croydon', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.89448, 138.55931);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7789, 'West Hindmarsh', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.90794, 138.56412);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7793, 'West Lakes', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.87299, 138.49458);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7794, 'West Lakes Shore', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8601, 138.48966);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7816, 'Westbourne Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.97165, 138.59525);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7843, 'Whyalla', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.04569, 137.54468);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7844, 'Whyalla Jenkins', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.02205, 137.51269);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7845, 'Whyalla Norrie', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.02903, 137.53922);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7846, 'Whyalla Playford', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.02788, 137.56196);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7847, 'Whyalla Stuart', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -33.02493, 137.52471);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7854, 'Willaston', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.5864, 138.74124);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7859, 'Williamstown', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.6721, 138.89108);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7867, 'Willunga', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.27127, 138.55417);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7883, 'Windsor Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.86538, 138.64703);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7915, 'Woodcroft', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.10236, 138.56292);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7926, 'Woodside', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.95433, 138.87901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7928, 'Woodville', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.877, 138.54291);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7929, 'Woodville Gardens', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.86788, 138.54798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7930, 'Woodville North', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.872, 138.54309);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7931, 'Woodville Park', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88696, 138.54648);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7932, 'Woodville South', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.88186, 138.53477);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7933, 'Woodville West', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.8864, 138.53095);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7956, 'Wudinna', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -32.97747, 135.3917);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7972, 'Wynn Vale', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.79942, 138.68714);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7993, 'Yankalilla', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -35.4939, 138.34225);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8026, 'Yorke Peninsula', 3904, 'SA', 'South Australia', 14, 'AU', 'Australia', -34.70549, 137.58179);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3916, 'Acton Park', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.87932, 147.48459);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4047, 'Austins Ferry', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.76667, 147.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4062, 'Bagdad', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.62968, 147.22339);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4145, 'Battery Point', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.88995, 147.33324);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4160, 'Beaconsfield', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.20227, 146.81723);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4170, 'Beauty Point', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.16216, 146.82146);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4200, 'Bellerive', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.87551, 147.3703);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4239, 'Berriedale', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.81667, 147.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4289, 'Blackmans Bay', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.00311, 147.31694);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4292, 'Blackstone Heights', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.45977, 147.08407);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4387, 'Break O\'Day', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.39069, 147.97477);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4398, 'Bridgewater', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.73719, 147.22784);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4399, 'Bridport', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.00046, 147.39175);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4404, 'Brighton', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.72673, 147.24233);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4484, 'Burnie', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.1965, 145.81136);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4540, 'Cambridge', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.83333, 147.45);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4649, 'Central Coast', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.26999, 146.05916);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4653, 'Central Highlands', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.19653, 146.63934);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4689, 'Chigwell', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.80912, 147.2448);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4707, 'Circular Head', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.01991, 145.08366);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4717, 'Claremont', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.78333, 147.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4720, 'Clarence', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.87369, 147.44725);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4725, 'Clarendon Vale', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.88988, 147.44368);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4878, 'Cressy', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.68561, 147.07792);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4911, 'Currie', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -39.92976, 143.85385);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4917, 'Cygnet', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.15333, 147.07253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4967, 'Deloraine', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.52477, 146.65701);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4981, 'Derwent Valley', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.80383, 146.5297);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4984, 'Devonport', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.21296, 146.32401);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4999, 'Dodges Ferry', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.85315, 147.62263);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5015, 'Dorset', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.04789, 147.73167);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5052, 'Dynnyrne', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.90541, 147.31576);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5073, 'East Devonport', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.18792, 146.3866);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5085, 'East Launceston', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.43843, 147.15101);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5191, 'Evandale', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.56858, 147.25271);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5250, 'Flinders', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -40.03799, 148.13965);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5277, 'Franklin', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.08884, 147.00906);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5297, 'Gagebrook', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.7477, 147.26984);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5319, 'Geeveston', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.16337, 146.92549);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5320, 'Geilston Bay', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.82955, 147.3463);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5324, 'George Town', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.11982, 147.01731);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5350, 'Glamorgan/Spring Bay', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.27832, 147.96675);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5385, 'Glenorchy', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.83188, 147.22954);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5409, 'Goodwood', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.82822, 147.29301);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5438, 'Granton', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.75149, 147.22795);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5503, 'Hadspen', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.50059, 147.07359);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5582, 'Herdsmans Cove', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.75066, 147.26483);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5609, 'Hillcrest', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.06324, 145.89437);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5621, 'Hobart', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.87936, 147.32941);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5622, 'Hobart city centre', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.8828, 147.32582);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5660, 'Howrah', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.88728, 147.40554);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5673, 'Huon Valley', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.29385, 146.56555);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5674, 'Huonville', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.03124, 147.04813);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5700, 'Invermay', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.42036, 147.13358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5835, 'Kentish', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.46341, 146.17726);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5865, 'King Island', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -39.87215, 143.99153);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5867, 'Kingborough', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.97451, 147.25113);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5872, 'Kings Meadows', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.47041, 147.16196);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5882, 'Kingston', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.97638, 147.30351);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5887, 'Kingston Beach', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.98021, 147.31941);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5982, 'Latrobe', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.21551, 146.40656);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5984, 'Lauderdale', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.91364, 147.48747);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5985, 'Launceston', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.43876, 147.13467);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5986, 'Launceston city centre', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.43352, 147.1378);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6000, 'Legana', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.36572, 147.04584);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6005, 'Lenah Valley', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.87146, 147.27514);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6028, 'Lindisfarne', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.84837, 147.36192);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6064, 'Longford', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.60512, 147.11887);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6087, 'Lutana', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.83475, 147.31152);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6177, 'Margate', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.02814, 147.26256);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6207, 'Mayfield', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.3876, 147.13052);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6229, 'Meander Valley', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.64952, 146.54572);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6268, 'Miandetta', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.1955, 146.35322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6282, 'Midway Point', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.7948, 147.52883);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6350, 'Montello', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.05762, 145.89626);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6355, 'Montrose', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.82895, 147.24735);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6359, 'Moonah', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.84617, 147.30228);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6389, 'Mornington', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.86267, 147.39819);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6446, 'Mount Nelson', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.92073, 147.32069);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6459, 'Mount Stuart', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.87157, 147.30164);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6467, 'Mowbray', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.40243, 147.15059);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6560, 'New Norfolk', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.78261, 147.0587);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6561, 'New Town', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.85758, 147.30869);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6571, 'Newnham', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.38969, 147.11397);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6575, 'Newstead', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.44108, 147.16183);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6632, 'North Hobart', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.87406, 147.31597);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6668, 'Northern Midlands', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.87988, 147.45776);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6674, 'Norwood', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.4592, 147.18077);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6697, 'Oakdowns', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.90178, 147.45595);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6715, 'Old Beach', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.77758, 147.26659);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6787, 'Park Grove', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.05478, 145.88201);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6828, 'Penguin', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.12258, 146.07318);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6839, 'Perth', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.57231, 147.17096);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6906, 'Port Sorell', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.16652, 146.55283);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6924, 'Prospect Vale', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.481, 147.10406);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6943, 'Queenstown', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.0805, 145.55646);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6959, 'Ranelagh', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.00977, 147.03764);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6970, 'Ravenswood', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.41593, 147.1825);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7009, 'Richmond', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.73554, 147.43833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7021, 'Risdon Vale', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.81242, 147.35654);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7024, 'Riverside', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.42105, 147.05086);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7039, 'Rocherlea', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.38083, 147.15738);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7050, 'Rokeby', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.89875, 147.44917);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7053, 'Romaine', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.09944, 145.89376);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7070, 'Rosetta', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.82105, 147.25258);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7115, 'Saint Leonards', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.45672, 147.19952);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7134, 'Sandford', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.93333, 147.5);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7141, 'Sandy Bay', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.89449, 147.32439);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7156, 'Scottsdale', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.1578, 147.51727);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7185, 'Seven Mile Beach', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.85863, 147.50532);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7194, 'Shearwater', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.15673, 146.53178);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7195, 'Sheffield', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.39947, 146.33897);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7209, 'Shorewell Park', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.0699, 145.87689);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7231, 'Smithton', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -40.84587, 145.12498);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7234, 'Snug', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.06669, 147.25468);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7242, 'Somerset', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.04065, 145.83055);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7246, 'Sorell', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.78908, 147.69488);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7265, 'South Hobart', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.89459, 147.30924);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7272, 'South Launceston', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.45506, 147.14556);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7296, 'Southern Midlands', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.41785, 147.43414);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7306, 'Spreyton', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.23524, 146.35108);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7326, 'St Helens', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.32028, 148.23889);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7375, 'Summerhill', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.46747, 147.12796);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7441, 'Taroona', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.9452, 147.3484);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7446, 'Tasman Peninsula', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -43.16245, 147.94739);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7556, 'Tranmere', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.92179, 147.41701);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7563, 'Trevallyn', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.44246, 147.10484);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7583, 'Turners Beach', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.1606, 146.23193);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7599, 'Ulverstone', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.16026, 146.18242);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7606, 'Upper Burnie', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.07139, 145.8996);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7701, 'Waratah/Wynyard', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.30709, 145.45831);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7715, 'Warrane', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.85546, 147.38297);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7748, 'Waverley', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.43602, 147.18588);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7782, 'West Coast', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.45246, 145.52264);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7790, 'West Hobart', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.87658, 147.30688);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7796, 'West Launceston', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.45092, 147.13114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7800, 'West Moonah', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -42.84996, 147.28181);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7807, 'West Tamar', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.26441, 146.89123);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7809, 'West Ulverstone', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.14744, 146.1267);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7818, 'Westbury', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.52914, 146.83914);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7975, 'Wynyard', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -40.9897, 145.72617);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8029, 'Youngtown', 3908, 'TAS', 'Tasmania', 14, 'AU', 'Australia', -41.48332, 147.17067);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3904, 'Abbotsford', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8, 145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3909, 'Aberfeldie', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75959, 144.8974);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3926, 'Airport West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7247, 144.88126);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3929, 'Albanvale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74609, 144.76856);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3934, 'Albert Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.84107, 144.95198);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3936, 'Albion', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78017, 144.81724);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3947, 'Alexandra', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.19132, 145.7112);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3954, 'Alfredton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.56667, 143.81667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3960, 'Allansford', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.38639, 142.59431);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3966, 'Alphington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78333, 145.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3967, 'Alpine', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.83412, 146.97936);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3970, 'Altona', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86964, 144.83036);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3971, 'Altona Meadows', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88413, 144.78367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3972, 'Altona North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83487, 144.84735);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3982, 'Anglesea', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.4073, 144.18587);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3990, 'Apollo Bay', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.7594, 143.67219);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3996, 'Ararat', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.48925, 142.82239);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3999, 'Ardeer', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.77586, 144.80144);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4004, 'Armadale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85544, 145.02052);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4006, 'Armstrong Creek', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.23121, 144.37374);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4012, 'Ascot', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.7, 144.33333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4015, 'Ascot Vale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.77988, 144.92276);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4016, 'Ashburton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86667, 145.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4028, 'Ashwood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86659, 145.10553);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4029, 'Aspendale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.02913, 145.10266);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4030, 'Aspendale Gardens', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.02277, 145.11798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4037, 'Attwood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.66955, 144.88675);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4051, 'Avenel', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.90088, 145.23367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4053, 'Avoca', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.09044, 143.47365);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4057, 'Avondale Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76155, 144.86261);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4060, 'Bacchus Marsh', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.67268, 144.43829);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4061, 'Badger Creek', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7, 145.51667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4064, 'Bairnsdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.82289, 147.61041);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4068, 'Balaclava', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86667, 145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4079, 'Ballan', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.59987, 144.2289);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4080, 'Ballarat', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.56622, 143.84957);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4081, 'Ballarat Central', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.56206, 143.85082);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4082, 'Ballarat East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.56667, 143.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4083, 'Ballarat North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.51884, 143.77284);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4088, 'Balnarring', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.36667, 145.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4091, 'Balwyn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80914, 145.0789);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4092, 'Balwyn North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79086, 145.09386);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4104, 'Bannockburn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.04894, 144.16882);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4107, 'Banyule', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73386, 145.08576);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4109, 'Baranduda', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.19114, 146.9538);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4131, 'Barwon Heads', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.27448, 144.48853);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4133, 'Bass Coast', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.48507, 145.4639);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4147, 'Baw Baw', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.96998, 146.14404);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4148, 'Baxter', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.2, 145.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4152, 'Bayside', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.93986, 145.01932);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4153, 'Bayswater', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85, 145.26667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4155, 'Bayswater North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.82612, 145.29831);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4161, 'Beaconsfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.05, 145.36667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4164, 'Beaconsfield Upper', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.99415, 145.4142);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4166, 'Beaufort', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.42996, 143.38347);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4167, 'Beaumaris', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.98534, 145.03361);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4176, 'Beechworth', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.35828, 146.68584);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4188, 'Belgrave', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.91093, 145.35359);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4189, 'Belgrave Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.92624, 145.34367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4190, 'Belgrave South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.93333, 145.33333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4191, 'Bell Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.10793, 144.33839);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4192, 'Bell Post Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.09564, 144.31968);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4204, 'Bellfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75309, 145.03848);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4210, 'Belmont', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.17485, 144.34276);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4216, 'Benalla', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.59041, 146.02812);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4218, 'Bendigo', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.75818, 144.28024);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4219, 'Bendigo city centre', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.75698, 144.27957);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4223, 'Bentleigh', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.91806, 145.03544);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4224, 'Bentleigh East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.91928, 145.05301);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4246, 'Berwick', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.03333, 145.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4248, 'Beveridge', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.48333, 144.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4274, 'Bittern', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.33333, 145.16667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4276, 'Black Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.55, 143.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4279, 'Black Rock', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.97357, 145.01636);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4283, 'Blackburn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81901, 145.15326);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4284, 'Blackburn North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80931, 145.1518);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4285, 'Blackburn South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83975, 145.15549);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4299, 'Blairgowrie', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.36131, 144.77955);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4307, 'Blind Bight', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.21427, 145.3377);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4325, 'Bonbeach', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.06528, 145.12278);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4349, 'Boronia', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86667, 145.28333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4351, 'Boroondara', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8264, 145.05299);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4353, 'Botanic Ridge', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13922, 145.26841);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4368, 'Box Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81887, 145.12545);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4369, 'Box Hill North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80266, 145.12656);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4370, 'Box Hill South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83236, 145.12098);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4386, 'Braybrook', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78671, 144.85484);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4392, 'Briagolong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.84356, 147.07268);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4393, 'Briar Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.70631, 145.121);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4400, 'Bright', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.72998, 146.95978);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4403, 'Brighton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.90561, 145.00279);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4405, 'Brighton East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.90232, 145.01734);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4407, 'Brimbank', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74287, 144.81644);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4414, 'Broadford', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.20276, 145.04837);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4416, 'Broadmeadows', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68015, 144.91877);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4425, 'Brookfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7008, 144.56025);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4427, 'Brooklyn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81609, 144.8415);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4435, 'Brown Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.54654, 143.91553);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4438, 'Brunswick', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76667, 144.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4440, 'Brunswick East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.77255, 144.97241);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4442, 'Brunswick West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76461, 144.94383);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4455, 'Bulleen', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76667, 145.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4459, 'Buloke', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -35.84638, 143.05201);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4470, 'Bundoora', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.69825, 145.05967);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4474, 'Buninyong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65019, 143.88388);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4476, 'Bunyip', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.09789, 145.71606);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4487, 'Burnside', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74937, 144.75301);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4489, 'Burnside Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.72691, 144.75225);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4500, 'Burwood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.84978, 145.11901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4502, 'Burwood East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85, 145.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4523, 'Cairnlea', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75931, 144.78781);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4529, 'California Gully', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.72887, 144.26089);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4537, 'Camberwell', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.84205, 145.0694);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4554, 'Campaspe', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.32338, 144.70844);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4556, 'Campbellfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.66386, 144.95953);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4557, 'Campbells Creek', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.08665, 144.20203);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4562, 'Camperdown', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.23392, 143.14983);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4565, 'Canadian', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.57606, 143.87742);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4575, 'Canterbury', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8247, 145.08476);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4580, 'Cape Woolamai', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.54285, 145.34407);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4588, 'Cardinia', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.09508, 145.56455);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4597, 'Carisbrook', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.04808, 143.81665);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4600, 'Carlton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8, 144.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4602, 'Carlton North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78818, 144.97014);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4605, 'Carnegie', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89359, 145.05534);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4607, 'Caroline Springs', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74124, 144.73631);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4614, 'Carrum', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.08333, 145.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4615, 'Carrum Downs', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.09968, 145.17248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4620, 'Casey', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.09519, 145.32279);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4625, 'Casterton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.58489, 141.40297);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4629, 'Castlemaine', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.06709, 144.21684);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4637, 'Caulfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88251, 145.02288);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4638, 'Caulfield East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88121, 145.04208);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4639, 'Caulfield North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8739, 145.02485);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4640, 'Caulfield South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89562, 145.02597);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4652, 'Central Goldfields', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.97889, 143.73857);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4656, 'Chadstone', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88766, 145.09519);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4667, 'Charlton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.26437, 143.34901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4676, 'Chelsea', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.05, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4677, 'Chelsea Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.03333, 145.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4679, 'Cheltenham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.96944, 145.04806);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4685, 'Chewton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.08137, 144.25682);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4691, 'Chiltern', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.15044, 146.60843);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4696, 'Chirnside Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7386, 145.31431);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4704, 'Churchill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.30776, 146.41367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4726, 'Clarinda', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.94066, 145.10238);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4730, 'Clayton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.91667, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4731, 'Clayton South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.93333, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4740, 'Clifton Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79798, 144.99533);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4741, 'Clifton Springs', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.1567, 144.5551);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4749, 'Clunes', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.29473, 143.78636);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4750, 'Clyde', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13333, 145.33333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4751, 'Clyde North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.11667, 145.33333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4755, 'Cobden', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.3286, 143.07484);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4756, 'Cobram', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -35.92069, 145.64066);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4757, 'Coburg', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75, 144.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4758, 'Coburg North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.72867, 144.96134);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4759, 'Cockatoo', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.93677, 145.49376);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4764, 'Cohuna', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -35.80697, 144.21886);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4765, 'Colac', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.339, 143.58489);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4766, 'Colac-Otway', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.43873, 143.59669);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4767, 'Coldstream', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7249, 145.37804);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4775, 'Collingwood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80253, 144.98872);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4806, 'Coolaroo', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65675, 144.9346);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4834, 'Corangamite', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.21596, 143.23542);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4838, 'Corio', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.08333, 144.38333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4845, 'Corryong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.19705, 147.90256);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4853, 'Cowes', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.45231, 145.23865);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4860, 'Craigieburn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.6, 144.95);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4864, 'Cranbourne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.11342, 145.28326);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4865, 'Cranbourne East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.11531, 145.29814);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4866, 'Cranbourne North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.07758, 145.29871);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4867, 'Cranbourne South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13502, 145.23958);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4868, 'Cranbourne West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.0965, 145.26707);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4874, 'Cremorne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8318, 144.9938);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4881, 'Creswick', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.42404, 143.8947);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4882, 'Crib Point', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.35, 145.2);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4890, 'Croydon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8, 145.28333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4892, 'Croydon Hills', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.77651, 145.26355);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4893, 'Croydon North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76741, 145.29073);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4895, 'Croydon South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81232, 145.2681);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4924, 'Dallas', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.67083, 144.93542);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4931, 'Dandenong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.98333, 145.2);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4932, 'Dandenong North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.96649, 145.2081);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4936, 'Darebin', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75153, 145.02193);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4937, 'Darley', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65807, 144.44344);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4954, 'Daylesford', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.34113, 144.14256);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4962, 'Deer Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76722, 144.76657);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4964, 'Delacombe', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.58911, 143.81472);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4965, 'Delahey', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7198, 144.77732);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4975, 'Dennington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.35519, 142.43361);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4980, 'Derrimut', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79238, 144.76994);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4983, 'Devon Meadows', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.16667, 145.3);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4987, 'Diamond Creek', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.66667, 145.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4992, 'Diggers Rest', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.62597, 144.71881);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4993, 'Dimboola', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.45616, 142.03287);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4995, 'Dingley Village', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9827, 145.1342);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4996, 'Dinner Plain', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.0236, 147.24124);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4998, 'Docklands', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8149, 144.95052);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5001, 'Donald', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.36864, 142.98106);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5002, 'Doncaster', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78828, 145.12373);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5003, 'Doncaster East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78761, 145.14888);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5007, 'Donvale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7891, 145.17488);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5013, 'Doreen', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.6, 145.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5022, 'Doveton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.99346, 145.23891);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5028, 'Dromana', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.33375, 144.96458);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5029, 'Drouin', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13658, 145.85838);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5032, 'Drysdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.17237, 144.56988);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5055, 'Eagle Point', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 147.68333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5058, 'Eaglehawk', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.71611, 144.25049);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5059, 'Eaglemont', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76379, 145.0638);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5064, 'East Bairnsdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83426, 147.65548);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5066, 'East Bendigo', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.74157, 144.31894);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5075, 'East Geelong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.15568, 144.37202);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5076, 'East Gippsland', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.34564, 148.58295);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5090, 'East Melbourne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 144.9879);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5103, 'Echuca', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.14057, 144.75185);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5108, 'Eden Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.48333, 145.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5115, 'Edithvale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.03724, 145.10974);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5142, 'Elliminyt', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.3711, 143.58003);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5145, 'Elsternwick', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88639, 145.0025);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5146, 'Eltham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73333, 145.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5147, 'Eltham North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7, 145.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5148, 'Elwood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88214, 144.98215);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5150, 'Emerald', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.93167, 145.44093);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5159, 'Endeavour Hills', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.97695, 145.25866);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5164, 'Epping', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65, 145.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5166, 'Epsom', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.71667, 144.31667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5177, 'Essendon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74981, 144.9109);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5178, 'Essendon North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74225, 144.90546);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5179, 'Essendon West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75489, 144.88338);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5187, 'Eumemmerring', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9978, 145.24821);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5189, 'Euroa', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.75555, 145.57075);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5203, 'Eynesbury', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80043, 144.57458);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5205, 'Fairfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.77977, 145.01764);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5215, 'Falls Creek', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.86535, 147.27782);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5221, 'Fawkner', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.71667, 144.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5227, 'Ferntree Gully', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88461, 145.29539);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5229, 'Ferny Creek', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88333, 145.33333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5241, 'Fitzroy', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79839, 144.97833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5243, 'Fitzroy North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78862, 144.97885);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5246, 'Flemington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78825, 144.93001);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5254, 'Flora Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.78123, 144.29562);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5259, 'Footscray', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8, 144.9);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5264, 'Forest Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83333, 145.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5276, 'Foster', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.65275, 146.20073);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5280, 'Frankston', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13402, 145.16875);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5281, 'Frankston East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13333, 145.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5282, 'Frankston North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.12352, 145.14836);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5283, 'Frankston South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.16604, 145.13643);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5301, 'Gannawarra', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -35.73211, 143.85316);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5305, 'Garfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.08985, 145.67502);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5316, 'Geelong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.14711, 144.36069);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5318, 'Geelong city centre', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.14996, 144.36176);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5317, 'Geelong West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13888, 144.34842);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5322, 'Gembrook', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.95321, 145.55536);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5345, 'Gisborne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.48858, 144.59421);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5349, 'Gladstone Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68742, 144.88675);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5356, 'Glen Eira', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89949, 145.04099);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5358, 'Glen Huntly', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89237, 145.04135);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5362, 'Glen Iris', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86667, 145.06667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5364, 'Glen Waverley', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.87811, 145.16476);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5372, 'Glenelg', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89083, 141.44238);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5377, 'Glenferrie', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83333, 145.05);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5380, 'Glengarry', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.11667, 146.56667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5387, 'Glenroy', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7, 144.93333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5404, 'Golden Plains', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85231, 143.86352);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5405, 'Golden Point', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.57493, 143.8687);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5406, 'Golden Square', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.77265, 144.25271);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5419, 'Gordon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.5823, 144.10925);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5428, 'Gowanbrae', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.70823, 144.89079);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5445, 'Greater Bendigo', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.72278, 144.43974);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5446, 'Greater Dandenong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.00112, 145.19073);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5447, 'Greater Geelong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.05182, 144.46137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5449, 'Greater Shepparton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.42742, 145.41519);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5458, 'Greensborough', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.70462, 145.10302);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5460, 'Greenvale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.63333, 144.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5474, 'Grovedale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.2, 144.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5501, 'Haddon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.6, 143.71667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5502, 'Hadfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.70728, 144.9416);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5506, 'Hallam', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.01667, 145.26667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5511, 'Hamilton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74425, 142.02202);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5515, 'Hamlyn Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.12108, 144.32799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5520, 'Hampton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.95, 145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5521, 'Hampton East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.93695, 145.02863);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5522, 'Hampton Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.03333, 145.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5535, 'Hastings', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.3, 145.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5537, 'Haven', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.76072, 142.19426);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5541, 'Hawthorn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81992, 145.0358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5543, 'Hawthorn East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.82484, 145.0464);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5544, 'Hawthorn South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8329, 145.0367);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5552, 'Hazelwood North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.26763, 146.48286);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5554, 'Healesville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65395, 145.51718);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5557, 'Heathcote', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.92214, 144.70837);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5558, 'Heatherton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.96667, 145.1);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5559, 'Heathmont', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83333, 145.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5567, 'Heidelberg', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75, 145.06667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5568, 'Heidelberg Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74313, 145.05695);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5569, 'Heidelberg West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73922, 145.04034);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5580, 'Hepburn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.31707, 144.03355);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5586, 'Herne Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13427, 144.32406);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5590, 'Heyfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9813, 146.78559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5591, 'Heywood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13294, 141.62949);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5595, 'Highett', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.95, 145.05);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5601, 'Highton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.17058, 144.3114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5612, 'Hillside', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.69047, 144.74172);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5618, 'Hindmarsh', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.03293, 141.73282);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5620, 'Hmas Cerberus', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.36491, 145.20038);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5624, 'Hobsons Bay', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85694, 144.83347);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5647, 'Hoppers Crossing', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88264, 144.7003);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5652, 'Horsham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.82857, 142.11448);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5655, 'Hotham Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.99298, 147.15225);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5664, 'Hughesdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 145.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5665, 'Hume', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.59717, 144.80511);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5670, 'Huntingdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.90766, 145.10847);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5672, 'Huntly', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.66451, 144.33382);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5676, 'Hurstbridge', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.64157, 145.19408);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5686, 'Indented Head', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.14305, 144.71343);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5687, 'Indigo', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.20854, 146.68628);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5698, 'Inverleigh', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.10177, 144.05132);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5699, 'Inverloch', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.62659, 145.7226);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5701, 'Invermay Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.53063, 143.85798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5703, 'Ironbark', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.75478, 144.26378);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5705, 'Irymple', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -34.23537, 142.17101);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5710, 'Ivanhoe', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76903, 145.04308);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5711, 'Ivanhoe East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7734, 145.06195);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5713, 'Jacana', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68778, 144.91111);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5714, 'Jackass Flat', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.71589, 144.28597);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5720, 'Jan Juc', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.34455, 144.29518);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5749, 'Junction Village', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13636, 145.29684);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5751, 'Junortoun', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.77106, 144.36311);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5761, 'Kalimna', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.87011, 147.96664);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5766, 'Kallista', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89815, 145.38226);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5767, 'Kalorama', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 145.36667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5774, 'Kangaroo Flat', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.8, 144.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5775, 'Kangaroo Ground', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68919, 145.2317);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5803, 'Kealba', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7371, 144.8283);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5807, 'Keilor', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.71667, 144.83333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5808, 'Keilor Downs', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.72337, 144.80839);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5809, 'Keilor East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73261, 144.86504);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5810, 'Keilor Lodge', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.69997, 144.80332);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5811, 'Keilor Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.72025, 144.85422);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5826, 'Kennington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.77128, 144.30298);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5827, 'Kensington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79188, 144.93114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5839, 'Kerang', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -35.73489, 143.92027);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5841, 'Kew', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80639, 145.03086);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5843, 'Kew East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79758, 145.05378);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5846, 'Keysborough', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.99116, 145.17385);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5847, 'Kialla', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.44729, 145.41422);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5859, 'Kilmore', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.29577, 144.95252);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5860, 'Kilsyth', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8, 145.31667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5861, 'Kilsyth South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.82033, 145.31599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5868, 'Kinglake', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.53291, 145.33964);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5869, 'Kinglake West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.46667, 145.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5874, 'Kings Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73397, 144.77766);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5875, 'Kingsbury', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.71406, 145.03509);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5884, 'Kingston', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.0045, 145.09531);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5889, 'Kingsville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80819, 144.87911);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5899, 'Knox', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89895, 145.26923);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5900, 'Knoxfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88978, 145.24962);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5905, 'Koo-Wee-Rup', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.19941, 145.49081);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5913, 'Koroit', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.2918, 142.36729);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5915, 'Korumburra', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.43194, 145.82355);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5931, 'Kurunjang', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.67587, 144.5969);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5934, 'Kyabram', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.31335, 145.05035);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5936, 'Kyneton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.24444, 144.45148);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5944, 'Lake Gardens', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.54632, 143.81653);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5952, 'Lake Wendouree', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.54993, 143.8473);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5956, 'Lakes Entrance', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86679, 148.00159);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5958, 'Lalor', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.66667, 145.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5963, 'Lancefield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.27733, 144.73596);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5969, 'Lang Lang', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.26605, 145.5621);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5971, 'Langwarrin', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.16667, 145.16667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5972, 'Langwarrin South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.18947, 145.1935);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5974, 'Lara', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.02388, 144.40617);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5983, 'Latrobe', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.25379, 146.46124);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5987, 'Launching Place', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78058, 145.56834);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5988, 'Laverton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86201, 144.76979);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6008, 'Leongatha', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.47607, 145.94685);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6010, 'Leopold', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.19001, 144.46825);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6024, 'Lilydale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75, 145.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6039, 'Little River', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.96667, 144.5);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6051, 'Loddon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.40406, 143.82964);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6062, 'Long Gully', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.74305, 144.25788);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6065, 'Longford', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.16237, 147.08591);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6068, 'Longwarry', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.11279, 145.76849);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6070, 'Lorne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.54043, 143.97636);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6072, 'Lovely Banks', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.06667, 144.33333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6078, 'Lower Plenty', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73333, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6082, 'Lucknow', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 147.65);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6089, 'Lynbrook', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.05588, 145.25615);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6095, 'Lysterfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.93333, 145.3);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6099, 'Macedon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.41963, 144.56242);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6100, 'Macedon Ranges', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.33343, 144.61581);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6110, 'Macleod', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73333, 145.06667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6117, 'Maddingley', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68518, 144.43245);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6121, 'Maffra', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.97132, 146.98366);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6125, 'Maiden Gully', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.75389, 144.20789);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6126, 'Maidstone', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78035, 144.87353);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6135, 'Maldon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.9957, 144.06834);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6137, 'Mallacoota', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.55896, 149.75407);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6140, 'Malvern', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86259, 145.02811);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6142, 'Malvern East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.87397, 145.04253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6147, 'Manifold Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.13762, 144.33369);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6156, 'Manningham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7571, 145.18053);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6161, 'Mansfield', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.2413, 146.14803);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6180, 'Maribyrnong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79141, 144.87786);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6186, 'Marong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.73333, 144.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6189, 'Maroondah', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80288, 145.26603);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6197, 'Maryborough', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.04562, 143.73923);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6214, 'McCrae', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.34972, 144.92806);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6220, 'McKinnon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.91667, 145.05);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6224, 'Meadow Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65117, 144.91855);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6235, 'Melbourne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.814, 144.96332);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6236, 'Melbourne City Centre', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81501, 144.96657);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6239, 'Melton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68144, 144.62292);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6240, 'Melton South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.70773, 144.57493);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6241, 'Melton West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.67852, 144.56883);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6247, 'Mentone', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.98333, 145.06667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6250, 'Merbein', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -34.16802, 142.06599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6258, 'Mernda', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.60075, 145.09555);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6266, 'Metung', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89154, 147.853);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6269, 'Mickleham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.53664, 144.90204);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6273, 'Middle Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85116, 144.96201);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6283, 'Mildura', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -34.18551, 142.16251);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6284, 'Mildura Shire', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -34.8645, 141.85232);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6288, 'Mill Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.66667, 145.06667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6294, 'Millgrove', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75527, 145.65347);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6308, 'Miners Rest', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.4808, 143.80107);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6316, 'Mirboo North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.40101, 146.16135);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6320, 'Mitcham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 145.2);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6322, 'Mitchell', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.17535, 144.97999);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6333, 'Moe', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.17828, 146.26099);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6337, 'Moira', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.0506, 145.53815);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6344, 'Monash', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89675, 145.14714);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6346, 'Monbulk', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.87427, 145.42592);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6348, 'Mont Albert', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81788, 145.10799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6349, 'Mont Albert North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80043, 145.10828);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6352, 'Montmorency', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.71667, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6354, 'Montrose', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 145.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6357, 'Moolap', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.18333, 144.43333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6362, 'Moonee Ponds', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76667, 144.91667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6363, 'Moonee Valley', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.74941, 144.89325);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6366, 'Moorabbin', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.94146, 145.05779);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6367, 'Moorabool', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.63338, 144.21946);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6372, 'Moorooduc', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.21667, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6374, 'Mooroolbark', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78247, 145.31682);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6375, 'Mooroopna', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.4, 145.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6379, 'Mordialloc', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38, 145.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6382, 'Moreland', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73557, 144.93745);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6387, 'Mornington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.21792, 145.03876);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6390, 'Mornington Peninsula', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.34004, 145.05455);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6395, 'Mortlake', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.08102, 142.80827);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6398, 'Morwell', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.23476, 146.39499);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6404, 'Mount Alexander', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.07607, 144.18825);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6409, 'Mount Buller', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.14595, 146.43694);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6411, 'Mount Clear', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.6, 143.88333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6417, 'Mount Dandenong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83333, 145.36667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6419, 'Mount Duneed', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.24089, 144.33748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6420, 'Mount Eliza', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.18333, 145.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6421, 'Mount Evelyn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78333, 145.38333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6426, 'Mount Helen', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.62463, 143.8789);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6438, 'Mount Macedon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.40048, 144.58412);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6441, 'Mount Martha', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.26667, 145.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6449, 'Mount Pleasant', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.58333, 143.86667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6464, 'Mount Waverley', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.87709, 145.12939);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6468, 'Moyne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.18785, 142.46217);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6476, 'Mulgrave', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.92845, 145.17708);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6496, 'Murrindindi', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.28104, 145.67437);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6499, 'Murrumbeena', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 145.06667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6507, 'Myrtleford', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.56104, 146.72371);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6509, 'Nagambie', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.78515, 145.15375);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6537, 'Narre Warren', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.03333, 145.3);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6538, 'Narre Warren North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.98333, 145.31667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6539, 'Narre Warren South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.04369, 145.2923);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6543, 'Nathalia', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.05772, 145.20406);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6547, 'Neerim South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.01683, 145.95447);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6557, 'New Gisborne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.46065, 144.5993);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6562, 'Newborough', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.17171, 146.29264);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6566, 'Newcomb', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.16623, 144.39429);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6567, 'Newington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.55846, 143.82485);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6573, 'Newport', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.84427, 144.88483);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6580, 'Newtown', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.15391, 144.33507);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6584, 'Nhill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.33333, 141.65006);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6588, 'Nichols Point', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -34.2121, 142.21443);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6589, 'Nicholson', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 147.73333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6591, 'Niddrie', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7375, 144.89212);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6593, 'Nillumbik', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.61474, 145.21706);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6598, 'Noble Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.96667, 145.16667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6599, 'Noble Park North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.94978, 145.19257);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6606, 'Norlane', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.10139, 144.35417);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6617, 'North Bendigo', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.74363, 144.28791);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6621, 'North Brighton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.90694, 145.00528);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6628, 'North Geelong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.10953, 144.35134);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6640, 'North Melbourne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79798, 144.94512);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6657, 'North Warrandyte', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.72924, 145.21574);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6660, 'North Wonthaggi', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.57769, 145.59302);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6665, 'Northcote', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76667, 145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6667, 'Northern Grampians', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.84962, 142.87303);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6677, 'Notting Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.905, 145.1427);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6684, 'Numurkah', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.08846, 145.44215);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6685, 'Nunawading', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.82043, 145.17308);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6690, 'Nyora', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.33364, 145.67248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6694, 'Oak Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.71842, 144.91945);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6703, 'Oakleigh', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89809, 145.08837);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6704, 'Oakleigh East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6705, 'Oakleigh South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.92416, 145.09146);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6710, 'Ocean Grove', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.25772, 144.51919);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6713, 'Officer', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.05916, 145.40947);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6721, 'Olinda', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85, 145.36667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6734, 'Orbost', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.69644, 148.457);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6740, 'Ormond', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 145.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6746, 'Ouyen', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -35.07087, 142.32034);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6763, 'Pakenham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.07018, 145.47411);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6764, 'Pakenham Upper', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.01667, 145.51667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6775, 'Panton Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.64082, 145.23991);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6789, 'Park Orchards', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.77688, 145.21463);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6792, 'Parkdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.99187, 145.08128);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6800, 'Parkville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78333, 144.95);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6809, 'Pascoe Vale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73333, 144.93333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6810, 'Pascoe Vale South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73973, 144.94615);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6811, 'Patterson Lakes', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.06934, 145.14327);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6814, 'Paynesville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.91886, 147.71944);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6821, 'Pearcedale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.203, 145.23488);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6849, 'Phillip Island', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.48349, 145.23102);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6867, 'Plenty', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.66667, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6868, 'Plumpton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68701, 144.69082);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6873, 'Point Cook', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.91482, 144.75088);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6875, 'Point Lonsdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.28173, 144.61055);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6890, 'Port Fairy', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.38535, 142.2371);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6898, 'Port Melbourne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83961, 144.94228);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6901, 'Port Phillip', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85159, 144.96992);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6909, 'Portarlington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.11542, 144.65559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6911, 'Portland', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.3462, 141.60257);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6915, 'Prahran', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85114, 144.99318);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6917, 'Preston', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75, 145.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6920, 'Princes Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78185, 144.96656);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6925, 'Puckapunyal', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.99493, 145.04005);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6930, 'Pyrenees', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.32756, 143.36472);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6934, 'Quarry Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.77646, 144.28024);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6940, 'Queenscliff', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.26789, 144.66193);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6942, 'Queenscliffe', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.26896, 144.66248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6967, 'Ravenhall', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76552, 144.75105);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6975, 'Red Cliffs', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -34.30942, 142.18971);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6978, 'Redan', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.57649, 143.83862);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6997, 'Research', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7, 145.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6998, 'Reservoir', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.71667, 145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7007, 'Richmond', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81819, 145.00176);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7015, 'Ringwood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 145.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7016, 'Ringwood East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 145.25);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7017, 'Ringwood North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8, 145.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7018, 'Ripponlea', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88333, 145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7036, 'Robinvale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -34.58356, 142.77228);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7040, 'Rochester', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.36352, 144.70077);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7041, 'Rockbank', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73353, 144.67003);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7054, 'Romsey', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.35075, 144.743);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7058, 'Rosanna', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73895, 145.06735);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7062, 'Rosebud', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.35542, 144.9068);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7063, 'Rosebud West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.36444, 144.87748);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7064, 'Rosedale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.15452, 146.7886);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7076, 'Ross Creek', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65, 143.75);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7083, 'Rowville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.93333, 145.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7084, 'Roxburgh Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.62581, 144.92555);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7094, 'Rushworth', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.58669, 145.0175);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7099, 'Rutherglen', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.0543, 146.46212);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7102, 'Rye', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.38528, 144.81221);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7107, 'Safety Beach', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.31535, 145.00027);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7108, 'Saint Albans', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73333, 144.8);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7109, 'Saint Andrews', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.60151, 145.27235);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7110, 'Saint Andrews Beach', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.4141, 144.82436);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7111, 'Saint Helena', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7, 145.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7113, 'Saint Kilda', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8676, 144.98099);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7114, 'Saint Leonards', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.17051, 144.71803);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7118, 'Sale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.11095, 147.06802);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7131, 'San Remo', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.52547, 145.37616);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7136, 'Sandhurst', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.081, 145.20767);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7137, 'Sandringham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.95218, 145.01129);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7147, 'Sassafras', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86667, 145.35);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7155, 'Scoresby', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 145.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7158, 'Seabrook', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88092, 144.75866);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7163, 'Seaford', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.1, 145.13333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7168, 'Seaholme', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.864, 144.84504);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7171, 'Sebastopol', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.58532, 143.83953);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7173, 'Seddon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80607, 144.8907);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7176, 'Selby', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.91667, 145.38333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7187, 'Seville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79802, 145.48763);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7189, 'Seymour', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.02655, 145.13924);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7203, 'Shepparton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.38047, 145.39867);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7204, 'Shepparton East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.40156, 145.47765);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7213, 'Silvan', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 145.41667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7224, 'Skye', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.10505, 145.2163);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7232, 'Smythes Creek', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.6, 143.78333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7233, 'Smythesdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.64308, 143.68617);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7235, 'Soldiers Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.54962, 143.85872);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7239, 'Somers', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.38134, 145.15898);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7244, 'Somerville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.21667, 145.16667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7247, 'Sorrento', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.33958, 144.74126);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7259, 'South Gippsland', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.69897, 146.06702);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7269, 'South Kingsville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83018, 144.8709);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7276, 'South Melbourne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83333, 144.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7277, 'South Morang', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65, 145.1);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7290, 'South Yarra', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83834, 144.99149);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7292, 'Southbank', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8228, 144.96434);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7294, 'Southern Grampians', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.52989, 142.02533);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7305, 'Spotswood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.82975, 144.88516);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7313, 'Springvale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.94853, 145.15274);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7315, 'Springvale South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.96667, 145.15);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7319, 'St Albans Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.18802, 144.39207);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7325, 'St Helena', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68988, 145.12315);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7332, 'St Kilda East', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86594, 145.00018);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7333, 'St Kilda West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85988, 144.97108);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7345, 'Stawell', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.05632, 142.78088);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7352, 'Stonnington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8613, 145.03776);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7354, 'Stratford', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9634, 147.0826);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7357, 'Strathbogie', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.72402, 145.32938);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7358, 'Strathdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.76572, 144.31548);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7361, 'Strathfieldsaye', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.80667, 144.35487);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7362, 'Strathmerton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -35.92533, 145.47865);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7363, 'Strathmore', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73563, 144.92065);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7378, 'Sunbury', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.57742, 144.72607);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7384, 'Sunshine', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78333, 144.83333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7388, 'Sunshine North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76987, 144.82787);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7389, 'Sunshine West', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79117, 144.81637);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7390, 'Surf Coast', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.33997, 144.1153);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7394, 'Surrey Hills', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 145.1);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7402, 'Swan Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -35.10061, 143.1681);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7406, 'Sydenham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.7, 144.76667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7418, 'Tallangatta', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.21791, 147.17699);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7440, 'Tarneit', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83634, 144.65952);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7450, 'Tatura', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.43962, 145.22994);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7451, 'Taylors Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.70988, 144.75483);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7452, 'Taylors Lakes', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.69863, 144.78631);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7455, 'Tecoma', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.90303, 145.34468);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7456, 'Teesdale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.03333, 144.05);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7464, 'Templestowe', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75405, 145.14864);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7465, 'Templestowe Lower', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76667, 145.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7474, 'Terang', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.24084, 142.92123);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7480, 'The Basin', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85, 145.31667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7491, 'The Patch', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89187, 145.40216);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7501, 'Thomastown', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.68333, 145.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7502, 'Thomson', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.16984, 144.3789);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7503, 'Thornbury', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75819, 145.00583);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7514, 'Timboon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.48434, 142.98033);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7529, 'Tongala', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.25466, 144.95622);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7534, 'Tooradin', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.21475, 145.38325);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7535, 'Toorak', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.84165, 145.01438);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7538, 'Tootgarook', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.3777, 144.85015);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7543, 'Torquay', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.33085, 144.32638);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7552, 'Towong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.36587, 147.62717);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7554, 'Trafalgar', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.20906, 146.15347);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7558, 'Traralgon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.19528, 146.5415);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7559, 'Travancore', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78076, 144.93545);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7562, 'Trentham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.38876, 144.32164);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7569, 'Truganina', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 144.75);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7574, 'Tullamarine', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.70128, 144.881);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7596, 'Tyabb', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.25, 145.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7614, 'Upwey', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 145.33333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7629, 'Vermont', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.83616, 145.19428);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7630, 'Vermont South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85747, 145.1827);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7636, 'Viewbank', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73991, 145.09323);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7655, 'Wahgunyah', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.01178, 146.39714);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7671, 'Wallan', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.41625, 144.97859);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7674, 'Wallington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.22641, 144.51199);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7681, 'Wandana Heights', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.17577, 144.30387);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7684, 'Wandin North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78333, 145.43333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7687, 'Wandong', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.3719, 145.03207);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7688, 'Wangaratta', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.61599, 146.42839);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7694, 'Wantirna', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85, 145.21667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7695, 'Wantirna South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.88333, 145.21667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7702, 'Warburton', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75375, 145.69037);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7710, 'Warracknabeal', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.25326, 142.39281);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7713, 'Warragul', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.15912, 145.93118);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7714, 'Warrandyte', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75, 145.23333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7716, 'Warranwood', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.77555, 145.24728);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7723, 'Warrnambool', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.38176, 142.48799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7734, 'Waterways', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.01478, 145.1305);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7736, 'Watsonia', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.71667, 145.08333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7737, 'Watsonia North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.69981, 145.08468);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7743, 'Wattleglen', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.66667, 145.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7745, 'Waurn Ponds', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.21667, 144.28333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7757, 'Wellington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.03765, 147.01697);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7762, 'Wendouree', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.53078, 143.82838);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7767, 'Werribee', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 144.66667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7768, 'Werribee South', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9475, 144.71667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7773, 'Wesburn', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.76667, 145.63333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7785, 'West Footscray', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.79746, 144.87727);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7799, 'West Melbourne', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81014, 144.95);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7811, 'West Wimmera', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.59921, 141.40038);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7812, 'West Wodonga', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.12346, 146.85193);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7825, 'Westmeadows', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.67604, 144.88701);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7832, 'Wheelers Hill', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.9, 145.18333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7834, 'White Hills', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.72875, 144.30525);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7837, 'Whitehorse', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.82868, 145.15432);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7841, 'Whittington', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.1808, 144.39322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7842, 'Whittlesea', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.55087, 145.09375);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7857, 'Williams Landing', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8619, 144.74371);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7858, 'Williamstown', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.86349, 144.899);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7860, 'Williamstown North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85515, 144.88259);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7874, 'Winchelsea', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.24485, 143.98322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7879, 'Windsor', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.85344, 144.99241);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7895, 'Wodonga', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.14469, 146.88818);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7896, 'Wollert', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.58333, 145.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7905, 'Wonga Park', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.73333, 145.26667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7909, 'Wonthaggi', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.60586, 145.59355);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7917, 'Woodend', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.35469, 144.52902);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7945, 'Woori Yallock', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78062, 145.53819);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7962, 'Wurruk', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.11667, 147.03333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7965, 'Wy Yung', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8, 147.58333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7969, 'Wyndham', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.8928, 144.63573);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7970, 'Wyndham Vale', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.89138, 144.62368);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7980, 'Yackandandah', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.31371, 146.83958);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7984, 'Yallambie', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.72515, 145.09352);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7986, 'Yallourn North', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.16053, 146.36449);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7995, 'Yarra', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.80178, 144.99593);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7996, 'Yarra Glen', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.65794, 145.37416);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7997, 'Yarra Junction', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.78192, 145.6143);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7998, 'Yarra Ranges', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.75006, 145.73708);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8001, 'Yarragon', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.20525, 146.06079);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8003, 'Yarram', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -38.56479, 146.67557);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8005, 'Yarrambat', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.63751, 145.13486);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8007, 'Yarraville', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.81667, 144.9);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8009, 'Yarrawonga', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.01923, 145.99973);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8010, 'Yarriambiack', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -36.02618, 142.40452);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8014, 'Yea', 3903, 'VIC', 'Victoria', 14, 'AU', 'Australia', -37.21067, 145.42755);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3902, 'Abbey', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.66364, 115.25635);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3930, 'Albany', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.7099, 118.12345);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3932, 'Albany city centre', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -35.02479, 117.88472);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3946, 'Alexander Heights', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.82758, 115.86501);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3953, 'Alfred Cove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03316, 115.81259);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3958, 'Alkimos', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.63039, 115.68638);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (3992, 'Applecross', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.01667, 115.83333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4000, 'Ardross', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.02696, 115.83548);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4003, 'Armadale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.17887, 116.1275);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4013, 'Ascot', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93818, 115.92258);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4017, 'Ashburton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -22.27674, 116.90057);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4019, 'Ashby', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.73255, 115.79768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4021, 'Ashfield', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91721, 115.93796);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4036, 'Attadale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.02489, 115.802);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4038, 'Atwell', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.14346, 115.86528);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4039, 'Aubin Grove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.16714, 115.86264);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4042, 'Augusta', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.31566, 115.15922);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4043, 'Augusta-Margaret River Shire', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.1152,
+        115.32277);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4049, 'Australind', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.2792, 115.71504);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4050, 'Aveley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.78132, 115.98959);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149550, 'Badgingarra', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.4436733, 115.4747145);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4066, 'Bakers Hill', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.74692, 116.45866);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4070, 'Balcatta', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.87501, 115.82839);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4072, 'Baldivis', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.32889, 115.83047);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4073, 'Balga', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.85497, 115.83986);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4078, 'Ballajura', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.84062, 115.89549);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4097, 'Banjup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.14179, 115.88671);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4101, 'Banksia Grove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.69615, 115.80501);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4135, 'Bassendean', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.90584, 115.94501);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4138, 'Bateman', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.05547, 115.84737);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4150, 'Baynton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.75164, 116.80139);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4151, 'Bayonet Head', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.97305, 117.93446);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4154, 'Bayswater', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91181, 115.9087);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4157, 'Beachlands', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.7857, 114.60192);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4162, 'Beaconsfield', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06748, 115.76401);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4171, 'Beckenham', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.02481, 115.95989);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4172, 'Bedford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91132, 115.8892);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4174, 'Bedfordale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.17406, 116.0504);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4175, 'Beechboro', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.86515, 115.93661);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4178, 'Beeliar', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.13339, 115.80637);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4185, 'Beldon', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.77466, 115.7627);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4201, 'Bellevue', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.90116, 116.02762);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4209, 'Belmont', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95458, 115.94218);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4220, 'Bennett Springs', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.85941, 115.94512);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4225, 'Bentley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.00224, 115.92473);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4229, 'Beresford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.75754, 114.61965);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4245, 'Bertram', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.24369, 115.84572);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4249, 'Beverley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.10839, 116.92736);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4255, 'Bibra Lake', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.09764, 115.81921);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4256, 'Bicton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.02778, 115.78333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4262, 'Bilingurr', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -17.90909, 122.22921);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4264, 'Bindoon', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.38663, 116.09664);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4266, 'Binningup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.1483, 115.69519);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4312, 'Bluff Point', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.7374, 114.62278);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4315, 'Boddington', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.79195, 116.41883);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4343, 'Booragoon', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03945, 115.83369);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4356, 'Boulder', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.78204, 121.4912);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4371, 'Boyanup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.48295, 115.72838);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4373, 'Boyup Brook', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.88555, 116.51885);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4374, 'Brabham', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.82728, 115.97417);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4390, 'Brentwood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.04347, 115.85246);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4395, 'Bridgetown', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.96242, 116.13598);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4396, 'Bridgetown-Greenbushes', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.99234, 116.22502);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4418, 'Broadwater', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.66304, 115.2842);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4419, 'Brockman', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -24.88126, 113.65365);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4424, 'Brookdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.16696, 116.00193);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4429, 'Brookton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.35533, 116.99994);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4432, 'Broome', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -17.94041, 122.64038);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4433, 'Broomehill-Tambellup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.0132, 117.65297);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4437, 'Bruce Rock', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.96651, 118.02385);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4439, 'Brunswick', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.2324, 115.86282);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4451, 'Bulgarra', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.72584, 116.85673);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4453, 'Bull Creek', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.05625, 115.86242);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4458, 'Bullsbrook', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.66905, 115.9999);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4460, 'Bunbury', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.32711, 115.64137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4485, 'Burns Beach', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.7206, 115.7205);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4498, 'Burswood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95872, 115.90396);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4505, 'Busselton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.68477, 115.3708);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4506, 'Busselton city cenre', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.65078, 115.34932);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4507, 'Butler', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.64298, 115.70431);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4510, 'Byford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.22099, 116.009);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4516, 'Cable Beach', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -17.96098, 122.21269);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4530, 'Calista', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.241, 115.79763);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4541, 'Cambridge', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93542, 115.79887);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4549, 'Camillo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.11292, 116.00205);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4569, 'Canning', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.04923, 115.91943);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4570, 'Canning Vale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.05799, 115.91814);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4571, 'Cannington', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.01625, 115.93648);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4581, 'Capel', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.52704, 115.61813);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4589, 'Cardup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.25802, 115.98512);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4591, 'Carey Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.34878, 115.6493);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4594, 'Carine', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.8523, 115.78258);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4599, 'Carlisle', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.97945, 115.91808);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4603, 'Carnamah', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.80411, 115.59402);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4604, 'Carnarvon', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -24.88258, 113.65713);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4610, 'Carramar', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.69023, 115.77159);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4631, 'Castletown', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.83237, 121.91563);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4633, 'Casuarina', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.24143, 115.8698);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149557, 'Cataby', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.7274473, 115.432016);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4641, 'Caversham', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88333, 115.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149552, 'Cervantes', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.5026475, 115.0541767);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4659, 'Champion Lakes', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.11913, 115.98617);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4663, 'Chapman Valley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.27249, 115.02794);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4686, 'Chidlow', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.86094, 116.27243);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4700, 'Chittering', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.35829, 116.05131);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4705, 'Churchlands', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.92142, 115.79322);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4709, 'City Beach', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.9344, 115.76174);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4710, 'City of Cockburn', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.10264, 115.84431);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4711, 'City of Perth', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.94978, 115.85383);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4718, 'Claremont', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.98127, 115.77942);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4727, 'Clarkson', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.68282, 115.7247);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4748, 'Cloverdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.96281, 115.94428);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4760, 'Cockburn Central', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.12133, 115.84776);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4773, 'College Grove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.37587, 115.65906);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4774, 'Collie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.27353, 116.16558);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4783, 'Como', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.99119, 115.86336);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4792, 'Connolly', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.74864, 115.75053);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4795, 'Coodanup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.55187, 115.75352);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4797, 'Coogee', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.11934, 115.7665);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4807, 'Coolbellup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.08124, 115.80606);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4808, 'Coolbinia', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.9147, 115.84894);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4809, 'Coolgardie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.01438, 121.20462);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4811, 'Cooloongup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.31506, 115.77772);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4825, 'Coorow', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.97865, 115.65613);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4843, 'Corrigin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.37599, 117.81023);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4848, 'Cottesloe', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.99905, 115.76089);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4851, 'Cowaramup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.85036, 115.10379);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4859, 'Craigie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.78727, 115.76989);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4869, 'Cranbrook', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.33414, 117.32898);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4873, 'Crawley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.98418, 115.81603);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4897, 'Cuballing', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.74026, 117.15497);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4898, 'Cue', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -27.22633, 118.00496);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4903, 'Cunderdin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.61259, 117.11803);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4909, 'Currambine', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.73306, 115.74766);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4919, 'Daglish', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95177, 115.8088);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4923, 'Dalkeith', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.99517, 115.7998);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4926, 'Dalwallinu', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.12998, 116.98401);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4927, 'Dalyellup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.40844, 115.61506);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4928, 'Dampier', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.66275, 116.71256);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4929, 'Dampier Peninsula', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -16.93241, 122.86559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4930, 'Dandaragan', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.54142, 115.46132);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4934, 'Darch', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.81255, 115.8458);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4935, 'Dardanup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.41611, 115.8741);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4938, 'Darling Downs', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.19442, 115.99187);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4943, 'Darlington', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91906, 116.0812);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4952, 'Dawesville', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.63229, 115.62904);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4955, 'Dayton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.85251, 115.97494);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4968, 'Denham', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -25.92679, 113.53327);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4974, 'Denmark', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.93473, 117.37518);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4977, 'Derby', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -17.30295, 123.62864);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4978, 'Derby-West Kimberley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -17.50447, 125.28014);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4988, 'Dianella', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88822, 115.87186);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (4997, 'Djugun', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -17.95395, 122.22792);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5004, 'Dongara', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.25818, 114.93276);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5005, 'Donnybrook', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.5713, 115.82446);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5006, 'Donnybrook-Balingup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.70217, 115.97778);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5017, 'Doubleview', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.89627, 115.78155);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5023, 'Dowerin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.11328, 117.10566);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5030, 'Drummond Cove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.67379, 114.6128);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5035, 'Dudley Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.55221, 115.731);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5039, 'Dumbleyung Shire', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.2178, 117.9875);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5040, 'Duncraig', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.83291, 115.7759);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5041, 'Dundas', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.12502, 124.50582);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5047, 'Dunsborough', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.61476, 115.10445);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5069, 'East Bunbury', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.33619, 115.66041);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5070, 'East Cannington', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.0098, 115.95503);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5071, 'East Carnarvon', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -24.86397, 113.67768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5074, 'East Fremantle', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03654, 115.76714);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5091, 'East Perth', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95872, 115.87109);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5092, 'East Pilbara', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -21.61331, 123.71368);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5097, 'East Victoria Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.98894, 115.90388);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5101, 'Eaton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.31664, 115.70503);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5106, 'Eden Hill', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88908, 115.94675);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5113, 'Edgewater', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.76547, 115.78223);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5120, 'Eglinton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.58677, 115.68878);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5141, 'Ellenbrook', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.76737, 115.96936);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5149, 'Embleton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.90355, 115.90902);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5170, 'Erskine', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.55717, 115.70657);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5175, 'Esperance', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.85919, 121.89164);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5176, 'Esperance Shire', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.5197, 122.15586);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5202, 'Exmouth', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -22.03643, 114.04358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5214, 'Falcon', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.58244, 115.66199);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5226, 'Ferndale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03494, 115.92233);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5242, 'Fitzroy Crossing', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -18.19714, 125.56663);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5256, 'Floreat', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93862, 115.79211);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5271, 'Forrestdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.1552, 115.93417);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5273, 'Forrestfield', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.98277, 116.00673);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5289, 'Fremantle', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.05165, 115.76379);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5303, 'Garden Island', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.24264, 115.69505);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5321, 'Gelorup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.42425, 115.64094);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5323, 'Geographe', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.63974, 115.38358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5327, 'Geraldton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.77897, 114.61459);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5328, 'Geraldton city centre', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.77754, 114.61494);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5330, 'Gidgegannup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.75441, 116.18746);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5339, 'Gingin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.18435, 115.65944);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5344, 'Girrawheen', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.84103, 115.83978);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5357, 'Glen Forrest', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91929, 116.10726);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5361, 'Glen Iris', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.33713, 115.6743);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5368, 'Glendalough', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91991, 115.81945);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5397, 'Gnangara', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.77612, 115.86623);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5398, 'Gnowangerup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.08658, 118.29832);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5401, 'Golden Bay', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.42505, 115.76099);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5414, 'Goomalling', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.23457, 116.79142);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5417, 'Gooseberry Hill', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95444, 116.0492);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5425, 'Gosnells', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06763, 116.00203);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5441, 'Grasmere', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -35.01806, 117.75556);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149556, 'Green Head', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.0774961, 114.9585129);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5455, 'Greenfields', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.52429, 115.76315);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5456, 'Greenmount', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.90072, 116.0495);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5465, 'Greenwood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.82723, 115.80247);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5475, 'Guildford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.9, 115.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5490, 'Gwelup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.87163, 115.79484);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5508, 'Halls Creek', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -19.00069, 127.45204);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5509, 'Halls Head', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.54315, 115.69665);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5510, 'Hamersley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.84898, 115.80757);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5514, 'Hamilton Hill', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.08451, 115.77946);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5517, 'Hammond Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.16853, 115.8504);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5523, 'Hannans', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.71909, 121.4548);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5530, 'Harrisdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.11084, 115.93563);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5533, 'Harvey', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.14976, 115.93376);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5560, 'Heathridge', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.76244, 115.75895);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5570, 'Helena Valley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91938, 116.03982);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5578, 'Henley Brook', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.81393, 115.98807);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5585, 'Herne Hill', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.82553, 116.0227);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5593, 'High Wycombe', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.94444, 116.0034);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5597, 'Highgate', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93971, 115.87015);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5603, 'Hilbert', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.17818, 115.9849);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149559, 'Hill River', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.2574411, 115.1536518);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5605, 'Hillarys', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.80698, 115.74045);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5610, 'Hillman', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.28327, 115.76364);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5615, 'Hilton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06208, 115.78049);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5625, 'Hocking', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.77012, 115.81832);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5671, 'Huntingdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.08318, 115.96614);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5683, 'Iluka', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.73554, 115.73058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5692, 'Inglewood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91663, 115.8798);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5693, 'Innaloo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.89272, 115.79508);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5704, 'Irwin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.34192, 115.04561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5721, 'Jandakot', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.10158, 115.87083);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5723, 'Jane Brook', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.86368, 116.05039);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5725, 'Jarrahdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.3358, 116.05951);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5729, 'Jerramungup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.0305, 119.11369);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5735, 'Jindalee', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.64938, 115.69496);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5740, 'Jolimont', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.94564, 115.80947);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5741, 'Joondalup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.77962, 115.76498);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5742, 'Joondanna', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.90767, 115.84233);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5752, 'Jurien Bay', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.30591, 115.03825);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5755, 'Kalamunda', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.00398, 116.13292);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5757, 'Kalbarri', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -27.7105, 114.16505);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5759, 'Kalgoorlie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.74614, 121.4742);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5760, 'Kalgoorlie/Boulder', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.77632, 124.92347);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5765, 'Kallaroo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.79098, 115.75298);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5769, 'Kambalda East', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.2055, 121.67011);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5770, 'Kambalda West', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.20169, 121.6306);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5786, 'Karawara', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.0086, 115.88114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5787, 'Kardinya', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06561, 115.81483);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5790, 'Karnup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.41894, 115.79267);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5792, 'Karratha', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.73765, 116.84629);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5793, 'Karrinyup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.87233, 115.77684);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5796, 'Katanning', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.62476, 117.63965);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5814, 'Kellerberrin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.57709, 117.80561);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5817, 'Kelmscott', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.12434, 116.0259);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5832, 'Kent Shire', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.53881, 118.66993);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5836, 'Kenwick', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03333, 115.96667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5845, 'Kewdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.97886, 115.95159);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5850, 'Kiara', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88156, 115.93893);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5880, 'Kingsley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.81036, 115.80077);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5891, 'Kinross', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.71868, 115.73839);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5903, 'Kojonup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.92546, 117.03982);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5904, 'Kondinin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.48431, 119.0242);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5907, 'Koondoola', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.84145, 115.86654);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5910, 'Koorda', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.60412, 117.40736);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5921, 'Kulin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.66096, 118.57544);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5923, 'Kununurra', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -15.77825, 128.74208);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5933, 'Kwinana', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.23391, 115.82785);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5945, 'Lake Grace', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.1291, 119.42041);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5953, 'Lakelands', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.47157, 115.77291);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5961, 'Lamington', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.73425, 121.46163);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149555, 'Lancelin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.0223127, 115.3239809);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5965, 'Landsdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.8075, 115.86599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5970, 'Langford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.04092, 115.94157);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5981, 'Lathlain', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.96755, 115.90631);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5989, 'Laverton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -27.93793, 125.27127);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5996, 'Leda', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.26766, 115.7993);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5997, 'Leederville', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93628, 115.8419);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149554, 'Leeman', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.9873579, 114.9578904);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (5998, 'Leeming', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.07511, 115.86613);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6003, 'Leinster', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -27.92028, 120.6967);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6009, 'Leonora', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.39424, 121.2596);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6012, 'Leschenault', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.24519, 115.7251);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6013, 'Lesmurdie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.00199, 116.04821);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6036, 'Little Grove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -35.06803, 117.87197);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6048, 'Lockridge', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88168, 115.95031);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6049, 'Lockyer', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -35.00567, 117.85875);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6074, 'Lower Chittering', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.58333, 116.11667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6076, 'Lower King', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.95778, 117.93833);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6092, 'Lynwood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.04013, 115.92888);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6118, 'Maddington', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.05, 115.98333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6119, 'Madeley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.8111, 115.82814);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6120, 'Madora Bay', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.46951, 115.75264);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6124, 'Maida Vale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95187, 116.02764);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149549, 'Malaga', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.8581429, 115.8798645);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6143, 'Mandurah', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.5269, 115.7217);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6144, 'Mandurah city centre', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.52644, 115.73361);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6150, 'Manjimup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.59789, 116.26566);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6155, 'Manning', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.01594, 115.86714);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6167, 'Marangaroo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.82711, 115.83843);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6171, 'Marble Bar', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -21.17067, 119.74441);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6176, 'Margaret River', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.95504, 115.07599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6185, 'Marmion', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.84158, 115.75692);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6195, 'Martin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.07549, 116.04536);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6211, 'Maylands', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93097, 115.89486);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6217, 'McKail', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.98533, 117.8301);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6225, 'Meadow Springs', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.49718, 115.75334);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6230, 'Medina', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.23406, 115.79901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6233, 'Meekatharra', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -25.3033, 118.99974);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6242, 'Melville', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.04325, 115.83408);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6246, 'Menora', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91889, 115.86208);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6248, 'Menzies', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.39176, 123.71878);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6259, 'Merredin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.46054, 118.38509);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6262, 'Merriwa', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.66494, 115.71273);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6276, 'Middle Swan', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.85, 116.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6280, 'Midland', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88909, 116.0107);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6281, 'Midvale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88881, 116.03288);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6289, 'Millars Well', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.74168, 116.81731);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6291, 'Millbridge', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.30617, 115.735);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6306, 'Mindarie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.68932, 115.70698);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6309, 'Mingenew', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.14515, 115.50123);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6313, 'Mira Mar', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -35.01517, 117.90096);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6317, 'Mirrabooka', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.85963, 115.86587);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6365, 'Moora', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.51218, 116.2098);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6377, 'Morawa', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.03545, 116.05643);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6385, 'Morley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88775, 115.9099);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6400, 'Mosman Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.01421, 115.76613);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6407, 'Mount Barker', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.63084, 117.66606);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6410, 'Mount Claremont', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.96177, 115.78337);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6425, 'Mount Hawthorn', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.92, 115.83509);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6427, 'Mount Helena', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.87606, 116.21025);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6433, 'Mount Lawley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93439, 115.8716);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6439, 'Mount Magnet', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.29082, 117.96655);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6440, 'Mount Marshall', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.29376, 118.00063);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6442, 'Mount Melville', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -35.02216, 117.87137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6444, 'Mount Nasura', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.1378, 116.02473);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6450, 'Mount Pleasant', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03974, 115.84993);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6455, 'Mount Richon', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.17349, 116.02137);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6460, 'Mount Tarcoola', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.79859, 114.6253);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149551, 'Muchea', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.5493638, 115.870362);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6473, 'Mukinbudin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.63684, 118.28648);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6477, 'Mullaloo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.77896, 115.73676);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6480, 'Mundaring', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88456, 116.21551);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6481, 'Mundijong', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.29217, 115.98564);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6488, 'Munster', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.13647, 115.78302);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6490, 'Murchison', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -27.00893, 116.41205);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6491, 'Murdoch', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06987, 115.83757);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6493, 'Murray', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.62391, 115.96538);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6504, 'Myaree', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.04, 115.81761);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6519, 'Nannup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.13466, 115.67375);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6528, 'Narembeen', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.02206, 118.6899);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6540, 'Narrogin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.93282, 117.17763);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6546, 'Nedlands', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.97994, 115.79942);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6569, 'Newman', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -23.35644, 119.73553);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6581, 'Ngaanyatjarraku', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -25.08871, 126.83494);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6590, 'Nickol', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.74558, 116.7954);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6600, 'Nollamara', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88016, 115.84543);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6604, 'Noranda', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.87333, 115.89901);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6616, 'North Beach', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.86298, 115.75624);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6624, 'North Coogee', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.09505, 115.75972);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6627, 'North Fremantle', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03333, 115.75);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6634, 'North Lake', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.0819, 115.83567);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6644, 'North Perth', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.92724, 115.85276);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6661, 'Northam', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.69898, 116.64964);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6662, 'Northampton Shire', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.04956, 114.49589);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6664, 'Northbridge', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.94784, 115.85881);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6682, 'Nullagine', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -21.88972, 120.1114);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6683, 'Nulsen', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.85696, 121.87499);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6687, 'Nungarin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.13714, 118.21768);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6699, 'Oakford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.20094, 115.93391);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6711, 'Ocean Reef', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.75871, 115.73601);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6726, 'Onslow', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -21.63764, 115.11221);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6730, 'Orana', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.99601, 117.85925);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6736, 'Orelia', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.2333, 115.82227);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6743, 'Osborne Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.90066, 115.81083);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6756, 'Padbury', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.80645, 115.7688);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6772, 'Palmyra', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.04502, 115.78589);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6779, 'Paraburdoo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -23.20417, 117.66973);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6793, 'Parkerville', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.87472, 116.138);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6802, 'Parkwood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.04913, 115.91838);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6803, 'Parmelia', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.25784, 115.82208);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6819, 'Pearce', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.66667, 116.01667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6822, 'Pearsall', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.78117, 115.81823);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6823, 'Pegs Creek', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.7383, 116.83278);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6825, 'Pemberton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.44311, 116.03689);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6835, 'Peppermint Grove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.99885, 115.76697);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6838, 'Perenjori', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.39784, 116.53543);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6840, 'Perth', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95224, 115.8614);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6841, 'Perth city centre', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95289, 115.85152);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6851, 'Piara Waters', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.13344, 115.91634);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6852, 'Piccadilly', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.7428, 121.46418);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6859, 'Pingelly', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.53174, 117.20004);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6860, 'Pinjarra', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.6298, 115.87351);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6865, 'Plantagenet Shire', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -34.62508, 117.59753);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6887, 'Port Denison', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.27367, 114.92068);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6892, 'Port Hedland', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.79258, 118.63264);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6894, 'Port Kennedy', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.37342, 115.7515);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6932, 'Quairading', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.01462, 117.39835);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6938, 'Queens Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.00314, 115.94621);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6947, 'Quindalup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.6356, 115.14899);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6948, 'Quinns Rocks', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.67379, 115.70372);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6961, 'Rangeway', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.78665, 114.63059);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6969, 'Ravensthorpe', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.68375, 120.15338);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6971, 'Ravenswood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.5824, 115.8315);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (6981, 'Redcliffe', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93845, 115.94645);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149558, 'Regans Ford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.9555288, 115.6073405);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7013, 'Ridgewood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.6615, 115.72261);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7026, 'Riverton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03468, 115.89856);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7027, 'Rivervale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95546, 115.91306);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7044, 'Rockingham', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.28239, 115.73238);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7045, 'Rockingham city centre', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.28407, 115.7354);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7049, 'Roebuck', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -18.1713, 122.50116);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7051, 'Roleystone', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.11458, 116.0706);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7079, 'Rossmoyne', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.03965, 115.86781);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7106, 'Safety Bay', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.30463, 115.74213);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7128, 'Salter Point', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.02384, 115.86582);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7130, 'Samson', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06996, 115.7977);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7139, 'Sandstone', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.42189, 118.98846);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7149, 'Scarborough', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.89578, 115.76431);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7172, 'Secret Harbour', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.40589, 115.75852);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7181, 'Serpentine', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.36051, 115.97723);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7182, 'Serpentine-Jarrahdale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.32452, 116.04507);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7188, 'Seville Grove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.13645, 115.98905);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7192, 'Shark Bay', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -26.38916, 114.21845);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7199, 'Shelley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.02957, 115.88664);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7202, 'Shenton Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95575, 115.79807);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7208, 'Shoalwater', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.29088, 115.71101);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7214, 'Silver Sands', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.50857, 115.73599);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7217, 'Sinagra', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.74261, 115.80633);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7218, 'Singleton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.44403, 115.75725);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7245, 'Somerville', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.76979, 121.45438);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7248, 'Sorrento', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.82533, 115.75248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7254, 'South Bunbury', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.3491, 115.63359);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7256, 'South Carnarvon', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -24.89348, 113.65846);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7258, 'South Fremantle', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06907, 115.75453);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7263, 'South Guildford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.9122, 115.96825);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7264, 'South Hedland', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.40655, 118.60069);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7267, 'South Kalgoorlie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.76507, 121.47334);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7271, 'South Lake', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.11125, 115.83873);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7281, 'South Perth', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.99884, 115.87222);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7291, 'South Yunderup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.5851, 115.78015);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7297, 'Southern River', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.10658, 115.95896);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7300, 'Spalding', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.73525, 114.63651);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7301, 'Spearwood', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.10534, 115.77797);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7304, 'Spencer Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -35.00515, 117.90005);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7323, 'St George Ranges', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -18.98204, 125.00873);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7330, 'St James', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.00004, 115.9098);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7347, 'Stirling', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.8794, 115.80929);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7351, 'Stoneville', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.86667, 121.76667);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7356, 'Strathalbyn', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.75168, 114.64576);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7365, 'Stratton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.86828, 116.04066);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7371, 'Subiaco', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.95964, 115.81564);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7372, 'Success', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.14281, 115.84999);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7383, 'Sunset Beach', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.71907, 114.62297);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7401, 'Swan', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.77039, 116.08746);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7403, 'Swan View', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88333, 116.05);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7404, 'Swanbourne', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.96878, 115.7673);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7424, 'Tammin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.60512, 117.48306);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7433, 'Tapping', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.71947, 115.79559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7436, 'Tarcoola Beach', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.81001, 114.62236);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7458, 'Telfer', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -21.21169, 123.26175);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7496, 'The Vines', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.75492, 116.00238);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7507, 'Thornlie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06003, 115.955);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7509, 'Three Springs', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -29.51386, 115.63158);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7526, 'Tom Price', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -22.6939, 117.7931);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7530, 'Toodyay', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.46991, 116.38804);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7560, 'Trayning', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.16681, 117.83812);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7564, 'Trigg', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.86939, 115.7571);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7571, 'Tuart Hill', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.89808, 115.83495);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7594, 'Two Rocks', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.49985, 115.58737);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7609, 'Upper Gascoyne', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -24.71935, 116.33876);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7619, 'Usher', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.37982, 115.6292);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7620, 'Utakarra', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.78333, 114.65);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7627, 'Vasse', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.69337, 115.2678);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7633, 'Victoria Park', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.97651, 115.90592);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7634, 'Victoria Plains', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.01632, 116.28546);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7638, 'Vincent', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93138, 115.85412);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7645, 'Viveash', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.87861, 115.99661);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7653, 'Waggrakine', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.71883, 114.63924);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7654, 'Wagin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.27501, 117.38554);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7658, 'Waikiki', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.31606, 115.7546);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7682, 'Wandering', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.52589, 116.56668);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7683, 'Wandi', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.1943, 115.8763);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7685, 'Wandina', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.81938, 114.63464);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7691, 'Wannanup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.59946, 115.64488);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7692, 'Wanneroo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.65293, 115.72211);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7706, 'Warnbro', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.34017, 115.7473);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7709, 'Waroona', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.84916, 115.90429);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7726, 'Warwick', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.83974, 115.80855);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7729, 'Waterford', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.01574, 115.88662);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7732, 'Watermans Bay', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.84915, 115.7559);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7739, 'Wattle Grove', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.00672, 116.00046);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7755, 'Wellard', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.26667, 115.83333);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7760, 'Wembley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.93308, 115.81783);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7761, 'Wembley Downs', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.91169, 115.77358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7776, 'West Arthur', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.44057, 116.68597);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7780, 'West Beach', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.87464, 121.89013);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7781, 'West Busselton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.65792, 115.32293);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7795, 'West Lamington', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.74707, 121.45248);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7797, 'West Leederville', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.94141, 115.83117);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7803, 'West Perth', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.94896, 115.84199);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7826, 'Westminster', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.86744, 115.83919);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7828, 'Westonia', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.88436, 118.72974);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7833, 'White Gum Valley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.06031, 115.77058);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7848, 'Wickepin', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.82211, 117.63996);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7850, 'Wickham', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -20.67474, 117.13784);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7853, 'Willagee', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.05196, 115.80533);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7855, 'Willetton', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.05251, 115.88782);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7856, 'Williams', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.05217, 116.70943);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7868, 'Wilson', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.02058, 115.91181);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7873, 'Wiluna', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -25.3663, 121.93243);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7889, 'Winthrop', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.05216, 115.82972);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7893, 'Withers', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.36807, 115.6305);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7907, 'Wongan-Ballidu', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.73138, 116.84854);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7910, 'Wonthella', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.76689, 114.63338);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7911, 'Woodanilling', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.51937, 117.3358);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7914, 'Woodbridge', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88695, 115.99196);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (149553, 'Woodridge', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.3314368, 115.5825247);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7927, 'Woodvale', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.78928, 115.79676);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7947, 'Wooroloo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.8038, 116.31311);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7948, 'Woorree', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.76677, 114.65806);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7961, 'Wundowie', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.76163, 116.3799);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7966, 'Wyalkatchem', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.19528, 117.44682);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7971, 'Wyndham-East Kimberley', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -15.51291, 126.58779);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7982, 'Yakamia', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -35.00392, 117.87828);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7983, 'Yalgoo', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -28.48787, 117.15818);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7985, 'Yallingup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.64592, 115.03514);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7987, 'Yalyalup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -33.67496, 115.41449);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7990, 'Yanchep', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.54678, 115.63171);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (7992, 'Yangebup', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -32.12065, 115.81623);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8022, 'Yilgarn', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -30.90938, 119.25881);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8023, 'Yokine', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.90113, 115.85319);
+INSERT INTO
+    cities (id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
+VALUES (8025, 'York', 3906, 'WA', 'Western Australia', 14, 'AU', 'Australia', -31.88809, 116.7678);

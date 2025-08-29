@@ -22,7 +22,7 @@ $authenticated = new Authorise();
 
 ?>
     <section class="container mx-auto p-4 mt-4">
-        <div class="px-8 py-6 bg-red-600 text-white flex justify-between rounded">
+        <div class="px-8 py-6 bg-red-600 text-white flex justify-between ">
             <div class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-32 w-32 mr-6" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"

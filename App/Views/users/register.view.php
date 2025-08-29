@@ -14,17 +14,17 @@
 loadPartial('header');
 loadPartial('navigation'); ?>
 
-    <main class="container mx-auto bg-zinc-50 py-8 px-4 shadow shadow-black/25 rounded-b-lg
+    <main class="container mx-auto bg-zinc-50 py-8 px-4 shadow shadow-black/25 
                  flex justify-center items-center mt-8 w-1/2 ">
 
-        <section class="bg-white p-8 rounded-lg shadow-md md:w-500 mx-6 w-full">
+        <section class="bg-white p-8 title shadow-md md:w-500 mx-6 w-full">
 
             <h2 class="text-4xl text-left font-bold mb-4">
                 Register
             </h2>
 
             <?= loadPartial('errors', [
-                'errors' => $errors ?? []
+                    'errors' => $errors ?? []
             ]) ?>
 
             <form method="POST" action="/auth/register">
@@ -33,7 +33,7 @@ loadPartial('navigation'); ?>
                     <label for="Name" class="mt-4 pb-1">Name:</label>
                     <input type="text" id="Name"
                            name="name" placeholder="Full Name"
-                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
                            value="<?= $user['name'] ?? '' ?>"/>
                 </section>
 
@@ -41,54 +41,66 @@ loadPartial('navigation'); ?>
                     <label for="Email" class="mt-4 pb-1">Email:</label>
                     <input type="email" id="Email"
                            name="email" placeholder="Email Address"
-                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
                            value="<?= $user['email'] ?? '' ?>"/>
+                </section>
+
+
+                <section class="mb-4">
+                    <label for="State" class="mt-4 pb-1">State:</label>
+                    <input type="text" id="State"
+                           name="state" placeholder="State"
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
+                           value="<?= $user['state'] ?? '' ?>"/>
                 </section>
 
                 <section class="mb-4">
                     <label for="City" class="mt-4 pb-1">City:</label>
                     <input type="text" id="City"
                            name="city" placeholder="City"
-                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
                            value="<?= $user['city'] ?? '' ?>"/>
-                </section>
-
-                <section class="mb-4">
-                    <label for="State" class="mt-4 pb-1">State:</label>
-                    <input type="text" id="State"
-                           name="state" placeholder="State"
-                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
-                           value="<?= $user['state'] ?? '' ?>"/>
                 </section>
 
                 <section class="mb-4">
                     <label for="Password" class="mt-4 pb-1">Password:</label>
                     <input type="password" id="Password"
                            name="password" placeholder="Password"
-                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"/>
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"/>
                 </section>
 
                 <section class="mb-4">
                     <label for="PasswordConfirmation" class="mt-4 pb-1">Confirm password:</label>
                     <input type="password" id="PasswordConfirmation"
                            name="password_confirmation" placeholder="Confirm Password"
-                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"/>
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"/>
                 </section>
 
-                <section class="mb-4">
+                <section class="mb-4 flex flex-row gap-4 justify-between">
                     <button type="submit"
-                            class="w-full bg-prussianblue-500 hover:bg-prussianblue-600 text-white px-4 py-2 rounded focus:outline-none
-                               transition ease-in-out duration-500">
-                        Register
+                            class="group relative inline-block overflow-hidden border bg-white border-sky-800 px-12 py-1 focus:ring-2focus:outline-hidden">
+                        <span class="absolute inset-y-0 left-0 w-[2px] bg-sky-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-sm font-medium  text-black transition-colors duration-500 group-hover:text-white">
+                                <i class="fa fa-user-plus inline-block mr-2"></i>
+                                Register
+                            </span>
                     </button>
-                </section>
 
-                <section class="mb-4">
-                    <p class="mt-8 text-zinc-700">
-                        Already have an account?
-                        <a class="bg-prussianblue-900 hover:bg-prussianblue-600 text-white px-1 pb-1 rounded
-                              transition ease-in-out duration-500" href="/auth/login">Login</a>
-                    </p>
+                    <div class="text-zinc-700 inline-flex justify-right">
+                        <p class="mt-2 mr-2">
+                            Already have an account?
+                        </p>
+
+                        <a class="group relative inline-block overflow-hidden border bg-white border-emerald-800 px-8 py-1 focus:ring-2focus:outline-hidden"
+                           href="/auth/login"
+                        >
+                            <span class="absolute inset-y-0 left-0 w-[2px] bg-emerald-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                            <span class="relative text-sm font-medium   text-black transition-colors duration-500 group-hover:text-white">
+                                <i class="fa-solid fa-arrow-right-to-bracket mr-4"></i>
+                                Login
+                            </span>
+                        </a>
+                    </div>
                 </section>
 
             </form>

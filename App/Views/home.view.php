@@ -16,9 +16,9 @@ loadPartial('navigation');
 
 ?>
 
-<main class="container mx-auto bg-zinc-50 py-8 px-4 shadow shadow-black/25 rounded-lg">
+<main class="container mx-auto bg-zinc-50 py-8 px-4 shadow shadow-black/25 title">
     <article class="grid grid-cols-1">
-        <header class="bg-zinc-700 text-zinc-200 -mx-4 -mt-8 mb-4 p-8 text-2xl font-bold rounded-t-lg">
+        <header class="bg-zinc-700 text-zinc-200 -mx-4 -mt-8 mb-4 p-8 text-2xl font-bold ">
             <h1>Vanilla PHP MVC Demo</h1>
         </header>
 
@@ -31,26 +31,26 @@ loadPartial('navigation');
     </article>
 
     <article class="grid grid-cols-2 ">
-        <section class="m-4 bg-zinc-200 text-zinc-700 p-8 rounded-lg shadow">
+        <section class="m-4 bg-zinc-200 text-zinc-700 p-8 title shadow">
             <dl class="flex flex-col">
                 <dt class="text-lg font-semibold ">Tutorial:</dt>
                 <dd class="ml-4">
-                    <a href="https://github.com/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN/tree/main/session-07"
+                    <a href="https://github.com/AdyGCode/SaaS-FED-Notes/tree/main/session-07"
                        class="hover:text-black">
                         <i class="fa fa-list inline-block mr-2 text-sm"></i>
-                        Parts 00 - 04: https://github.com/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN/tree/main/session-07
+                        Parts 00 - 04: https://github.com/AdyGCode/SaaS-FED-Notes/tree/main/session-07
                     </a>
                 </dd>
                 <dd class="ml-4">
-                    <a href="https://github.com/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN/tree/main/session-08"
+                    <a href="https://github.com/AdyGCode/SaaS-FED-Notes/tree/main/session-08"
                        class="hover:text-black">
                         <i class="fa fa-list inline-block mr-2 text-sm"></i>
-                        Parts 05 - 10: https://github.com/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN/tree/main/session-07
+                        Parts 05 - 10: https://github.com/AdyGCode/SaaS-FED-Notes/tree/main/session-07
                     </a>
                 </dd>
             </dl>
         </section>
-        <section class="m-4 bg-zinc-200 text-zinc-700 p-8 rounded-lg shadow">
+        <section class="m-4 bg-zinc-200 text-zinc-700 p-8 title shadow">
             <dl class="flex flex-col">
                 <dt class="text-lg font-semibold">Source Code:</dt>
                 <dd class="ml-4">
@@ -62,7 +62,7 @@ loadPartial('navigation');
                 </dd>
             </dl>
         </section>
-        <section class="m-4 bg-zinc-200 text-zinc-700 p-8 rounded-lg shadow">
+        <section class="m-4 bg-zinc-200 text-zinc-700 p-8 title shadow">
             <dl class="flex flex-col">
 
                 <dt class="text-lg font-semibold">HelpDesk</dt>
@@ -90,7 +90,7 @@ loadPartial('navigation');
 
         </section>
 
-        <section class="m-4 bg-zinc-200 text-zinc-700 p-8 rounded-lg shadow">
+        <section class="m-4 bg-zinc-200 text-zinc-700 p-8 title shadow">
             <dl class="flex flex-col">
 
                 <dt class="text-lg font-semibold">Featured Product</dt>

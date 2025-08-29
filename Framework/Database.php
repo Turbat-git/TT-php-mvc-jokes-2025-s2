@@ -75,7 +75,7 @@ class Database
      *
      * Use:
      * <code>
-     *   $sql = "SELECT name, description from products WHERE name like '%:name%'";
+     *   $sql = "SELECT name, description from categories WHERE name like '%:name%'";
      *   $filter = ['name'=>'ian',];
      *   $results = $dbConn->query($sql,$filter);
      * </code>

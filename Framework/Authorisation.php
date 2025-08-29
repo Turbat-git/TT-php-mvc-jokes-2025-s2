@@ -36,4 +36,10 @@ class Authorisation
 
         return false;
     }
+
+    public static function isAdmin():bool
+    {
+        $sessionUser = Session::get('user');
+        return (int)$sessionUser['id'] === 10 || (int)$sessionUser['id'] === 20;
+    }
 }

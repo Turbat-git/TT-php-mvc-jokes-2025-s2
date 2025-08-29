@@ -22,6 +22,7 @@ export default defineConfig({
                 'index.php',
                 'template.php',
                 'public/index.{html,php,js}',
+                'App/Views/**/*.view.{html,php,js}',
                 'App/Views/**/*.{html,php,js}'
             ],
         }),
@@ -35,5 +36,6 @@ export default defineConfig({
                 alwaysReload: true
             }
         ),
-    ]
+    ],
+    'assetsDir':'public/assets'
 }) ;

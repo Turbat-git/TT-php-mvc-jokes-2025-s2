@@ -18,10 +18,10 @@
 loadPartial('header');
 loadPartial('navigation'); ?>
 
-    <main class="container mx-auto bg-zinc-50 py-8 px-4 shadow shadow-black/25 rounded-b-lg
+    <main class="container mx-auto bg-zinc-50 py-8 px-4 shadow shadow-black/25 
                  flex justify-center items-center mt-8 w-1/2 ">
 
-        <section class="bg-white p-8 rounded-lg shadow-md md:w-500 mx-6 w-full">
+        <section class="bg-white p-8 title shadow-md md:w-500 mx-6 w-full">
 
             <h2 class="text-4xl text-left font-bold mb-4">
                 Login
@@ -37,7 +37,7 @@ loadPartial('navigation'); ?>
                     <label for="Email" class="mt-4 pb-1">Email:</label>
                     <input type="email" id="Email"
                            name="email" placeholder="Email Address"
-                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
                            value="<?= $user['email'] ?? '' ?>"/>
                 </section>
 
@@ -45,25 +45,34 @@ loadPartial('navigation'); ?>
                     <label for="Password" class="mt-4 pb-1">Password:</label>
                     <input type="password" id="Password"
                            name="password" placeholder="Password"
-                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"/>
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"/>
                 </section>
 
-                <section class="mb-4">
 
+                <section class="mb-4 flex flex-row gap-4 justify-between">
                     <button type="submit"
-                            class="w-full bg-prussianblue-500 hover:bg-prussianblue-600 text-white px-4 py-2 rounded
-                                   focus:outline-none transition ease-in-out duration-500">
-                        Login
+                            class="group relative inline-block overflow-hidden border bg-white border-sky-800 px-12 py-1 focus:ring-2focus:outline-hidden">
+                        <span class="absolute inset-y-0 left-0 w-[2px] bg-sky-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-sm font-medium  text-black transition-colors duration-500 group-hover:text-white">
+                                <i class="fa fa-arrow-right-to-bracket inline-block mr-2"></i>
+                                Login
+                            </span>
                     </button>
-                </section>
 
-                <section class="mb-4">
-                    <p class="mt-8 text-zinc-700">
-                        So you are not a member...
-                        <a class="bg-prussianblue-900 hover:bg-prussianblue-600 text-white px-1 pb-1 rounded
-                              transition ease-in-out duration-500"
-                           href="/auth/register">Register</a> now!
-                    </p>
+                    <div class="text-zinc-700 inline-flex justify-right">
+                        <p class="mt-2 mr-2">
+                            So you're not a member...                        </p>
+
+                        <a class="group relative inline-block overflow-hidden border bg-white border-emerald-800 px-8 py-1 focus:ring-2focus:outline-hidden"
+                           href="/auth/register"
+                        >
+                            <span class="absolute inset-y-0 left-0 w-[2px] bg-emerald-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                            <span class="relative text-sm font-medium   text-black transition-colors duration-500 group-hover:text-white">
+                                <i class="fa-solid fa-user-plus mr-4"></i>
+                                Register Now
+                            </span>
+                        </a>
+                    </div>
                 </section>
 
             </form>

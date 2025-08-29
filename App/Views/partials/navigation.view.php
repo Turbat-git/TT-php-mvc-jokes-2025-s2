@@ -19,7 +19,7 @@ $authenticated = new Authorise();
 <header class="bg-gray-950 text-gray-200 p-4 flex-grow-0 flex flex-row align-middle content-center mb-4">
     <h1 class="flex-0 w-32 text-xl p-4 ">
         <a href="#"
-           class="py-4 px-4 -mx-4 -my-4 font-display font-bold rounded
+           class="py-4 px-4 -mx-4 -my-4 font-display font-bold 
              text-pink-500 hover:text-black
              hover:bg-prussianblue-500
                  transition ease-in-out duration-700">
@@ -38,7 +38,7 @@ $authenticated = new Authorise();
             </li>
 
             <?php
-            if ($authenticated->isAuthenticated()) {
+            if ($authenticated->isAuthenticated()):
                 ?>
                 <li>
                     <a href="/dashboard"
@@ -48,24 +48,24 @@ $authenticated = new Authorise();
                         Dashboard
                     </a>
                 </li>
-                <?php
-            }
+            <?php
+            endif
             ?>
 
             <li>
-                <a href="/products"
+                <a href="/jokes"
                    class="pb-2 px-1 text-gray-400 hover:text-gray-300
                      border-0 border-b-2 hover:border-b-gray-500
                      transition ease-in-out duration-500">
-                    Products
+                    Jokes
                 </a>
             </li>
             <li>
-                <a href="/colours"
+                <a href="/categories"
                    class="pb-2 px-1 text-gray-400 hover:text-gray-300
                      border-0 border-b-2 hover:border-b-gray-500
                      transition ease-in-out duration-500">
-                    Colours
+                    Categories
                 </a>
             </li>
             <li>
@@ -80,9 +80,7 @@ $authenticated = new Authorise();
         </ul>
 
         <ul class="flex flex-row gap-4">
-            <?php
-            if (!$authenticated->isAuthenticated()) {
-                ?>
+            <?php if (!$authenticated->isAuthenticated()) : ?>
                 <li>
                     <form method="GET" action="/auth/login" class="">
                         <button class="pb-2 px-1 text-sm text-gray-400 hover:text-gray-300
@@ -101,9 +99,7 @@ $authenticated = new Authorise();
                         </button>
                     </form>
                 </li>
-                <?php
-            } else {
-                ?>
+            <?php else : ?>
                 <li>
                     <form method="POST" action="/auth/logout" class="">
                         <button class="pb-2 px-1 text-sm text-gray-400 hover:text-gray-300
@@ -113,21 +109,25 @@ $authenticated = new Authorise();
                         </button>
                     </form>
                 </li>
-                <?php
-            }
-            ?>
+            <?php endif ?>
 
-            <li>
-                <form method="GET" action="#" class="mx-5 flex">
-                    <label for="Keywords">Search:</label>
-                    <input type="text" name="keywords" id="Keywords" placeholder="Product search..."
-                           class="w-full md:w-auto px-4 py-1 border border-gray-800 focus:outline-none focus:border-b-gray-500"/>
-                    <button class="w-full md:w-auto bg-gray-500 hover:bg-gray-600 text-white px-4 py-1 focus:outline-none transition ease-in-out duration-500">
-                        <i class="fa fa-search"></i> Search
-                    </button>
-                </form>
-            </li>
+            <?php if ($authenticated->isAuthenticated()) : ?>
+                <li>
+                    <form method="GET" action="#" class="mx-5 flex gap-0">
+                        <label class="py-2 pr-2" for="Keywords"><span class="sr-only">Search:</span></label>
 
+                        <input type="text" name="keywords" id="Keywords" placeholder="Search jokes..."
+                               class=" md:w-auto px-4 py-1 border border-gray-800 focus:outline-none focus:border-b-gray-500"/>
+
+                        <button class="group relative inline-block overflow-hidden border bg-gray-500 border-gray-800 px-6 py-1 focus:ring-2 focus:outline-hidden">
+                            <span class="absolute inset-y-0 left-0 w-[2px] bg-blue-800 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                            <span class="relative text-sm font-medium text-white transition-colors group-hover:text-white">
+                                <i class="fa fa-search"></i> Search
+                            </span>
+                        </button>
+                    </form>
+                </li>
+            <?php endif ?>
         </ul>
 
     </nav>

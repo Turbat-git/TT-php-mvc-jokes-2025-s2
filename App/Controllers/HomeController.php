@@ -31,45 +31,45 @@ class HomeController
     }
 
     /*
-     * Show the latest products
+     * Show the latest categories
      *
      * @return void
      */
     public function index()
     {
-        $simpleRandomSixQuery = 'SELECT * FROM products ORDER BY RAND() LIMIT 0,1';
+        $simpleRandomSixQuery = 'SELECT * FROM categories ORDER BY RAND() LIMIT 0,1';
 
-        $products = $this->db->query($simpleRandomSixQuery)
+        $categories = $this->db->query($simpleRandomSixQuery)
             ->fetchAll();
 
 
         loadView('home', [
-            'product' => $products[0]
+            'category' => $categories[0]
         ]);
     }
 
     /*
-     * Show the latest products
+     * Show the latest categories
      *
      * @return void
      */
     public function dashboard()
     {
-        $lastSixQuery = 'SELECT * FROM products ORDER BY created_at DESC LIMIT 0,6';
-        $simpleRandomSixQuery = 'SELECT * FROM products ORDER BY RAND() LIMIT 0,6';
+        $lastSixQuery = 'SELECT * FROM categories ORDER BY created_at DESC LIMIT 0,6';
+        $simpleRandomSixQuery = 'SELECT * FROM categories ORDER BY RAND() LIMIT 0,6';
 
-        $products = $this->db->query($simpleRandomSixQuery)
+        $categories= $this->db->query($simpleRandomSixQuery)
             ->fetchAll();
 
-        $productCount = $this->db->query('SELECT count(id) as total FROM products ')
+        $categoryCount = $this->db->query('SELECT count(id) as total FROM categories ')
             ->fetch();
 
         $userCount = $this->db->query('SELECT count(id) as total FROM users')
             ->fetch();
 
         loadView('dashboard', [
-            'products' => $products,
-            'productCount' => $productCount,
+            'categories' => $categories,
+            'categoryCount' => $categoryCount,
             'userCount' => $userCount,
         ]);
     }

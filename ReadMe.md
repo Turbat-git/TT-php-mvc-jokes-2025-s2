@@ -25,7 +25,7 @@ Used by students at North Metropolitan TAFE for learning and assessment purposes
 
 | Term                | Definition                                                                                                  |
 |---------------------|-------------------------------------------------------------------------------------------------------------|
-| BREAD               | Database operations to Browse, Read, Edit, Add and Delete data                                              |
+| BREAD               | Database operations to Browse, Read (one), Edit, Add and Delete data                                        |
 | CRUD                | More commonly used term over BREAD. Create (Add), Retrieve (Browse/Read), Update (Edit) and Delete (Delete) |
 | Relational Database | ...                                                                                                         |
 | One to One          | ...                                                                                                         |
@@ -103,7 +103,18 @@ composer update
 npm install
 ```
 
-If required, you may need to install CK Editor, Commonmark and HTML-to-Markdown using:
+#### Windows Specific Dependencies for NodeJS
+
+On Windows Machines you will need to execute this command to add extra node dependenc:
+
+```shell
+npm i  @rollup/rollup-win32-x64-msvc 
+npm i @esbuild/win32-x64
+```
+
+#### CK Editor and Markdown
+
+We also advise the installation of the CK Editor, Commonmark and HTML-to-Markdown using:
 
 ```shell
 composer require ckeditor/ckeditor league/html-to-markdown league/commonmark
@@ -114,10 +125,15 @@ npm install @ckeditor/ckeditor5-build-classic
 
 Create the Database, Database user password, plus tables and seed data for your chosen RDBMS.
 
+
+> ### IMPORTANT
+> **YOU MUST** update the Database, Username and Passwords in the SQL before execution.
+
 #### MariaDB and MySQL
 
 Using PhpMyAdmin or a similar GUI based MySQL/RDBMS administration interface, execute the
 provided SQL files for your DBMS.
+
 
 #### PostgreSQL
 
@@ -125,11 +141,11 @@ TODO: Instructions for PostgreSQL are to be completed.
 
 #### Links to SQL Scripts
 
-| DBMS       | User & DB Script                                      |
-|------------|-------------------------------------------------------|
-| MariaDB    | [database-mariadb.sql](./config/database-mariadb.sql) |
-| MariaDB    | [database-mysql.sql](./config/database-mysql.sql)     |
-| PostgreSQL | [TODO: Not available](#)                              |
+| DBMS       | User & DB Script                                             |
+|------------|--------------------------------------------------------------|
+| MariaDB    | config/[database-mariadb.sql](./config/database-mariadb.sql) |
+| MariaDB    | config/[database-mysql.sql](./config/database-mysql.sql)     |
+| PostgreSQL | [TODO: Not available](#)                                     |
 
 
 TODO: More details on use for use in developing basic application using this code.
@@ -139,19 +155,7 @@ TODO: More details on use for use in developing basic application using this cod
 
 ## Usage
 
-> TODO: Add details of how to use this demonstration application.
-
-Home Screen (not logged in)
-
-![Home Screen](src/images/home-screen.png)
-
-Products screen
-
-![Products Screen](src/images/products-screen.png)
-
-Filter feature on Colours
-
-![Colours Fltered](src/images/colours-filtered.png)
+> TODO: Add details of how to use this base code.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

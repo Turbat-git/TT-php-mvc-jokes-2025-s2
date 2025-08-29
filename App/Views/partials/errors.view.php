@@ -16,8 +16,8 @@
  */
 
 if (isset($errors) && count($errors) > 0): ?>
-    <div class="flex w-full shadow-lg rounded-lg my-4">
-        <div class="bg-red-600 py-2 px-6 rounded-l-lg flex items-center">
+    <div class="flex w-full shadow-lg  my-4">
+        <div class="bg-red-600 py-2 px-6  flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="fill-current text-white" width="20"
                  height="20">
                 <path fill-rule="evenodd"
@@ -28,7 +28,7 @@ if (isset($errors) && count($errors) > 0): ?>
                       100-2 1 1 0 000 2z"></path>
             </svg>
         </div>
-        <div class="px-4 py-2 bg-white rounded-r-lg flex flex-col justify-between items-left w-full
+        <div class="px-4 py-2 bg-white  flex flex-col justify-between items-left w-full
                     border border-l-transparent border-gray-200">
             <?php
             foreach ($errors as $error) : ?>
