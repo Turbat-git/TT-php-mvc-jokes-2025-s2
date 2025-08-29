@@ -63,7 +63,12 @@ class UserController
      */
     public function register()
     {
-        loadView('users/register');
+        $states = $this->db->query('SELECT state_id, state_code, state_name FROM cities')->fetchAll();
+        $cities = $this->db->query('SELECT name, id, state_id FROM cities')->fetchAll();
+        loadView('users/register',  [
+            'cities' => $cities,
+            'states' => $states
+        ]);
     }
 
     /**
@@ -100,6 +105,10 @@ class UserController
         }
 
         if (!empty($errors)) {
+
+            $states = $this->db->query('SELECT state_id, state_code, state_name FROM cities ORDER BY state_name')->fetchAll();
+            $cities = $this->db->query('SELECT name, id, state_id, state_code FROM cities ORDER BY name')->fetchAll();
+
             loadView('users/register', [
                 'errors' => $errors,
                 'user' => [
@@ -107,7 +116,9 @@ class UserController
                     'email' => $email,
                     'city' => $city,
                     'state' => $state,
-                ]
+                ],
+                'cities' => $cities,
+                'states' => $states
             ]);
             exit;
         }

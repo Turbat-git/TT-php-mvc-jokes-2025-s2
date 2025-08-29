@@ -56,10 +56,22 @@ loadPartial('navigation'); ?>
 
                 <section class="mb-4">
                     <label for="City" class="mt-4 pb-1">City:</label>
-                    <input type="text" id="City"
-                           name="city" placeholder="City"
-                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
-                           value="<?= $user['city'] ?? '' ?>"/>
+                    <select name="city" id="City"
+                            placeholder="City"
+                            class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none">
+                        <?php if (empty($user['city'])) : ?>
+                            <option value="" disabled selected>Select City</option>
+                        <?php endif ?>
+                        <?php foreach ($cities as $key => $city): ?>
+                            <option value="<?= $city->id ?>"
+                                    <?php if (!empty($user['city']) && (int) $user['city'] === $city->id) :
+                                        echo 'selected';
+                                    endif ?>
+                            ><?= $city->name ?> (<?= $city->state_code ?>)
+                            </option>
+                        <?php endforeach ?>?
+                    </select>
+
                 </section>
 
                 <section class="mb-4">
