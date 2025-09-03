@@ -61,13 +61,13 @@ loadPartial('navigation');
                     </a>
                     <span class="pl-6.5 flex flex-row flex-wrap">
                     <img class="p-1"
-                         src="https://img.shields.io/github/stars/AdyGCode/SaaS-FED-Notes?style=for-the-badge"
+                         src="https://img.shields.io/github/stars/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN?style=for-the-badge"
                          alt="GitHub Repo stars">
                     <img class="p-1"
-                         src="https://img.shields.io/github/last-commit/AdyGCode/SaaS-FED-Notes?style=for-the-badge"
+                         src="https://img.shields.io/github/last-commit/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN?style=for-the-badge"
                          alt="GitHub Last Commit">
                     <img class="p-1"
-                         src="https://img.shields.io/github/downloads/AdyGCode/SaaS-FED-Notes/total?style=for-the-badge"
+                         src="https://img.shields.io/github/downloads/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN/total?style=for-the-badge"
                          alt="GitHub Downloads">
                         </span>
                 </dd>
@@ -109,7 +109,8 @@ loadPartial('navigation');
                     <a href="https://help.screencraft.net.au"
                        class="hover:text-black">
                         <i class="fa fa-home inline-block mr-2 text-sm"></i>
-                        <?= $category->title ?? "-" ?>
+                        <i class="fa fa-tag inline-block mr-2"></i>
+                        <?= $category->title ?? "" ?>
                     </a>
                 </dd>
 

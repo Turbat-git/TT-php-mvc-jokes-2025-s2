@@ -239,7 +239,8 @@ class UserController
             'name' => $user->name,
             'email' => $user->email,
             'city' => $user->city,
-            'state' => $user->state
+            'state' => $user->state,
+            'last_timestamp' => time(),
         ]);
 
         redirect('/');
