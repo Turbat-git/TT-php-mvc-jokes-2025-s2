@@ -93,12 +93,12 @@ loadPartial('navigation');
         <section class="m-4 bg-zinc-200 text-zinc-700 p-8 title shadow">
             <dl class="flex flex-col">
 
-                <dt class="text-lg font-semibold">Featured Product</dt>
+                <dt class="text-lg font-semibold">Featured Category</dt>
                 <dd class="ml-4">
                     <a href="https://help.screencraft.net.au"
                        class="hover:text-black">
-                        <i class="fa fa-home inline-block mr-2 text-sm"></i>
-                        <?= $product->name ?? "" ?>
+                        <i class="fa fa-tag inline-block mr-2"></i>
+                        <?= $category->title ?? "" ?>
                     </a>
                 </dd>
 
