@@ -29,6 +29,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/assets/css/all.css">
 
+    <!-- Add a forced refresh every 15 minutes to log user out if idle -->
+    <meta http-equiv="refresh" content="9001">
 
 </head>
 <body class="bg-white flex flex-col h-screen justify-between">

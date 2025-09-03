@@ -42,4 +42,5 @@ class Authorisation
         $sessionUser = Session::get('user');
         return (int)$sessionUser['id'] === 10 || (int)$sessionUser['id'] === 20;
     }
+
 }

@@ -65,7 +65,7 @@ class UserController
     {
         $states = $this->db->query('SELECT state_id, state_code, state_name FROM cities')->fetchAll();
         $cities = $this->db->query('SELECT name, id, state_id FROM cities')->fetchAll();
-        loadView('users/register',  [
+        loadView('users/register', [
             'cities' => $cities,
             'states' => $states
         ]);
@@ -147,7 +147,8 @@ class UserController
             'password' => password_hash($password, PASSWORD_DEFAULT)
         ];
 
-        $this->db->query('INSERT INTO users (name, email, city, state, password) VALUES (:name, :email, :city, :state, :password)', $params);
+        $this->db->query('INSERT INTO users (name, email, city, state, password) VALUES (:name, :email, :city, :state, :password)',
+            $params);
 
         // Get new user ID
         $userId = $this->db->conn->lastInsertId();
@@ -238,10 +239,13 @@ class UserController
             'name' => $user->name,
             'email' => $user->email,
             'city' => $user->city,
-            'state' => $user->state
+            'state' => $user->state,
+            'last_timestamp' => time(),
         ]);
 
         redirect('/');
     }
+
+
 
 }

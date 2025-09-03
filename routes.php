@@ -13,6 +13,7 @@
  * Author:          Adrian Gould <Adrian.Gould@nmtafe.wa.edu.au>
  *
  */
+global $router;
 
 $router->get('/', 'HomeController@index');
 
