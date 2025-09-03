@@ -69,6 +69,9 @@ loadPartial('navigation');
                     <img class="p-1"
                          src="https://img.shields.io/github/downloads/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN/total?style=for-the-badge"
                          alt="GitHub Downloads">
+                    <img class="p-1"
+                         src="https://img.shields.io/github/v/release/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN?style=for-the-badge"
+                         alt="GitHub Downloads">
                         </span>
                 </dd>
             </dl>
