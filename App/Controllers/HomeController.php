@@ -18,20 +18,43 @@
 namespace App\Controllers;
 
 
+use Framework\Authorisation;
 use Framework\Database;
+use Framework\middleware\Authorise;
+use Framework\Session;
 
+/**
+ * HomeController Class
+ *
+ * Provides "static" pages to the end user.
+ *
+ * Includes:
+ * - Home page
+ * - Dashboard
+ */
 class HomeController
 {
     protected $db;
 
+    /**
+     * HomeController constructor/instantiator
+     *
+     * @throws \Exception
+     */
     public function __construct()
     {
         $config = require basePath('config/db.php');
         $this->db = new Database($config);
+
     }
 
     /*
-     * Show the home page
+     * Show the home page to the visitor
+     *
+     * The controller requests the Home page to be rendered,
+     * with a single random category shown.
+     *
+     * TODO: Show a single random joke, correctly formatted
      *
      * @return void
      */
@@ -49,14 +72,27 @@ class HomeController
     }
 
     /*
-     * Show the authenticated user dashboard
+     * Show the dashboard
+     *
+     * Dashboard statistics shown include:
+     *  - number of categories
+     *  - number of users
+     *  - number of jokes
+     *
+     * TODO: Ensure that the correct counts are shown when dashboard is rendered
      *
      * @return void
      */
     public function dashboard()
     {
-        $lastSixQuery = 'SELECT * FROM categories ORDER BY created_at DESC LIMIT 0,6';
-        $simpleRandomSixQuery = 'SELECT * FROM categories ORDER BY RAND() LIMIT 0,6';
+
+        if (  Session::get('user') ) {
+            Authorise::isActive();
+        }
+
+
+        $lastSixQuery = 'SELECT * FROM categories ORDER BY created_at DESC LIMIT 0,2';
+        $simpleRandomSixQuery = 'SELECT * FROM categories ORDER BY RAND() LIMIT 0,5';
 
         $categories= $this->db->query($simpleRandomSixQuery)
             ->fetchAll();

@@ -109,7 +109,8 @@ loadPartial('navigation');
                     <a href="https://help.screencraft.net.au"
                        class="hover:text-black">
                         <i class="fa fa-home inline-block mr-2 text-sm"></i>
-                        <?= $category->title ?? "-" ?>
+                        <i class="fa fa-tag inline-block mr-2"></i>
+                        <?= $category->title ?? "" ?>
                     </a>
                 </dd>
 
