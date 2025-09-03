@@ -32,10 +32,10 @@ loadPartial('navigation');
                             bg-gray-100 dark:bg-gray-800 shadow">
                 <div class=" p-4 align-center text-center
                             col-span-1
-                            text-amber-800 dark:text-amber-500
+                            text-amber-50 dark:text-amber-500
                             bg-amber-500 dark:bg-amber-800 mr-4">
                     <p class="text-center"><i class="fa fa-mug-saucer text-4xl"></i></p>
-                    <h4 class="text-center mb-0 text-xs font-medium">
+                    <h4 class="text-center mb-0 font-medium pt-2 text-amber-950">
                         Jokes
                     </h4>
                 </div>
@@ -52,10 +52,10 @@ loadPartial('navigation');
                             bg-gray-100 dark:bg-gray-800 shadow">
                 <div class=" p-4 align-center text-center
                             col-span-1
-                            text-green-800 dark:text-green-500
+                            text-green-50 dark:text-green-500
                             bg-green-500 dark:bg-green-800 mr-4">
                     <p class="text-center"><i class="fa fa-mug-saucer text-4xl"></i></p>
-                    <h4 class="text-center mb-0 text-xs font-medium">
+                    <h4 class="text-center mb-0 font-medium pt-2 text-green-950">
                         Categories
                     </h4>
                 </div>
@@ -72,10 +72,10 @@ loadPartial('navigation');
                             bg-gray-100 dark:bg-gray-800 shadow">
                 <div class=" p-4 align-center text-center
                             col-span-1
-                            text-prussianblue-800 dark:text-prussianblue-500
+                            text-prussianblue-50 dark:text-prussianblue-500
                             bg-prussianblue-500 dark:bg-prussianblue-800 mr-4">
                     <p class="text-center"><i class="fa fa-users text-4xl"></i></p>
-                    <h4 class="text-center mb-0 text-xs font-medium">
+                    <h4 class="text-center mb-0 font-medium pt-2 text-prussianblue-950">
                         Users
                     </h4>
                 </div>
@@ -89,33 +89,18 @@ loadPartial('navigation');
 
         </section>
 
-        <section class="my-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
+        <section class="my-8 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-center">
 
             <?php
-            foreach ($products ?? [] as $product):
+            foreach ($categories ?? [] as $category):
                 ?>
                 <!--            article>(header>h4{Name})+(section>p{Description})+(footer>p{Price})-->
-                <article class="bg-gray-100 border border-gray-400 shadow  flex flex-col overflow-hidden">
-                    <header class="-mx-2 bg-gray-700 text-gray-200 text-lg  flex-0">
-                        <h4 class="h-20 px-6 py-2">
-                            <?= $product->name ?>
-                        </h4>
-                    </header>
-                    <img class="h-24 md:h-48 lg:h-56 w-full object-cover" src="https://picsum.photos/640/480"
-                         alt="">
-                    <section class="flex-grow p-4">
-                        <div class="text-gray-600 bg-gray-100 parsedown">
-                            <?= html_entity_decode($product->description) ?>
-                        </div>
-                    </section>
-                    <footer class="-mx-2 bg-gray-200 text-gray-900 text-sm px-4 py-4 -mb-2  flex-0 flex justify-between">
-                        <p class="">Price: $<?= $product->price / 100 ?></p>
-                        <a href="/products/<?= $product->id ?>"
-                           class="btn">
-                            More details...
-                        </a>
-                    </footer>
-                </article>
+                <a class="group relative inline-block overflow-hidden border bg-white border-neutral-800 px-10 py-1 focus:ring-2focus:outline-hidden"
+                   href="/categories/<?= $category->id ?>"
+                >
+                    <span class="absolute inset-y-0 left-0 w-[2px] bg-neutral-800 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                    <span class="relative text-sm font-medium   text-black transition-colors duration-500 group-hover:text-white"><?= $category->title ?></span>
+                </a>
 
             <?php
             endforeach

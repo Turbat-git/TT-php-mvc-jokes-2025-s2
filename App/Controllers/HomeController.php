@@ -31,7 +31,7 @@ class HomeController
     }
 
     /*
-     * Show the latest categories
+     * Show the home page
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class HomeController
     }
 
     /*
-     * Show the latest categories
+     * Show the authenticated user dashboard
      *
      * @return void
      */
@@ -72,6 +72,18 @@ class HomeController
             'categoryCount' => $categoryCount,
             'userCount' => $userCount,
         ]);
+    }
+
+
+
+    /*
+     * Show the test static page
+     *
+     * @return void
+     */
+    public function test()
+    {
+        loadView('static/test', []);
     }
 
 

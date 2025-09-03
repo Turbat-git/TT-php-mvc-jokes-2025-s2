@@ -2,17 +2,20 @@
 -- BEFORE COMMENCING:
 --
 -- - If the instructions in an assessment tell you to use a different database name then
---   replace the XXX_SaaS_FED_YYYY_SN with the name as required. For example:
---      Assessment DB: XXX_SaaS_FED_Jokes_YYYY_SN
+--   replace the xxx_saas_fed_yyyy_sn with the name as required. For example:
+--      Assessment DB: xxx_saas_fed_jokes_yyyy_sn
 --
--- - Replace all instances of YYYY with the current year
+-- - Replace all instances of yyyy with the current year
 --   For example, 2025
 --
--- - Replace all instances of SN with S followed by the semester number
---   For example, S1 for semester 1
+-- - Replace all instances of sn with s followed by the semester number
+--   For example, s1 for semester 1
 --
--- - Replace ALL instances of XXX with your initials
+-- - Replace ALL instances of xxx with your initials
 --   For example, AJG for Adrian Gould
+--
+-- Once this file has been updated and executed using your preferred UI for MariaDB/MySQl,
+-- open and complete the same tasks with the database-cities.sql file
 --
 -- --------------------------------------------------------------------------------------------
 --
@@ -28,6 +31,7 @@
 
 -- ======================================> BEGIN SECTION <=====================================
 -- USER & DATABASE REMOVAL
+--
 -- In this section we perform a clean-up of any existing database and user(s) associated with
 -- this database.
 --
@@ -38,9 +42,9 @@
 -- --------------------------------------------------------------------------------------------
 -- Clean up existing database and user(s)
 -- --------------------------------------------------------------------------------------------
-DROP DATABASE IF EXISTS `XXX_SaaS_FED_YYYY_SN`;
-DROP USER IF EXISTS 'XXX_SaaS_FED_YYYY_SN'@'localhost';
-DROP USER IF EXISTS 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1';
+DROP DATABASE IF EXISTS `xxx_saas_fed_yyyy_sn`;
+DROP USER IF EXISTS 'xxx_saas_fed_yyyy_sn'@'localhost';
+DROP USER IF EXISTS 'xxx_saas_fed_yyyy_sn'@'127.0.0.1';
 -- =======================================> END SECTION <======================================
 
 
@@ -53,9 +57,9 @@ DROP USER IF EXISTS 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1';
 -- --------------------------------------------------------------------------------------------
 
 -- --------------------------------------------------------------------------------------------
--- Create Database named 'XXX_SaaS_FED_YYYY_SN'
+-- Create Database named 'xxx_saas_fed_yyyy_sn'
 -- --------------------------------------------------------------------------------------------
-CREATE DATABASE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`;
+CREATE DATABASE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`;
 
 -- --------------------------------------------------------------------------------------------
 -- Create User & Grant Permissions
@@ -63,27 +67,27 @@ CREATE DATABASE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`;
 -- We create users that are able to access the database via localhost and 127.0.0.1 just in
 -- case IPv6 is detected. Some RDBMS systems may not be 100% compatible with IPv6 IP addresses.
 -- --------------------------------------------------------------------------------------------
-CREATE USER 'XXX_SaaS_FED_YYYY_SN'@'localhost'
+CREATE USER 'xxx_saas_fed_yyyy_sn'@'localhost'
     IDENTIFIED WITH mysql_native_password
         USING PASSWORD('Password1234');
 
-CREATE USER 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1'
+CREATE USER 'xxx_saas_fed_yyyy_sn'@'127.0.0.1'
     IDENTIFIED WITH mysql_native_password
         USING PASSWORD('Password1234');
 
 GRANT USAGE ON *.*
-    TO 'XXX_SaaS_FED_YYYY_SN'@'localhost';
+    TO 'xxx_saas_fed_yyyy_sn'@'localhost';
 
 GRANT USAGE ON *.*
-    TO 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1';
+    TO 'xxx_saas_fed_yyyy_sn'@'127.0.0.1';
 
 GRANT ALL PRIVILEGES
-    ON `XXX_SaaS_FED_YYYY_SN`.*
-    TO 'XXX_SaaS_FED_YYYY_SN'@'localhost';
+    ON `xxx_saas_fed_yyyy_sn`.*
+    TO 'xxx_saas_fed_yyyy_sn'@'localhost';
 
 GRANT ALL PRIVILEGES
-    ON `XXX_SaaS_FED_YYYY_SN`.*
-    TO 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1';
+    ON `xxx_saas_fed_yyyy_sn`.*
+    TO 'xxx_saas_fed_yyyy_sn'@'127.0.0.1';
 
 -- --------------------------------------------------------------------------------------------
 -- Apply the user's privileges.
@@ -94,6 +98,7 @@ FLUSH PRIVILEGES;
 
 -- ======================================> BEGIN SECTION <=====================================
 -- CREATE USER TABLE(S)
+--
 -- This section creates the 'users' table, one of the most commonly created database table
 -- structures. The basic user table will vary depending on the developer's choices.
 -- For example, the user's address information may be moved into a second table that contains
@@ -101,19 +106,19 @@ FLUSH PRIVILEGES;
 -- --------------------------------------------------------------------------------------------
 
 -- --------------------------------------------------------------------------------------------
--- Tell MySQL to use the  `XXX_SaaS_FED_YYYY_SN` database for commands.
+-- Tell MySQL to use the  `xxx_saas_fed_yyyy_sn` database for commands.
 -- --------------------------------------------------------------------------------------------
-USE `XXX_SaaS_FED_YYYY_SN`;
+USE `xxx_saas_fed_yyyy_sn`;
 
 -- --------------------------------------------------------------------------------------------
 -- Remove any existing Users table
 -- --------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS `XXX_SaaS_FED_YYYY_SN`.`users`;
+DROP TABLE IF EXISTS `xxx_saas_fed_yyyy_sn`.`users`;
 
 -- --------------------------------------------------------------------------------------------
 -- Create the table structure for the 'users' table
 -- --------------------------------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`users`
+CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`users`
 (
     `id`         int          NOT NULL AUTO_INCREMENT,
     `name`       varchar(255)      DEFAULT NULL,
@@ -139,6 +144,10 @@ CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`users`
 -- This section creates additional table(s).
 --
 -- In the case of this example, it creates a 'categories' table.
+--
+-- The `database-cities.sql` file creates a cities table and adds ~4,000 Australian
+-- cities to the database.
+--
 -- --------------------------------------------------------------------------------------------
 
 -- --------------------------------------------------------------------------------------------
@@ -149,9 +158,9 @@ CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`users`
 --
 -- The use of BACK-TICKS is compulsory
 -- --------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS `XXX_SaaS_FED_YYYY_SN`.`categories`;
+DROP TABLE IF EXISTS `xxx_saas_fed_yyyy_sn`.`categories`;
 
-CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`categories`
+CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`categories`
 (
     `id`          bigint unsigned NOT NULL AUTO_INCREMENT,
     `title`       varchar(255)    NOT NULL,
@@ -182,31 +191,34 @@ CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`categories`
 --
 -- The Password is Password1 hashed using the PHP password_hash() method.
 -- --------------------------------------------------------------------------------------------
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`users`
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`users`
 VALUES (10, 'Super User', 'super@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
         'Perth', 'WA', 'Australia', '2000-01-01 00:00:01');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`users`
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`users`
 VALUES (20, 'Ad Ministrator', 'admin@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
         'Perth', 'WA', 'Australia', '2024-01-01 10:30:01');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`users`
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`users`
 VALUES (50, 'YOUR_NAME', 'GIVEN_NAME@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
         'Perth', 'WA', 'Australia', '2024-08-10 16:11:43');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`users`
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`users`
 VALUES (100, 'Jacques d\`Carre', 'jacques@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
         'Bunbury', 'WA', 'Australia', '2024-08-15 13:04:21'),
+
        (101, 'Minah d\`Carre', 'minah@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
         'Melbourne', 'VIC', 'Australia', '2024-08-20 13:17:21'),
+
        (102, 'Crystal Chantelle-Leer', 'crystal@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
         'Adelaide', 'SA', 'Australia', '2024-08-20 17:59:13');
+
 -- =======================================> END SECTION <======================================
 
 
@@ -219,24 +231,24 @@ VALUES (100, 'Jacques d\`Carre', 'jacques@example.com',
 -- Seed Categories Table
 -- --------------------------------------------------------------------------------------------
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`, `user_id`)
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`categories`(`id`, `title`, `created_at`, `user_id`)
 VALUES (1, 'unknown', '2000-01-01 00:00:01', 20);
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`, `user_id`)
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`categories`(`id`, `title`, `created_at`, `user_id`)
 VALUES (10, 'dad', '2000-01-01 00:00:01', 20);
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`, `user_id`)
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`categories`(`id`, `title`, `created_at`, `user_id`)
 VALUES (11, 'geek', '2000-01-01 00:00:10', 20),
        (12, 'programmer', '2000-01-01 00:00:10', 20),
        (13, 'web', '2000-01-01 00:00:10', 20);
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`, `user_id`)
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`categories`(`id`, `title`, `created_at`, `user_id`)
 VALUES (14, 'knock-knock', '2000-01-01 00:00:20', 20),
        (15, 'rude', '2000-01-01 00:00:20', 20),
        (16, 'dog', '2000-01-01 00:00:20', 20),
        (17, 'cat', '2000-01-01 00:00:20', 20);
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`, `user_id`)
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`categories`(`id`, `title`, `created_at`, `user_id`)
 VALUES (18, 'halloween', '2000-01-01 00:00:30', 20),
        (19, 'animal', '2000-01-01 00:00:30', 20);
 

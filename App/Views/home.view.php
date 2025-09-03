@@ -59,6 +59,17 @@ loadPartial('navigation');
                         <i class="fa fa-code inline-block mr-2 text-sm"></i>
                         https://github.com/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN
                     </a>
+                    <span class="pl-6.5 flex flex-row flex-wrap">
+                    <img class="p-1"
+                         src="https://img.shields.io/github/stars/AdyGCode/SaaS-FED-Notes?style=for-the-badge"
+                         alt="GitHub Repo stars">
+                    <img class="p-1"
+                         src="https://img.shields.io/github/last-commit/AdyGCode/SaaS-FED-Notes?style=for-the-badge"
+                         alt="GitHub Last Commit">
+                    <img class="p-1"
+                         src="https://img.shields.io/github/downloads/AdyGCode/SaaS-FED-Notes/total?style=for-the-badge"
+                         alt="GitHub Downloads">
+                        </span>
                 </dd>
             </dl>
         </section>
@@ -93,12 +104,12 @@ loadPartial('navigation');
         <section class="m-4 bg-zinc-200 text-zinc-700 p-8 title shadow">
             <dl class="flex flex-col">
 
-                <dt class="text-lg font-semibold">Featured Product</dt>
+                <dt class="text-lg font-semibold">Featured Category</dt>
                 <dd class="ml-4">
                     <a href="https://help.screencraft.net.au"
                        class="hover:text-black">
                         <i class="fa fa-home inline-block mr-2 text-sm"></i>
-                        <?= $product->name ?? "" ?>
+                        <?= $category->title ?? "-" ?>
                     </a>
                 </dd>
 

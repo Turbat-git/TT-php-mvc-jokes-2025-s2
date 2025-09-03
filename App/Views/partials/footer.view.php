@@ -70,11 +70,11 @@
                 Help Center
                 <span class="text-prussianblue-600 text-xs p-1">New</span>
             </a>
-            <a class="my-1 block" href="https://help.screencraft.net.au/hc/2680392001">
+            <a class="my-1 block" href="https://help.screencraft.net.au">
                 FAQs
                 <span class="text-prussianblue-600 text-xs p-1">New</span>
             </a>
-            <a class="my-1 block" href="https://help.screencraft.net.au/help/2680392001">
+            <a class="my-1 block" href="https://help.screencraft.net.au">
                 New Request
                 <span class="text-prussianblue-600 text-xs p-1">New</span>
             </a>

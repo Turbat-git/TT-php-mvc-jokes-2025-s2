@@ -9,12 +9,14 @@
  *
  * Author:          YOUR NAME
  *
+ * Update the dbname, username and password as appropriate.
+ *
  */
 
 return [
     'host' => '127.0.0.1',
     'port' => 3306,
-    'dbname' => 'XXX_SaaS_FED_YYYY_SN',
-    'username' => 'XXX_SaaS_FED_YYYY_SN',
+    'dbname' => 'xxx_saas_fed_yyyy_sn',
+    'username' => 'xxx_saas_fed_yyyy_sn',
     'password' => 'Password1234'
 ];
