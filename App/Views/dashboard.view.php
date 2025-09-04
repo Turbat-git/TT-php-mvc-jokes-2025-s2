@@ -16,20 +16,20 @@ loadPartial('navigation');
 
 ?>
 
-<main class="container mx-auto bg-gray-50 py-8 px-4 shadow shadow-black/25 title">
+<main class="container mx-auto bg-neutral-50 py-8 px-4 shadow shadow-black/25 title">
     <article>
-        <header class="bg-gray-700 text-gray-200 -mx-4 -mt-8 p-8 text-2xl font-bold mb-2 ">
+        <header class="bg-neutral-700 text-neutral-200 -mx-4 -mt-8 p-8 text-2xl font-bold mb-2 ">
             <h1>Vanilla PHP MVC Demo</h1>
         </header>
 
-        <section class="bg-gray-500
+        <section class="bg-neutral-500
                         grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
                         gap-8 -mx-4 -mt-2 px-4 py-0
-                        border border-t-0 border-x-0 border-b-gray-300">
+                        border border-t-0 border-x-0 border-b-neutral-300">
 
             <section class=" my-8
                             grid grid-cols-4 items-center justify-center
-                            bg-gray-100 dark:bg-gray-800 shadow">
+                            bg-neutral-100 dark:bg-neutral-800 shadow">
                 <div class=" p-4 align-center text-center
                             col-span-1
                             text-amber-50 dark:text-amber-500
@@ -49,7 +49,7 @@ loadPartial('navigation');
 
             <section class=" my-8
                             grid grid-cols-4 items-center justify-center
-                            bg-gray-100 dark:bg-gray-800 shadow">
+                            bg-neutral-100 dark:bg-neutral-800 shadow">
                 <div class=" p-4 align-center text-center
                             col-span-1
                             text-green-50 dark:text-green-500
@@ -69,7 +69,7 @@ loadPartial('navigation');
 
             <section class=" my-8
                             grid grid-cols-4 items-center justify-center
-                            bg-gray-100 dark:bg-gray-800 shadow">
+                            bg-neutral-100 dark:bg-neutral-800 shadow">
                 <div class=" p-4 align-center text-center
                             col-span-1
                             text-prussianblue-50 dark:text-prussianblue-500

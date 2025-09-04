@@ -15,11 +15,11 @@
 
 <!-- Page Footer -->
 <!-- based on https://www.creative-tim.com/twcomponents/component/tailwind-css-footer-1-->
-<footer class="w-full text-gray-400 bg-gray-950 body-font text-sm pt-4 mt-12">
+<footer class="w-full text-neutral-400 bg-neutral-950 body-font text-sm pt-4 mt-12">
     <section class="max-w-screen-xl mx-auto px-4 sm:px-6
-         text-gray-400 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-between">
+         text-neutral-400 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-between">
         <nav class="py-2">
-            <h5 class="font-display text-left font-medium tracking-widest text-gray-500 uppercase title-font>
+            <h5 class="font-display text-left font-medium tracking-widest text-neutral-500 uppercase title-font>
                 About
             </h5>
             <a class=" my-1 block" href="/#">
@@ -36,7 +36,7 @@
             </a>
         </nav>
         <nav class="py-2">
-            <h5 class="font-display text-left font-medium tracking-widest text-gray-500 uppercase title-font">
+            <h5 class="font-display text-left font-medium tracking-widest text-neutral-500 uppercase title-font">
                 Resources
             </h5>
 
@@ -63,7 +63,7 @@
 
         </nav>
         <nav class="py-2">
-            <h5 class="font-display text-left font-medium tracking-widest text-gray-500 uppercase title-font">
+            <h5 class="font-display text-left font-medium tracking-widest text-neutral-500 uppercase title-font">
                 Support
             </h5>
             <a class="my-1 block" href="https://help.screencraft.net.au">
@@ -88,7 +88,7 @@
             </a>
         </nav>
         <nav class="py-2">
-            <h5 class="font-display text-left font-medium tracking-widest text-gray-500 uppercase title-font ">
+            <h5 class="font-display text-left font-medium tracking-widest text-neutral-500 uppercase title-font ">
                 Contact us
             </h5>
 
@@ -101,24 +101,24 @@
                 contact@example.com
                 <span class="text-prussianblue-600 text-xs p-1"></span>
             </a>
-            <p class="text-gray-400 pt-6">
+            <p class="text-neutral-400 pt-6">
                 &copy; Copyright YYYY YOUR_NAME. All rights reserved.
             </p>
         </nav>
         <nav class="py-2 pb-6 col-span-4 flex flex-wrap justify-between">
             <p class="text-xs">
                 Based on the <a href="https://github.com/bradtraversy/workopia-php"
-                                class="text-gray-500 hover:text-white underline underline-offset-2">Workopia Project</a>
+                                class="text-neutral-500 hover:text-white underline underline-offset-2">Workopia Project</a>
                 from the
                 <a href="https://www.traversymedia.com/php-from-scratch"
-                   class="text-gray-500 hover:text-white underline underline-offset-2">PHP From Scratch</a> course, and
+                   class="text-neutral-500 hover:text-white underline underline-offset-2">PHP From Scratch</a> course, and
                 the subsequent
                 <a href="https://github.com/AdyGCode/XXX-SaaS-Vanilla-MVC-YYYY-SN/tree/main/session-07"
-                   class="text-gray-500 hover:text-white underline underline-offset-2">supporting tutorial</a>
+                   class="text-neutral-500 hover:text-white underline underline-offset-2">supporting tutorial</a>
                 by <a href="https://adygcode.github.io"
-                      class="text-gray-500 hover:text-white">Adrian Gould</a> &
+                      class="text-neutral-500 hover:text-white">Adrian Gould</a> &
                 <a href="https://www.northmetrotafe.wa.edu.au"
-                   class="text-gray-500 hover:text-red-700">North Metropolitan TAFE</a>
+                   class="text-neutral-500 hover:text-red-700">North Metropolitan TAFE</a>
                 <br>
                 <span class="text-prussianblue-500">License: MIT Open Source Licensing</span>
             </p>

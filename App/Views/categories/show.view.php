@@ -26,9 +26,13 @@ loadPartial('navigation');
 
         <header class="bg-zinc-700 text-zinc-200 -mx-4 -mt-8 p-8 mb-8 flex ">
             <h1 class="grow text-2xl font-bold  ">Categories - Detail</h1>
-            <p class="text-md px-8 py-2 bg-prussianblue-500 hover:bg-prussianblue-600 text-white  transition ease-in-out duration-500">
-                <a href="/categories/create">Add Category</a>
-            </p>
+            <a class="group relative inline-block overflow-hidden border bg-neutral-500 border-neutral-800 px-6 py-2 focus:ring-2 focus:outline-hidden"
+               href="/categories/create">
+                <span class="absolute inset-y-0 left-0 w-[2px] bg-prussianblue-600 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                <span class="relative text-sm font-medium text-white transition-colors group-hover:text-white">
+                                <i class="fa fa-list"></i> Add Category
+                        </span>
+            </a>
         </header>
 
         <section>
@@ -52,48 +56,42 @@ loadPartial('navigation');
 
             <?php
             if (Framework\Authorisation::isOwner($category->user_id ?? 0)) :
-                ?>
-                <form method="POST"
-                      action="/categories/<?= $category->id ?>"
-                      class="px-4 py-4 mt-4 -mx-4 border-0 border-t-1 border-zinc-300 text-lg flex flex-row gap-8">
+            ?>
+            <section class="px-4 py-4 mt-4 -mx-4 border-0 border-t-1 border-zinc-300 text-lg flex flex-row gap-8">
 
-                    <a class="group relative inline-block overflow-hidden border bg-gray-50 border-emerald-500 px-12 py-2 focus:ring-2 focus:outline-hidden"
-                       href="/categories">
-                        <span class="absolute inset-y-0 left-0 w-[2px] bg-emerald-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
-                        <span class="relative text-sm font-medium text-black transition-colors duration-500 group-hover:text-white">
+                <a class="group relative inline-block overflow-hidden border bg-neutral-50 border-emerald-500 px-12 py-2 focus:ring-2 focus:outline-hidden"
+                   href="/categories">
+                    <span class="absolute inset-y-0 left-0 w-[2px] bg-emerald-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                    <span class="relative text-sm font-medium text-black transition-colors duration-500 group-hover:text-white">
                                 <i class="fa fa-list inline-block mr-2"></i> Show All
                             </span>
-                    </a>
+                </a>
 
-                    <?php if ($category->id > 1): ?>
+                <?php if ($category->id > 1): ?>
 
-                        <a class="group relative inline-block overflow-hidden border bg-white border-amber-800 px-12 py-2 focus:ring-2focus:outline-hidden"
-                           href="/categories/edit/<?= $category->id ?>"
-                        >
-                            <span class="absolute inset-y-0 left-0 w-[2px] bg-amber-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
-                            <span class="relative text-sm font-medium  text-black transition-colors duration-500 group-hover:text-white">
+                    <a class="group relative inline-block overflow-hidden border bg-white border-amber-800 px-12 py-2 focus:ring-2focus:outline-hidden"
+                       href="/categories/edit/<?= $category->id ?>"
+                    >
+                        <span class="absolute inset-y-0 left-0 w-[2px] bg-amber-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-sm font-medium  text-black transition-colors duration-500 group-hover:text-white">
                                 <i class="fa fa-edit inline-block mr-2"></i>
                                 Edit
                             </span>
-                        </a>
+                    </a>
 
-                        <input type="hidden" name="_method" value="DELETE">
-                        <input type="hidden" name="category_id" value="<?= $category->id ?>">
-                        <button type="submit"
-                                class="group relative inline-block overflow-hidden border bg-white border-red-800 px-12 py-2 focus:ring-2focus:outline-hidden">
-                            <span class="absolute inset-y-0 left-0 w-[2px] bg-red-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
-                            <span class="relative text-sm font-medium  text-black transition-colors duration-500 group-hover:text-white">
-                                <i class="fa fa-times inline-block mr-2"></i>
-                                Delete
-                            </span>
-                        </button>
-                    <?php endif ?>
+                    <a class="group relative inline-block overflow-hidden border bg-white border-red-800 px-8 py-2 focus:ring-2focus:outline-hidden"
+                       href="/categories/delete/<?= $category->id ?>"
+                    >
+                        <span class="absolute inset-y-0 left-0 w-[2px] bg-red-800 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-sm font-medium text-black transition-colors duration-500 group-hover:text-white">
+                                            Delete <i class="fa-solid fa-times"></i>
+                                        </span>
+                    </a>
+                <?php endif ?>
 
-                </form>
+                <?php endif ?>
 
-            <?php endif ?>
-
-        </section>
+            </section>
 
     </article>
 </main>

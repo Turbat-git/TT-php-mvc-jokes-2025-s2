@@ -28,7 +28,7 @@ loadPartial('navigation');
             <header class="bg-zinc-700 text-zinc-200 -mx-4 -mt-8 p-8 mb-8 flex">
                 <h2 class="grow text-2xl font-bold ">Categories - Edit</h2>
 
-                <a class="group relative inline-block overflow-hidden border bg-gray-500 border-gray-800 px-6 py-2 focus:ring-2 focus:outline-hidden"
+                <a class="group relative inline-block overflow-hidden border bg-neutral-500 border-neutral-800 px-6 py-2 focus:ring-2 focus:outline-hidden"
                    href="/categories/create">
                     <span class="absolute inset-y-0 left-0 w-[2px] bg-prussianblue-600 transition-all duration-500 ease-in-out group-hover:w-full"></span>
                     <span class="relative text-sm font-medium text-white transition-colors group-hover:text-white">
@@ -48,7 +48,7 @@ loadPartial('navigation');
                 <form id="CategoryForm" method="POST" action="/categories/<?= $category_id ?>">
                     <input type="hidden" name="_method" value="PUT">
 
-                    <h2 class="text-2xl font-bold mb-6 text-left text-gray-500">
+                    <h2 class="text-2xl font-bold mb-6 text-left text-neutral-500">
                         Category Information
                         <input id="CategoryID" type="hidden" name="category_id"
                                value="<?= $category->id ?>"/>
