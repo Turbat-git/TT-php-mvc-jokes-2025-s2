@@ -25,7 +25,7 @@ if ($successMessage !== null) : ?>
             </svg>
         </div>
         <div class="px-4 py-2 bg-white  flex justify-between items-center w-full border
-                    border-l-transparent border-gray-200">
+                    border-l-transparent border-neutral-200">
             <?= $successMessage ?>
         </div>
     </div>
@@ -48,7 +48,7 @@ if ($errorMessage !== null) : ?>
             </svg>
         </div>
         <div class="px-4 py-2 bg-white  flex justify-between items-center w-full border
-                    border-l-transparent border-gray-200">
+                    border-l-transparent border-neutral-200">
             <?= $errorMessage ?>
         </div>
     </div>

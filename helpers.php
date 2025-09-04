@@ -100,7 +100,7 @@ function inspect($value)
  */
 function dump(): void
 {
-    echo "<pre class='bg-gray-100 color-black m-2 p-2 shadow flex-grow text-sm'>";
+    echo "<pre class='bg-neutral-100 color-black m-2 p-2 shadow flex-grow text-sm'>";
     array_map(function ($x) {
         var_dump($x);
     }, func_get_args());
@@ -115,7 +115,7 @@ function dump(): void
  */
 function dd(): void
 {
-    echo "<pre class='bg-gray-100 color-black m-2 p-2 shadow flex-grow text-sm'>";
+    echo "<pre class='bg-neutral-100 color-black m-2 p-2 shadow flex-grow text-sm'>";
     array_map(function ($x) {
         var_dump($x);
     }, func_get_args());

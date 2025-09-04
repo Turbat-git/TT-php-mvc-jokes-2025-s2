@@ -19,8 +19,9 @@
 --
 -- --------------------------------------------------------------------------------------------
 
-CREATE TABLE `xxx_saas_fed_yyyy_sn`.`cities`
-(
+DROP TABLE IF EXISTS  `xxx_saas_fed_yyyy_sn`.`cities`;
+
+CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`cities`(
     `id`           INT          NOT NULL,
     `name`         VARCHAR(255) NOT NULL,
     `state_id`     INT          NOT NULL,
