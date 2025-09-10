@@ -21,19 +21,19 @@
 
 
 -- --------------------------------------------------------------------------------------------
--- Tell MySQL to use the  `XXX_SaaS_FED_YYYY_SN` database for commands.
+-- Tell MySQL to use the  `xxx_saas_fed_yyyy_sn` database for commands.
 -- --------------------------------------------------------------------------------------------
-USE `XXX_SaaS_FED_YYYY_SN`;
+USE `xxx_saas_fed_yyyy_sn`;
 
 -- --------------------------------------------------------------------------------------------
 -- Remove any existing Jokes table
 -- --------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS `XXX_SaaS_FED_YYYY_SN`.`jokes`;
+DROP TABLE IF EXISTS `xxx_saas_fed_yyyy_sn`.`jokes`;
 
 -- --------------------------------------------------------------------------------------------
 -- Create the table structure for the 'jokes' table
 -- --------------------------------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`jokes`
+CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`jokes`
 (
     `id`          int          NOT NULL AUTO_INCREMENT,
     `title`       varchar(128) NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`jokes`
 -- =======================================> END SECTION <======================================
 
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`jokes`(`title`, `content`, `category_id`) VALUES ("Charging Rhino", "
+INSERT INTO `xxx_saas_fed_yyyy_sn`.`jokes`(`title`, `content`, `category_id`) VALUES ("Charging Rhino", "
 How do you keep a Rhino from charging?
 
 Take away its credit card.

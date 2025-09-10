@@ -12,7 +12,7 @@
   </component>
   <component name="PhpCodeSniffer">
     <phpcs_settings>
-      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="92f807e5-972d-4aa8-b45b-46509f268570" timeout="30000" />
+      <phpcs_by_interpreter interpreter_id="92f807e5-972d-4aa8-b45b-46509f268570" timeout="30000" />
     </phpcs_settings>
   </component>
   <component name="PhpIncludePathManager">
@@ -28,12 +28,13 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/ckeditor/ckeditor" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/league/csv" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.3" />
   <component name="PhpStan">
     <PhpStan_settings>
-      <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="92f807e5-972d-4aa8-b45b-46509f268570" timeout="60000" />
+      <phpstan_by_interpreter interpreter_id="92f807e5-972d-4aa8-b45b-46509f268570" timeout="60000" />
     </PhpStan_settings>
   </component>
   <component name="PhpStanOptionsConfiguration">
@@ -46,7 +47,7 @@
   </component>
   <component name="Psalm">
     <Psalm_settings>
-      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="92f807e5-972d-4aa8-b45b-46509f268570" timeout="60000" />
+      <psalm_fixer_by_interpreter interpreter_id="92f807e5-972d-4aa8-b45b-46509f268570" timeout="60000" />
     </Psalm_settings>
   </component>
   <component name="PsalmOptionsConfiguration">

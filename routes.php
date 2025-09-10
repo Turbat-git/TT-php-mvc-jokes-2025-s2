@@ -22,6 +22,10 @@ $router->get('/', 'HomeController@index');
 $router->get('/dashboard', 'HomeController@dashboard');
 $router->get('/test', 'HomeController@test');
 
+
+$router->get('/import', "CsvImportController@index");
+$router->post('/import', "CsvImportController@store");
+
 /**
  * UserController methods for authentication/registration
  */

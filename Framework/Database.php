@@ -104,4 +104,14 @@ class Database
             throw new RuntimeException("Query failed to execute: {$e->getMessage()}");
         }
     }
+
+
+    public function beginTransaction(){
+        $this->conn->beginTransaction();
+    }
+    public function endTransaction(){
+        $this->conn->commit();
+    }
+
+
 }
