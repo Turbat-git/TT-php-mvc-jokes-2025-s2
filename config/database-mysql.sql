@@ -236,6 +236,11 @@ INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`)
 VALUES (18, 'halloween', '2000-01-01 00:00:30'),
        (19, 'animal', '2000-01-01 00:00:30');
 
+INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`)
+VALUES (20, 'lightbulb', '2000-01-01 00:00:30'),
+       (21, 'one-liner', '2000-01-01 00:00:30'),
+       (22, 'lawyer', '2000-01-01 00:00:30');
+
 -- ===================================> END SEEDING SECTION <==================================
 
 
