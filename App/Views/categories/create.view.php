@@ -38,7 +38,7 @@ loadPartial('navigation');
 
                 <form id="CategoryForm" method="POST" action="/categories">
 
-                    <h2 class="text-2xl font-bold mb-6 text-left text-gray-500">
+                    <h2 class="text-2xl font-bold mb-6 text-left text-neutral-500">
                         Category Information
                     </h2>
 

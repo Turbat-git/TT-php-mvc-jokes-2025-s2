@@ -16,7 +16,7 @@ use Framework\Middleware\Authorise;
 $authenticated = new Authorise();
 ?>
 
-<header class="bg-gray-950 text-gray-200 p-4 flex-grow-0 flex flex-row align-middle content-center mb-4">
+<header class="bg-neutral-950 text-neutral-200 p-4 flex-grow-0 flex flex-row align-middle content-center mb-4">
     <h1 class="flex-0 w-32 text-xl p-4 ">
         <a href="#"
            class="py-4 px-4 -mx-4 -my-4 font-display font-bold 
@@ -30,8 +30,8 @@ $authenticated = new Authorise();
         <ul class="flex flex-row gap-4 flex-grow">
             <li>
                 <a href="/"
-                   class="pb-2 px-1 text-gray-400 hover:text-gray-300
-                     border-0 border-b-2 border-b-prussianblue-500 hover:border-b-gray-500
+                   class="pb-2 px-1 text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 border-b-prussianblue-500 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
                     Home
                 </a>
@@ -42,8 +42,8 @@ $authenticated = new Authorise();
                 ?>
                 <li>
                     <a href="/dashboard"
-                       class="pb-2 px-1 text-gray-400 hover:text-gray-300
-                     border-0 border-b-2 hover:border-b-gray-500
+                       class="pb-2 px-1 text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
                         Dashboard
                     </a>
@@ -54,24 +54,24 @@ $authenticated = new Authorise();
 
             <li>
                 <a href="/jokes"
-                   class="pb-2 px-1 text-gray-400 hover:text-gray-300
-                     border-0 border-b-2 hover:border-b-gray-500
+                   class="pb-2 px-1 text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
                     Jokes
                 </a>
             </li>
             <li>
                 <a href="/categories"
-                   class="pb-2 px-1 text-gray-400 hover:text-gray-300
-                     border-0 border-b-2 hover:border-b-gray-500
+                   class="pb-2 px-1 text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
                     Categories
                 </a>
             </li>
             <li>
                 <a href="#"
-                   class="pb-2 px-1 text-gray-400 hover:text-gray-300
-                     border-0 border-b-2 hover:border-b-gray-500
+                   class="pb-2 px-1 text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
                     Link 1
                 </a>
@@ -83,8 +83,8 @@ $authenticated = new Authorise();
             <?php if (!$authenticated->isAuthenticated()) : ?>
                 <li>
                     <form method="GET" action="/auth/login" class="">
-                        <button class="pb-2 px-1 text-sm text-gray-400 hover:text-gray-300
-                     border-0 border-b-2 hover:border-b-gray-500
+                        <button class="pb-2 px-1 text-sm text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
                             <i class="fa fa-door-open"></i> Login
                         </button>
@@ -92,8 +92,8 @@ $authenticated = new Authorise();
                 </li>
                 <li>
                     <form method="GET" action="/auth/register" class="">
-                        <button class="pb-2 px-1 text-sm text-gray-400 hover:text-gray-300
-                     border-0 border-b-2 hover:border-b-gray-500
+                        <button class="pb-2 px-1 text-sm text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
                             <i class="fa fa-person-pregnant"></i> Register
                         </button>
@@ -102,8 +102,8 @@ $authenticated = new Authorise();
             <?php else : ?>
                 <li>
                     <form method="POST" action="/auth/logout" class="">
-                        <button class="pb-2 px-1 text-sm text-gray-400 hover:text-gray-300
-                     border-0 border-b-2 hover:border-b-gray-500
+                        <button class="pb-2 px-1 text-sm text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
                             <i class="fa fa-door-closed"></i> Logout
                         </button>
@@ -117,9 +117,9 @@ $authenticated = new Authorise();
                         <label class="py-2 pr-2" for="Keywords"><span class="sr-only">Search:</span></label>
 
                         <input type="text" name="keywords" id="Keywords" placeholder="Search jokes..."
-                               class=" md:w-auto px-4 py-1 border border-gray-800 focus:outline-none focus:border-b-gray-500"/>
+                               class=" md:w-auto px-4 py-1 border border-neutral-800 focus:outline-none focus:border-b-neutral-500"/>
 
-                        <button class="group relative inline-block overflow-hidden border bg-gray-500 border-gray-800 px-6 py-1 focus:ring-2 focus:outline-hidden">
+                        <button class="group relative inline-block overflow-hidden border bg-neutral-500 border-neutral-800 px-6 py-1 focus:ring-2 focus:outline-hidden">
                             <span class="absolute inset-y-0 left-0 w-[2px] bg-blue-800 transition-all duration-500 ease-in-out group-hover:w-full"></span>
                             <span class="relative text-sm font-medium text-white transition-colors group-hover:text-white">
                                 <i class="fa fa-search"></i> Search

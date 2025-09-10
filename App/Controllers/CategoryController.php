@@ -163,7 +163,7 @@ class CategoryController
         ];
         $latestCategoryId = $this->db->query($existingCategoryQuery, $existingCategoryParams)->fetch();
 
-        if (isset($latestCategoryId->id ) && $latestCategoryId->id > 0) {
+        if (isset($latestCategoryId->id) && $latestCategoryId->id > 0) {
             $errors[$field] = ucfirst($newCategoryData['title']).' already exists';
         }
 
@@ -286,7 +286,7 @@ class CategoryController
         $allowedFields = ['id', 'title', 'description'];
         $updateValues = array_intersect_key($_POST, array_flip($allowedFields)) ?? [];
         $updateValues = array_map('sanitize', $updateValues);
-        $requiredFields = ['title', ];
+        $requiredFields = ['title',];
         $errors = [];
 
         foreach ($requiredFields as $field) {
@@ -329,6 +329,58 @@ class CategoryController
         Session::setFlashMessage('success_message', 'Category updated');
 
         redirect('/categories/'.$id);
+    }
+
+
+    /**
+     * Show the category edit form
+     *
+     * @param  array  $params
+     * @return null
+     * @throws Exception
+     */
+    public function delete(array $params): null
+    {
+
+        $id = $params['id'] ?? '';
+        $category_id = $id;
+
+        $params = [
+            'id' => $id,
+        ];
+
+        $category = $this->db->query('SELECT * FROM categories WHERE categories.id = :id ', $params)->fetch();
+
+        // Check if category exists
+        if (!$category) {
+            ErrorController::notFound('Category not found');
+            exit();
+        }
+
+        // Not really required, but it provides a little protection
+        // by using the category's retrieved user ID
+        $category_id = $category->id;
+        $user_id = $category->user_id;
+
+        // Authorisation
+        if (!Authorisation::isOwner($user_id)) {
+            Session::setFlashMessage('error_message',
+                'You are not authorized to delete this category');
+
+            return redirect('/categories/'.$category_id);
+        }
+
+        // Convert the category description ready for the editor
+        $converter = new HtmlConverter();
+        $category->description = $converter->convert($category->description ?? '');
+
+        loadView('categories/delete', [
+            'category' => $category,
+            'category_id' => $category_id,
+            "user_id" => $user_id,
+        ]);
+
+        return null;
     }
 
     public function destroy(array $params)

@@ -29,7 +29,7 @@ if (isset($errors) && count($errors) > 0): ?>
             </svg>
         </div>
         <div class="px-4 py-2 bg-white  flex flex-col justify-between items-left w-full
-                    border border-l-transparent border-gray-200">
+                    border border-l-transparent border-neutral-200">
             <?php
             foreach ($errors as $error) : ?>
 
