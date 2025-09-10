@@ -60,3 +60,11 @@ $router->post('/categories', 'CategoryController@store', ['auth']);
 $router->put('/categories/{id}', 'CategoryController@update', ['auth']);
 $router->delete('/categories/{id}', 'CategoryController@destroy', ['auth']);
 
+/**
+ * Jokes Routes
+ */
+
+
+/**
+ * User Routes
+ */

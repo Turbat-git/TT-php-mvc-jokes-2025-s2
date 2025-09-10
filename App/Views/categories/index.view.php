@@ -109,7 +109,9 @@ loadPartial('navigation');
                                 </a>
 
                                 <?php
-                                if (Framework\Authorisation::isAdmin() || Framework\Authorisation::isOwner($category->user_id ?? 0)) :
+                                /* Ensure the user is LOGGED IN before the Edit/Delete buttons are available */
+                                if (Framework\Session::has('user') &&
+                                   (Framework\Authorisation::isAdmin() || Framework\Authorisation::isOwner($category->user_id ?? 0))) :
                                 ?>
                                 <?php if ($category->id > 1): ?>
 

@@ -52,7 +52,9 @@ class Database
         $port = $config['port'];
         $dbName = $config['dbname'];
 
+        // Data Source Name
         $dsn = "mysql:host={$host};port={$port};dbname={$dbName}";
+        // "mongodb:host=123.45.67.89;port=12071;"
 
         $options = [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -93,7 +95,7 @@ class Database
 
             // Bind named params
             foreach ($params as $param => $value) {
-                $sth->bindValue(':' . $param, $value);
+                $sth->bindValue(":{$param}", $value);
             }
 
             $sth->execute();
