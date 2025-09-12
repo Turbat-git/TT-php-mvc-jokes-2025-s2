@@ -22,6 +22,10 @@ $router->get('/', 'HomeController@index');
 $router->get('/dashboard', 'HomeController@dashboard');
 $router->get('/test', 'HomeController@test');
 
+
+$router->get('/import', "CsvImportController@index");
+$router->post('/import', "CsvImportController@store");
+
 /**
  * UserController methods for authentication/registration
  */
@@ -78,3 +82,24 @@ $router->post('/features', 'FeatureController@store', ['auth']);
 $router->put('/features/{id}', 'FeatureController@update', ['auth']);
 $router->delete('/features/{id}', 'FeatureController@destroy', ['auth']);
 
+/**
+ * Example Category Feature Routes
+ */
+$router->get('/categories', 'CategoryController@index');
+$router->get('/categories/create', 'CategoryController@create', ['auth']);
+$router->get('/categories/edit/{id}', 'CategoryController@edit', ['auth']);
+$router->get('/categories/search', 'CategoryController@search');
+$router->get('/categories/{id}', 'CategoryController@show');
+
+$router->post('/categories', 'CategoryController@store', ['auth']);
+$router->put('/categories/{id}', 'CategoryController@update', ['auth']);
+$router->delete('/categories/{id}', 'CategoryController@destroy', ['auth']);
+
+/**
+ * Jokes Routes
+ */
+
+
+/**
+ * User Routes
+ */

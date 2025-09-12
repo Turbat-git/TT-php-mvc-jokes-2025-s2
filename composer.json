@@ -44,7 +44,8 @@
     "ckeditor/ckeditor": "^4.25",
     "league/commonmark": "^2.7",
     "ext-pdo": "*",
-    "ext-mbstring": "*"
+    "ext-mbstring": "*",
+    "league/csv": "^9.24.1"
   },
   "autoload": {
     "psr-4": {

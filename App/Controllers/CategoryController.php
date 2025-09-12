@@ -124,6 +124,7 @@ class CategoryController
     #[NoReturn]
     public function store()
     {
+
         $allowedFields = ['title', 'description',];
         $fields = [];
         $values = [];
@@ -137,7 +138,7 @@ class CategoryController
             $fields[] = $field;
             // Strip whitespace & convert empty strings to null
             $value = trim($value);
-            if ($value === '') {
+            if ($value === '' || $value === "<p>&nbsp;</p>") {
                 $newCategoryData[$field] = null;
             }
             $values[] = ':'.$field;
@@ -319,7 +320,7 @@ class CategoryController
         $updateFields = implode(', ', $updateFields);
 
         /* Update the Category */
-        $updateQuery = "UPDATE categories SET $updateFields WHERE id = :id";
+        $updateQuery = "UPDATE categories SET $updateFields, updated_at = now() WHERE id = :id";
 
         $updateValues['id'] = $id;
 
