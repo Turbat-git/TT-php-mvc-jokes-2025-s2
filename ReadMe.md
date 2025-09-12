@@ -143,7 +143,7 @@ TODO: Instructions for PostgreSQL are to be completed.
 
 | DBMS       | User & DB Script                                             |
 |------------|--------------------------------------------------------------|
-| MariaDB    | config/[database-mariadb.sql](./config/database-mariadb.sql) |
+| MariaDB    | config/[database-0-create-user-database-mariadb.sql](config/database-0-create-user-database-mariadb.sql) |
 | MariaDB    | config/[database-mysql.sql](./config/database-mysql.sql)     |
 | PostgreSQL | [TODO: Not available](#)                                     |
 

@@ -19,26 +19,6 @@
 --
 -- --------------------------------------------------------------------------------------------
 
-DROP TABLE IF EXISTS  `xxx_saas_fed_yyyy_sn`.`cities`;
-
-CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`cities`(
-    `id`           INT          NOT NULL,
-    `name`         VARCHAR(255) NOT NULL,
-    `state_id`     INT          NOT NULL,
-    `state_code`   VARCHAR(6)   NOT NULL,
-    `state_name`   VARCHAR(128) NOT NULL,
-    `country_id`   INT          NOT NULL,
-    `country_code` VARCHAR(6)   NOT NULL,
-    `country_name` VARCHAR(128) NOT NULL,
-    `latitude`     FLOAT        NOT NULL,
-    `longitude`    FLOAT        NOT NULL
-) ENGINE = InnoDB;
-
-ALTER TABLE `xxx_saas_fed_yyyy_sn`.`cities`
-    ADD `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `longitude`,
-    ADD `updated_at` DATETIME NULL     DEFAULT NULL AFTER `created_at`;
-
-
 INSERT INTO
    `xxx_saas_fed_yyyy_sn`.`cities`(id, name, state_id, state_code, state_name, country_id, country_code, country_name, latitude, longitude)
 VALUES (3915, 'Acton', 3907, 'ACT', 'Australian Capital Territory', 14, 'AU', 'Australia', -35.27767, 149.11829);

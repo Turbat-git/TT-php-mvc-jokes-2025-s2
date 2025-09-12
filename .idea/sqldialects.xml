@@ -2,8 +2,12 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/App/Controllers/CategoryController.php" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/config/database-jokes-mariadb.sql" dialect="MariaDB" />
-    <file url="file://$PROJECT_DIR$/config/database-mariadb.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/config/database-0-create-user-database-mariadb.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/config/database-1-create-base-tables-mariadb.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/config/database-2-seed-base-tables-mariadb.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/config/database-4-create-cities-table.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/config/database-6-create-jokes-mariadb.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/config/database-7-seed-jokes-mariadb.sql" dialect="MariaDB" />
     <file url="PROJECT" dialect="MariaDB" />
   </component>
 </project>
