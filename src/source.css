@@ -71,7 +71,7 @@
     @apply text-gray-700 hover:text-gray-200;
     @apply border border-gray-400 hover:border-gray-900;
     @apply hover:shadow-none shadow;
-    @apply ;
+    
     @apply transition ease-in-out duration-500;
 }
 
