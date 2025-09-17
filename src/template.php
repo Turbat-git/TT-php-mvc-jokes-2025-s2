@@ -278,7 +278,8 @@
             </a>
         </nav>
         <nav class="p-5 col-span-2 md:col-span-5 lg:col-span-2">
-            <p class="text-zinc-400">&copy; Copyright 2024 YOUR_NAME. All rights reserved.</p>
+            <p class="text-zinc-400">&copy; Copyright 2025 Turbat Turkhuu. All rights reserved
+                .</p>
             <p class="text-xs">
                 Based on the <a href="https://github.com/bradtraversy/workopia-php"
                                 class="text-zinc-500 hover:text-white underline underline-offset-2">Workopia Project</a>

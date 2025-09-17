@@ -8,7 +8,7 @@
  *
  * Filename:        login.view.php
  * Location:        ${FILE_LOCATION}
- * Project:         XXX-SaaS-Vanilla-MVC-YYYY-SN
+ * Project:         TT-SaaS-Vanilla-MVC-2025-S2
  * Date Created:    23/08/2024
  *
  * Author:          Adrian Gould <Adrian.Gould@nmtafe.wa.edu.au>

@@ -102,7 +102,7 @@
                 <span class="text-prussianblue-600 text-xs p-1"></span>
             </a>
             <p class="text-neutral-400 pt-6">
-                &copy; Copyright YYYY YOUR_NAME. All rights reserved.
+                &copy; Copyright 2025 Turbat Turkhuu. All rights reserved.
             </p>
         </nav>
         <nav class="py-2 pb-6 col-span-4 flex flex-wrap justify-between">

@@ -38,9 +38,9 @@
 -- --------------------------------------------------------------------------------------------
 -- Clean up existing database and user(s)
 -- --------------------------------------------------------------------------------------------
-DROP DATABASE IF EXISTS `XXX_SaaS_FED_YYYY_SN`;
-DROP USER IF EXISTS 'XXX_SaaS_FED_YYYY_SN'@'localhost';
-DROP USER IF EXISTS 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1';
+DROP DATABASE IF EXISTS TT_SaaS_FED_2025_S2;
+DROP USER IF EXISTS 'TT_SaaS_FED_2025_S2'@'localhost';
+DROP USER IF EXISTS 'TT_SaaS_FED_2025_S2'@'127.0.0.1';
 -- =======================================> END SECTION <======================================
 
 
@@ -55,32 +55,32 @@ DROP USER IF EXISTS 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1';
 -- --------------------------------------------------------------------------------------------
 -- Create Database named 'XXX_SaaS_FED_YYYY_SN'
 -- --------------------------------------------------------------------------------------------
-CREATE DATABASE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`;
+CREATE DATABASE IF NOT EXISTS TT_SaaS_FED_2025_S2;
 
 -- --------------------------------------------------------------------------------------------
 -- Create User & Grant Permissions
 -- We create users that are able to access the database via localhost and 127.0.0.1  just in
 -- case IPv6 is detected. Some RDBMS systems may not be 100% compatible with IPv6 IP addresses.
 -- --------------------------------------------------------------------------------------------
-CREATE USER 'XXX_SaaS_FED_YYYY_SN'@'localhost'
+CREATE USER 'TT_SaaS_FED_2025_S2'@'localhost'
     IDENTIFIED WITH mysql_native_password BY 'Password1234';
 
-CREATE USER 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1'
+CREATE USER 'TT_SaaS_FED_2025_S2'@'127.0.0.1'
     IDENTIFIED WITH mysql_native_password BY 'Password1234';
 
 GRANT USAGE ON *.*
-    TO 'XXX_SaaS_FED_YYYY_SN'@'localhost';
+    TO 'TT_SaaS_FED_2025_S2'@'localhost';
 
 GRANT USAGE ON *.*
-    TO 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1';
+    TO 'TT_SaaS_FED_2025_S2'@'127.0.0.1';
 
 GRANT ALL PRIVILEGES
-    ON `XXX_SaaS_FED_YYYY_SN`.*
-    TO 'XXX_SaaS_FED_YYYY_SN'@'localhost';
+    ON TT_SaaS_FED_2025_S2.*
+    TO 'TT_SaaS_FED_2025_S2'@'localhost';
 
 GRANT ALL PRIVILEGES
-    ON `XXX_SaaS_FED_YYYY_SN`.*
-    TO 'XXX_SaaS_FED_YYYY_SN'@'127.0.0.1';
+    ON TT_SaaS_FED_2025_S2.*
+    TO 'TT_SaaS_FED_2025_S2'@'127.0.0.1';
 
 -- --------------------------------------------------------------------------------------------
 -- Apply the user's privileges.
@@ -100,26 +100,29 @@ FLUSH PRIVILEGES;
 -- --------------------------------------------------------------------------------------------
 -- Tell MySQL to use the  `XXX_SaaS_FED_YYYY_SN` database for commands.
 -- --------------------------------------------------------------------------------------------
-USE `XXX_SaaS_FED_YYYY_SN`;
+USE TT_SaaS_FED_2025_S2;
 
 -- --------------------------------------------------------------------------------------------
 -- Remove any existing Users table
 -- --------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS `XXX_SaaS_FED_YYYY_SN`.`users`;
+DROP TABLE IF EXISTS TT_SaaS_FED_2025_S2.`users`;
 
 -- --------------------------------------------------------------------------------------------
 -- Create the table structure for the 'users' table
 -- --------------------------------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`users`
+CREATE TABLE IF NOT EXISTS TT_SaaS_FED_2025_S2.`users`
 (
     `id`         int          NOT NULL AUTO_INCREMENT,
-    `name`       varchar(255)      DEFAULT NULL,
+    `given_name`       varchar(128)      NOT NULL,
+    `family_name`       varchar(128)     DEFAULT NULL,
+    `nickname`       varchar(32)      NOT NULL,
     `email`      varchar(255) NOT NULL,
     `password`   varchar(255) NOT NULL,
     `city`       varchar(45)       DEFAULT NULL,
     `state`      varchar(45)       DEFAULT NULL,
     `country`    varchar(45)       DEFAULT 'Australia',
     `created_at` timestamp    NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` timestamp    DEFAULT NULL,
 
     PRIMARY KEY (`id`)
 
@@ -146,9 +149,9 @@ CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`users`
 --
 -- The use of BACK-TICKS is compulsory
 -- --------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS `XXX_SaaS_FED_YYYY_SN`.`categories`;
+DROP TABLE IF EXISTS TT_SaaS_FED_2025_S2.`categories`;
 
-CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`categories`
+CREATE TABLE IF NOT EXISTS TT_SaaS_FED_2025_S2.`categories`
 (
     `id`          bigint unsigned NOT NULL AUTO_INCREMENT,
     `title`       varchar(255)    NOT NULL,
@@ -178,31 +181,37 @@ CREATE TABLE IF NOT EXISTS `XXX_SaaS_FED_YYYY_SN`.`categories`
 --
 -- The Password is Password1 hashed using the PHP password_hash() method.
 -- --------------------------------------------------------------------------------------------
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`users`
-VALUES (10, 'Super User', 'super@example.com',
-        '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Perth', 'WA', 'Australia', '2000-01-01 00:00:01');
+INSERT INTO TT_SaaS_FED_2025_S2.`users`
+VALUES (10, 'Super', 'User', 'SuperUser',
+        'super@example.com','$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
+        'Perth', 'WA', 'Australia', '2000-01-01 00:00:01',
+        '2000-01-01 00:00:01');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`users`
-VALUES (20, 'Ad Ministrator', 'admin@example.com',
-        '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Perth', 'WA', 'Australia', '2024-01-01 10:30:01');
+INSERT INTO TT_SaaS_FED_2025_S2.`users`
+VALUES (20, 'Ad', 'Ministrator','Administrator',
+        'admin@example.com','$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
+        'Perth', 'WA', 'Australia', '2024-01-01 10:30:01',
+        '2025-01-01 00:00:01');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`users`
-VALUES (50, 'YOUR NAME', 'GIVEN_NAME@example.com',
-        '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Perth', 'WA', 'Australia', '2024-08-10 16:11:43');
+INSERT INTO TT_SaaS_FED_2025_S2.`users`
+VALUES (50, 'YOUR', 'Name', 'YOUR NAME',
+        'GIVEN_NAME@example.com','$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
+        'Perth', 'WA', 'Australia', '2024-08-10 16:11:43',
+        '2024-08-10 16:11:43');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`users`
-VALUES (100, 'Jacques d\`Carre', 'jacques@example.com',
-        '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Bunbury', 'WA', 'Australia', '2024-08-15 13:04:21'),
-       (101, 'Minah d\`Carre', 'minah@example.com',
-        '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Melbourne', 'VIC', 'Australia', '2024-08-20 13:17:21'),
-       (102, 'Crystal Chantelle-Leer', 'crystal@example.com',
-        '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Adelaide', 'SA', 'Australia', '2024-08-20 17:59:13');
+INSERT INTO TT_SaaS_FED_2025_S2.`users`
+VALUES (100, 'Jacques ', 'd\`Carre', 'Jacque',
+        'jacques@example.com','$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
+        'Bunbury', 'WA', 'Australia', '2024-08-15 13:04:21',
+        '2025-01-01 00:00:01'),
+       (101, 'Minah', 'd\`Carre', 'Minah',
+        'minah@example.com','$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
+        'Melbourne', 'VIC', 'Australia', '2024-08-20 13:17:21',
+        '2025-01-01 00:00:01'),
+       (102, 'Crystal', 'Chantelle-Leer', 'Crystal',
+        'crystal@example.com','$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
+        'Adelaide', 'SA', 'Australia', '2024-08-20 17:59:13',
+        '2025-01-01 00:00:01');
 -- =======================================> END SECTION <======================================
 
 
@@ -215,28 +224,28 @@ VALUES (100, 'Jacques d\`Carre', 'jacques@example.com',
 -- Seed Categories Table
 -- --------------------------------------------------------------------------------------------
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`)
+INSERT INTO TT_SaaS_FED_2025_S2.`categories`(`id`, `title`, `created_at`)
 VALUES (1, 'unknown', '2000-01-01 00:00:01');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`)
+INSERT INTO TT_SaaS_FED_2025_S2.`categories`(`id`, `title`, `created_at`)
 VALUES (10, 'dad', '2000-01-01 00:00:01');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`)
+INSERT INTO TT_SaaS_FED_2025_S2.`categories`(`id`, `title`, `created_at`)
 VALUES (11, 'geek', '2000-01-01 00:00:10'),
        (12, 'programmer', '2000-01-01 00:00:10'),
        (13, 'web', '2000-01-01 00:00:10');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`)
+INSERT INTO TT_SaaS_FED_2025_S2.`categories`(`id`, `title`, `created_at`)
 VALUES (14, 'knock-knock', '2000-01-01 00:00:20'),
        (15, 'rude', '2000-01-01 00:00:20'),
        (16, 'dog', '2000-01-01 00:00:20'),
        (17, 'cat', '2000-01-01 00:00:20');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`)
+INSERT INTO TT_SaaS_FED_2025_S2.`categories`(`id`, `title`, `created_at`)
 VALUES (18, 'halloween', '2000-01-01 00:00:30'),
        (19, 'animal', '2000-01-01 00:00:30');
 
-INSERT INTO `XXX_SaaS_FED_YYYY_SN`.`categories`(`id`, `title`, `created_at`)
+INSERT INTO TT_SaaS_FED_2025_S2.`categories`(`id`, `title`, `created_at`)
 VALUES (20, 'lightbulb', '2000-01-01 00:00:30'),
        (21, 'one-liner', '2000-01-01 00:00:30'),
        (22, 'lawyer', '2000-01-01 00:00:30');
