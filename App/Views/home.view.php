@@ -23,7 +23,8 @@ loadPartial('navigation');
         </header>
 
         <section class="my-4 p-4  gap-8 justify-start">
-            <p class="text-3xl font-light">Welcome to the XXX SaaS Vanilla MVC YYYY/SN Template App</p>
+            <p class="text-3xl font-light">Welcome to the TT SaaS Vanilla MVC 2025/S2 Template
+                App</p>
             <p>This is a starter template for simple vanilla mvc based applications.</p>
             <p>Its primary purpose is as a <strong>teaching tool</strong> and is provided with no guarantees for
                 security and production readiness.</p>

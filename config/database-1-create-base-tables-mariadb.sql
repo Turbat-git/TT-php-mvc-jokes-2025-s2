@@ -41,17 +41,17 @@
 -- --------------------------------------------------------------------------------------------
 -- Tell MySQL to use the  `xxx_saas_fed_yyyy_sn` database for commands.
 -- --------------------------------------------------------------------------------------------
-USE `xxx_saas_fed_yyyy_sn`;
+USE `TT_SaaS_FED_2025_S2`;
 
 -- --------------------------------------------------------------------------------------------
 -- Remove any existing Users table
 -- --------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS `xxx_saas_fed_yyyy_sn`.`users`;
+DROP TABLE IF EXISTS `TT_SaaS_FED_2025_S2`.`users`;
 
 -- --------------------------------------------------------------------------------------------
 -- Create the table structure for the 'users' table
 -- --------------------------------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`users`
+CREATE TABLE IF NOT EXISTS `TT_SaaS_FED_2025_S2`.`users`
 (
     `id`         int          NOT NULL AUTO_INCREMENT,
     `name`       varchar(255)      DEFAULT NULL,
@@ -91,9 +91,9 @@ CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`users`
 --
 -- The use of BACK-TICKS is compulsory
 -- --------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS `xxx_saas_fed_yyyy_sn`.`categories`;
+DROP TABLE IF EXISTS `TT_SaaS_FED_2025_S2`.`categories`;
 
-CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`categories`
+CREATE TABLE IF NOT EXISTS `TT_SaaS_FED_2025_S2`.`categories`
 (
     `id`          bigint unsigned NOT NULL AUTO_INCREMENT,
     `title`       varchar(255)    NOT NULL,

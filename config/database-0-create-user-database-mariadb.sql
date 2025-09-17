@@ -42,9 +42,9 @@
 -- --------------------------------------------------------------------------------------------
 -- Clean up existing database and user(s)
 -- --------------------------------------------------------------------------------------------
-DROP DATABASE IF EXISTS `xxx_saas_fed_yyyy_sn`;
-DROP USER IF EXISTS 'xxx_saas_fed_yyyy_sn'@'localhost';
-DROP USER IF EXISTS 'xxx_saas_fed_yyyy_sn'@'127.0.0.1';
+DROP DATABASE IF EXISTS `TT_SaaS_FED_2025_S2`;
+DROP USER IF EXISTS 'TT_SaaS_FED_2025_S2'@'localhost';
+DROP USER IF EXISTS 'TT_SaaS_FED_2025_S2'@'127.0.0.1';
 -- =======================================> END SECTION <======================================
 
 
@@ -57,9 +57,9 @@ DROP USER IF EXISTS 'xxx_saas_fed_yyyy_sn'@'127.0.0.1';
 -- --------------------------------------------------------------------------------------------
 
 -- --------------------------------------------------------------------------------------------
--- Create Database named 'xxx_saas_fed_yyyy_sn'
+-- Create Database named 'TT_SaaS_FED_2025_S2'
 -- --------------------------------------------------------------------------------------------
-CREATE DATABASE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`;
+CREATE DATABASE IF NOT EXISTS `TT_SaaS_FED_2025_S2`;
 
 -- --------------------------------------------------------------------------------------------
 -- Create User & Grant Permissions
@@ -67,27 +67,27 @@ CREATE DATABASE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`;
 -- We create users that are able to access the database via localhost and 127.0.0.1 just in
 -- case IPv6 is detected. Some RDBMS systems may not be 100% compatible with IPv6 IP addresses.
 -- --------------------------------------------------------------------------------------------
-CREATE USER 'xxx_saas_fed_yyyy_sn'@'localhost'
+CREATE USER 'TT_SaaS_FED_2025_S2'@'localhost'
     IDENTIFIED WITH mysql_native_password
         USING PASSWORD('Password1234');
 
-CREATE USER 'xxx_saas_fed_yyyy_sn'@'127.0.0.1'
+CREATE USER 'TT_SaaS_FED_2025_S2'@'127.0.0.1'
     IDENTIFIED WITH mysql_native_password
         USING PASSWORD('Password1234');
 
 GRANT USAGE ON *.*
-    TO 'xxx_saas_fed_yyyy_sn'@'localhost';
+    TO 'TT_SaaS_FED_2025_S2'@'localhost';
 
 GRANT USAGE ON *.*
-    TO 'xxx_saas_fed_yyyy_sn'@'127.0.0.1';
+    TO 'TT_SaaS_FED_2025_S2'@'127.0.0.1';
 
 GRANT ALL PRIVILEGES
-    ON `xxx_saas_fed_yyyy_sn`.*
-    TO 'xxx_saas_fed_yyyy_sn'@'localhost';
+    ON `TT_SaaS_FED_2025_S2`.*
+    TO 'TT_SaaS_FED_2025_S2'@'localhost';
 
 GRANT ALL PRIVILEGES
-    ON `xxx_saas_fed_yyyy_sn`.*
-    TO 'xxx_saas_fed_yyyy_sn'@'127.0.0.1';
+    ON `TT_SaaS_FED_2025_S2`.*
+    TO 'TT_SaaS_FED_2025_S2'@'127.0.0.1';
 
 -- --------------------------------------------------------------------------------------------
 -- Apply the user's privileges.

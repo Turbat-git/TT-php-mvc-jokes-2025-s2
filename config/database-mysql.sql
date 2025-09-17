@@ -53,7 +53,7 @@ DROP USER IF EXISTS 'TT_SaaS_FED_2025_S2'@'127.0.0.1';
 -- --------------------------------------------------------------------------------------------
 
 -- --------------------------------------------------------------------------------------------
--- Create Database named 'XXX_SaaS_FED_YYYY_SN'
+-- Create Database named 'TT_SaaS_FED_2025_S2'
 -- --------------------------------------------------------------------------------------------
 CREATE DATABASE IF NOT EXISTS TT_SaaS_FED_2025_S2;
 
@@ -63,10 +63,10 @@ CREATE DATABASE IF NOT EXISTS TT_SaaS_FED_2025_S2;
 -- case IPv6 is detected. Some RDBMS systems may not be 100% compatible with IPv6 IP addresses.
 -- --------------------------------------------------------------------------------------------
 CREATE USER 'TT_SaaS_FED_2025_S2'@'localhost'
-    IDENTIFIED WITH mysql_native_password BY 'Password1234';
+    IDENTIFIED WITH mysql_native_password USING PASSWORD('Password1234');
 
 CREATE USER 'TT_SaaS_FED_2025_S2'@'127.0.0.1'
-    IDENTIFIED WITH mysql_native_password BY 'Password1234';
+    IDENTIFIED WITH mysql_native_password USING PASSWORD('Password1234');
 
 GRANT USAGE ON *.*
     TO 'TT_SaaS_FED_2025_S2'@'localhost';

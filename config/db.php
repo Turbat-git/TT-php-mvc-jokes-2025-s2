@@ -16,7 +16,7 @@
 return [
     'host' => '127.0.0.1',
     'port' => 3306,
-    'dbname' => 'xxx_saas_fed_yyyy_sn',
-    'username' => 'xxx_saas_fed_yyyy_sn',
+    'dbname' => 'TT_SaaS_FED_2025_S2',
+    'username' => 'TT_SaaS_FED_2025_S2',
     'password' => 'Password1234'
 ];
