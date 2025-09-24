@@ -79,7 +79,9 @@ class UserController
      */
     public function store_register()
     {
-        $name = $_POST['name'] ?? null;
+        $given_name = $_POST['given_name'] ?? null;
+        $family_name = $_POST['family_name'] ?? null;
+        $nickname = $_POST['nickname'] ?? null;
         $email = $_POST['email'] ?? null;
         $city = $_POST['city'] ?? null;
         $state = $_POST['state'] ?? null;
@@ -93,8 +95,12 @@ class UserController
             $errors['email'] = 'Please enter a valid email address';
         }
 
-        if (!Validation::string($name, 2, 50)) {
-            $errors['name'] = 'Name must be between 2 and 50 characters';
+        if (!Validation::string($given_name, 2, 50)) {
+            $errors['given_name'] = 'Given name must be between 2 and 50 characters';
+        }
+
+        if (!Validation::string($family_name, 2, 50)) {
+            $errors['family_name'] = 'Family name must be between 2 and 50 characters';
         }
 
         if (!Validation::string($password, 6, 50)) {
@@ -113,7 +119,9 @@ class UserController
             loadView('users/register', [
                 'errors' => $errors,
                 'user' => [
-                    'name' => $name,
+                    'given_name' => $given_name,
+                    'family_name' => $family_name,
+                    'nickname' => $nickname,
                     'email' => $email,
                     'city' => $city,
                     'state' => $state,
@@ -141,14 +149,16 @@ class UserController
 
         // Create user account
         $params = [
-            'name' => $name,
+            'given_name' => $given_name,
+            'family_name' => $family_name,
+            'nickname' => $nickname,
             'email' => $email,
             'city' => $city,
             'state' => $state,
             'password' => password_hash($password, PASSWORD_DEFAULT)
         ];
 
-        $this->db->query('INSERT INTO users (name, email, city, state, password) VALUES (:name, :email, :city, :state, :password)', $params);
+        $this->db->query('INSERT INTO users (given_name, family_name, nickname, email,  password, city, state) VALUES (:given_name, :family_name, :nickname, :email, :password, :city, :state)', $params);
 
         // Get new user ID
         $userId = $this->db->conn->lastInsertId();
@@ -156,7 +166,9 @@ class UserController
         // Set user session
         Session::set('user', [
             'id' => $userId,
-            'name' => $name,
+            'given_name' => $given_name,
+            'family_name' => $family_name,
+            'nickname' => $nickname,
             'email' => $email,
             'city' => $city,
             'state' => $state
@@ -236,7 +248,9 @@ class UserController
         // Set user session
         Session::set('user', [
             'id' => $user->id,
-            'name' => $user->name,
+            'given_name' => $user->given_name,
+            'family_name' => $user->family_name,
+            'nickname' => $user->nickname,
             'email' => $user->email,
             'city' => $user->city,
             'state' => $user->state,

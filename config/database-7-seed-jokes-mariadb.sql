@@ -23,17 +23,17 @@
 -- --------------------------------------------------------------------------------------------
 -- Tell MySQL to use the  `xxx_saas_fed_yyyy_sn` database for commands.
 -- --------------------------------------------------------------------------------------------
-USE `xxx_saas_fed_yyyy_sn`;
+USE TT_SaaS_FED_2025_S2;
 
 -- --------------------------------------------------------------------------------------------
 -- Remove any existing Jokes table
 -- --------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS `xxx_saas_fed_yyyy_sn`.`jokes`;
+DROP TABLE IF EXISTS TT_SaaS_FED_2025_S2.`jokes`;
 
 -- --------------------------------------------------------------------------------------------
 -- Create the table structure for the 'jokes' table
 -- --------------------------------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `xxx_saas_fed_yyyy_sn`.`jokes`
+CREATE TABLE IF NOT EXISTS `TT_SaaS_FED_2025_S2`.`jokes`
 (
     `id`          int          NOT NULL AUTO_INCREMENT,
     `title`       varchar(128) NOT NULL,

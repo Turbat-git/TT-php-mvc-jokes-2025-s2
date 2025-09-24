@@ -30,11 +30,27 @@ loadPartial('navigation'); ?>
             <form method="POST" action="/auth/register">
 
                 <section class="mb-4">
-                    <label for="Name" class="mt-4 pb-1">Name:</label>
-                    <input type="text" id="Name"
-                           name="name" placeholder="Full Name"
+                    <label for="Given_Name" class="mt-4 pb-1">Given Name:</label>
+                    <input type="text" id="Given_Name"
+                           name="given_name" placeholder="First Name"
                            class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
-                           value="<?= $user['name'] ?? '' ?>"/>
+                           value="<?= $user['given_name'] ?? '' ?>"/>
+                </section>
+
+                <section class="mb-4">
+                    <label for="Family_Name" class="mt-4 pb-1">Family Name:</label>
+                    <input type="text" id="Family_Name"
+                           name="family_name" placeholder="Family Name"
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
+                           value="<?= $user['family_name'] ?? '' ?>"/>
+                </section>
+
+                <section class="mb-4">
+                    <label for="Nickname" class="mt-4 pb-1">Nickname:</label>
+                    <input type="text" id="Nickname"
+                           name="nickname" placeholder="Nickname"
+                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
+                           value="<?= $user['nickname'] ?? '' ?>"/>
                 </section>
 
                 <section class="mb-4">
@@ -49,7 +65,6 @@ loadPartial('navigation'); ?>
                 <section class="mb-4">
                     <label for="State" class="mt-4 pb-1">State:</label>
                     <select name="state" id="City"
-                            placeholder="City"
                             class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none">
                         <?php if (empty($user['state'])) : ?>
                             <option value="" disabled selected>Select State</option>
@@ -69,7 +84,6 @@ loadPartial('navigation'); ?>
                 <section class="mb-4">
                     <label for="City" class="mt-4 pb-1">City:</label>
                     <select name="city" id="City"
-                            placeholder="City"
                             class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none">
                         <?php if (empty($user['city'])) : ?>
                             <option value="" disabled selected>Select City</option>
