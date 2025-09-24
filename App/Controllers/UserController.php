@@ -177,6 +177,21 @@ class UserController
         redirect('/');
     }
 
+    public function profile_viewer()
+    {
+        $currentUser = Session::get('user');
+        $id = $currentUser['id'];
+
+        $params=[
+          'id'=>$id
+        ];
+
+        $profile = $this->db->query('SELECT * FROM users WHERE id = :userId', $params)->fetch();
+
+        $this->load->view('profile.view', $profile);
+
+    }
+
     /**
      * Logout a user and kill session
      *

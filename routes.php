@@ -36,6 +36,8 @@ $router->post('/auth/register', 'UserController@store_register', ['guest']);
 $router->post('/auth/logout', 'UserController@logout', ['auth']);
 $router->post('/auth/login', 'UserController@authenticate', ['guest']);
 
+$router->post('/user/profile', 'UserController@profile_viewer', ['auth']);
+
 /**
  * Category Feature Routes
  *
