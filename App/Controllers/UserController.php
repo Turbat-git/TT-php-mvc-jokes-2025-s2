@@ -81,7 +81,7 @@ class UserController
     {
         $given_name = $_POST['given_name'] ?? null;
         $family_name = $_POST['family_name'] ?? null;
-        $nickname = $_POST['nickname'] ?? null;
+        $nickname = $_POST['nickname'] ?: $given_name;
         $email = $_POST['email'] ?? null;
         $city = $_POST['city'] ?? null;
         $state = $_POST['state'] ?? null;
