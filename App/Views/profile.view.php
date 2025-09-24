@@ -20,16 +20,8 @@ loadPartial('navigation');
 <main class="container mx-auto bg-zinc-50 py-8 px-4 shadow shadow-black/25 title">
     <article class="grid grid-cols-1">
         <header class="bg-zinc-700 text-zinc-200 -mx-4 -mt-8 mb-4 p-8 text-2xl font-bold ">
-            <h1>Vanilla PHP MVC Demo</h1>
+            <h1>Profile</h1>
         </header>
-
-        <section class="my-4 p-4  gap-8 justify-start">
-            <p class="text-3xl font-light">Welcome to the TT SaaS Vanilla MVC 2025/S2 Template
-                App</p>
-            <p>This is a starter template for simple vanilla mvc based applications.</p>
-            <p>Its primary purpose is as a <strong>teaching tool</strong> and is provided with no guarantees for
-                security and production readiness.</p>
-        </section>
     </article>
 
     <article class="grid grid-cols-2 ">
@@ -115,7 +107,7 @@ loadPartial('navigation');
                        class="hover:text-black">
                         <i class="fa fa-home inline-block mr-2 text-sm"></i>
                         <i class="fa fa-tag inline-block mr-2"></i>
-                        <?= $category->title ?? "" ?>
+                        <?= $profile['given_name']->title ?? "" ?>
                     </a>
                 </dd>
 

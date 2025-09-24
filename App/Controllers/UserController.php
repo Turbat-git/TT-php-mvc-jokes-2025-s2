@@ -186,10 +186,9 @@ class UserController
           'id'=>$id
         ];
 
-        $profile = $this->db->query('SELECT * FROM users WHERE id = :userId', $params)->fetch();
+        $profile = $this->db->query('SELECT * FROM users WHERE id = :id', $params)->fetch();
 
-        $this->load->view('profile.view', $profile);
-
+        loadView('profile.view', ['profile' => $profile]);
     }
 
     /**
