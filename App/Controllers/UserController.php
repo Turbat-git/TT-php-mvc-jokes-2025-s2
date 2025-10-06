@@ -57,16 +57,6 @@ class UserController
     }
 
     /**
-     * Show the login page
-     *
-     * @return void
-     */
-    public function profile()
-    {
-        loadView('users/profile');
-    }
-
-    /**
      * Show the register page
      *
      * @return void
@@ -222,6 +212,11 @@ class UserController
         redirect('/');
     }
 
+    /**
+     * Show the information of the user
+     *
+     * @return void
+     */
     public function profile_viewer()
     {
         $currentUser = Session::get('user');
@@ -233,7 +228,7 @@ class UserController
 
         $profile = $this->db->query('SELECT * FROM users WHERE id = :id', $params)->fetch();
 
-        loadView('profile.view', ['profile' => $profile]);
+        loadView('users/profile', ['profile' => $profile]);
     }
 
     /**

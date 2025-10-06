@@ -31,15 +31,15 @@ loadPartial('navigation');
         ]) ?>
 
             <div class="bg-white shadow rounded-lg p-6 space-y-4">
-                <p><strong>Given Name:</strong> <?= htmlspecialchars($profile->given_name ?? '') ?></p>
-                <p><strong>Family Name:</strong> <?= htmlspecialchars($profile->family_name ?? '') ?></p>
+                <p><strong>Given Name:</strong> <?= htmlspecialchars($profile->given_name ?? "") ?></p>
+                <p><strong>Family Name:</strong> <?= htmlspecialchars($profile->family_name ?? "") ?></p>
                 <p><strong>Nickname:</strong> <?= htmlspecialchars($profile->nickname ?? '') ?></p>
                 <p><strong>Email:</strong> <?= htmlspecialchars($profile->email ?? '') ?></p>
                 <p><strong>City:</strong> <?= htmlspecialchars($profile->city ?? '') ?></p>
                 <p><strong>State:</strong> <?= htmlspecialchars($profile->state ?? '') ?></p>
 
                 <div class="mt-6">
-                    <a href="/profile/edit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                    <a href="/profile/update" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
                         Edit Profile
                     </a>
                 </div>

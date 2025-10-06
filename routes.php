@@ -25,7 +25,6 @@ $router->get('/test', 'HomeController@test');
 
 $router->get('/import', "CsvImportController@index");
 $router->post('/import', "CsvImportController@store");
-$router->get('/users/profile', 'UserController@profile', ['auth']);
 
 /**
  * UserController methods for authentication/registration
@@ -36,7 +35,7 @@ $router->post('/auth/register', 'UserController@store_register', ['guest']);
 $router->post('/auth/logout', 'UserController@logout', ['auth']);
 $router->post('/auth/login', 'UserController@authenticate', ['guest']);
 $router->get('/users/profile', 'UserController@profile_viewer', ['auth']);
-$router->post('/users/profile', 'UserController@updateProfile', ['auth']);
+$router->post('/profile/update', 'UserController@updateProfile', ['auth']);
 
 
 /**
