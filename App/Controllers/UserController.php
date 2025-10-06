@@ -57,6 +57,16 @@ class UserController
     }
 
     /**
+     * Show the login page
+     *
+     * @return void
+     */
+    public function profile()
+    {
+        loadView('users/profile');
+    }
+
+    /**
      * Show the register page
      *
      * @return void
@@ -70,6 +80,41 @@ class UserController
             'cities' => $cities,
             'states' => $states
         ]);
+    }
+
+    /**
+     * Update the user's data
+     *
+     * @return void
+     */
+    public function updateProfile($key, $value)
+    {
+        $currentUser = Session::get('user');
+        $id = $currentUser['id'];
+
+        $given_name = $_POST['given_name'] ?? null;
+        $family_name = $_POST['family_name'] ?? null;
+        $nickname = $_POST['nickname'] ?? $given_name;
+        $email = $_POST['email'] ?? null;
+        $city = $_POST['city'] ?? null;
+        $state = $_POST['state'] ?? null;
+
+        $errors = [];
+
+        if(!Validation::email($email)) {
+            $errors['email'] = 'Invalid email';
+        }
+
+        if(!Validation::string($given_name,2, 50)) {
+            $errors['given_name'] = 'Invalid given name';
+        }
+
+        if(!Validation::string($family_name,2, 50)) {
+            $errors['family_name'] = 'Invalid family name';
+        }
+
+
+
     }
 
     /**
