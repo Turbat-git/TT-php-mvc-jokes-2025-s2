@@ -36,6 +36,7 @@ $router->post('/auth/logout', 'UserController@logout', ['auth']);
 $router->post('/auth/login', 'UserController@authenticate', ['guest']);
 $router->get('/users/profile', 'UserController@profile_viewer', ['auth']);
 $router->post('/profile/update', 'UserController@updateProfile', ['auth']);
+$router->get('/profile/edit', 'UserController@editProfile', ['auth']);
 
 
 /**

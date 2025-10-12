@@ -1,9 +1,7 @@
 <?php
 /**
- *  A ONE LINE ABOUT THIS FILE
+ *  User editing their details
  *
- * MULTI-LINE DESCRIPTION (OPTIONAL)
- * To tell the reader what this does in detail
  *
  * Project:         TT-php-mvc-jokes-2025-s2
  * Filename:        profile.view.php
@@ -39,49 +37,64 @@ loadPartial('navigation');
                        class="border rounded w-full p-2">
             </section>
 
-            <div>
+            <section>
                 <label for="family_name" class="block font-medium">Family Name</label>
                 <input type="text" id="family_name" name="family_name"
                        value="<?= htmlspecialchars($profile->family_name ?? '') ?>"
                        class="border rounded w-full p-2">
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <label for="nickname" class="block font-medium">Nickname</label>
                 <input type="text" id="nickname" name="nickname"
                        value="<?= htmlspecialchars($profile->nickname ?? '') ?>"
                        class="border rounded w-full p-2">
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <label for="email" class="block font-medium">Email</label>
                 <input type="email" id="email" name="email"
                        value="<?= htmlspecialchars($profile->email ?? '') ?>"
                        class="border rounded w-full p-2">
-            </div>
+            </section>
 
-            <div>
-                <label for="city" class="block font-medium">City</label>
-                <input type="text" id="city" name="city"
-                       value="<?= htmlspecialchars($profile->city ?? '') ?>"
-                       class="border rounded w-full p-2">
-            </div>
+            <section class="mb-4">
+                <label for="state" class="mt-4 pb-1">State:</label>
+                <select name="state" id="state"
+                        class="w-full px-4 py-2 border border-b-zinc-300 focus:outline-none">
+                    <option value="" disabled selected>Select State</option>
+                    <?php foreach ($states as $state): ?>
+                        <option value="<?= $state->state_id ?>"
+                                <?= (!empty($profile->state) && (int) $profile->state === (int) $state->state_id) ? 'selected' : '' ?>>
+                            <?= $state->state_name ?> (<?= $state->state_code ?? "" ?>)
+                        </option>
+                    <?php endforeach ?>
+                </select>
+            </section>
 
-            <div>
-                <label for="state" class="block font-medium">State</label>
-                <input type="text" id="state" name="state"
-                       value="<?= htmlspecialchars($profile->state ?? '') ?>"
-                       class="border rounded w-full p-2">
-            </div>
+            <section class="mb-4">
+                <label for="city" class="mt-4 pb-1">City:</label>
+                <select name="city" id="city"
+                        class="w-full px-4 py-2 border border-b-zinc-300 focus:outline-none">
+                    <option value="" disabled selected>Select City</option>
+                    <?php foreach ($cities as $city): ?>
+                        <option value="<?= $city->id ?>"
+                                <?= (!empty($profile->city) && (int) $profile->city === (int) $city->id) ? 'selected' : '' ?>>
+                            <?= $city->name ?> (<?= $city->state_code ?>)
+                        </option>
+                    <?php endforeach ?>
+                </select>
+            </section>
 
-            <div class="mt-6 flex space-x-4">
+
+            <section class="mt-6 flex space-x-4">
                 <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
                     Save Changes
                 </button>
-                <a href="/profile" class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500">
+                <a href="/users/profile" class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500">
                     Cancel
                 </a>
-            </div>
+            </section>
 
         </form>
 

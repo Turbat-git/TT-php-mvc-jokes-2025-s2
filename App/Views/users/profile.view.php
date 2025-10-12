@@ -39,7 +39,7 @@ loadPartial('navigation');
                 <p><strong>State:</strong> <?= htmlspecialchars($profile->state ?? '') ?></p>
 
                 <div class="mt-6">
-                    <a href="/profile/update" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                    <a href="/profile/edit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
                         Edit Profile
                     </a>
                 </div>

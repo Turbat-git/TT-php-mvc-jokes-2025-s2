@@ -73,11 +73,34 @@ class UserController
     }
 
     /**
+     * Display the edit profile
+     *
+     * @return void
+     */
+    public function editProfile()
+    {
+        $currentUser = Session::get('user');
+        $id = $currentUser['id'];
+
+        $states = $this->db->query('SELECT DISTINCT state_id, state_code, state_name FROM cities ORDER BY state_name')->fetchAll();
+        $cities = $this->db->query('SELECT name, id, state_id, state_code, state_name FROM cities ORDER BY name')->fetchAll();
+
+        $params = ['id' => $id];
+        $profile = $this->db->query('SELECT * FROM users WHERE id = :id', $params)->fetch();
+
+        loadView('users/profile.edit', [
+            'profile' => $profile,
+            'cities' => $cities,
+            'states' => $states
+        ]);
+    }
+
+    /**
      * Update the user's data
      *
      * @return void
      */
-    public function updateProfile($key, $value)
+    public function updateProfile()
     {
         $currentUser = Session::get('user');
         $id = $currentUser['id'];
@@ -91,21 +114,75 @@ class UserController
 
         $errors = [];
 
-        if(!Validation::email($email)) {
-            $errors['email'] = 'Invalid email';
+        // Basic validation
+        if (!Validation::email($email)) {
+            $errors['email'] = 'Invalid email address.';
         }
 
-        if(!Validation::string($given_name,2, 50)) {
-            $errors['given_name'] = 'Invalid given name';
+        if (!Validation::string($given_name, 2, 50)) {
+            $errors['given_name'] = 'Given name must be between 2 and 50 characters.';
         }
 
-        if(!Validation::string($family_name,2, 50)) {
-            $errors['family_name'] = 'Invalid family name';
+        if (!Validation::string($family_name, 2, 50)) {
+            $errors['family_name'] = 'Family name must be between 2 and 50 characters.';
         }
 
+        // If there are validation errors, reload the profile page with messages
+        if (!empty($errors)) {
+            $profile = [
+                'given_name' => $given_name,
+                'family_name' => $family_name,
+                'nickname' => $nickname,
+                'email' => $email,
+                'city' => $city,
+                'state' => $state
+            ];
 
+            loadView('users/profile', [
+                'errors' => $errors,
+                'profile' => $profile
+            ]);
+            exit;
+        }
 
+        // Update database
+        $params = [
+            'id' => $id,
+            'given_name' => $given_name,
+            'family_name' => $family_name,
+            'nickname' => $nickname,
+            'email' => $email,
+            'city' => $city,
+            'state' => $state
+        ];
+
+        $this->db->query(
+            'UPDATE users 
+         SET given_name = :given_name,
+             family_name = :family_name,
+             nickname = :nickname,
+             email = :email,
+             city = :city,
+             state = :state
+         WHERE id = :id',
+            $params
+        );
+
+        // Update session data
+        Session::set('user', [
+            'id' => $id,
+            'given_name' => $given_name,
+            'family_name' => $family_name,
+            'nickname' => $nickname,
+            'email' => $email,
+            'city' => $city,
+            'state' => $state
+        ]);
+
+        // Redirect back to profile page with success message
+        redirect('/users/profile?updated=1');
     }
+
 
     /**
      * Store user in database
