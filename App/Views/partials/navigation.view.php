@@ -77,6 +77,21 @@ $authenticated = new Authorise();
                 </a>
             </li>
 
+            <li>
+                <form method="GET" action="#" class="mx-5 flex gap-0">
+                    <label class="py-2 pr-2" for="Keywords"><span class="sr-only">Search:</span></label>
+
+                    <input type="text" name="keywords" id="Keywords" placeholder="Search jokes..."
+                           class=" md:w-auto px-4 py-1 border border-neutral-800 focus:outline-none focus:border-b-neutral-500"/>
+
+                    <button class="group relative inline-block overflow-hidden border bg-neutral-500 border-neutral-800 px-6 py-1 focus:ring-2 focus:outline-hidden">
+                        <span class="absolute inset-y-0 left-0 w-[2px] bg-blue-800 transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-sm font-medium text-white transition-colors group-hover:text-white">
+                                <i class="fa fa-search"></i> Search
+                            </span>
+                    </button>
+                </form>
+            </li>
         </ul>
 
         <ul class="flex flex-row gap-4">
@@ -101,6 +116,14 @@ $authenticated = new Authorise();
                 </li>
             <?php else : ?>
                 <li>
+                    <a href="/users/profile" class="pb-2 px-1 text-sm text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
+                     transition ease-in-out duration-500">
+                        <i class="fa fa-person"></i> Profile
+                    </a>
+                </li>
+
+                <li>
                     <form method="POST" action="/auth/logout" class="">
                         <button class="pb-2 px-1 text-sm text-neutral-400 hover:text-neutral-300
                      border-0 border-b-2 hover:border-b-neutral-500
@@ -108,31 +131,6 @@ $authenticated = new Authorise();
                             <i class="fa fa-door-closed"></i> Logout
                         </button>
                     </form>
-                </li>
-            <?php endif ?>
-
-            <?php if ($authenticated->isAuthenticated()) : ?>
-                <li>
-                    <form method="GET" action="#" class="mx-5 flex gap-0">
-                        <label class="py-2 pr-2" for="Keywords"><span class="sr-only">Search:</span></label>
-
-                        <input type="text" name="keywords" id="Keywords" placeholder="Search jokes..."
-                               class=" md:w-auto px-4 py-1 border border-neutral-800 focus:outline-none focus:border-b-neutral-500"/>
-
-                        <button class="group relative inline-block overflow-hidden border bg-neutral-500 border-neutral-800 px-6 py-1 focus:ring-2 focus:outline-hidden">
-                            <span class="absolute inset-y-0 left-0 w-[2px] bg-blue-800 transition-all duration-500 ease-in-out group-hover:w-full"></span>
-                            <span class="relative text-sm font-medium text-white transition-colors group-hover:text-white">
-                                <i class="fa fa-search"></i> Search
-                            </span>
-                        </button>
-                    </form>
-                </li>
-                <li>
-                    <a href="/users/profile" class="pb-2 px-1 text-sm text-neutral-400 hover:text-neutral-300
-                     border-0 border-b-2 hover:border-b-neutral-500
-                     transition ease-in-out duration-500">
-                            <i class="fa fa-person"></i> Profile
-                    </a>
                 </li>
             <?php endif ?>
         </ul>

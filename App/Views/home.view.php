@@ -103,18 +103,33 @@ loadPartial('navigation');
                 </dd>
             </dl>
 
+            <section class="text-center my-6">
+                <form method="GET" action="/">
+                    <button type="submit" name="random" value="1" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                        Get Random Joke
+                    </button>
+                </form>
+                <?php if (!empty($joke)): ?>
+                    <div class="mt-4 bg-white border border-gray-300 p-4 rounded shadow">
+                        <h3 class="text-lg font-bold mb-2">Here's your random joke!</h3>
+                        <p><?= $joke->content ?? 'No joke found.' ?></p>
+                    </div>
+                <?php else: ?>
+                    <p class="mt-4 italic text-gray-500">Click the button above to see a random joke.</p>
+                <?php endif; ?>
+            </section>
+
         </section>
 
         <section class="m-4 bg-zinc-200 text-zinc-700 p-8 title shadow">
             <dl class="flex flex-col">
-
                 <dt class="text-lg font-semibold">Featured Category</dt>
                 <dd class="ml-4">
                     <a href="https://help.screencraft.net.au"
                        class="hover:text-black">
                         <i class="fa fa-home inline-block mr-2 text-sm"></i>
                         <i class="fa fa-tag inline-block mr-2"></i>
-                        <?= $category->title ?? "" ?>
+                        <?= $category->title ?? '' ?> (<?= $jokeCount ?? 0 ?> jokes)
                     </a>
                 </dd>
 

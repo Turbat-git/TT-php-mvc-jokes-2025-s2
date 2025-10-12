@@ -86,7 +86,6 @@ loadPartial('navigation');
                     </p>
                 </div>
             </section>
-
         </section>
 
         <section class="my-8 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-center">

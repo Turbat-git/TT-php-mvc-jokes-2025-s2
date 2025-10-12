@@ -52,23 +52,38 @@ class HomeController
      * Show the home page to the visitor
      *
      * The controller requests the Home page to be rendered,
-     * with a single random category shown.
+     * with a single random category shown and returns a random joke if the button on the homepage is pressed.
      *
-     * TODO: Show a single random joke, correctly formatted
      *
      * @return void
      */
     public function index()
     {
         $simpleRandomSixQuery = 'SELECT * FROM categories ORDER BY RAND() LIMIT 0,1';
+        $categoryJokeCountQuery = 'SELECT COUNT(*) as total FROM jokes WHERE category_id = :category_id';
 
         $categories = $this->db->query($simpleRandomSixQuery)
             ->fetchAll();
 
+        $categoryId = $categories[0]->id;
+        $categoryJokeCount = $this->db->query($categoryJokeCountQuery,['category_id'=>$categoryId])->fetch();
 
-        loadView('home', [
-            'category' => $categories[0]
-        ]);
+        if (!empty($_GET['random'])) {
+            $simpleRandomJokeQuery = 'SELECT * FROM jokes ORDER BY RAND() LIMIT 0,1';
+            $joke = $this->db->query($simpleRandomJokeQuery)->fetch();
+
+
+            loadView('home', [
+                'category' => $categories[0],
+                'jokeCount' => $categoryJokeCount->total,
+                'joke' => $joke
+            ]);
+        } else{
+            loadView('home', [
+                'category' => $categories[0],
+                'jokeCount' => $categoryJokeCount->total,
+            ]);
+        }
     }
 
     /*
@@ -102,6 +117,7 @@ class HomeController
 
         $userCount = $this->db->query('SELECT count(id) as total FROM users')
             ->fetch();
+
 
         loadView('dashboard', [
             'categories' => $categories,

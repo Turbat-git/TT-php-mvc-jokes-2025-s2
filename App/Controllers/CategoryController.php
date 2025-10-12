@@ -419,4 +419,20 @@ class CategoryController
         return null;
     }
 
+    /**
+     * Return a random category and its joke counts
+     *
+     */
+    public function getRandomCategoryWithJokeCount()
+    {
+        $sql = "SELECT c.id, c.title, COUNT(j.id) as joke_count
+            FROM categories c
+            LEFT JOIN jokes j ON j.category_id = c.id
+            GROUP BY c.id
+            ORDER BY RAND()
+            LIMIT 1";
+
+        return $this->db->query($sql)->fetch();
+    }
+
 }
