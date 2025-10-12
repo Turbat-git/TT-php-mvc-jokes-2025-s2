@@ -60,7 +60,7 @@ loadPartial('navigation');
 
             <section class="mb-4">
                 <label for="state" class="mt-4 pb-1">State:</label>
-                <select name="state" id="state"
+                <select name="state" id="State"
                         class="w-full px-4 py-2 border border-b-zinc-300 focus:outline-none">
                     <option value="" disabled selected>Select State</option>
                     <?php foreach ($states as $state): ?>
@@ -74,13 +74,27 @@ loadPartial('navigation');
 
             <section class="mb-4">
                 <label for="city" class="mt-4 pb-1">City:</label>
-                <select name="city" id="city"
+                <select name="city" id="City"
                         class="w-full px-4 py-2 border border-b-zinc-300 focus:outline-none">
                     <option value="" disabled selected>Select City</option>
                     <?php foreach ($cities as $city): ?>
                         <option value="<?= $city->id ?>"
                                 <?= (!empty($profile->city) && (int) $profile->city === (int) $city->id) ? 'selected' : '' ?>>
                             <?= $city->name ?> (<?= $city->state_code ?>)
+                        </option>
+                    <?php endforeach ?>
+                </select>
+            </section>
+
+            <section class="mb-4">
+                <label for="country" class="mt-4 pb-1">Country:</label>
+                <select name="country" id="Country"
+                        class="w-full px-4 py-2 border border-b-zinc-300 focus:outline-none">
+                    <option value="" disabled selected>Select Country</option>
+                    <?php foreach ($countries as $country): ?>
+                        <option value="<?= $country->id ?>"
+                                <?= (!empty($profile->country) && (int) $profile->country === (int) $country->id) ? 'selected' : '' ?>>
+                            <?= $country->name ?>
                         </option>
                     <?php endforeach ?>
                 </select>

@@ -101,6 +101,25 @@ loadPartial('navigation'); ?>
                 </section>
 
                 <section class="mb-4">
+                    <label for="Country" class="mt-4 pb-1">Country:</label>
+                    <select name="country" id="Country"
+                            class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none">
+                        <?php if (empty($user['country'])) : ?>
+                            <option value="" disabled selected>Select Country</option>
+                        <?php endif ?>
+                        <?php foreach ($countries as $key => $country): ?>
+                            <option value="<?= $country->id ?>"
+                                    <?php if (!empty($user['country']) && (int) $user['country'] === $country->id) :
+                                        echo 'selected';
+                                    endif ?>
+                            ><?= $country->name ?>
+                            </option>
+                        <?php endforeach ?>?
+                    </select>
+
+                </section>
+
+                <section class="mb-4">
                     <label for="Password" class="mt-4 pb-1">Password:</label>
                     <input type="password" id="Password"
                            name="password" placeholder="Password"

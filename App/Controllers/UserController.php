@@ -65,10 +65,12 @@ class UserController
     {
         $states = $this->db->query('SELECT DISTINCT state_id, state_code, state_name FROM cities ORDER BY state_name')->fetchAll();
         $cities = $this->db->query('SELECT name, id, state_id, state_code, state_name FROM cities ORDER BY name')->fetchAll();
+        $countries = $this->db->query('SELECT name, id FROM countries ORDER BY name')->fetchAll();
 
         loadView('users/register',  [
             'cities' => $cities,
-            'states' => $states
+            'states' => $states,
+            'countries' => $countries
         ]);
     }
 
@@ -84,6 +86,7 @@ class UserController
 
         $states = $this->db->query('SELECT DISTINCT state_id, state_code, state_name FROM cities ORDER BY state_name')->fetchAll();
         $cities = $this->db->query('SELECT name, id, state_id, state_code, state_name FROM cities ORDER BY name')->fetchAll();
+        $countries = $this->db->query('SELECT name, id FROM countries ORDER BY name')->fetchAll();
 
         $params = ['id' => $id];
         $profile = $this->db->query('SELECT * FROM users WHERE id = :id', $params)->fetch();
@@ -91,7 +94,8 @@ class UserController
         loadView('users/profile.edit', [
             'profile' => $profile,
             'cities' => $cities,
-            'states' => $states
+            'states' => $states,
+            'countries' => $countries
         ]);
     }
 
