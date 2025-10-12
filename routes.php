@@ -25,6 +25,7 @@ $router->get('/test', 'HomeController@test');
 
 $router->get('/import', "CsvImportController@index");
 $router->post('/import', "CsvImportController@store");
+$router->get('/about', 'StaticPageController@about');
 
 /**
  * UserController methods for authentication/registration

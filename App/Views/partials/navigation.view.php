@@ -69,11 +69,11 @@ $authenticated = new Authorise();
                 </a>
             </li>
             <li>
-                <a href="#"
+                <a href="/about"
                    class="pb-2 px-1 text-neutral-400 hover:text-neutral-300
                      border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
-                    Link 1
+                    About Us
                 </a>
             </li>
 
