@@ -65,6 +65,12 @@ class JokeController
         ]);
     }
 
+    /**
+     * Search through the jokes from the input of the user. Searches through the content and not the title.
+     *
+     * @param array $params
+     * @return void
+     */
     public function search(array $params){
         $searchTerm = $_GET['keywords'] ?? '';
 
@@ -81,6 +87,13 @@ class JokeController
         loadView('jokes/result', [
             'jokes' => $result
         ]);
+    }
+
+    public function add(array $params){
+        $AddQuery = 'INSERT INTO jokes jokes_title, jokes_content, category_id, user_id 
+                     VALUES(:jokes_title, :jokes_content, :category_id, :user_id)';
+
+        $result = $db->query($AddQuery, params[])
     }
 
 }

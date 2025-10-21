@@ -20,6 +20,17 @@ loadPartial('navigation');
 
     <section>
         <ul class="space-y-4">
+            <div class="flex gap-4 mb-6">
+                <a href="/jokes/create"
+                   class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">
+                    <i class="fa fa-plus"></i> Add Joke
+                </a>
+
+                <a href="/jokes/mine"
+                   class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                    <i class="fa fa-user"></i> My Jokes
+                </a>
+            </div>
             <?php if (empty($jokes)): ?>
                 <li>No jokes found.</li>
             <?php else: ?>
