@@ -25,7 +25,7 @@ loadPartial('navigation');
             <?php else: ?>
                 <?php foreach ($jokes as $joke): ?>
                     <li class="border p-3">
-                        <a href="jokes" class="font-semibold"><?= $joke->jokes_title ?></a>
+                        <a href="content/<?= $joke->jokes_id ?>" class="font-semibold"><?= $joke->jokes_title ?></a>
                         <a href="categories"><strong><br>Category:</strong> <?= $joke->categories_title ?></a>
                         <p><strong>Author:</strong> <?= $joke->users_nickname ?></p>
                     </li>
