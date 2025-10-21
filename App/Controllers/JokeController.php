@@ -42,7 +42,12 @@ class JokeController
         ]);
     }
 
-
+    /**
+     * Show the content of the joke to the user.
+     *
+     * @param array $params
+     * @return void
+     */
     public function show(array $params){
         $JokeQuery = 'SELECT jokes.title AS jokes_title, jokes.content as jokes_content, 
         categories.title AS categories_title, users.given_name as user_fname, users.family_name as user_lname 
@@ -55,15 +60,27 @@ class JokeController
 
         $joke = $this->db->query($JokeQuery, ['id' => $id])->fetch();
 
-//        var_dump($joke);
-//        exit;
-
         loadView('jokes/content', [
             'joke' => $joke
         ]);
+    }
 
+    public function search(array $params){
+        $searchTerm = $_GET['keywords'] ?? '';
 
+        $SearchQuery = 'SELECT jokes.title AS jokes_title, categories.title AS categories_title,
+        users.nickname as users_nickname, jokes.id AS jokes_id
+        FROM jokes
+        LEFT JOIN categories ON jokes.category_id = categories.id
+        LEFT JOIN users ON jokes.user_id = users.id WHERE LOWER(jokes.content) LIKE LOWER(:search)';
 
+        $searchParam = ['search' => '%' . $searchTerm . '%'];
+
+        $result = $this->db->query($SearchQuery, $searchParam);
+
+        loadView('jokes/result', [
+            'jokes' => $result
+        ]);
     }
 
 }

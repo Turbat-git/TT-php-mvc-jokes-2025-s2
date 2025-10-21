@@ -103,7 +103,8 @@ $router->delete('/categories/{id}', 'CategoryController@destroy', ['auth']);
  * Jokes Routes
  */
 $router->get('/jokes', 'JokeController@index');
-$router->get('/content/{id}', 'JokeController@show');
+$router->get('/content/{id}', 'JokeController@show', ['auth']);
+$router->get('/jokes/search?{keywords}', 'JokeController@search');
 
 /**
  * User Routes

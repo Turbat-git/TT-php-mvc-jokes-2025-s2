@@ -55,5 +55,4 @@ class ErrorController
             'message' => $message
         ]);
     }
-
 }

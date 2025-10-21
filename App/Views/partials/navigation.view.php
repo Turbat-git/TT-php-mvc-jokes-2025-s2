@@ -78,7 +78,7 @@ $authenticated = new Authorise();
             </li>
 
             <li>
-                <form method="GET" action="#" class="mx-5 flex gap-0">
+                <form method="GET" action="/jokes/search" class="mx-5 flex gap-0">
                     <label class="py-2 pr-2" for="Keywords"><span class="sr-only">Search:</span></label>
 
                     <input type="text" name="keywords" id="Keywords" placeholder="Search jokes..."
