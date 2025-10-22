@@ -11,9 +11,12 @@
  *
  */
 
+use Framework\middleware\Authorise;
+
 loadPartial('header');
 loadPartial('navigation');
 
+$authenticated = new Authorise();
 ?>
 
 <main class="container mx-auto bg-zinc-50 py-8 px-4 shadow shadow-black/25 title">
@@ -132,13 +135,14 @@ loadPartial('navigation');
                         <?= $category->title ?? '' ?> (<?= $jokeCount ?? 0 ?> jokes)
                     </a>
                 </dd>
-                <dt class="text-lg font-semibold">Total Category Count</dt>
+                <?php if ($authenticated->isAuthenticated()) : ?>
+                <dt class="text-lg font-semibold">Total User Count</dt>
                 <dd class="ml-4">
                     <a href="https://help.screencraft.net.au"
                        class="hover:text-black">
                         <i class="fa fa-home inline-block mr-2 text-sm"></i>
                         <i class="fa fa-tag inline-block mr-2"></i>
-                        <?= $totalCategoryCount ?? '' ?>
+                        <?= $totalUsersCount ?? '' ?>
                     </a>
                 </dd>
                 <dt class="text-lg font-semibold">Total Joke Count</dt>
@@ -150,7 +154,7 @@ loadPartial('navigation');
                         <?= $totalJokeCount ?? '' ?>
                     </a>
                 </dd>
-
+                <?php endif; ?>
             </dl>
 
         </section>

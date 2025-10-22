@@ -61,7 +61,7 @@ class HomeController
     {
         $simpleRandomSixQuery = 'SELECT * FROM categories ORDER BY RAND() LIMIT 0,1';
         $categoryJokeCountQuery = 'SELECT COUNT(*) AS total FROM jokes WHERE category_id = :category_id';
-        $allCategoryQuery = 'SELECT COUNT(*) AS total FROM categories';
+        $allUsersQuery = 'SELECT COUNT(*) AS total FROM users';
         $allJokesQuery = 'SELECT COUNT(*) AS total FROM jokes';
 
         $categories = $this->db->query($simpleRandomSixQuery)
@@ -71,9 +71,7 @@ class HomeController
         $categoryJokeCount = $this->db->query($categoryJokeCountQuery,['category_id'=>$categoryId])->fetch();
 
         $totalJokeCount = $this->db->query($allJokesQuery)->fetch();
-        $totalCategoryCount = $this->db->query($allCategoryQuery)->fetch();
-//        dump($totalJokeCount->total);
-//        die();
+        $totalUsersCount = $this->db->query($allUsersQuery)->fetch();
 
         if (!empty($_GET['random'])) {
             $simpleRandomJokeQuery = 'SELECT * FROM jokes ORDER BY RAND() LIMIT 0,1';
@@ -85,14 +83,14 @@ class HomeController
                 'jokeCount' => $categoryJokeCount->total,
                 'joke' => $joke,
                 'totalJokeCount' => $totalJokeCount->total,
-                'totalCategoryCount' => $totalCategoryCount->total
+                'totalUsersCount' => $totalUsersCount->total
             ]);
         } else{
             loadView('home', [
                 'category' => $categories[0],
                 'jokeCount' => $categoryJokeCount->total,
-                'totalJokeCount' => $totalJokeCount,
-                'totalCategoryCount' => $totalCategoryCount
+                'totalJokeCount' => $totalJokeCount->total,
+                'totalUsersCount' => $totalUsersCount->total
             ]);
         }
     }
