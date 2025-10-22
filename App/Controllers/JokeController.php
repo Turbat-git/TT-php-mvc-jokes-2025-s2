@@ -166,13 +166,72 @@ class JokeController
             LEFT JOIN users ON jokes.user_id = users.id
             WHERE user_id = :user_id";
 
-//        $JokesQuery = "SELECT id AS jokes_id, title AS jokes_title, content as jokes_content FROM jokes WHERE user_id = :user_id";1
-
         $result = $this->db->query($JokesQuery, ['user_id' => $user_id])->fetchAll();
 
         loadView('jokes/mine', [
             'jokes' => $result
         ]);
+    }
+
+    public function editJoke(array $params){
+        $categories = $this->db->
+        query('SELECT DISTINCT id, title FROM categories ORDER BY title')->fetchAll();
+
+        $jokes_id = $params['id'] ?? '';
+
+        $params = ['id' => $jokes_id];
+        $joke = $this->db->query('SELECT * FROM jokes WHERE id = :id', $params)->fetch();
+
+        loadView('jokes/joke.edit', [
+            'joke' => $joke,
+            'categories' => $categories
+        ]);
+    }
+
+    public function updateJoke(array $params){
+
+        $title = $_POST['title'] ?? null;
+        $content = $_POST['content'] ?? null;
+        $category_id = $_POST['category'] ?? null;
+
+        $jokes_id = $params['id'] ?? '';
+
+        $errors = [];
+
+        if (!Validation::string($title, 2, 50)) {
+            $errors['given_name'] = 'Title must be between 2 and 50 characters';
+        }
+
+        if (!Validation::string($content, 5)) {
+            $errors['family_name'] = 'Content must be at least 5 characters';
+        }
+
+        if (!empty($errors)) {
+            $categories = $this->db->query('SELECT DISTINCT id, title FROM categories ORDER BY title')->fetchAll();
+
+            loadView('jokes/joke.edit', [
+                'errors' => $errors,
+                'categories' => $categories,
+                'old_input' => [
+                    'title' => $title,
+                    'content' => $content,
+                    'category_id' => $category_id
+                ]
+            ]);
+            exit;
+        }
+
+        // Create joke details
+        $params = [
+            'title' => $title,
+            'content' => $content,
+            'category_id' => $category_id,
+            'id' => $jokes_id
+        ];
+
+        $this->db->query('UPDATE jokes SET title = :title, content = :content, category_id = :category_id WHERE id = :id', $params);
+
+        redirect('/mine');
     }
 
 }

@@ -28,11 +28,6 @@ loadPartial('navigation');
                             </button>
                         </form>
                     </li>
-
-                    <a href="/jokes/mine"
-                       class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-                        <i class="fa fa-user"></i> My Jokes
-                    </a>
                 </div>
                 <?php if (empty($jokes)): ?>
                     <li>No jokes found.</li>
@@ -43,8 +38,8 @@ loadPartial('navigation');
                             <a href="categories"><strong><br>Category:</strong> <?= $joke->categories_title ?></a>
                             <p><strong>Author:</strong> <?= $joke->users_nickname ?></p>
 
-                            <div class="flex gap-4 mt-2"> <!-- Add flexbox container here -->
-                                <form method="GET" action="/edit" class="">
+                            <div class="flex gap-4 mt-2">
+                                <form method="GET" action="/edit/<?= $joke->jokes_id ?>" class="">
                                     <input type="hidden" name="id" value="<?= $joke->jokes_id ?>">
                                     <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-green-700 transition">
                                         <i class="fa fa-edit"></i> Edit Joke

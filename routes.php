@@ -109,6 +109,9 @@ $router->get('/add', 'JokeController@add_joke', ['auth']);
 $router->post('/add', 'JokeController@store_joke', ['auth']);
 $router->get('/mine', 'JokeController@user_jokes', ['auth']);
 
+$router->get('/edit/{id}', 'JokeController@editJoke', ['auth']);
+$router->post('/edit/{id}', 'JokeController@updateJoke', ['auth']);
+
 
 /**
  * User Routes
