@@ -221,7 +221,7 @@ class JokeController
             exit;
         }
 
-        // Create joke details
+        // Update joke details
         $params = [
             'title' => $title,
             'content' => $content,
@@ -232,6 +232,19 @@ class JokeController
         $this->db->query('UPDATE jokes SET title = :title, content = :content, category_id = :category_id WHERE id = :id', $params);
 
         redirect('/mine');
+    }
+
+    public function deleteJoke(array $params){
+        $DeleteQuery = 'DELETE FROM jokes WHERE id = :id';
+
+        $id = $params['id'] ?? "";
+
+        $this->db->query($DeleteQuery, ['id'=>$id])->fetch();
+
+        Session::setFlashMessage('success_message', 'Joke deleted');
+
+        redirect('/mine');
+        return null;
     }
 
 }

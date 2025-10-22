@@ -111,6 +111,7 @@ $router->get('/mine', 'JokeController@user_jokes', ['auth']);
 
 $router->get('/edit/{id}', 'JokeController@editJoke', ['auth']);
 $router->post('/edit/{id}', 'JokeController@updateJoke', ['auth']);
+$router->post('/delete/{id}', 'JokeController@deleteJoke', ['auth']);
 
 
 /**
