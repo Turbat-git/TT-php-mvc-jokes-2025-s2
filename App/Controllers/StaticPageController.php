@@ -32,9 +32,13 @@ class StaticPageController
         $this->db = new Database($config);
     }
 
+    /**
+     * Pass the data into the about page
+     *
+     * @return void
+     */
     public function about()
     {
-        // Load the about view (passing any data if needed)
         loadView('static/about', [
             'developer' => 'Turbat Turkhuu',
             'appOverview' => 'This application is a simple jokes platform built using PHP MVC.',
@@ -45,6 +49,4 @@ class StaticPageController
             ]
         ]);
     }
-
-
 }

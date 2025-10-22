@@ -132,6 +132,24 @@ loadPartial('navigation');
                         <?= $category->title ?? '' ?> (<?= $jokeCount ?? 0 ?> jokes)
                     </a>
                 </dd>
+                <dt class="text-lg font-semibold">Total Category Count</dt>
+                <dd class="ml-4">
+                    <a href="https://help.screencraft.net.au"
+                       class="hover:text-black">
+                        <i class="fa fa-home inline-block mr-2 text-sm"></i>
+                        <i class="fa fa-tag inline-block mr-2"></i>
+                        <?= $totalCategoryCount ?? '' ?>
+                    </a>
+                </dd>
+                <dt class="text-lg font-semibold">Total Joke Count</dt>
+                <dd class="ml-4">
+                    <a href="https://help.screencraft.net.au"
+                       class="hover:text-black">
+                        <i class="fa fa-home inline-block mr-2 text-sm"></i>
+                        <i class="fa fa-tag inline-block mr-2"></i>
+                        <?= $totalJokeCount ?? '' ?>
+                    </a>
+                </dd>
 
             </dl>
 

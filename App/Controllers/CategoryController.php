@@ -384,6 +384,12 @@ class CategoryController
         return null;
     }
 
+    /**
+     * Deletes the category data from the database
+     *
+     * @param array $params
+     * @return void|null
+     */
     public function destroy(array $params)
     {
         $id = $params['id'] ?? '';
