@@ -22,117 +22,46 @@ loadPartial('navigation');
         <section class="bg-white p-8 title shadow-md md:w-500 mx-6 w-full">
 
             <h2 class="text-4xl text-left font-bold mb-4">
-                Register
+                Add Joke
             </h2>
 
             <?= loadPartial('errors', [
                 'errors' => $errors ?? []
             ]) ?>
 
-            <form method="POST" action="/auth/register">
+            <form method="POST" action="/add">
 
                 <section class="mb-4">
-                    <label for="Given_Name" class="mt-4 pb-1">Given Name:</label>
-                    <input type="text" id="Given_Name"
-                           name="given_name" placeholder="First Name"
+                    <label for="Title" class="mt-4 pb-1">Title:</label>
+                    <input type="text" id="Title"
+                           name="title" placeholder="Title"
                            class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
-                           value="<?= $user['given_name'] ?? '' ?>"/>
                 </section>
 
                 <section class="mb-4">
-                    <label for="Family_Name" class="mt-4 pb-1">Family Name:</label>
-                    <input type="text" id="Family_Name"
-                           name="family_name" placeholder="Family Name"
+                    <label for="Content" class="mt-4 pb-1">Content:</label>
+                    <input type="text" id="Content"
+                           name="content" placeholder="Content"
                            class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
-                           value="<?= $user['family_name'] ?? '' ?>"/>
                 </section>
 
                 <section class="mb-4">
-                    <label for="Nickname" class="mt-4 pb-1">Nickname:</label>
-                    <input type="text" id="Nickname"
-                           name="nickname" placeholder="Nickname"
-                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
-                           value="<?= $user['nickname'] ?? '' ?>"/>
-                </section>
-
-                <section class="mb-4">
-                    <label for="Email" class="mt-4 pb-1">Email:</label>
-                    <input type="email" id="Email"
-                           name="email" placeholder="Email Address"
-                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"
-                           value="<?= $user['email'] ?? '' ?>"/>
-                </section>
-
-
-                <section class="mb-4">
-                    <label for="State" class="mt-4 pb-1">State:</label>
-                    <select name="state" id="City"
+                    <label for="Category" class="mt-4 pb-1">Category:</label>
+                    <select name="category" id="Category"
                             class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none">
-                        <?php if (empty($user['state'])) : ?>
+                        <?php if (empty($joke['categories'])) : ?>
                             <option value="" disabled selected>Select State</option>
                         <?php endif ?>
-                        <?php foreach ($states as $key => $state): ?>
-                            <option value="<?= $state->state_id ?>"
-                                <?php if (!empty($user['state']) && (int) $user['state'] === $state->state_id) :
+                        <?php foreach ($categories as $key => $category): ?>
+                            <option value="<?= $category->id ?>"
+                                <?php if (!empty($old_input['category_id']) && (int)$old_input['category_id'] === $category->id) :
                                     echo 'selected';
                                 endif ?>
-                            ><?= $state->state_name ?> (<?= $state->state_code??"" ?>)
+                            ><?= $category->title ?>
                             </option>
                         <?php endforeach ?>?
                     </select>
 
-                </section>
-
-                <section class="mb-4">
-                    <label for="City" class="mt-4 pb-1">City:</label>
-                    <select name="city" id="City"
-                            class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none">
-                        <?php if (empty($user['city'])) : ?>
-                            <option value="" disabled selected>Select City</option>
-                        <?php endif ?>
-                        <?php foreach ($cities as $key => $city): ?>
-                            <option value="<?= $city->id ?>"
-                                <?php if (!empty($user['city']) && (int) $user['city'] === $city->id) :
-                                    echo 'selected';
-                                endif ?>
-                            ><?= $city->name ?> (<?= $city->state_code ?>)
-                            </option>
-                        <?php endforeach ?>?
-                    </select>
-
-                </section>
-
-                <section class="mb-4">
-                    <label for="Country" class="mt-4 pb-1">Country:</label>
-                    <select name="country" id="Country"
-                            class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none">
-                        <?php if (empty($user['country'])) : ?>
-                            <option value="" disabled selected>Select Country</option>
-                        <?php endif ?>
-                        <?php foreach ($countries as $key => $country): ?>
-                            <option value="<?= $country->id ?>"
-                                <?php if (!empty($user['country']) && (int) $user['country'] === $country->id) :
-                                    echo 'selected';
-                                endif ?>
-                            ><?= $country->name ?>
-                            </option>
-                        <?php endforeach ?>?
-                    </select>
-
-                </section>
-
-                <section class="mb-4">
-                    <label for="Password" class="mt-4 pb-1">Password:</label>
-                    <input type="password" id="Password"
-                           name="password" placeholder="Password"
-                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"/>
-                </section>
-
-                <section class="mb-4">
-                    <label for="PasswordConfirmation" class="mt-4 pb-1">Confirm password:</label>
-                    <input type="password" id="PasswordConfirmation"
-                           name="password_confirmation" placeholder="Confirm Password"
-                           class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none"/>
                 </section>
 
                 <section class="mb-4 flex flex-row gap-4 justify-between">
@@ -141,24 +70,12 @@ loadPartial('navigation');
                         <span class="absolute inset-y-0 left-0 w-[2px] bg-sky-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
                         <span class="relative text-sm font-medium  text-black transition-colors duration-500 group-hover:text-white">
                                 <i class="fa fa-user-plus inline-block mr-2"></i>
-                                Register
+                                Add
                             </span>
                     </button>
 
                     <div class="text-zinc-700 inline-flex justify-right">
-                        <p class="mt-2 mr-2">
-                            Already have an account?
-                        </p>
-
-                        <a class="group relative inline-block overflow-hidden border bg-white border-emerald-800 px-8 py-1 focus:ring-2focus:outline-hidden"
-                           href="/auth/login"
-                        >
-                            <span class="absolute inset-y-0 left-0 w-[2px] bg-emerald-500 transition-all duration-500 ease-in-out group-hover:w-full"></span>
-                            <span class="relative text-sm font-medium   text-black transition-colors duration-500 group-hover:text-white">
-                                <i class="fa-solid fa-arrow-right-to-bracket mr-4"></i>
-                                Login
-                            </span>
-                        </a>
+                        <a href="jokes.view.php"> Back </a>
                     </div>
                 </section>
 

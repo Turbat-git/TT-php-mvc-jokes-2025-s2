@@ -21,10 +21,22 @@ loadPartial('navigation');
     <section>
         <ul class="space-y-4">
             <div class="flex gap-4 mb-6">
-                <a href="/jokes/create"
-                   class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">
-                    <i class="fa fa-plus"></i> Add Joke
-                </a>
+                <li>
+                    <form method="GET" action="/auth/register" class="">
+                        <button class="pb-2 px-1 text-sm text-neutral-400 hover:text-neutral-300
+                     border-0 border-b-2 hover:border-b-neutral-500
+                     transition ease-in-out duration-500">
+                            <i class="fa fa-person-pregnant"></i> Register
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form method="GET" action="/add" class="">
+                        <button class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">
+                            <i class="fa fa-plus"></i> Add joke
+                        </button>
+                    </form>
+                </li>
 
                 <a href="/jokes/mine"
                    class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">

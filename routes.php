@@ -105,6 +105,10 @@ $router->delete('/categories/{id}', 'CategoryController@destroy', ['auth']);
 $router->get('/jokes', 'JokeController@index');
 $router->get('/content/{id}', 'JokeController@show', ['auth']);
 $router->get('/jokes/search?{keywords}', 'JokeController@search');
+$router->get('/add', 'JokeController@add_joke', ['auth']);
+$router->post('/add', 'JokeController@store_joke', ['auth']);
+$router->get('/mine', 'JokeController@user_jokes', ['auth']);
+
 
 /**
  * User Routes
