@@ -12,7 +12,9 @@
  */
 
 use Framework\Middleware\Authorise;
+use Framework\Session;
 
+$currentUser = Session::get('user');
 $authenticated = new Authorise();
 ?>
 
@@ -119,7 +121,7 @@ $authenticated = new Authorise();
                     <a href="/users/profile" class="pb-2 px-1 text-sm text-neutral-400 hover:text-neutral-300
                      border-0 border-b-2 hover:border-b-neutral-500
                      transition ease-in-out duration-500">
-                        <i class="fa fa-person"></i> <?= $?>
+                        <i class="fa fa-person"></i> <?= $currentUser['nickname'] ?>
                     </a>
                 </li>
 
