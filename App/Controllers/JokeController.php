@@ -94,6 +94,11 @@ class JokeController
         ]);
     }
 
+    /**
+     * Get the categories from the database and load the view
+     *
+     * @return void
+     */
     public function add_joke(){
         $categories = $this->db->
             query('SELECT DISTINCT id, title FROM categories ORDER BY title')->fetchAll();
@@ -103,6 +108,11 @@ class JokeController
         ]);
     }
 
+    /**
+     * Store the newly added joke to the database
+     *
+     * @return void
+     */
     public function store_joke()
     {
         $currentUser = Session::get('user');
@@ -154,6 +164,11 @@ class JokeController
         redirect('jokes/jokes');
     }
 
+    /**
+     * Display only the jokes added by the user
+     *
+     * @return void
+     */
     public function user_jokes(){
         $currentUser = Session::get('user');
         $user_id = $currentUser['id'];
@@ -173,6 +188,12 @@ class JokeController
         ]);
     }
 
+    /**
+     * Load the view of the form to edit details of a joke
+     *
+     * @param array $params
+     * @return void
+     */
     public function editJoke(array $params){
         $categories = $this->db->
         query('SELECT DISTINCT id, title FROM categories ORDER BY title')->fetchAll();
@@ -188,6 +209,12 @@ class JokeController
         ]);
     }
 
+    /**
+     * Store the details of the updated joke in the database
+     *
+     * @param array $params
+     * @return void
+     */
     public function updateJoke(array $params){
 
         $title = $_POST['title'] ?? null;
@@ -234,6 +261,12 @@ class JokeController
         redirect('/mine');
     }
 
+    /**
+     * Delete joke from the database
+     *
+     * @param array $params
+     * @return null
+     */
     public function deleteJoke(array $params){
         $DeleteQuery = 'DELETE FROM jokes WHERE id = :id';
 

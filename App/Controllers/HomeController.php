@@ -48,7 +48,7 @@ class HomeController
 
     }
 
-    /*
+    /**
      * Show the home page to the visitor
      *
      * The controller requests the Home page to be rendered,
@@ -95,7 +95,7 @@ class HomeController
         }
     }
 
-    /*
+    /**
      * Show the dashboard
      *
      * Dashboard statistics shown include:
@@ -103,7 +103,6 @@ class HomeController
      *  - number of users
      *  - number of jokes
      *
-     * TODO: Ensure that the correct counts are shown when dashboard is rendered
      *
      * @return void
      */

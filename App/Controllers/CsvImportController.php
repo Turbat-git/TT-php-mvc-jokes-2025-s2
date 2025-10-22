@@ -14,6 +14,11 @@ class CsvImportController
 
     protected Database $db;
 
+    /**
+     * CSVImportController constructor/instantiator
+     *
+     * @throws \Exception
+     */
     public function __construct()
     {
         $config = require basePath('config/db.php');
