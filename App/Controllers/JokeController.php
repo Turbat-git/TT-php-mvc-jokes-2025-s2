@@ -30,8 +30,11 @@ class JokeController
      * @return void
      */
     public function index(){
+        $currentUser = Session::get('user');
+        $current_user_id = $currentUser['id'];
+
         $JokeQuery = 'SELECT jokes.title AS jokes_title, categories.title AS categories_title,
-       users.nickname as users_nickname, jokes.id AS jokes_id
+       users.nickname as users_nickname, jokes.id AS jokes_id, users.id AS user_id
         FROM jokes
         LEFT JOIN categories ON jokes.category_id = categories.id
         LEFT JOIN users ON jokes.user_id = users.id
@@ -40,7 +43,8 @@ class JokeController
         $jokes = $this->db->query($JokeQuery);
 
         loadView('jokes/jokes', [
-            'jokes' => $jokes
+            'jokes' => $jokes,
+            'current_user_id' => $current_user_id
         ]);
     }
 
@@ -52,7 +56,7 @@ class JokeController
      */
     public function show(array $params){
         $JokeQuery = 'SELECT jokes.title AS jokes_title, jokes.content as jokes_content, 
-        categories.title AS categories_title, users.given_name as user_fname, users.family_name as user_lname 
+        categories.title AS categories_title, users.given_name as user_fname, users.family_name as user_lname
         FROM jokes
         LEFT JOIN categories ON jokes.category_id = categories.id
         LEFT JOIN users ON jokes.user_id = users.id
@@ -154,9 +158,17 @@ class JokeController
         $currentUser = Session::get('user');
         $user_id = $currentUser['id'];
 
-        $JokesQuery = "SELECT * FROM jokes WHERE user_id = :user_id";
+        $JokesQuery = "SELECT jokes.id AS jokes_id, jokes.title AS jokes_title, jokes.content as jokes_content,
+            categories.title AS categories_title, users.given_name as user_fname, users.family_name as user_lname,
+            users.nickname AS users_nickname
+            FROM jokes
+            LEFT JOIN categories ON jokes.category_id = categories.id
+            LEFT JOIN users ON jokes.user_id = users.id
+            WHERE user_id = :user_id";
 
-        $result = $this->db->query($JokesQuery, $user_id)->fetchAll();
+//        $JokesQuery = "SELECT id AS jokes_id, title AS jokes_title, content as jokes_content FROM jokes WHERE user_id = :user_id";1
+
+        $result = $this->db->query($JokesQuery, ['user_id' => $user_id])->fetchAll();
 
         loadView('jokes/mine', [
             'jokes' => $result

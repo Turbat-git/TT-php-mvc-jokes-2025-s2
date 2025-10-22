@@ -50,7 +50,7 @@ loadPartial('navigation');
                     <select name="category" id="Category"
                             class="w-full px-4 py-2 border border-b-zinc-300  focus:outline-none">
                         <?php if (empty($joke['categories'])) : ?>
-                            <option value="" disabled selected>Select State</option>
+                            <option value="" disabled selected>Select Category</option>
                         <?php endif ?>
                         <?php foreach ($categories as $key => $category): ?>
                             <option value="<?= $category->id ?>"

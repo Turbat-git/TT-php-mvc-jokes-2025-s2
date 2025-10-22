@@ -42,6 +42,22 @@ loadPartial('navigation');
                             <a href="content/<?= $joke->jokes_id ?>" class="font-semibold"><?= $joke->jokes_title ?></a>
                             <a href="categories"><strong><br>Category:</strong> <?= $joke->categories_title ?></a>
                             <p><strong>Author:</strong> <?= $joke->users_nickname ?></p>
+
+                            <div class="flex gap-4 mt-2"> <!-- Add flexbox container here -->
+                                <form method="GET" action="/edit" class="">
+                                    <input type="hidden" name="id" value="<?= $joke->jokes_id ?>">
+                                    <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-green-700 transition">
+                                        <i class="fa fa-edit"></i> Edit Joke
+                                    </button>
+                                </form>
+
+                                <form method="POST" action="/delete" class="">
+                                    <input type="hidden" name="id" value="<?= $joke->jokes_id ?>">
+                                    <button class="px-4 py-2 bg-red-600 text-white rounded hover:bg-blue-700 transition">
+                                        <i class="fa fa-trash"></i> Delete Joke
+                                    </button>
+                                </form>
+                            </div>
                         </li>
                     <?php endforeach; ?>
                 <?php endif; ?>
